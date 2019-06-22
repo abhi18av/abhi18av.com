@@ -1,0 +1,9 @@
+version: '1'
+
+tasks:
+  show:
+    cmds:
+      - boot show -f perun/asciidoctor show -f
+  meta:
+    cmds:
+      - boot perun/print-meta
