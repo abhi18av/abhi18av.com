@@ -7,3 +7,9 @@ tasks:
   meta:
     cmds:
       - boot perun/print-meta
+  render:
+    cmds:
+      - boot perun/asciidoctor perun/render -r site.core/page target
+  serve:
+    cmds:
+      - boot serve -r public watch perun/asciidoctor perun/render -r site.core/page wait
