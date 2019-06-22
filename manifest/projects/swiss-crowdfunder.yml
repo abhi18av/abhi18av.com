@@ -1,0 +1,59 @@
+name: Swiss Crowdfunder
+url: https://swiss-crowdfunder.com
+image: "/img/products/swiss-crowdfunder.png"
+opensourced: 2017
+priority: 30
+technologies:
+  - ruby-on-rails
+  - saas
+  - javascript
+  - ruby
+  - nginx
+  - postgresql
+  - debian
+people:
+  - alain
+  - nico
+  - sanghee
+short-description: >-
+  *Swiss Crowdfunder* is a crowd funding and equity funding
+  platform. It is a joint product with *ungleich glarus ag* and Open
+  Source.
+description: >-
+  Swiss Crowdfunder is a crowd funding and equity funding platform.
+  It is a joint product with [ungleich glarus ag](https://ungleich.ch/).
+
+  ## Why did we do it?
+
+  Crowdfunding using established platforms can be very expensive.
+  Usually, there is a fee of 12-20% that has to be paid. **Swiss
+  Crowdfunder** is fully open source - therefore it can be used by anyone to
+  start their own crowdfunding platform or campaign.
+
+  ## Open source
+
+  **Swiss Crowdfunder** is released under the popular
+  [AGPL license](https://github.com/200ok-ungleich/swiss-crowdfunder/blob/master/LICENSE),
+  has a
+  [contribution guide](https://github.com/200ok-ungleich/swiss-crowdfunder/blob/master/CONTRIBUTING.md)
+  as well as a
+  [code of conduct](https://github.com/200ok-ungleich/swiss-crowdfunder/blob/master/CODE_OF_CONDUCT.md),
+  is
+  [fully configurable](https://github.com/200ok-ungleich/swiss-crowdfunder#configuration)
+  and has a community
+  [Mattermost chatroom](https://github.com/200ok-ungleich/swiss-crowdfunder#configuration).
+
+  For more information, visit
+  [https://github.com/200ok-ungleich/swiss-crowdfunder](https://github.com/200ok-ungleich/swiss-crowdfunder), star the project and become part of it!
+
+  ## Hosted SaaS
+
+  Next to the OSS version, we run and support our hosted SaaS
+  version at
+  [https://swiss-crowdfunder.com/](https://swiss-crowdfunder.com/).
+  If you don't want to get too technical, get in touch with us at
+  info@200ok.ch and we will host your campaign for an 8% fee.
+
+  We also offer coaching and support in how to set up a proper
+  crowdfunding campaign and optimize your marketing efforts. Call or
+  write us anytime!

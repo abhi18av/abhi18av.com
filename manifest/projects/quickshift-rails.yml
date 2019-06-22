@@ -1,0 +1,54 @@
+name: QuickShift
+url: https://quickshift.ch
+image: "/img/products/quickshift.png"
+priority: 10
+incubated: 2015-2017
+incubator-status:
+  Going through the LEAN process, QuickShift has validated all MVP
+  stages and by 2018 has become it's own entity QuickShift Gmbh.
+people:
+  - phil
+  - alain
+  - pascal
+  - micha
+technologies:
+  - ruby
+  - ruby-on-rails
+  - riot
+  - nginx
+  - postgresql
+  - debian
+  - javascript
+  - ansible
+short-description: >-
+  *QuickShift* is a fully automatic work planning solution.
+description: >-
+  QuickShift is a fully automatic work planning solution.
+
+  **Reduce costs**: Save time through automatic shiftplan generation. Make
+  the best of your working time instead. Save costs by optimizing the
+  assignment of employees.
+
+  **Automatic shift assignment**: QuickShift assigns your employees to
+  optimal shifts within your business.
+
+  **Better shift plans**: QuickShift generates optimal shift plans. By
+  using our algorithmic approach, we trump the quality of manually
+  created plans. Without additional effort, you will improve upon the
+  satisfaction of your employees, because the plans also take their
+  wishes into account.
+
+  **Conforming to the law**: QuickShift ensures that your shift plans are
+  conforming to Swiss laws ArG and L-GAV.
+
+  **Online availability**: You have online access to your shiftplans. Your
+  employees can also see their assignments and enter their wishes for
+  future plans.
+
+  Do you want to create your shift plans automatically with
+  QuickShift? Please contact us any time at <a
+  href="mailto:info@quickshift.ch">info@quickshift.ch</a> or <a
+  href="tel:+41 76 405 05 67">+41 76 405 05 67</a> . You can also
+  create your business yourself on <a
+  href="https://quickshift.ch">https://quickshift.ch</a> and we will
+  contact you as soon as possible.

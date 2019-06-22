@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport"><link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"><link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"><link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"><link href="/manifest.json" rel="manifest"><link color="#5bbad5" href="/safari-pinned-tab.svg" rel="mask-icon"><meta content="#ffffff" name="theme-color"><link href="/css/normalize.css" rel="stylesheet"><link href="/css/app.css" rel="stylesheet"><title>Redux in 30 lines of ClojureScript - 200ok</title><link href="/rss.xml" rel="alternate" title="200ok - Consultancy, Research Lab, Incubator" type="application/rss+xml"><link href="/atom.xml" rel="alternate" title="200ok - Consultancy, Research Lab, Incubator" type="application/atom+xml"><meta content="Redux in 30 lines of ClojureScript - 200ok" property="og:title"><meta content="article" property="og:type"><meta property="og:description"><meta content="https://200ok.ch/posts/minimal-redux-clojurescript.html" property="og:url"><meta content="https://200ok.ch/img/logo.png" property="og:image"><meta content="summary" name="twitter:card"><meta content="@twohundredok" name="twitter:site"><meta content="Redux in 30 lines of ClojureScript - 200ok" name="twitter:title"><meta content="https://200ok.ch/img/logo.png" name="twitter:image"><meta name="twitter:description"><link href="https://200ok.ch/posts/minimal-redux-clojurescript.html" rel="canonical"><link href="/css/styles/solarized-light.css" rel="stylesheet"></head><body id="blog" itemscope itemtype="http://schema.org/Blog"><div class="top-bar"><div class="top-bar-left"><top-bar-title itemprop="image"><a href="/" id="logo"><img src="/img/200ok.svg"></a></top-bar-title></div><div class="top-bar-right"><ul class="menu"><li><a href="/blog.html">Blog</a></li><li><a href="/projects.html">Projects</a></li><li><a href="/team.html">Team</a></li><li><a href="/atom.xml" id="atom-feed"><span>&nbsp;</span>Feed</a></li></ul></div></div><main class="single-post"><div id="content"><article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting"><h3 class="headline" itemprop="headline"><a class="nunito" href="/posts/minimal-redux-clojurescript.html" itemprop="url">Redux in 30 lines of ClojureScript</a></h3><div class="subheader"><p class="post-meta"><time itemprop="datePublished">2018-02-26</time> - <span itemprop="wordCount">507</span> words - <span itemprop="timeRequired">5</span> min read</p><div class="byline"><img class="author-icon" src="/img/author.svg"><section class="author" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Josef Erben</span></section></div></div><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><meta content="190" itemprop="height"><meta content="349" itemprop="width"><meta content="https://200ok.ch/img/logo.png" itemprop="url"></span><div><div class="article-body" itemprop="articleBody"><p><a href="https://redux.js.org/introduction/core-concepts">Redux</a> is a popular choice when it comes to dealing with state in larger single page applications. But even smaller applications might benefit from a redux architecture. I will show you how to implement redux in less than 30 lines of ClojureScript to get a <strong>clean application structure</strong> and to <strong>reduce cognitive load</strong>.</p>
+<h2 id="redux.reducer">redux.reducer</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode clojure"><code class="sourceCode clojure"><a class="sourceLine" id="cb1-1" title="1">(<span class="kw">ns</span> redux.reducer)</a>
+<a class="sourceLine" id="cb1-2" title="2"></a>
+<a class="sourceLine" id="cb1-3" title="3">(<span class="bu">defmulti</span><span class="fu"> Action</span></a>
+<a class="sourceLine" id="cb1-4" title="4">  (<span class="kw">fn</span> [state action]</a>
+<a class="sourceLine" id="cb1-5" title="5">    (<span class="at">:type</span> action)))</a>
+<a class="sourceLine" id="cb1-6" title="6"></a>
+<a class="sourceLine" id="cb1-7" title="7">(<span class="bu">defmethod</span><span class="fu"> Action </span><span class="at">:default</span> [state {<span class="at">:keys</span> [<span class="kw">type</span>] <span class="at">:as</span> action-data}]</a>
+<a class="sourceLine" id="cb1-8" title="8">  (<span class="kw">prn</span> <span class="st">&quot;Action of &quot;</span> <span class="kw">type</span> <span class="st">&quot; not defined.&quot;</span>)</a>
+<a class="sourceLine" id="cb1-9" title="9">  state)</a></code></pre></div>
+<p>It is possible to keep the redux implementation so simple because of two features of Clojure. One of those features we are taking advantage of is <em>multimethods</em>, my favorite form of Clojure’s runtime polymorphism. Throughout our app the only way to change the state of the redux store is by dispatching actions. You can define action types by setting <em>:type</em>. Use it like this:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode clojure"><code class="sourceCode clojure"><a class="sourceLine" id="cb2-1" title="1">(r/dispatch! {<span class="at">:type</span> <span class="at">:add-todo</span> <span class="at">:name</span> <span class="st">&quot;brew coffee&quot;</span>})</a></code></pre></div>
+<p>Your reducers <strong>always</strong> have to return state!</p>
+<h2 id="redux.core">redux.core</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode clojure"><code class="sourceCode clojure"><a class="sourceLine" id="cb3-1" title="1">(<span class="kw">ns</span> redux.core</a>
+<a class="sourceLine" id="cb3-2" title="2">  (<span class="at">:require-macros</span> [cljs.core.async.macros <span class="at">:refer</span> [go go-loop]])</a>
+<a class="sourceLine" id="cb3-3" title="3">  (<span class="at">:require</span></a>
+<a class="sourceLine" id="cb3-4" title="4">   [cljs.core.async <span class="at">:as</span> a]</a>
+<a class="sourceLine" id="cb3-5" title="5">   [reagent.core <span class="at">:as</span> r]</a>
+<a class="sourceLine" id="cb3-6" title="6">   [redux.reducer <span class="at">:refer</span> [Action]]))</a>
+<a class="sourceLine" id="cb3-7" title="7"></a>
+<a class="sourceLine" id="cb3-8" title="8">(<span class="bu">defonce</span><span class="fu"> !state </span>(r/atom {}))</a>
+<a class="sourceLine" id="cb3-9" title="9">(<span class="bu">defonce</span><span class="fu"> !actions </span>(a/chan))</a>
+<a class="sourceLine" id="cb3-10" title="10"></a>
+<a class="sourceLine" id="cb3-11" title="11">(<span class="bu">defn</span><span class="fu"> dispatch! </span>[action]</a>
+<a class="sourceLine" id="cb3-12" title="12">  (a/put! !actions action))</a>
+<a class="sourceLine" id="cb3-13" title="13"></a>
+<a class="sourceLine" id="cb3-14" title="14">(go-loop []</a>
+<a class="sourceLine" id="cb3-15" title="15">  (<span class="kw">when-let</span> [a (a/&lt;! !actions)]</a>
+<a class="sourceLine" id="cb3-16" title="16">    (<span class="kw">swap!</span> !state Action a)</a>
+<a class="sourceLine" id="cb3-17" title="17">    (<span class="kw">recur</span>)))</a></code></pre></div>
+<p>The other feature we are using to concisely implement redux are <strong>channels</strong>. Channels allow us to dispatch actions asynchronously from within other actions, which takes away at least half of the pain of building single page applications.</p>
+<p>The redux store is a <code>ratom</code>, which is watched by reagent components and triggers re-renders.</p>
+<p>To query state in a component just require</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode clojure"><code class="sourceCode clojure"><a class="sourceLine" id="cb4-1" title="1">[redux.core <span class="at">:as</span> r]</a></code></pre></div>
+<p>and use</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode clojure"><code class="sourceCode clojure"><a class="sourceLine" id="cb5-1" title="1"><span class="at">@r/!state</span></a></code></pre></div>
+<h2 id="benefits">Benefits</h2>
+<h3 id="structure">Structure</h3>
+<p>Redux can help you structuring your application. It becomes obvious to have a list of reducers and a list of components. While this is a sensible way to split state changing logic from the view in early stages of development, you might later group reducers/components by use cases.</p>
+<pre><code>.
+├── redux
+│   ├── core.cljs
+│   └── reducer.cljs
+└── app
+    ├── components
+    │   ├── box.cljs
+    │   ├── button.cljs
+    │   ├── item.cljs
+    │   ├── screen.cljs
+    │   └── snackbar.cljs
+    ├── core.cljs
+    ├── reducers
+    │   ├── components.cljs
+    │   ├── validation.cljs
+    │   ├── form.cljs
+    │   └── websockets.cljs
+    └── utils.cljs</code></pre>
+<h3 id="reduced-cognitive-load">Reduced cognitive load</h3>
+<p>If you agree with Clojure’s way of dealing with complexity through isolation, you will agree with me on this point.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode clojure"><code class="sourceCode clojure"><a class="sourceLine" id="cb7-1" title="1">(<span class="bu">defmethod</span><span class="fu"> Action </span><span class="at">:blur</span> [s {<span class="at">:keys</span> [id evt]}]</a>
+<a class="sourceLine" id="cb7-2" title="2">  (r/dispatch! {<span class="at">:type</span> <span class="at">:close-warning</span>})</a>
+<a class="sourceLine" id="cb7-3" title="3">  (<span class="kw">let</span> [<span class="kw">val</span> (<span class="kw">-&gt;</span> evt .-target .-value)]</a>
+<a class="sourceLine" id="cb7-4" title="4">    (r/dispatch! {<span class="at">:type</span> <span class="at">:update-comp</span> <span class="at">:id</span> id <span class="at">:data</span> textt <span class="kw">val</span>}))</a>
+<a class="sourceLine" id="cb7-5" title="5">  s)</a></code></pre></div>
+<p>While working on a reducer for an action type, you are looking at a pure <sup>1</sup> function of action and state. There is neither any other state nor any affected components elsewhere, you can focus on building and returning the next state.</p>
+<p>In order to implement a redux app, start with the event handler, create empty reducers and implement reducers one by one.</p>
+<p><strong>1</strong> We are dispatching an action from within the function. This is a semantically observable side effect and strictly speaking the function is not pure. Nevertheless, the side effect is applied in a controlled way to our system and reducers remaing easy to reason about. The argument of reduced cognitive load holds.</p>
+</div><div class="tags"><img class="tag-icon" src="/img/tag.svg"><ul itemprop="keywords"><li class="category"><a href="/category/clojure.html">clojure</a></li><li class="tag"><a href="/tags/clojure.html">#clojure</a></li><li class="tag"><a href="/tags/redux.html">#redux</a></li><li class="tag"><a href="/tags/clojurescript.html">#clojurescript</a></li><li class="tag"><a href="/tags/state_management.html">#state_management</a></li></ul></div></div></article></div></main><footer><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><div class="name" itemprop="name">200ok GmbH</div><div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"><a href="https://goo.gl/maps/GNAoiNF7mbL2" title="View on Google Maps"><div itemprop="streetAddress">Badenerstrasse 313</div><div><span itemprop="postalCode">8003</span> <span itemprop="addressLocality">Zürich</span></div></a></div><div itemprop="telephone">+41 76 405 05 67</div><div itemprop="email"><a href="mailto:info@200ok.ch">info@200ok.ch</a></div><img itemprop="logo" src="https://200ok.ch/img/200ok.svg"></div></footer><div class="scripts" style="{:display &quot;none&quot;}"><script src="/js/vendor/bowser.min.js"></script><script async src="/js/ie_safeguard.js"></script><script async src="/js/tour.js"></script><script src="/js/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script><script>tour=null</script></div></body></html>

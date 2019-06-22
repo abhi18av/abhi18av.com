@@ -1,0 +1,21 @@
+name: json2xlsx
+image: "/img/products/json2xlsx.png"
+url: https://gitlab.com/200ok/json2xslx
+category: Conversion Tool
+opensourced: 2018
+priority: 100
+technologies:
+  - clojure
+  - docjure
+  - json
+  - xlsx
+  - apache-poi
+  - lein-bin
+people:
+  - phil
+short-description: >-
+  *json2xlsx* is a self contained binary to convert json data into a
+  xlsx file.
+description: >-
+  *json2xlsx* is a self contained binary to convert json data into a
+  xlsx file.

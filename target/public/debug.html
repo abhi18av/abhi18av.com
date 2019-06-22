@@ -1,0 +1,3426 @@
+<!DOCTYPE html>
+<html><body><h1>debug</h1><h2>fsdb</h2><pre>{:projects
+ {:collecture-web
+  {:description
+   "## The place to record and listen to lectures\nRecord and listen to lectures on [collecture.io](https://collecture.io) - on the go, when you need it and at your own pace.\n**Give students the ability to**\n- Stop time\n- Go back to every lecture\n- Learn at their own pace\n**Record lectures with less than 30s effort**\n**Bring your own device**\n**Share recordings**\n- Web access - Share only a link - No need to install anything\n**Public and private sharing**\n**As a lecturer, prepare your next lecture by listening to your colleagues**\nCollecture is in the catalog of software for lecturers at [Zurich University of Applied Sciences](http://zhaw.ch) and used in various lectures at the School of Engineering and the School of Management and Law.\nVisit [collecture.io](https://collecture.io) or download the [iOS](https://itunes.apple.com/ch/app/collecture/id1185222314?l=en&mt=8) or [Android](https://play.google.com/store/apps/details?id=io.collecture) App.\n## How do I get started?\"\nWe have you covered! Please take a look at the [Get Started Page](https://collecture.io/get-started).",
+   :category "Education",
+   :short-description
+   "The place to record and listen to lectures.\nRecord and listen to lectures on collecture.io - on the go, when you need it and at your own pace.",
+   :name "Collecture",
+   :priority 20,
+   :url "https://collecture.io",
+   :image "/img/products/collecture.png",
+   :incubator-status
+   "Full product developed and used daily by lecturers and students alike.",
+   :people ["dibran" "phil" "alain" "ursula" "nick"],
+   :incubated 2016,
+   :technologies
+   ["ansible"
+    "clojure"
+    "cljs"
+    "ring"
+    "re-frame"
+    "rabbitmq"
+    "nginx"
+    "aws"
+    "reagent"
+    "react"
+    "postgresql"
+    "javascript"
+    "debian"]},
+  :kunstmuseum-chat
+  {:name "Kunstmuseum Basel Chat",
+   :image "/img/products/kunstmuseum-chat.png",
+   :priority 44,
+   :technologies ["nodejs" "javascript" "faye" "riot"],
+   :people ["alain" "anna"],
+   :short-description
+   "A mobile-first chat application with an admin back-end for Kunstmuseum Basel exhibitions.",
+   :description
+   "A mobile-first chat application with an admin back-end. Visitors of Kunstmuseum Basel exhibitions can ask questions on iPads which are deployed throughout the museum and get instant feeback from curators, restaurators and art brokers."},
+  :quickshift-rails
+  {:description
+   "QuickShift is a fully automatic work planning solution.\n**Reduce costs**: Save time through automatic shiftplan generation. Make the best of your working time instead. Save costs by optimizing the assignment of employees.\n**Automatic shift assignment**: QuickShift assigns your employees to optimal shifts within your business.\n**Better shift plans**: QuickShift generates optimal shift plans. By using our algorithmic approach, we trump the quality of manually created plans. Without additional effort, you will improve upon the satisfaction of your employees, because the plans also take their wishes into account.\n**Conforming to the law**: QuickShift ensures that your shift plans are conforming to Swiss laws ArG and L-GAV.\n**Online availability**: You have online access to your shiftplans. Your employees can also see their assignments and enter their wishes for future plans.\nDo you want to create your shift plans automatically with QuickShift? Please contact us any time at <a href=\"mailto:info@quickshift.ch\">info@quickshift.ch</a> or <a href=\"tel:+41 76 405 05 67\">+41 76 405 05 67</a> . You can also create your business yourself on <a href=\"https://quickshift.ch\">https://quickshift.ch</a> and we will contact you as soon as possible.",
+   :short-description
+   "*QuickShift* is a fully automatic work planning solution.",
+   :name "QuickShift",
+   :priority 10,
+   :url "https://quickshift.ch",
+   :image "/img/products/quickshift.png",
+   :incubator-status
+   "Going through the LEAN process, QuickShift has validated all MVP stages and by 2018 has become it's own entity QuickShift Gmbh.",
+   :people ["phil" "alain" "pascal" "micha"],
+   :incubated "2015-2017",
+   :technologies
+   ["ruby"
+    "ruby-on-rails"
+    "riot"
+    "nginx"
+    "postgresql"
+    "debian"
+    "javascript"
+    "ansible"]},
+  :wittbib
+  {:name "Wittbib Library Management",
+   :opensourced 2012,
+   :priority 120,
+   :technologies
+   ["ruby-on-rails"
+    "saas"
+    "coffeescript"
+    "jquery"
+    "ruby"
+    "postgresql"],
+   :people ["phil" "alain"],
+   :short-description
+   "A library management application that we developed as a contribution to library organised by volunteers.",
+   :description
+   "A library management application that we developed as a contribution to library organised by volunteers. Wittbib has the ability to scan ISBN numbers from a book using a hand scanner to look up book meta data in different databases. The books of the library can then be searched and lent to visitors. There is also a public searching interface as well as various export formats for the library."},
+  :p-slides
+  {:description
+   "### Simple semantic slides\np_slides is a *static files only*, dead simple way, to create semantic slides. It neither needs a server, installed software, pre-compilation nor a special editor. Neither editing nor presenting has any external dependencies - it's just a html file.\n- Only think about content, don't worry about styling\n- Static files only, no need for a server, installed software, pre-compilation or a special editor (unless of course your favorite and very special editor!)\n- For editing and presenting, there are no external dependencies\n- It's just a html file (therefore it can easily be put into version control for example)\n- Extendable and supporting themes\n- Write slides in markdown\np_slides is used in various courses at [Zurich University of Applied Sciences](http://zhaw.ch) and is a quite popular project on [Github](https://github.com/munen/p_slides).",
+   :category "Education",
+   :short-description
+   "*p_slides* is a \"static files only\", dead simple way to create semantic slides.",
+   :name "p_slides",
+   :priority 50,
+   :url "https://github.com/munen/p_slides",
+   :image "/img/products/p_slides.png",
+   :people ["alain"],
+   :technologies ["html" "markdown" "javascript"],
+   :opensourced 2012},
+  :swiss-crowdfunder
+  {:description
+   "Swiss Crowdfunder is a crowd funding and equity funding platform. It is a joint product with [ungleich glarus ag](https://ungleich.ch/).\n## Why did we do it?\nCrowdfunding using established platforms can be very expensive. Usually, there is a fee of 12-20% that has to be paid. **Swiss Crowdfunder** is fully open source - therefore it can be used by anyone to start their own crowdfunding platform or campaign.\n## Open source\n**Swiss Crowdfunder** is released under the popular [AGPL license](https://github.com/200ok-ungleich/swiss-crowdfunder/blob/master/LICENSE), has a [contribution guide](https://github.com/200ok-ungleich/swiss-crowdfunder/blob/master/CONTRIBUTING.md) as well as a [code of conduct](https://github.com/200ok-ungleich/swiss-crowdfunder/blob/master/CODE_OF_CONDUCT.md), is [fully configurable](https://github.com/200ok-ungleich/swiss-crowdfunder#configuration) and has a community [Mattermost chatroom](https://github.com/200ok-ungleich/swiss-crowdfunder#configuration).\nFor more information, visit [https://github.com/200ok-ungleich/swiss-crowdfunder](https://github.com/200ok-ungleich/swiss-crowdfunder), star the project and become part of it!\n## Hosted SaaS\nNext to the OSS version, we run and support our hosted SaaS version at [https://swiss-crowdfunder.com/](https://swiss-crowdfunder.com/). If you don't want to get too technical, get in touch with us at info@200ok.ch and we will host your campaign for an 8% fee.\nWe also offer coaching and support in how to set up a proper crowdfunding campaign and optimize your marketing efforts. Call or write us anytime!",
+   :short-description
+   "*Swiss Crowdfunder* is a crowd funding and equity funding platform. It is a joint product with *ungleich glarus ag* and Open Source.",
+   :name "Swiss Crowdfunder",
+   :priority 30,
+   :url "https://swiss-crowdfunder.com",
+   :image "/img/products/swiss-crowdfunder.png",
+   :people ["alain" "nico" "sanghee"],
+   :technologies
+   ["ruby-on-rails"
+    "saas"
+    "javascript"
+    "ruby"
+    "nginx"
+    "postgresql"
+    "debian"],
+   :opensourced 2017},
+  :voicerepublic-site
+  {:description
+   "Professional live audio streaming and archiving of events. Whether you want to stream your event live or record it and upload the files - with Voice Republic you’ll easily create your own audio channel.\nPROFESSIONAL STREAMING SOLUTION The StreamBoxx is developed to stream and archive events. All live streams can be controlled via your web browser from anywhere you like.\nOpen Source: [https://github.com/voicerepublic/](https://github.com/voicerepublic/)",
+   :short-description
+   "Professional live audio streaming and archiving of events. Whether you want to stream your event live or record it and upload the files - with *Voice Republic* you’ll easily create your own audio channel.",
+   :name "Voice Republic",
+   :priority 35,
+   :url "https://voicerepublic.com",
+   :image "/img/products/voicerepublic.png",
+   :incubator-status
+   "Full product developed, 7-digits capital raised.",
+   :people ["phil" "alain" "nick" "josef"],
+   :incubated 2014,
+   :technologies
+   ["ruby-on-rails"
+    "cljs"
+    "clojure"
+    "faye"
+    "rabbitmq"
+    "icecast"
+    "liquidsoap"
+    "ruby"
+    "nginx"
+    "aws"
+    "elk"
+    "d3"
+    "reagent"
+    "react"
+    "postgresql"
+    "duct"
+    "javascript"
+    "coffeescript"
+    "debian"],
+   :opensourced 2019},
+  :200ok-site
+  {:description
+   "\"You're lookin' at it, baby! The setup behind this website is cooler than you might think. Because it's totally data-driven. That's right. Robots 'n stuff.\"",
+   :short-description
+   "\"You're lookin' at it, baby! The setup behind this website is cooler than you might think. Because it's totally data-driven. That's right. Robots 'n stuff.\"",
+   :name "200ok Website",
+   :priority 60,
+   :url "https://gitlab.com/200ok/200ok.gitlab.io",
+   :image "/img/products/200ok.ch.png",
+   :people ["phil" "alain"],
+   :technologies ["clojure" "boot" "perun" "hiccup" "fsdb"],
+   :opensourced 2016},
+  :codegraph
+  {:description
+   "Codegraph is a command utility written in about 50 lines of Clojure. It reads Clojure code with Clojure's builtin function `read-string`, analyzes the code and generates a dot file, which can be fed into Graphviz to generate a dependency graph of the given code. It works nicely with ClojureScript. And it's a beautiful demonstration of Clojure's homoiconicity (which is a fancy technical term for \"code is data\").",
+   :short-description
+   "Generates a dependency graph for Clojure and ClojureScript code.",
+   :name "Codegraph",
+   :priority 80,
+   :url "https://gitlab.com/200ok/codegraph",
+   :image "/img/products/codegraph.png",
+   :people ["phil"],
+   :technologies ["clojure" "graphviz"],
+   :opensourced 2016},
+  :json2xslx
+  {:description
+   "*json2xlsx* is a self contained binary to convert json data into a xlsx file.",
+   :category "Conversion Tool",
+   :short-description
+   "*json2xlsx* is a self contained binary to convert json data into a xlsx file.",
+   :name "json2xlsx",
+   :priority 100,
+   :url "https://gitlab.com/200ok/json2xslx",
+   :image "/img/products/json2xlsx.png",
+   :people ["phil"],
+   :technologies
+   ["clojure" "docjure" "json" "xlsx" "apache-poi" "lein-bin"],
+   :opensourced 2018},
+  :webhooks
+  {:description
+   "Webhooks is a lightweight webhooks server written in Clojure. It allows to set up webhook endpoints and corresponding shell commands, which will be executed when the endpoint is requested. The config file is written in EDN (the preferred clojure data format). The config file will be read per request, so there is no restart required after updating the config file.",
+   :short-description
+   "*Webhooks* is a lightweight webhooks server written in Clojure.",
+   :name "Webhooks",
+   :priority 90,
+   :url "https://gitlab.com/200ok/webhooks",
+   :image "/img/products/webhooks.svg",
+   :people ["phil"],
+   :technologies ["clojure"],
+   :opensourced 2017},
+  :hegel
+  {:description
+   "Hegel is not only one of the most influential philosophers of post-Kantian idealism, but also a swiss german word for a pocket knive, and most recently also a tool to convert camt to v11.",
+   :category "Conversion Tool",
+   :short-description
+   "*Hegel* is a swiss german word for a pocket knive, and most recently also a tool to convert camt to v11.",
+   :name "Hegel",
+   :priority 110,
+   :url "https://gitlab.com/200ok/hegel",
+   :image "/img/products/hegel.svg",
+   :people ["phil"],
+   :technologies ["ruby" "sinatra" "heroku"],
+   :opensourced 2017},
+  :meetup-calendar
+  {:name "Meetup Calendar Microservice",
+   :opensourced 2015,
+   :priority 110,
+   :url "https://github.com/munen/meetup-calendar",
+   :technologies ["ruby" "sinatra" "heroku" "haml" "css"],
+   :people ["alain"],
+   :short-description
+   "A microservice accessing the Meetup API and rendering a HTML table for any given meetup.",
+   :description
+   "A microservice accessing the Meetup API and rendering a HTML table for any given meetup. We are also making a free hosted SaaS version available."},
+  :wilmalivestats
+  {:people ["phil"], :technologies ["ruby-on-rails" "aws" "faye"]},
+  :voicerepublic-backoffice
+  {:people ["phil" "alain" "nick"],
+   :technologies
+   ["ruby-on-rails"
+    "cljs"
+    "faye"
+    "rabbitmq"
+    "ruby"
+    "nginx"
+    "aws"
+    "d3"
+    "reagent"
+    "react"
+    "postgresql"
+    "javascript"
+    "debian"]},
+  :pseudocult
+  {:description
+   "Pseudocult (which is an anagram to \"cloud setup\") enables you to set up your cloud (AWS) declarativly and consistently.\nIt is mainly a clojure program that you run providing one or more config files, which describe your cloud setup. Pseudocult will detect discrepancies between the current state of the cloud and the description obtained from the config files as well as take action to overcome the discrepencies.",
+   :category "Cloud Configuration",
+   :short-description
+   "*Pseudocult* (which is an anagram to \"cloud setup\") enables you to set up your cloud (AWS) declarativly and consistently.",
+   :name "Pseudocult",
+   :priority 100,
+   :url "https://gitlab.com/200ok/pseudocult",
+   :people ["phil"],
+   :technologies ["clojure" "aws" "amazonica"],
+   :opensourced 2017},
+  :collecture-mobile
+  {:name "Collecture Mobile Apps",
+   :priority 25,
+   :image "/img/products/collecture-mobile.png",
+   :category "Education",
+   :people ["dibran" "phil" "alain"],
+   :technologies
+   ["reagent" "re-frame" "react-native" "re-natal" "cljs" "aws"],
+   :short-description
+   "iOS and Android mobile apps to record, organize and share lectures and meetings on collecture.io.",
+   :description
+   "iOS and Android mobile apps to record, organize and share lectures and meetings on collecture.io."},
+  :quickshift-java
+  {:people ["pascal" "mischa"],
+   :technologies ["java" "optaplanner" "drools"]},
+  :wilmaaepg
+  {:people ["phil"],
+   :technologies ["ruby-on-rails" "google-protocol-buffers"]},
+  :zen-temple
+  {:name "Insopor Zen Academy",
+   :url "http://zen-temple.net",
+   :image "/img/products/zen-temple.png",
+   :priority 47,
+   :people ["alain"],
+   :technologies
+   ["wordpress"
+    "javascript"
+    "clojure"
+    "heroku"
+    "ruby"
+    "sinatra"
+    "adwords"],
+   :short-description
+   "*zen-temple.net* is a multilingual, SEO optimized website with over 500 landing pages, each with automated integrations into 8 social media networks. It feeds data from specialized microservices and has automated integration into Google Adwords.",
+   :description
+   "zen-temple.net is a multilingual, SEO optimized website with over 500 landing pages, each with automated integrations into 8 social media networks. It feeds data from specialized microservices and has automated integration into Google Adwords."},
+  :voicerepublic-mobile
+  {:people ["dibran"], :technologies ["angular" "ionic"]},
+  :fsdb
+  {:name "fsdb",
+   :url "https://gitlab.com/200ok/fsdb",
+   :opensourced 2017,
+   :priority 70,
+   :technologies ["clojure"],
+   :people ["phil"],
+   :short-description
+   "A Clojure library that provides a reasonably convenient database on top of the file system.",
+   :description
+   "A Clojure library that provides a reasonably convenient database on top of the file system."},
+  :simplatyser
+  {:description
+   "Simplatyser automates manual tasks for you with the power of the cloud.",
+   :short-description
+   "*Simplatyser* automates manual tasks for you with the power of the cloud.",
+   :name "Simplatyser",
+   :priority 45,
+   :url "https://simplatyser.ch/",
+   :image "/img/products/simplatyser.png",
+   :incubator-status "MVP online and usable, but currently on hold.",
+   :people ["max" "raphael" "alain" "phil"],
+   :incubated 2015,
+   :technologies
+   ["java"
+    "jhipster"
+    "postgresql"
+    "angular"
+    "debian"
+    "docker"
+    "clojure"]},
+  :wilmaaautoscaling {:technologies ["aws"]}},
+ :clients
+ {:voicerepublic
+  {:name "Voice Republic Media AG",
+   :position 60,
+   :logo "vr.svg",
+   :url "https://voicerepublic.com"},
+  :bos-schweiz
+  {:name "BOS Schweiz",
+   :position 90,
+   :logo "bos-schweiz.jpg",
+   :url "http://www.bos-schweiz.ch",
+   :projects ["webhooks"]},
+  :satcom
+  {:name "Satcom International AG",
+   :position 110,
+   :logo "satcom.jpg",
+   :url "http://satcom-int.com"},
+  :srg
+  {:name "SRG SSR",
+   :position 35,
+   :logo "SRG.png",
+   :url "http://www.srgssr.ch"},
+  :xsenda
+  {:position 25,
+   :name "xSenda",
+   :logo "xsenda.png",
+   :url "https://www.xsenda.ch/"},
+  :sva
+  {:name "SVA Zürich",
+   :position 25,
+   :logo "logo_sva_zuerich.svg",
+   :url "https://www.svazurich.ch"},
+  :livingdocs
+  {:name "Livingdocs",
+   :position 10,
+   :logo "livingdocs_logo.svg",
+   :url "https://livingdocs.io/"},
+  :kunstmuseumbasel
+  {:name "Kunstmuseum Basel",
+   :position 50,
+   :logo "logo_kumu_basel_rot.gif",
+   :url "https://kunstmuseumbasel.ch/",
+   :projects ["kunstmuseum-chat"]},
+  :zhaw
+  {:name "ZHAW Zurich University of Applied Sciences",
+   :position 20,
+   :logo "zhaw_soe.jpg",
+   :url "https://www.zhaw.ch/en/engineering/"},
+  :swi
+  {:name "swissinfo",
+   :position 100,
+   :logo "swissinfo.png",
+   :url "https://www.swissinfo.ch/"},
+  :swisscom
+  {:position 20,
+   :name "Swisscom",
+   :logo "swisscom.jpg",
+   :url "http://swisscom.ch"},
+  :sourcepole
+  {:name "Sourcepole AG",
+   :position 80,
+   :logo "sourcepole.png",
+   :url "https://sourcepole.ch"},
+  :wilmaa
+  {:name "Wilmaa",
+   :position 40,
+   :logo "wilmaa_logo.png",
+   :url "https://wilmaa.com"},
+  :nzz
+  {:name "NZZ",
+   :position 30,
+   :logo "nzz_logo.png",
+   :url "https://nzz.ch"},
+  :trifork
+  {:name "Trifork",
+   :position 27,
+   :logo "trifork.png",
+   :url "https://trifork.com/"},
+  :switch
+  {:position 15,
+   :name "Switch",
+   :logo "switch.png",
+   :url "https://switch.ch"}},
+ :locations
+ {:okhq
+  {:name "Zürich",
+   :address "Badenerstrasse 313, 8003 Zürich",
+   :images nil,
+   :description
+   "Our Zürich headquarter is well situated within urban Zürich next to Albisriederplatz.\nThis is our **day to day office** where we work together on our products and for clients. In summer, it features a great option to cool off and relax in the pool. We've got a great meeting room that we use for workshops and coachings.\n## Office location\n<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2701.777878179114!2d8.50997601594404!3d47.37725357917015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a2496f25c69%3A0xd00300eef0166b7b!2sBadenerstrasse+313%2C+8003+Z%C3%BCrich!5e0!3m2!1sen!2sch!4v1517591996880\" width=\"400\" height=\"300\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>\n## Public Transportation\nDrive to station \"Albisriederplatz\" (Trams 2 and 3 and busses 33, 72 and 83). From there, it is a 2 minute walk.\n## Parking Lots\nPlease use one of the public parking lots 150m from the office.\n<iframe src=\"https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d1795.1385523643235!2d8.511208336500038!3d47.3769617138686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e2!4m3!3m2!1d47.3767326!2d8.5120795!4m5!1s0x47900a2496f25c69%3A0xd00300eef0166b7b!2sBadenerstrasse+313%2C+Z%C3%BCrich!3m2!1d47.377253599999996!2d8.5121647!5e1!3m2!1sen!2sch!4v1517592561287\" width=\"400\" height=\"300\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>"},
+  :lambda
+  {:name "Glarus",
+   :address "Im Stützli 5, 8750 Glarus",
+   :images nil,
+   :description
+   "Our Glarus office is perfectly situated within the mountains of Glarus, Switzerland.\nThere, we hold multi-day **code retreats** and **workshops**. In summer we do hikes and go snow shoeing in winter. It also is a co-working space where 200ok partners and friends work together while enjoying the benefits of the local scenery.\n## Office location\n<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.812931495304!2d9.058425415934522!3d47.04390147915123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47852da58017cbdf%3A0xed472da130a82575!2sIm+St%C3%BCtzli+5%2C+8750+Glarus!5e0!3m2!1sen!2sch!4v1517592065475\" width=\"400\" height=\"300\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>\n## Public Transportation\nGlarus is very accessible by public transportation. There are direct trains from Zurich and Rapperswil every 30 minutes.\n## Parking Lots\nPlease use one of the public parking lots 150m from the office.\n<iframe src=\"https://www.google.com/maps/embed?pb=!1m27!1m11!1m3!1d2285.2765428884004!2d9.059551010391942!3d47.043509042269896!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x47852daf9c28c753%3A0xb06473db6d3bdeba!2sLangenackerstrasse+2%2C+8750+Glarus!3m2!1d47.0435915!2d9.0617152!4m5!1s0x47852da58017cbdf%3A0xed472da130a82575!2sIm+St%C3%BCtzli+5%2C+8750+Glarus!3m2!1d47.0439015!2d9.0606141!5e1!3m2!1sen!2sch!4v1517592361525\" width=\"400\" height=\"300\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>"}},
+ :tour
+ ["/"
+  "/team.html"
+  "/technologies.html"
+  "/clients.html"
+  "/services.html"
+  "/projects.html"
+  "/opensource.html"],
+ :expertises
+ {:cloud
+  {:name "Cloud Infrastructure",
+   :technologies ["aws" "terraform" "ansible"]},
+  :audio {:name "Audio Live Streaming and Processing"},
+  :data {:name "Data Science & Visualization"}},
+ :people
+ {:dibran
+  {:name "Dibran Isufi",
+   :title "Code Gluer",
+   :email "dibran@200ok.ch",
+   :image "/img/dibran.jpg",
+   :position 60,
+   :uuid "28f71257-ead7-4599-b6fd-454b6abc01f3",
+   :description "Glues all the code together."},
+  :nick
+  {:name "Nick Niles",
+   :title "VP of Design",
+   :email "nick@200ok.ch",
+   :image "/img/nick.jpg",
+   :position 35,
+   :uuid "50403e2f-5da2-4e11-98ad-686b25889432",
+   :description
+   "A former rock musician and long-distance runner from Northern California, Nick has been designing and building web sites since 1997. With a background in design & technology, and an MFA in Film Directing from Columbia University, he enjoys telling stories through motion graphics, animations, and rich digital experiences."},
+  :pascal
+  {:name "Pascal Huber",
+   :title "Software Engineer",
+   :email "pascal@200ok.ch",
+   :image "/img/pascal.jpg",
+   :position 45,
+   :uuid "bb581b55-c1c6-4685-bb46-a25916fbd1ad",
+   :description
+   "Pascal has been working in IT for 8 years. He has studied computer science where he could foster his primary interests: optimizing processes and algorithms."},
+  :alain
+  {:name "Alain M. Lafon",
+   :title "Founder & CEO",
+   :image "/img/munen_alain_lafon.jpg",
+   :email "alain@200ok.ch",
+   :position 10,
+   :uuid "a3948985-c326-4f1b-b2f5-521d91a01808",
+   :description
+   "Alain has been programming for the web since 2004. He is an avid follower of Web Standards and constantly improving his own productivity as well as the productivity of the team he is working with by his profound knowledge about agile methodologies as well as tooling to facilitate a smooth software development process.\nHe is also a lecturer at [ZHAW](http://zhaw.ch) and ordained Zen monk - tending to [Lambda Zen Temple](http://zen-temple.net/zen-temples/lambda-zen-temple/introduction/) in Glarus, Switzerland, as headmonk."},
+  :alex
+  {:name "Alex Mihov",
+   :title "Software Engineer",
+   :image "/img/alex.jpg",
+   :email "alex@200ok.ch",
+   :position 30,
+   :uuid "21908556-bd55-40fb-9ce0-89935c37a3bd",
+   :description
+   "Alex has a BA in computer science. His focus at 200ok is on web related projects.\nThe constant advancements and new technologies in the domain of web development are very much in sync with Alex' wish to tackle and hopefully solve new problems every day."},
+  :phil
+  {:name "Phil Hofmann",
+   :title "Founder",
+   :email "phil@200ok.ch",
+   :image "/img/phil.jpg",
+   :position 20,
+   :uuid "769734a1-bc69-43fe-9be9-73d5a319a9de",
+   :description
+   "Phil has been programming for the web since 1999. He is an experienced Software Engineer."},
+  :carl
+  {:name "Carl Anders Düvel",
+   :title "Software Engineer",
+   :email "carl@200ok.ch",
+   :image "/img/carl.jpg",
+   :position 31,
+   :uuid "dadad064-e504-43e9-9eab-d66223753a49",
+   :description
+   "Carl is an independent IT-Consultant from Northern Germany who holds a BA in Politics and Public Administration as well as in Applied Computer Science. He worked for nearly a decade in the software industry starting out his career on applications servers slinging J2EE code and just a few years ago falling in love with programming again through the power of Lisp or more specifically Clojure. He also enjoys operations work and has spent a considerate time working in a high traffic, high availability and very cloudy environment."},
+  :anna
+  {:name "Anna-Flurina Kälin",
+   :title "Designer",
+   :email "annaflurina@200ok.ch",
+   :image "/img/anna.jpg",
+   :position 70,
+   :uuid "50403e2f-5da2-4e11-98ad-686b25889432",
+   :description
+   "Anna has a Master of Arts in Art Education and is currently working on her degree in Computer Science. She works as a lecturer and designer. At 200ok, she combines her inner artist with her love for programming."},
+  :josef
+  {:name "Josef Erben",
+   :image "/img/josef.jpg",
+   :title "Clojure Coder",
+   :email "josef@200ok.ch",
+   :position 55,
+   :uuid "cd18f913-bb0f-4362-8601-389ac94a1df8",
+   :description ""}},
+ :technologies
+ {:coffeescript
+  {:name "CoffeeScript",
+   :logo "coffeescript.png",
+   :category "Programming Language",
+   :url "http://coffeescript.org/",
+   :description
+   "CoffeeScript is a language that compiles into JavaScript. Underneath that awkward Java-esque patina, JavaScript has always had a gorgeous heart. CoffeeScript is an attempt to expose the good parts of JavaScript in a simple way.\nThe golden rule of CoffeeScript is \"It's just JavaScript.\" The code compiles one-to-one into the equivalent JS, and there is no interpretation at runtime. You can use any existing JavaScript library seamlessly from CoffeeScript (and vice-versa)."},
+  :javascript
+  {:name "Javascript",
+   :priority 50,
+   :logo "javascript.png",
+   :category "Programming Language",
+   :description
+   "JavaScript is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs.\nAs a multi-paradigm language, JavaScript supports event-driven, functional, and imperative (including object-oriented and prototype-based) programming styles. It has an API for working with text, arrays, dates, regular expressions, and basic manipulation of the DOM, but the language itself does not include any I/O, such as networking, storage, or graphics facilities, relying for these upon the host environment in which it is embedded."},
+  :riot
+  {:name "Riot",
+   :logo "riot.png",
+   :category "Frontend Framework",
+   :url "http://riotjs.com/",
+   :description "A simple and elegant component-based UI library."},
+  :react
+  {:name "React",
+   :priority 70,
+   :logo "react.png",
+   :category "Frontend Framework",
+   :url "https://reactjs.org/",
+   :description
+   "The most popular Open Source Software of our times. (This it proven by facts.)\nReact allows developers to create large web-applications that use data and can change over time without reloading the page. It aims primarily to provide speed, simplicity, and scalability. React processes only user interfaces in applications.\nIt is maintained by Facebook, Instagram and a community of individual developers and corporations."},
+  :r
+  {:name "R",
+   :priority 80,
+   :logo "r.svg",
+   :category "Programming Language",
+   :url "https://www.r-project.org/",
+   :description
+   "R is an open source programming language and software environment for statistical computing and graphics that is supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis."},
+  :aws
+  {:name "Amazon Web Services",
+   :priority 90,
+   :logo "aws.svg",
+   :category "Cloud Computing Platform",
+   :url "https://aws.amazon.com/"},
+  :faye
+  {:name "Faye",
+   :logo "faye.gif",
+   :category "Message Broker",
+   :url "https://faye.jcoglan.com/",
+   :description
+   "Faye is a publish-subscribe messaging system based on the Bayeux protocol. It provides message servers for Node.js and Ruby, and clients for use on the server and in all major web browsers."},
+  :kubernetes
+  {:name "Kubernetes",
+   :category "Cloud",
+   :logo "kubernetes.png",
+   :url "https://kubernetes.io/",
+   :description
+   "Kubernetes is an open-source container-orchestration system for automating deployment, scaling and management of containerized applications. It was originally designed by Google and is now maintained by the Cloud Native Computing Foundation. It aims to provide a \"platform for automating deployment, scaling, and operations of application containers across clusters of hosts\". It works with a range of container tools, including Docker."},
+  :postgresql
+  {:name "PostgreSQL",
+   :logo "postgresql.png",
+   :category "Database",
+   :url "https://www.postgresql.org/",
+   :description
+   "PostgreSQL is an object-relational database management system (ORDBMS) with an emphasis on extensibility and standards compliance. As a database server, its primary functions are to store data securely and return that data in response to requests from other software applications. It can handle workloads ranging from small single-machine applications to large Internet-facing applications (or for data warehousing) with many concurrent users."},
+  :ring {:name "Ring"},
+  :adwords {:name "Google Adwords", :logo "google-adwords.jpg"},
+  :clojure
+  {:name "Clojure",
+   :priority 10,
+   :logo "clojure.png",
+   :category "Programming Language",
+   :url "https://clojure.org/",
+   :description
+   "Clojure is a dynamic, general-purpose programming language, combining the approachability and interactive development of a scripting language with an efficient and robust infrastructure for multithreaded programming. Clojure is a compiled language, yet remains completely dynamic – every feature supported by Clojure is supported at runtime. Clojure provides easy access to the Java frameworks, with optional type hints and type inference, to ensure that calls to Java can avoid reflection.\nClojure is a dialect of Lisp, and shares with Lisp the code-as-data philosophy and a powerful macro system. Clojure is predominantly a functional programming language, and features a rich set of immutable, persistent data structures. When mutable state is needed, Clojure offers a software transactional memory system and reactive Agent system that ensure clean, correct, multithreaded designs."},
+  :sinatra
+  {:name "Sinatra",
+   :category "Web Application Framework",
+   :logo "sinatra.png",
+   :url "http://sinatrarb.com/",
+   :description
+   "Sinatra is a DSL for quickly creating web applications in Ruby with minimal effort."},
+  :drools
+  {:name "Drools",
+   :logo "drools.png",
+   :category "Rule Engine",
+   :url "https://www.drools.org/",
+   :description
+   "Drools is a Business Rules Management System (BRMS) solution. It provides a core Business Rules Engine (BRE), a web authoring and rules management application (Drools Workbench) and an Eclipse IDE plugin for core development."},
+  :latex
+  {:name "LaTex",
+   :logo "latex.png",
+   :category "Document Preparation System",
+   :url "https://www.latex-project.org/",
+   :description
+   "LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. LaTeX is the de facto standard for the communication and publication of scientific documents. LaTeX is available as free software."},
+  :docker
+  {:name "Docker",
+   :category "Cloud",
+   :logo "docker.png",
+   :url "https://www.docker.com/",
+   :description
+   "Docker is used to run software packages called \"containers\". Containers are isolated from each other and bundle their own tools, libraries and configuration files; they can communicate with each other through well-defined channels. All containers are run by a single operating system kernel and are thus more lightweight than virtual machines. Containers are created from \"images\" that specify their precise contents. Images are often created by combining and modifying standard images downloaded from repositories."},
+  :nodejs
+  {:name "Node.js",
+   :priority 60,
+   :logo "nodejs.png",
+   :category "Runtime Environment",
+   :url "https://nodejs.org/",
+   :description
+   "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world."},
+  :optaplanner
+  {:name "OptaPlanner",
+   :logo "optaplanner.png",
+   :category "Constraint Solver",
+   :url "https://www.optaplanner.org/",
+   :description
+   "OptaPlanner is a constraint satisfaction solver. It optimizes business resource planning use cases, such as Vehicle Routing, Employee Rostering, Cloud Optimization, Job Scheduling, Bin Packing and many more. Every organization faces such scheduling puzzles: assign a limited set of constrained resources (employees, assets, time and money) to provide products or services to customers. OptaPlanner optimizes those planning problems to do more business with less resources.\nOptaPlanner is a lightweight, embeddable planning engine. It enables normal Java™ programmers to solve optimization problems efficiently. Constraints apply on plain domain objects and can reuse existing code. There’s no need to input difficult mathematical equations. Under the hood, OptaPlanner combines sophisticated optimization heuristics and metaheuristics (such as Tabu Search, Simulated Annealing and Late Acceptance) with very efficient score calculation.\nOptaPlanner is open source software, released under the Apache Software License. It is written in 100% pure Java™, runs on any JVM and is available in the Maven Central repository too."},
+  :livingdocs
+  {:name "Livingdocs",
+   :priority 52,
+   :category "CMS",
+   :logo "livingdocs.png",
+   :url "https://www.livingdocs.io/",
+   :description
+   "Livingdocs is not only a CMS but a component-based solution to publish across many devices and products."},
+  :react-native
+  {:name "React Native",
+   :logo "reactnative.png",
+   :category "Front-end Framework",
+   :url "https://facebook.github.io/react-native/",
+   :description
+   "React Native lets you build mobile apps using only JavaScript. It uses the same design as React, letting you compose a rich mobile UI from declarative components."},
+  :nginx
+  {:name "Nginx",
+   :logo "nginx.png",
+   :category "Web Server",
+   :url "https://nginx.org/",
+   :description
+   "Nginx is a web server which can also be used as a reverse proxy, load balancer and HTTP cache.\nNginx is free and open source software, released under the terms of a BSD-like license. A large fraction of web servers use NGINX, often as a load balancer."},
+  :monit
+  {:name "Monit",
+   :category "Monitoring",
+   :logo "monit.png",
+   :url "https://mmonit.com/monit/",
+   :description
+   "Monit is a small Open Source utility for managing and monitoring Unix systems. Monit conducts automatic maintenance and repair and can execute meaningful causal actions in error situations."},
+  :re-natal
+  {:name "Re-Natal",
+   :category "Technology Bridge",
+   :url "https://github.com/drapanjanas/re-natal",
+   :description
+   "A utility for building ClojureScript-based React Native apps"},
+  :analytics
+  {:name "Google Analytics",
+   :logo "google-analytics.png",
+   :description
+   "Google Analytics is a web analytics service offered by Google that tracks and reports website traffic.\nAt 200ok, we're building products data-driven, so that marketing and product development choices can be deduced from actual user interactions. This means that we're not just plugging Google Analytics into a website. We interface with it on an API level to get custom data into Analytics - later we build custom software to re-use this data in any form required: for example in reports or statistics right within the original product."},
+  :vagrant
+  {:name "Vagrant",
+   :logo "vagrant.png",
+   :url "https://www.vagrantup.com/",
+   :description
+   "Vagrant is an open-source software product for building and maintaining portable virtual software development environments, e.g. for VirtualBox, Hyper-V, Docker, VMware, and AWS. The core idea behind it lies in the fact that the environment maintenance of virtualizations becomes increasingly difficult in a large software development project. Vagrant simplifies the necessary software configuration management in order to increase development productivity. Vagrant is written in the Ruby language, but its ecosystem supports development in almost all major languages."},
+  :ruby-on-rails
+  {:name "Ruby On Rails",
+   :priority 40,
+   :logo "rails.svg",
+   :category "Web Application Framework",
+   :url "http://rubyonrails.org/",
+   :description
+   "Ruby on Rails, or Rails, is a server-side web application framework written in Ruby under the MIT License. Rails is a model–view–controller (MVC) framework, providing default structures for a database, a web service, and web pages. It encourages and facilitates the use of web standards such as JSON or XML for data transfer, and HTML, CSS and JavaScript for display and user interfacing. In addition to MVC, Rails emphasizes the use of other well-known software engineering patterns and paradigms, including convention over configuration (CoC), don't repeat yourself (DRY), and the active record pattern."},
+  :protobuf
+  {:name "Protocol Buffers",
+   :logo "google-dev.png",
+   :url "https://developers.google.com/protocol-buffers/",
+   :description
+   "Protocol buffers are Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data – think XML, but smaller, faster, and simpler. You define how you want your data to be structured once, then you can use special generated source code to easily write and read your structured data to and from a variety of data streams and using a variety of languages."},
+  :wordpress {:name "Wordpress", :logo "wordpress.png"},
+  :sox
+  {:name "SoX",
+   :category "Audio Processing",
+   :logo "sox.png",
+   :url "http://sox.sourceforge.net/",
+   :description
+   "SoX is the Swiss Army knife of sound processing programs. SoX is a cross-platform (Windows, Linux, MacOS X, etc.) command line utility that can convert various formats of computer audio files in to other formats. It can also apply various effects to these sound files, and, as an added bonus, SoX can play and record audio files on most platforms."},
+  :re-frame
+  {:name "Re-Frame",
+   :logo "reframe.png",
+   :category "Front-end Framework",
+   :url "https://github.com/Day8/re-frame",
+   :description
+   "re-frame is a pattern for writing SPAs in ClojureScript, using Reagent."},
+  :duct
+  {:name "Duct",
+   :logo "duct.svg",
+   :category "Web Application Framework",
+   :url "https://github.com/duct-framework/duct",
+   :description
+   "Duct is a highly modular framework for building server-side applications in Clojure using data-driven architecture.\nIt is similar in scope to Arachne, and is based on Integrant. Duct builds applications around an immutable configuration that acts as a structural blueprint. The configuration can be manipulated and queried to produce sophisticated behavior."},
+  :elk
+  {:name "Elk",
+   :logo "elk.png",
+   :category "Analytics Solution",
+   :url "https://www.elastic.co/products"},
+  :ansible
+  {:name "Ansible",
+   :logo "ansible.png",
+   :category "System Configuration Management",
+   :url "https://www.ansible.com/",
+   :description
+   "Ansible is an open-source automation engine that automates software provisioning, configuration management, and application deployment."},
+  :reagent
+  {:name "Reagent",
+   :logo "reagent.png",
+   :category "Front-end Framework",
+   :url "http://reagent-project.github.io/",
+   :description
+   "Reagent provides a minimalistic interface between ClojureScript and React. It allows you to define efficient React components using nothing but plain ClojureScript functions and data, that describe your UI using a Hiccup-like syntax.\nThe goal of Reagent is to make it possible to define arbitrarily complex UIs using just a couple of basic concepts, and to be fast enough by default that you rarely have to care about performance."},
+  :terraform
+  {:name "Terraform",
+   :logo "terraform.svg",
+   :category "Cloud Configuration",
+   :url "https://www.terraform.io/",
+   :description
+   "Terraform is an infrastructure as code software by HashiCorp. It allows users to define a datacenter infrastructure in a high-level configuration language, from which it can create an execution plan to build the infrastructure in a service provider such as AWS."},
+  :d3
+  {:name "D3",
+   :priority 55,
+   :logo "d3.png",
+   :category "Visualization",
+   :url "https://d3js.org/",
+   :description
+   "D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation."},
+  :icecast
+  {:name "Icecast",
+   :logo "icecast.png",
+   :category "Media Streaming Server",
+   :url "http://icecast.org/",
+   :description
+   "Icecast is a streaming media (audio/video) server which currently supports Ogg (Vorbis and Theora), Opus, WebM and MP3 streams. It can be used to create an Internet radio station or a privately running jukebox and many things in between. It is very versatile in that new formats can be added relatively easily and supports open standards for communication and interaction."},
+  :debian
+  {:name "Debian GNU/Linux",
+   :logo "debian.jpg",
+   :category "Operating System",
+   :url "https://www.debian.org/",
+   :description
+   "Debian is a Unix-like computer operating system that is composed entirely of free software, most of which is under the GNU General Public License and packaged by a group of individuals participating in the Debian Project.\nThe project's work is carried out over the Internet by a team of volunteers guided by the Debian Project Leader and three foundational documents: the Debian Social Contract, the Debian Constitution, and the Debian Free Software Guidelines. New distributions are updated continually, and the next candidate is released after a time-based freeze."},
+  :rabbitmq
+  {:name "RabbitMQ",
+   :logo "rabbitmq.png",
+   :category "Message Broker",
+   :url "https://www.rabbitmq.com/",
+   :description
+   "With more than 35,000 production deployments of RabbitMQ world-wide at small startups and large enterprises, RabbitMQ is the most popular open source message broker.\nRabbitMQ is lightweight and easy to deploy on premises and in the cloud. It supports multiple messaging protocols. RabbitMQ can be deployed in distributed and federated configurations to meet high-scale, high-availability requirements."},
+  :heroku
+  {:name "Heroku",
+   :logo "heroku.jpg",
+   :category "Cloud Computing Platform",
+   :description
+   "Heroku is a cloud platform as a service (PaaS) supporting several programming languages that is used as a web application deployment model. Heroku, one of the first cloud platforms, has been in development since June 2007, when it supported only the Ruby programming language, but now supports Java, Node.js, Scala, Clojure, Python, PHP, and Go."},
+  :cljs
+  {:name "ClojureScript",
+   :priority 20,
+   :logo "cljs.svg",
+   :category "Programming Language",
+   :url "https://clojurescript.org/",
+   :description
+   "ClojureScript is a compiler for Clojure that targets JavaScript. It emits JavaScript code which is compatible with the advanced compilation mode of the Google Closure optimizing compiler."},
+  :ruby
+  {:name "Ruby",
+   :priority 30,
+   :logo "ruby.png",
+   :category "Programming Language",
+   :url "https://www.ruby-lang.org/",
+   :description
+   "Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write."},
+  :munin
+  {:name "Munin",
+   :category "Monitoring",
+   :logo "munin.png",
+   :url "http://munin-monitoring.org/",
+   :description
+   "Munin is a networked resource monitoring tool that can help analyze resource trends and \"what just happened to kill our performance?\" problems. It is designed to be very plug and play. A default installation provides a lot of graphs with almost no work."},
+  :liquidsoap
+  {:name "Liquidsoap",
+   :logo "liquidsoap.png",
+   :category "Programming Language",
+   :url "http://liquidsoap.fm/",
+   :description
+   "Liquidsoap is the swiss-army knife for multimedia streaming, notably used for netradios and webtvs. It has tons of features, it's free and it's open-source!"}},
+ :services
+ {:development
+  {:name "Software Development",
+   :description
+   "We love technology & and we surely love to code. Whether you need a custom solution for your business or you need someone to code your idea, which most definitely will become the next Twitter or Facebook, drop us a line or use the chat on this site to get in contact. We're looking forward to hearing from you."},
+  :consulting
+  {:name "Consulting",
+   :description
+   "Our team covers a broad palette of technologies as well as whole technology stacks and brings plenty of years of experience to the table. We offer onsite technology consulting. Whether you are about to start a green field project or try to bring change to an existing software solution, we can help you to move forward and meet your goals."},
+  :training
+  {:name "Training",
+   :description
+   "We not only love code, we also love to teach coding: \"Code excellent and talk about it.\" You want your team hit the ground running with a new technology? Training is the way to go. We offer single- and multi-day training courses for a couple of technologies that will boost the productivity of your team. Let us know about your ideas and together we will figure something out that meet you needs."},
+  :opensource-integration
+  {:name "Open Source Integration",
+   :description
+   "As an open source integrator we offer cost effective solutions built on top of the most proven open source technologies. Open Source is a treasure trove of well established solutions that can help you digitize and transform your business. Having not only released and contributed to a lot of open source projects, but also having studied open source scientifically we understand what makes open source tick and how to make it work for you."},
+  :coaching
+  {:name "Coaching",
+   :description
+   "Don't make the same mistakes we did! Take the shortcut, by letting us help you avoid the same traps. We have plenty of experience in software development and we like to share it. It's not only knowing your way around technology. It's also about how you think about it and how you do it. Whether as an individual or a small team coaching is probably the most effective way to acquire new skills and to learn and adopt a mindset that helps building better software."},
+  :workshops
+  {:name "Workshops",
+   :description
+   "Building a successful company is hard. Really hard. At 200ok, we have launched multiple incubators and spinned-off companies, so we have a little experience in how to optimize your chances of success. For that we have created multiple workshops: <strong>Traction</strong>: A startup guide to getting customers. <strong>Bullseye</strong>: The Bullseye framework is designed to be a straightforward way to direct your traction focus and maximize your results. <strong>Lean Startup</strong>: Be more innovative. Stop wasting people's time. Be more successful. <strong>Scrum</strong>: Scrum is an Agile framework for completing complex projects."},
+  :hosting
+  {:name "Hosting & Maintenance",
+   :description
+   "We support our clients and products in all areas of Unix/Linux infrastructure. 200ok works with true DevOps in mind where our developers are not just developers, but have a strong background in different flavors of Unix and Linux. All our applications are deployed through automated configuration management, many run within containers, all have automated monitoring and exception notification and either run in Swiss data centers on private networks or on any cloud service provider.\nWe also offer to support and maintain the applications that we build at various levels to meet the clients' demands - from regular security updates to adding new functionality. In cooperation with our partners we are able to provide 24/7 on-call service."}}}</pre><h2>meta</h2><pre>{:description "Consultancy - Research Lab - Incubator",
+ :doc-root "public",
+ :subdescription "based in beautiful Zürich, Switzerland",
+ :io.perun/version "0.4.3-SNAPSHOT",
+ :base-url "https://200ok.ch/",
+ :author "200ok GmbH",
+ :categories
+ ({:description
+   "How to configure Electron apps like Slack and Spotify under Linux to look good on HiDPI screens.",
+   :path "public/posts/2018-06-12_slack_hidpi_settings_for_linux.html",
+   :category "debian",
+   :ttr 1,
+   :tags ("slack" "electron" "hidpi" "spotify"),
+   :slug "2018-06-12_slack_hidpi_settings_for_linux",
+   :date-published #inst "2018-06-12T00:00:00.000-00:00",
+   :permalink "/posts/2018-06-12_slack_hidpi_settings_for_linux.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2018-06-12_slack_hidpi_settings_for_linux.html",
+   :parent-path "public/posts/",
+   :title "Slack HiDPI settings for Linux",
+   :canonical-url
+   "https://200ok.ch/posts/2018-06-12_slack_hidpi_settings_for_linux.html",
+   :short-filename "2018-06-12_slack_hidpi_settings_for_linux",
+   :extension "html",
+   :filename "2018-06-12_slack_hidpi_settings_for_linux.html",
+   :original-path "posts/2018-06-12_slack_hidpi_settings_for_linux.md",
+   :uuid "18836293-284d-4d49-8557-a641a9360089",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:description
+   "Third incarnation of the Glarner Hackathon from 2018-11-30 until 2018-12-02.",
+   :path "public/posts/hack4glarus_hackathon_2018_winter_edition.html",
+   :category "200ok",
+   :ttr 2,
+   :tags ("200ok" "ungleich" "ungleich_glarus_ag"),
+   :slug "hack4glarus_hackathon_2018_winter_edition",
+   :featured-image "/img/2018-11/hack4glarus-2018-winter.jpg",
+   :date-published #inst "2018-11-16T00:00:00.000-00:00",
+   :permalink "/posts/hack4glarus_hackathon_2018_winter_edition.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/hack4glarus_hackathon_2018_winter_edition.html",
+   :parent-path "public/posts/",
+   :title "Hack4Glarus Hackathon in Linthal",
+   :canonical-url
+   "https://200ok.ch/posts/hack4glarus_hackathon_2018_winter_edition.html",
+   :short-filename "hack4glarus_hackathon_2018_winter_edition",
+   :extension "html",
+   :filename "hack4glarus_hackathon_2018_winter_edition.html",
+   :original-path
+   "posts/2018-11-16-hack4glarus_hackathon_2018_winter_edition.md",
+   :uuid "9fdc1bba-80d7-4bad-9305-57db23d60aa5",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:path
+   "public/posts/2018-03-08_Write_your_own_brightness_control.html",
+   :category "Debian",
+   :ttr 5,
+   :tags ("linux" "tooling"),
+   :slug "2018-03-08_Write_your_own_brightness_control",
+   :date-published #inst "2018-03-08T00:00:00.000-00:00",
+   :permalink
+   "/posts/2018-03-08_Write_your_own_brightness_control.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2018-03-08_Write_your_own_brightness_control.html",
+   :parent-path "public/posts/",
+   :title "Write your own brightness control",
+   :canonical-url
+   "https://200ok.ch/posts/2018-03-08_Write_your_own_brightness_control.html",
+   :short-filename "2018-03-08_Write_your_own_brightness_control",
+   :extension "html",
+   :filename "2018-03-08_Write_your_own_brightness_control.html",
+   :original-path
+   "posts/2018-03-08_Write_your_own_brightness_control.md",
+   :uuid "00d91bdb-3f5a-424e-950f-05ab060491bc",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:path "public/posts/beating-2048-using-clojure.html",
+   :category "clojure",
+   :ttr 15,
+   :tags ("coding" 2048 "ai"),
+   :slug "beating-2048-using-clojure",
+   :date-published #inst "2017-10-30T00:00:00.000-00:00",
+   :permalink "/posts/beating-2048-using-clojure.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/beating-2048-using-clojure.html",
+   :parent-path "public/posts/",
+   :title "Beating 2048 using Clojure",
+   :canonical-url
+   "https://200ok.ch/posts/beating-2048-using-clojure.html",
+   :short-filename "beating-2048-using-clojure",
+   :extension "html",
+   :filename "beating-2048-using-clojure.html",
+   :original-path "posts/2017-10-30-beating-2048-using-clojure.md",
+   :uuid "b0775f93-01f6-4160-90fb-1bde0e0c751a",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Josef Erben"}
+  {:path "public/posts/minimal-redux-clojurescript.html",
+   :category "clojure",
+   :ttr 5,
+   :tags ("clojure" "redux" "clojurescript" "state_management"),
+   :slug "minimal-redux-clojurescript",
+   :date-published #inst "2018-02-26T00:00:00.000-00:00",
+   :permalink "/posts/minimal-redux-clojurescript.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/minimal-redux-clojurescript.html",
+   :parent-path "public/posts/",
+   :title "Redux in 30 lines of ClojureScript",
+   :canonical-url
+   "https://200ok.ch/posts/minimal-redux-clojurescript.html",
+   :short-filename "minimal-redux-clojurescript",
+   :extension "html",
+   :filename "minimal-redux-clojurescript.html",
+   :original-path "posts/2018-02-19-minimal-redux-clojurescript.md",
+   :uuid "872f6ea12523e358594e523c5c251ab3",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Josef Erben"}
+  {:description
+   "If your bluetooth adapter doesn't work for your brand new Lenovo X1 Carbon 6th Gen under Linux, read this article.",
+   :path
+   "public/posts/2018-12-17_making_bluetooth_work_on_lenovo_x1_carbon_6th_gen_with_linux.html",
+   :category "Debian",
+   :ttr 2,
+   :tags ("linux" "bluetooth"),
+   :slug
+   "2018-12-17_making_bluetooth_work_on_lenovo_x1_carbon_6th_gen_with_linux",
+   :date-published #inst "2018-12-17T00:00:00.000-00:00",
+   :permalink
+   "/posts/2018-12-17_making_bluetooth_work_on_lenovo_x1_carbon_6th_gen_with_linux.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2018-12-17_making_bluetooth_work_on_lenovo_x1_carbon_6th_gen_with_linux.html",
+   :parent-path "public/posts/",
+   :title
+   "Making Bluetooth work on Lenovo X1 Carbon 6th gen with Linux",
+   :canonical-url
+   "https://200ok.ch/posts/2018-12-17_making_bluetooth_work_on_lenovo_x1_carbon_6th_gen_with_linux.html",
+   :short-filename
+   "2018-12-17_making_bluetooth_work_on_lenovo_x1_carbon_6th_gen_with_linux",
+   :extension "html",
+   :filename
+   "2018-12-17_making_bluetooth_work_on_lenovo_x1_carbon_6th_gen_with_linux.html",
+   :original-path
+   "posts/2018-12-17_making_bluetooth_work_on_lenovo_x1_carbon_6th_gen_with_linux.md",
+   :uuid "3f14aceb-84de-415d-8fc7-f9ef44415e76",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:path "public/posts/edit-remote-files-with-emacs.html",
+   :category "Emacs",
+   :ttr 1,
+   :tags ("emacs" "eshell"),
+   :slug "edit-remote-files-with-emacs",
+   :date-published #inst "2017-08-23T00:00:00.000-00:00",
+   :permalink "/posts/edit-remote-files-with-emacs.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/edit-remote-files-with-emacs.html",
+   :parent-path "public/posts/",
+   :title "Edit remote files with Emacs",
+   :canonical-url
+   "https://200ok.ch/posts/edit-remote-files-with-emacs.html",
+   :short-filename "edit-remote-files-with-emacs",
+   :extension "html",
+   :filename "edit-remote-files-with-emacs.html",
+   :original-path "posts/2017-08-23-edit-remote-files-with-emacs.md",
+   :uuid "36acb87c-a6fb-4f53-88a3-1e1ae01f6c2d",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:path
+   "public/posts/2018-02-25_List_AWS_S3_bucket_with_HTTP_and_XML.html",
+   :category "cloud",
+   :ttr 3,
+   :tags ("aws" "s3"),
+   :slug "2018-02-25_List_AWS_S3_bucket_with_HTTP_and_XML",
+   :date-published #inst "2018-02-26T00:00:00.000-00:00",
+   :permalink
+   "/posts/2018-02-25_List_AWS_S3_bucket_with_HTTP_and_XML.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2018-02-25_List_AWS_S3_bucket_with_HTTP_and_XML.html",
+   :parent-path "public/posts/",
+   :title "List AWS S3 bucket objects with HTTP and XML",
+   :canonical-url
+   "https://200ok.ch/posts/2018-02-25_List_AWS_S3_bucket_with_HTTP_and_XML.html",
+   :short-filename "2018-02-25_List_AWS_S3_bucket_with_HTTP_and_XML",
+   :extension "html",
+   :filename "2018-02-25_List_AWS_S3_bucket_with_HTTP_and_XML.html",
+   :original-path
+   "posts/2018-02-25_List_AWS_S3_bucket_with_HTTP_and_XML.md",
+   :uuid "b5cfdbb4-88bf-4708-92a3-e3df16c41bc8",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:path "public/posts/2018-09-27_X1_carbon_cpu_frequency_update.html",
+   :category "Debian",
+   :ttr 2,
+   :tags ("x1_carbon" "x1_carbon_6th_gen" "linux"),
+   :slug "2018-09-27_X1_carbon_cpu_frequency_update",
+   :date-published #inst "2018-09-27T00:00:00.000-00:00",
+   :permalink "/posts/2018-09-27_X1_carbon_cpu_frequency_update.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2018-09-27_X1_carbon_cpu_frequency_update.html",
+   :parent-path "public/posts/",
+   :title "X1 Carbon CPU frequency update",
+   :canonical-url
+   "https://200ok.ch/posts/2018-09-27_X1_carbon_cpu_frequency_update.html",
+   :short-filename "2018-09-27_X1_carbon_cpu_frequency_update",
+   :extension "html",
+   :filename "2018-09-27_X1_carbon_cpu_frequency_update.html",
+   :original-path "posts/2018-09-27_X1_carbon_cpu_frequency_update.md",
+   :uuid "ebec9d41-f44f-44bd-a002-09d84c6f2b2e",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:path "public/posts/working-in-glarus.html",
+   :category "200ok",
+   :ttr 1,
+   :tags ("coworking" "glarus"),
+   :slug "working-in-glarus",
+   :date-published #inst "2017-10-19T00:00:00.000-00:00",
+   :permalink "/posts/working-in-glarus.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/working-in-glarus.html",
+   :parent-path "public/posts/",
+   :title "Coworking in Glarus",
+   :canonical-url "https://200ok.ch/posts/working-in-glarus.html",
+   :short-filename "working-in-glarus",
+   :extension "html",
+   :filename "working-in-glarus.html",
+   :original-path "posts/2017-10-19-working-in-glarus.md",
+   :uuid "a8d0756c-88fa-4a80-861a-c560cec69b9d",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:description
+   "Get on the bandwagon and sign up for the great CMS SaaS offering of livingdocs.io",
+   :path
+   "public/posts/2019-03-01_livingdocs_is_on_the_shortlist_for_the_best_of_swiss_web_awards.html",
+   :category "Web",
+   :ttr 1,
+   :tags ("200ok" "livingdocs"),
+   :slug
+   "2019-03-01_livingdocs_is_on_the_shortlist_for_the_best_of_swiss_web_awards",
+   :featured-image
+   "/img/2019/03/livingdocs_swisscom-tv_whitepaper.png",
+   :date-published #inst "2019-03-01T00:00:00.000-00:00",
+   :permalink
+   "/posts/2019-03-01_livingdocs_is_on_the_shortlist_for_the_best_of_swiss_web_awards.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2019-03-01_livingdocs_is_on_the_shortlist_for_the_best_of_swiss_web_awards.html",
+   :parent-path "public/posts/",
+   :title
+   "Livingdocs is on the shortlist for the \"Best of Swiss Web Awards\"",
+   :canonical-url
+   "https://200ok.ch/posts/2019-03-01_livingdocs_is_on_the_shortlist_for_the_best_of_swiss_web_awards.html",
+   :short-filename
+   "2019-03-01_livingdocs_is_on_the_shortlist_for_the_best_of_swiss_web_awards",
+   :extension "html",
+   :filename
+   "2019-03-01_livingdocs_is_on_the_shortlist_for_the_best_of_swiss_web_awards.html",
+   :original-path
+   "posts/2019-03-01_livingdocs_is_on_the_shortlist_for_the_best_of_swiss_web_awards.md",
+   :uuid "3ae1e748-42c4-4d3a-9c20-da2505f764b2",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:description
+   "Phil gives a good introduction into PWAs and how they benefit both from the responsive web and the opportunities of native applications.",
+   :path
+   "public/posts/2019-05-21_interview_with_netzwoche_on_pwas_promise_the_best_of_two_worlds.html",
+   :category "Web",
+   :ttr 6,
+   :tags ("pwa" "programming" "interview" "public_appearance"),
+   :slug
+   "2019-05-21_interview_with_netzwoche_on_pwas_promise_the_best_of_two_worlds",
+   :featured-image "/img/phil.jpg",
+   :date-published #inst "2019-05-20T00:00:00.000-00:00",
+   :permalink
+   "/posts/2019-05-21_interview_with_netzwoche_on_pwas_promise_the_best_of_two_worlds.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2019-05-21_interview_with_netzwoche_on_pwas_promise_the_best_of_two_worlds.html",
+   :parent-path "public/posts/",
+   :title
+   "Interview with Netzwoche on 'PWAs promise the best of two worlds'",
+   :canonical-url
+   "https://200ok.ch/posts/2019-05-21_interview_with_netzwoche_on_pwas_promise_the_best_of_two_worlds.html",
+   :short-filename
+   "2019-05-21_interview_with_netzwoche_on_pwas_promise_the_best_of_two_worlds",
+   :extension "html",
+   :filename
+   "2019-05-21_interview_with_netzwoche_on_pwas_promise_the_best_of_two_worlds.html",
+   :original-path
+   "posts/2019-05-21_interview_with_netzwoche_on_pwas_promise_the_best_of_two_worlds.md",
+   :uuid "6b7c4f86-9ee6-41d7-a854-ece3c414575a",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Phil Hofmann, Alain M. Lafon"}
+  {:path
+   "public/posts/2018-03-28_writing_solid_end_to_end_tests_with_buoys.html",
+   :category "Coders Tip",
+   :ttr 9,
+   :tags ("testing"),
+   :slug "2018-03-28_writing_solid_end_to_end_tests_with_buoys",
+   :date-published #inst "2018-03-31T00:00:00.000-00:00",
+   :permalink
+   "/posts/2018-03-28_writing_solid_end_to_end_tests_with_buoys.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2018-03-28_writing_solid_end_to_end_tests_with_buoys.html",
+   :parent-path "public/posts/",
+   :title "Writing solid End-to-End-Tests with Buoys",
+   :canonical-url
+   "https://200ok.ch/posts/2018-03-28_writing_solid_end_to_end_tests_with_buoys.html",
+   :short-filename
+   "2018-03-28_writing_solid_end_to_end_tests_with_buoys",
+   :extension "html",
+   :filename
+   "2018-03-28_writing_solid_end_to_end_tests_with_buoys.html",
+   :original-path
+   "posts/2018-03-28_writing_solid_end_to_end_tests_with_buoys.md",
+   :uuid "75849f20-8cae-41e3-a4dd-06ce5248b19c",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Phil Hofmann, Alain M. Lafon"}
+  {:path "public/posts/200ok-in-the-media.html",
+   :category "200ok",
+   :ttr 6,
+   :tags ("200ok" "ungleich" "ungleich_glarus_ag" "Hack4glarus"),
+   :slug "200ok-in-the-media",
+   :date-published #inst "2017-12-06T00:00:00.000-00:00",
+   :permalink "/posts/200ok-in-the-media.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/200ok-in-the-media.html",
+   :parent-path "public/posts/",
+   :title "200ok in the media",
+   :canonical-url "https://200ok.ch/posts/200ok-in-the-media.html",
+   :short-filename "200ok-in-the-media",
+   :extension "html",
+   :filename "200ok-in-the-media.html",
+   :original-path "posts/2017-12-04-200ok-in-the-media.md",
+   :uuid "872f6e3125239358594e523c5a251ab1",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:description "New quickshift.ch release",
+   :path
+   "public/posts/2019-06-09_quickshift_news_vom_neuen_release.html",
+   :category "200ok",
+   :ttr 2,
+   :tags ("quickshift"),
+   :slug "2019-06-09_quickshift_news_vom_neuen_release",
+   :featured-image "/img/products/quickshift.png",
+   :date-published #inst "2019-06-09T00:00:00.000-00:00",
+   :permalink
+   "/posts/2019-06-09_quickshift_news_vom_neuen_release.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2019-06-09_quickshift_news_vom_neuen_release.html",
+   :parent-path "public/posts/",
+   :title "QuickShift: News vom neuen Release",
+   :canonical-url
+   "https://200ok.ch/posts/2019-06-09_quickshift_news_vom_neuen_release.html",
+   :short-filename "2019-06-09_quickshift_news_vom_neuen_release",
+   :extension "html",
+   :filename "2019-06-09_quickshift_news_vom_neuen_release.html",
+   :original-path
+   "posts/2019-06-09_quickshift_news_vom_neuen_release.org",
+   :uuid "c867d49d-5f16-4bdd-94e2-86aa10c426de",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:path "public/posts/riotjs-module-hot-loading-demo.html",
+   :category "riotjs",
+   :ttr 1,
+   :tags ("javascript" "spa" "module" "webpack"),
+   :slug "riotjs-module-hot-loading-demo",
+   :date-published #inst "2016-11-01T00:00:00.000-00:00",
+   :permalink "/posts/riotjs-module-hot-loading-demo.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/riotjs-module-hot-loading-demo.html",
+   :parent-path "public/posts/",
+   :title "RiotJS Module hot-loading Demo",
+   :canonical-url
+   "https://200ok.ch/posts/riotjs-module-hot-loading-demo.html",
+   :short-filename "riotjs-module-hot-loading-demo",
+   :extension "html",
+   :filename "riotjs-module-hot-loading-demo.html",
+   :original-path "posts/2016-11-01-riotjs-module-hot-loading-demo.md",
+   :uuid "9330e642-4fea-4315-9291-15074bf6630e",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:path
+   "public/posts/using-clojure-to-visualize-dependencies-in-clojure-code.html",
+   :category "tooling",
+   :ttr 2,
+   :tags ("clojure" "graph" "dependencies" "visualization"),
+   :slug "using-clojure-to-visualize-dependencies-in-clojure-code",
+   :date-published #inst "2016-12-02T00:00:00.000-00:00",
+   :permalink
+   "/posts/using-clojure-to-visualize-dependencies-in-clojure-code.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/using-clojure-to-visualize-dependencies-in-clojure-code.html",
+   :parent-path "public/posts/",
+   :title "using clojure to visualize dependencies in clojure code",
+   :canonical-url
+   "https://200ok.ch/posts/using-clojure-to-visualize-dependencies-in-clojure-code.html",
+   :short-filename
+   "using-clojure-to-visualize-dependencies-in-clojure-code",
+   :extension "html",
+   :filename
+   "using-clojure-to-visualize-dependencies-in-clojure-code.html",
+   :original-path
+   "posts/2016-12-03-using-clojure-to-visualize-dependencies-in-clojure-code.md",
+   :uuid "3f14de9f-273b-4e44-86cd-504b88225b8b",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Phil Hofmann"}
+  {:path
+   "public/posts/jq-my-new-favorite-tool-to-work-with-json-on-the-command-line.html",
+   :category "tooling",
+   :ttr 3,
+   :tags ("json" "cli"),
+   :slug
+   "jq-my-new-favorite-tool-to-work-with-json-on-the-command-line",
+   :date-published #inst "2016-12-02T00:00:00.000-00:00",
+   :permalink
+   "/posts/jq-my-new-favorite-tool-to-work-with-json-on-the-command-line.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/jq-my-new-favorite-tool-to-work-with-json-on-the-command-line.html",
+   :parent-path "public/posts/",
+   :title
+   "jq - my new favorite tool to work with json on the command line",
+   :canonical-url
+   "https://200ok.ch/posts/jq-my-new-favorite-tool-to-work-with-json-on-the-command-line.html",
+   :short-filename
+   "jq-my-new-favorite-tool-to-work-with-json-on-the-command-line",
+   :extension "html",
+   :filename
+   "jq-my-new-favorite-tool-to-work-with-json-on-the-command-line.html",
+   :original-path
+   "posts/2016-12-02-jq-my-new-favorite-tool-to-work-with-json-on-the-command-line.md",
+   :uuid "105c9d69-08a0-4f37-9cbb-7d1f8c5513da",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Phil Hofmann"}
+  {:description "Hack4Glarus Hackathon in Linthal.",
+   :path "public/posts/hack4glarus-hackathon-in-linthal.html",
+   :category "200ok",
+   :ttr 2,
+   :tags ("200ok" "ungleich" "ungleich_glarus_ag"),
+   :slug "hack4glarus-hackathon-in-linthal",
+   :featured-image "/img/2017-11-18/hack4glarus.jpg",
+   :date-published #inst "2017-11-18T00:00:00.000-00:00",
+   :permalink "/posts/hack4glarus-hackathon-in-linthal.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/hack4glarus-hackathon-in-linthal.html",
+   :parent-path "public/posts/",
+   :title "Hack4Glarus Hackathon in Linthal",
+   :canonical-url
+   "https://200ok.ch/posts/hack4glarus-hackathon-in-linthal.html",
+   :short-filename "hack4glarus-hackathon-in-linthal",
+   :extension "html",
+   :filename "hack4glarus-hackathon-in-linthal.html",
+   :original-path
+   "posts/2017-11-18-hack4glarus-hackathon-in-linthal.md",
+   :uuid "65b2ebe34ef2b65bdcbfee845a109811",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:path "public/posts/oss-release-swiss-crowdfunder.html",
+   :category "200ok",
+   :ttr 2,
+   :tags
+   ("200ok"
+    "ungleich"
+    "ungleich_glarus_ag"
+    "swiss_crowdfunder"
+    "crowdfunding"),
+   :slug "oss-release-swiss-crowdfunder",
+   :date-published #inst "2017-12-03T00:00:00.000-00:00",
+   :permalink "/posts/oss-release-swiss-crowdfunder.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/oss-release-swiss-crowdfunder.html",
+   :parent-path "public/posts/",
+   :title "Open source release of swiss-crowdfunder.com",
+   :canonical-url
+   "https://200ok.ch/posts/oss-release-swiss-crowdfunder.html",
+   :short-filename "oss-release-swiss-crowdfunder",
+   :extension "html",
+   :filename "oss-release-swiss-crowdfunder.html",
+   :original-path "posts/2017-12-03-oss-release-swiss-crowdfunder.md",
+   :uuid "64a179eb59636d611924f2c75a23cd91",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:path "public/posts/coders-tip-commit-at-the-end-of-the-day.html",
+   :category "coders tip",
+   :ttr 3,
+   :tags ("programming" "version control" "git"),
+   :slug "coders-tip-commit-at-the-end-of-the-day",
+   :date-published #inst "2017-04-02T00:00:00.000-00:00",
+   :permalink "/posts/coders-tip-commit-at-the-end-of-the-day.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/coders-tip-commit-at-the-end-of-the-day.html",
+   :parent-path "public/posts/",
+   :title
+   "Coders Tip: Commit and push at at least at the end of the day",
+   :canonical-url
+   "https://200ok.ch/posts/coders-tip-commit-at-the-end-of-the-day.html",
+   :short-filename "coders-tip-commit-at-the-end-of-the-day",
+   :extension "html",
+   :filename "coders-tip-commit-at-the-end-of-the-day.html",
+   :original-path
+   "posts/2017-04-02-coders-tip-commit-at-the-end-of-the-day.md",
+   :uuid "54aed99c-4003-4a6b-aa5f-c56fbdd7fe2a",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:path "public/posts/use-emacs-instead-of-vidir.html",
+   :category "Emacs",
+   :ttr 2,
+   :tags ("shell" "linux" "emacs" "unix"),
+   :slug "use-emacs-instead-of-vidir",
+   :date-published #inst "2017-09-11T00:00:00.000-00:00",
+   :permalink "/posts/use-emacs-instead-of-vidir.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/use-emacs-instead-of-vidir.html",
+   :parent-path "public/posts/",
+   :title "Use Emacs for mass renaming of files (instead of vidir)",
+   :canonical-url
+   "https://200ok.ch/posts/use-emacs-instead-of-vidir.html",
+   :short-filename "use-emacs-instead-of-vidir",
+   :extension "html",
+   :filename "use-emacs-instead-of-vidir.html",
+   :original-path "posts/2017-09-11-use-emacs-instead-of-vidir.md",
+   :uuid "c8a75550-6534-42cf-bb3b-d6fcc6319d72",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:path "public/posts/2018-04-21_quickshift-news.html",
+   :category "200ok",
+   :ttr 1,
+   :tags ("incubators" "quickshift"),
+   :slug "2018-04-21_quickshift-news",
+   :date-published #inst "2018-04-21T00:00:00.000-00:00",
+   :permalink "/posts/2018-04-21_quickshift-news.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2018-04-21_quickshift-news.html",
+   :parent-path "public/posts/",
+   :title "QuickShift geht in die Beta Phase",
+   :canonical-url
+   "https://200ok.ch/posts/2018-04-21_quickshift-news.html",
+   :short-filename "2018-04-21_quickshift-news",
+   :extension "html",
+   :filename "2018-04-21_quickshift-news.html",
+   :language "de",
+   :original-path "posts/2018-04-21_quickshift-news.md",
+   :uuid "2be120b7-7f97-44b8-810f-137c1c8ae9f6",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors
+   "Alain M. Lafon, Phil Hofmann, Pascal Huber, Mischa Steiner"}
+  {:path "public/posts/webscraping-with-python-and-beautifulsoup.html",
+   :category "python",
+   :ttr 9,
+   :tags
+   ("beautifulsoup"
+    "howto"
+    "scraping"
+    "tutorial"
+    "web_scraping"
+    "webscraping"),
+   :slug "webscraping-with-python-and-beautifulsoup",
+   :date-published #inst "2009-03-15T00:00:00.000-00:00",
+   :permalink "/posts/webscraping-with-python-and-beautifulsoup.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/webscraping-with-python-and-beautifulsoup.html",
+   :parent-path "public/posts/",
+   :title "Webscraping with Python and BeautifulSoup",
+   :canonical-url
+   "https://200ok.ch/posts/webscraping-with-python-and-beautifulsoup.html",
+   :short-filename "webscraping-with-python-and-beautifulsoup",
+   :extension "html",
+   :filename "webscraping-with-python-and-beautifulsoup.html",
+   :original-path
+   "posts/2009-03-15-webscraping-with-python-and-beautifulsoup.md",
+   :uuid "0881dac9-3437-48d0-b2a2-fc6ffe653da4",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:path "public/posts/change-color-of-terminal-during-ssh.html",
+   :category "tricks",
+   :ttr 1,
+   :tags
+   ("linux"
+    "console"
+    "cli"
+    "terminal"
+    "shell"
+    "ssh"
+    "dbus"
+    "roxterm"
+    "zsh"),
+   :slug "change-color-of-terminal-during-ssh",
+   :date-published #inst "2016-11-01T00:00:00.000-00:00",
+   :permalink "/posts/change-color-of-terminal-during-ssh.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/change-color-of-terminal-during-ssh.html",
+   :parent-path "public/posts/",
+   :title "Change the color of the terminal during ssh",
+   :canonical-url
+   "https://200ok.ch/posts/change-color-of-terminal-during-ssh.html",
+   :short-filename "change-color-of-terminal-during-ssh",
+   :extension "html",
+   :filename "change-color-of-terminal-during-ssh.html",
+   :original-path
+   "posts/2016-11-01-change-color-of-terminal-during-ssh.md",
+   :uuid "23207c54-6893-40bf-9bd1-81d498ea24d7",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Phil Hofmann"}
+  {:description "X1 Carbon 6th gen about 50% slower on Linux",
+   :path
+   "public/posts/2018-09-26_X1_carbon_6th_gen_about_50_percent_slower_on_Linux.html",
+   :category "Debian",
+   :ttr 2,
+   :tags ("x1_carbon" "x1_carbon_6th_gen" "linux"),
+   :slug
+   "2018-09-26_X1_carbon_6th_gen_about_50_percent_slower_on_Linux",
+   :featured-image "/img/x1_without_cpu_fix.png",
+   :date-published #inst "2018-09-26T00:00:00.000-00:00",
+   :permalink
+   "/posts/2018-09-26_X1_carbon_6th_gen_about_50_percent_slower_on_Linux.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2018-09-26_X1_carbon_6th_gen_about_50_percent_slower_on_Linux.html",
+   :parent-path "public/posts/",
+   :title "X1 Carbon 6th gen about 50% slower on Linux",
+   :canonical-url
+   "https://200ok.ch/posts/2018-09-26_X1_carbon_6th_gen_about_50_percent_slower_on_Linux.html",
+   :short-filename
+   "2018-09-26_X1_carbon_6th_gen_about_50_percent_slower_on_Linux",
+   :extension "html",
+   :filename
+   "2018-09-26_X1_carbon_6th_gen_about_50_percent_slower_on_Linux.html",
+   :original-path
+   "posts/2018-09-26_X1_carbon_6th_gen_about_50_percent_slower_on_Linux.md",
+   :uuid "5eef3578-c2a2-4179-8984-49f4f0cd9961",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon, Pascal Huber"}
+  {:description
+   "Disable the option 'flat-volume' which enables application volume changes to change the system volume. The rationale that this beavior is dangerous when wearing headphones.",
+   :path
+   "public/posts/2019-05-20_disable_flatvolume_for_pulseaudio.html",
+   :category "Debian",
+   :ttr 2,
+   :tags ("linux"),
+   :slug "2019-05-20_disable_flatvolume_for_pulseaudio",
+   :date-published #inst "2019-05-20T00:00:00.000-00:00",
+   :permalink
+   "/posts/2019-05-20_disable_flatvolume_for_pulseaudio.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2019-05-20_disable_flatvolume_for_pulseaudio.html",
+   :parent-path "public/posts/",
+   :title "Disable \"flat-volume\" for PulseAudio",
+   :canonical-url
+   "https://200ok.ch/posts/2019-05-20_disable_flatvolume_for_pulseaudio.html",
+   :short-filename "2019-05-20_disable_flatvolume_for_pulseaudio",
+   :extension "html",
+   :filename "2019-05-20_disable_flatvolume_for_pulseaudio.html",
+   :original-path
+   "posts/2019-05-20_disable_flatvolume_for_pulseaudio.md",
+   :uuid "ad5b526c-a788-4802-8f31-c52e1ea4aa1f",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:path "public/posts/riotjs-tables.html",
+   :category "riotjs",
+   :ttr 3,
+   :tags ("javascript" "spa"),
+   :slug "riotjs-tables",
+   :date-published #inst "2016-10-29T00:00:00.000-00:00",
+   :permalink "/posts/riotjs-tables.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/riotjs-tables.html",
+   :parent-path "public/posts/",
+   :title "RiotJS and nested custom Tags within Tables",
+   :canonical-url "https://200ok.ch/posts/riotjs-tables.html",
+   :short-filename "riotjs-tables",
+   :extension "html",
+   :filename "riotjs-tables.html",
+   :original-path "posts/2016-10-29-riotjs-tables.md",
+   :uuid "0accc98c-020e-4293-9b8e-67a2e143a1c5",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:path "public/posts/have-the-data-your-way-with-fsdb.html",
+   :category "clojure",
+   :ttr 2,
+   :tags ("opensource" "clojure" "filesystem" "database"),
+   :slug "have-the-data-your-way-with-fsdb",
+   :date-published #inst "2017-09-25T00:00:00.000-00:00",
+   :permalink "/posts/have-the-data-your-way-with-fsdb.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/have-the-data-your-way-with-fsdb.html",
+   :parent-path "public/posts/",
+   :title "Have the data your way with fsdb",
+   :canonical-url
+   "https://200ok.ch/posts/have-the-data-your-way-with-fsdb.html",
+   :short-filename "have-the-data-your-way-with-fsdb",
+   :extension "html",
+   :filename "have-the-data-your-way-with-fsdb.html",
+   :original-path
+   "posts/2017-09-25-have-the-data-your-way-with-fsdb.md",
+   :uuid "3c5fb578-a608-4aa4-9d08-84df4af9b762",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Phil Hofmann"}
+  {:path "public/posts/2018-04-27_Play_Emacs_like_an_Instrument.html",
+   :category "Emacs",
+   :ttr 1,
+   :tags
+   ("talks"
+    "public_appearance"
+    "200ok"
+    "clojure"
+    "elisp"
+    "ruby"
+    "javascript"),
+   :slug "2018-04-27_Play_Emacs_like_an_Instrument",
+   :date-published #inst "2018-04-27T00:00:00.000-00:00",
+   :permalink "/posts/2018-04-27_Play_Emacs_like_an_Instrument.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2018-04-27_Play_Emacs_like_an_Instrument.html",
+   :parent-path "public/posts/",
+   :title "Play Emacs like an Instrument",
+   :canonical-url
+   "https://200ok.ch/posts/2018-04-27_Play_Emacs_like_an_Instrument.html",
+   :short-filename "2018-04-27_Play_Emacs_like_an_Instrument",
+   :extension "html",
+   :filename "2018-04-27_Play_Emacs_like_an_Instrument.html",
+   :original-path "posts/2018-04-27_Play_Emacs_like_an_Instrument.md",
+   :uuid "4adfd949-5106-483a-befd-792e6ab41d34",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:description
+   "The professional live audio streaming and archiving of events platform voicerepublic.com has been open sourced under the GPL license.",
+   :path
+   "public/posts/2019-05-14_open_sourcing_voicerepublic.com_under_the_gpl.html",
+   :category "200ok",
+   :ttr 1,
+   :tags ("voicerepublic" "opensource"),
+   :slug "2019-05-14_open_sourcing_voicerepublic.com_under_the_gpl",
+   :featured-image "/img/products/voicerepublic.png",
+   :date-published #inst "2019-05-14T00:00:00.000-00:00",
+   :permalink
+   "/posts/2019-05-14_open_sourcing_voicerepublic.com_under_the_gpl.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2019-05-14_open_sourcing_voicerepublic.com_under_the_gpl.html",
+   :parent-path "public/posts/",
+   :title "Open sourcing voicerepublic.com under the GPL",
+   :canonical-url
+   "https://200ok.ch/posts/2019-05-14_open_sourcing_voicerepublic.com_under_the_gpl.html",
+   :short-filename
+   "2019-05-14_open_sourcing_voicerepublic.com_under_the_gpl",
+   :extension "html",
+   :filename
+   "2019-05-14_open_sourcing_voicerepublic.com_under_the_gpl.html",
+   :original-path
+   "posts/2019-05-14_open_sourcing_voicerepublic.com_under_the_gpl.md",
+   :uuid "d17237d6-62c7-419a-a521-0154599f88ff",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Phil Hofmann, Alain M. Lafon"}
+  {:path
+   "public/posts/org-mode-capture-template-for-code-snippets.html",
+   :category "orgmode",
+   :ttr 2,
+   :tags ("elisp" "emacs" "programming"),
+   :slug "org-mode-capture-template-for-code-snippets",
+   :date-published #inst "2016-05-01T00:00:00.000-00:00",
+   :permalink
+   "/posts/org-mode-capture-template-for-code-snippets.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/org-mode-capture-template-for-code-snippets.html",
+   :parent-path "public/posts/",
+   :title "Orgmode capture template for code snippets",
+   :canonical-url
+   "https://200ok.ch/posts/org-mode-capture-template-for-code-snippets.html",
+   :short-filename "org-mode-capture-template-for-code-snippets",
+   :extension "html",
+   :filename "org-mode-capture-template-for-code-snippets.html",
+   :original-path
+   "posts/2016-05-01-org-mode-capture-template-for-code-snippets.md",
+   :uuid "3eeda4a5-a749-417a-b07c-e7ded2407b73",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:description
+   "Über die letzten drei Tagen haben wir ein wunderbar sonniges Code Retreat mit dem Team unseres Inkubators QuickShift in Ronco, Italien geniessen können.",
+   :path
+   "public/posts/2018-06-17_code_retreat_quickshift_in_conco,_italy.html",
+   :category "200ok",
+   :ttr 2,
+   :tags ("quickshift" "code_retreat"),
+   :slug "2018-06-17_code_retreat_quickshift_in_conco,_italy",
+   :date-published #inst "2018-06-17T00:00:00.000-00:00",
+   :permalink
+   "/posts/2018-06-17_code_retreat_quickshift_in_conco,_italy.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2018-06-17_code_retreat_quickshift_in_conco,_italy.html",
+   :parent-path "public/posts/",
+   :title "Code Retreat in Ronco, Italien",
+   :canonical-url
+   "https://200ok.ch/posts/2018-06-17_code_retreat_quickshift_in_conco,_italy.html",
+   :short-filename
+   "2018-06-17_code_retreat_quickshift_in_conco,_italy",
+   :extension "html",
+   :filename "2018-06-17_code_retreat_quickshift_in_conco,_italy.html",
+   :original-path
+   "posts/2018-06-17_code_retreat_quickshift_in_conco,_italy.md",
+   :uuid "8a4b3414-c95c-42be-a4c4-563580127e57",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:description
+   "Learning a new programming language can be hard. However, learning idiomatic JavaScript for Clojure devs (or generally devs with solid functional programming experience), is not.",
+   :path
+   "public/posts/2018-08-07_quickly_learn_idiomatic_javascript_as_a_clojure_programmer.html",
+   :category "clojure",
+   :ttr 4,
+   :tags ("clojure" "javascript" "programming"),
+   :slug
+   "2018-08-07_quickly_learn_idiomatic_javascript_as_a_clojure_programmer",
+   :date-published #inst "2018-08-07T00:00:00.000-00:00",
+   :permalink
+   "/posts/2018-08-07_quickly_learn_idiomatic_javascript_as_a_clojure_programmer.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2018-08-07_quickly_learn_idiomatic_javascript_as_a_clojure_programmer.html",
+   :parent-path "public/posts/",
+   :title "Quickly learn idiomatic JavaScript as a Clojure programmer",
+   :canonical-url
+   "https://200ok.ch/posts/2018-08-07_quickly_learn_idiomatic_javascript_as_a_clojure_programmer.html",
+   :short-filename
+   "2018-08-07_quickly_learn_idiomatic_javascript_as_a_clojure_programmer",
+   :extension "html",
+   :filename
+   "2018-08-07_quickly_learn_idiomatic_javascript_as_a_clojure_programmer.html",
+   :original-path
+   "posts/2018-08-07_quickly_learn_idiomatic_javascript_as_a_clojure_programmer.md",
+   :uuid "34b18432-7f99-4aed-b381-d8d08fcb1012",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:path "public/posts/search-for-recent-files-on-s3.html",
+   :category "tooling",
+   :ttr 2,
+   :tags ("aws" "cloud" "s3"),
+   :slug "search-for-recent-files-on-s3",
+   :date-published #inst "2017-04-11T00:00:00.000-00:00",
+   :permalink "/posts/search-for-recent-files-on-s3.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/search-for-recent-files-on-s3.html",
+   :parent-path "public/posts/",
+   :title "Search for recently updated files on Amazon S3",
+   :canonical-url
+   "https://200ok.ch/posts/search-for-recent-files-on-s3.html",
+   :short-filename "search-for-recent-files-on-s3",
+   :extension "html",
+   :filename "search-for-recent-files-on-s3.html",
+   :original-path "posts/2017-04-11-search-for-recent-files-on-s3.md",
+   :uuid "ad9e6d0b-f374-42cb-b9d9-5a6ca247ffae",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:description
+   "Alain was invited to be a mentor of this years ETH VIScon Hackathon.",
+   :path
+   "public/posts/2018-10-06_eth_viscon_hackathon_and_symposium_2018.html",
+   :category "200ok",
+   :ttr 1,
+   :tags
+   ("vis"
+    "eth"
+    "viscon"
+    "hackathon"
+    "mentor"
+    "mentoring"
+    "public_appearance"),
+   :slug "2018-10-06_eth_viscon_hackathon_and_symposium_2018",
+   :featured-image "/img/2018-10/VIScon_flyer.png",
+   :date-published #inst "2018-10-06T00:00:00.000-00:00",
+   :permalink
+   "/posts/2018-10-06_eth_viscon_hackathon_and_symposium_2018.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2018-10-06_eth_viscon_hackathon_and_symposium_2018.html",
+   :parent-path "public/posts/",
+   :title "ETH VIScon Hackathon and Symposium 2018",
+   :canonical-url
+   "https://200ok.ch/posts/2018-10-06_eth_viscon_hackathon_and_symposium_2018.html",
+   :short-filename
+   "2018-10-06_eth_viscon_hackathon_and_symposium_2018",
+   :extension "html",
+   :filename "2018-10-06_eth_viscon_hackathon_and_symposium_2018.html",
+   :original-path
+   "posts/2018-10-06_eth_viscon_hackathon_and_symposium_2018.md",
+   :uuid "8b7c369b-e5ea-4294-bf48-531f57a1058d",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:path "public/posts/2018-12-09_unhexlify.html",
+   :category "python",
+   :ttr 4,
+   :tags ("python"),
+   :slug "2018-12-09_unhexlify",
+   :date-published #inst "2009-12-09T00:00:00.000-00:00",
+   :permalink "/posts/2018-12-09_unhexlify.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2018-12-09_unhexlify.html",
+   :parent-path "public/posts/",
+   :title "Python’s binascii – hexlify() and unhexlify()",
+   :canonical-url "https://200ok.ch/posts/2018-12-09_unhexlify.html",
+   :short-filename "2018-12-09_unhexlify",
+   :extension "html",
+   :filename "2018-12-09_unhexlify.html",
+   :original-path "posts/2018-12-09_unhexlify.md",
+   :uuid "e219ff9f-81b9-4728-ac2a-b94e018b1b55",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:description
+   "A snippet for ZSH to recognize project folders you changed to, so that when you create new shells (i.e. through opening a terminal) it changes to the last used project automatically.",
+   :path
+   "public/posts/2018-04-10_Make_zsh_recognise_Projects_you_are_working_on.html",
+   :category "tricks",
+   :ttr 7,
+   :tags ("linux" "console" "cli" "terminal" "shell" "zsh"),
+   :slug "2018-04-10_Make_zsh_recognise_Projects_you_are_working_on",
+   :date-published #inst "2018-04-30T00:00:00.000-00:00",
+   :permalink
+   "/posts/2018-04-10_Make_zsh_recognise_Projects_you_are_working_on.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2018-04-10_Make_zsh_recognise_Projects_you_are_working_on.html",
+   :parent-path "public/posts/",
+   :title "Make zsh recognize Projects you are working on",
+   :canonical-url
+   "https://200ok.ch/posts/2018-04-10_Make_zsh_recognise_Projects_you_are_working_on.html",
+   :short-filename
+   "2018-04-10_Make_zsh_recognise_Projects_you_are_working_on",
+   :extension "html",
+   :filename
+   "2018-04-10_Make_zsh_recognise_Projects_you_are_working_on.html",
+   :original-path
+   "posts/2018-04-10_Make_zsh_recognise_Projects_you_are_working_on.md",
+   :uuid "1b14fdba-ae8b-4936-af07-049edc6e85ec",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Phil Hofmann"}
+  {:path
+   "public/posts/2018-11-08_automated_time_tracking_to_letsfreckle.html",
+   :category "Tooling",
+   :ttr 1,
+   :tags ("200ok"),
+   :slug "2018-11-08_automated_time_tracking_to_letsfreckle",
+   :date-published #inst "2018-11-08T00:00:00.000-00:00",
+   :permalink
+   "/posts/2018-11-08_automated_time_tracking_to_letsfreckle.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2018-11-08_automated_time_tracking_to_letsfreckle.html",
+   :parent-path "public/posts/",
+   :title "Automated time tracking to letsfreckle",
+   :canonical-url
+   "https://200ok.ch/posts/2018-11-08_automated_time_tracking_to_letsfreckle.html",
+   :short-filename "2018-11-08_automated_time_tracking_to_letsfreckle",
+   :extension "html",
+   :filename "2018-11-08_automated_time_tracking_to_letsfreckle.html",
+   :original-path
+   "posts/2018-11-08_automated_time_tracking_to_letsfreckle.md",
+   :uuid "6e3becb2-9ea8-41ea-8ada-fe86c2c2d985",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:description
+   "Fetches issues from Pivotal and creates an Orgmode file for it",
+   :path
+   "public/posts/2018-07-15_create_org_mode_tasks_from_pivotal_tracker_issues.html",
+   :category "orgmode",
+   :ttr 2,
+   :tags ("emacs" "tooling" "productivity" "tracker2pivotal"),
+   :slug
+   "2018-07-15_create_org_mode_tasks_from_pivotal_tracker_issues",
+   :date-published #inst "2018-07-15T00:00:00.000-00:00",
+   :permalink
+   "/posts/2018-07-15_create_org_mode_tasks_from_pivotal_tracker_issues.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2018-07-15_create_org_mode_tasks_from_pivotal_tracker_issues.html",
+   :parent-path "public/posts/",
+   :title "Create Orgmode tasks from Pivotal Tracker issues",
+   :canonical-url
+   "https://200ok.ch/posts/2018-07-15_create_org_mode_tasks_from_pivotal_tracker_issues.html",
+   :short-filename
+   "2018-07-15_create_org_mode_tasks_from_pivotal_tracker_issues",
+   :extension "html",
+   :filename
+   "2018-07-15_create_org_mode_tasks_from_pivotal_tracker_issues.html",
+   :original-path
+   "posts/2018-07-15_create_org_mode_tasks_from_pivotal_tracker_issues.md",
+   :uuid "2d8cd5c0-54f1-45c2-b4c4-853f302b8419",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:description
+   "How to supercharge your development setup with true code hot-reloading in a truly functional programming language.",
+   :path
+   "public/posts/2018-07-24_introduction_to_clojureScript_and_functional_programming.html",
+   :category "clojure",
+   :ttr 1,
+   :tags
+   ("200ok"
+    "talk"
+    "clojure"
+    "clojurescript"
+    "functional_programming"
+    "public_appearance"),
+   :slug
+   "2018-07-24_introduction_to_clojureScript_and_functional_programming",
+   :featured-image "/img/2018-07/intro_to_cljs_and_fp.png",
+   :date-published #inst "2018-07-24T00:00:00.000-00:00",
+   :permalink
+   "/posts/2018-07-24_introduction_to_clojureScript_and_functional_programming.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2018-07-24_introduction_to_clojureScript_and_functional_programming.html",
+   :parent-path "public/posts/",
+   :title "Introduction to ClojureScript and Functional Programming",
+   :canonical-url
+   "https://200ok.ch/posts/2018-07-24_introduction_to_clojureScript_and_functional_programming.html",
+   :short-filename
+   "2018-07-24_introduction_to_clojureScript_and_functional_programming",
+   :extension "html",
+   :filename
+   "2018-07-24_introduction_to_clojureScript_and_functional_programming.html",
+   :original-path
+   "posts/2018-07-24_introduction_to_clojureScript_and_functional_programming.md",
+   :uuid "ce2a9ca5-5509-4c1f-b460-1ef5a6823657",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. lafon"}
+  {:path "public/posts/upgrade-to-chromium-60.html",
+   :category "debian",
+   :ttr 1,
+   :tags ("debian" "chromium"),
+   :slug "upgrade-to-chromium-60",
+   :date-published #inst "2017-09-04T00:00:00.000-00:00",
+   :permalink "/posts/upgrade-to-chromium-60.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/upgrade-to-chromium-60.html",
+   :parent-path "public/posts/",
+   :title "Upgrade to Chromium 60 on Debian",
+   :canonical-url "https://200ok.ch/posts/upgrade-to-chromium-60.html",
+   :short-filename "upgrade-to-chromium-60",
+   :extension "html",
+   :filename "upgrade-to-chromium-60.html",
+   :original-path "posts/2017-09-04-upgrade-to-chromium-60.md",
+   :uuid "1521b412-93f7-4c85-94ed-0da0dde984bc",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:path "public/posts/releasing-200ok.ch-3.0.html",
+   :category "200ok",
+   :ttr 1,
+   :tags ("clojure"),
+   :slug "releasing-200ok.ch-3.0",
+   :date-published #inst "2017-11-02T00:00:00.000-00:00",
+   :permalink "/posts/releasing-200ok.ch-3.0.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/releasing-200ok.ch-3.0.html",
+   :parent-path "public/posts/",
+   :title "Releasing 200ok.ch - v3.0",
+   :canonical-url "https://200ok.ch/posts/releasing-200ok.ch-3.0.html",
+   :short-filename "releasing-200ok.ch-3.0",
+   :extension "html",
+   :filename "releasing-200ok.ch-3.0.html",
+   :original-path "posts/2017-11-02-releasing-200ok.ch-3.0.md",
+   :uuid "3ba310cb-836d-426c-9641-63524677ef11",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Phil Hofmann, Alain M. Lafon, Nick Niles"}
+  {:path "public/posts/contextual-helpers-with-zsh-hooks.html",
+   :category "tricks",
+   :ttr 2,
+   :tags ("linux" "console" "cli" "terminal" "shell" "zsh"),
+   :slug "contextual-helpers-with-zsh-hooks",
+   :date-published #inst "2016-12-09T00:00:00.000-00:00",
+   :permalink "/posts/contextual-helpers-with-zsh-hooks.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/contextual-helpers-with-zsh-hooks.html",
+   :parent-path "public/posts/",
+   :title "Contextual helpers with zsh hooks",
+   :canonical-url
+   "https://200ok.ch/posts/contextual-helpers-with-zsh-hooks.html",
+   :short-filename "contextual-helpers-with-zsh-hooks",
+   :extension "html",
+   :filename "contextual-helpers-with-zsh-hooks.html",
+   :original-path
+   "posts/2016-12-09-contextual-helpers-with-zsh-hooks.md",
+   :uuid "9fa5731a-1d91-4cc9-a45b-b479a76a845d",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Phil Hofmann"}
+  {:path
+   "public/posts/a-prototype-for-a-function-generating-macro-in-clojure.html",
+   :category "clojure",
+   :ttr 3,
+   :tags ("macro" "metaprogramming" "prototype"),
+   :slug "a-prototype-for-a-function-generating-macro-in-clojure",
+   :date-published #inst "2016-12-10T00:00:00.000-00:00",
+   :permalink
+   "/posts/a-prototype-for-a-function-generating-macro-in-clojure.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/a-prototype-for-a-function-generating-macro-in-clojure.html",
+   :parent-path "public/posts/",
+   :title "a prototype for a function generating macro in Clojure",
+   :canonical-url
+   "https://200ok.ch/posts/a-prototype-for-a-function-generating-macro-in-clojure.html",
+   :short-filename
+   "a-prototype-for-a-function-generating-macro-in-clojure",
+   :extension "html",
+   :filename
+   "a-prototype-for-a-function-generating-macro-in-clojure.html",
+   :original-path
+   "posts/2016-12-10-a-prototype-for-a-function-generating-macro-in-clojure.md",
+   :uuid "e96d3d98-6312-4486-92c0-79008774e840",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Phil Hofmann"}
+  {:path "public/posts/joint-release-of-swiss-crowdfunder.html",
+   :category "200ok",
+   :ttr 2,
+   :tags
+   ("200ok"
+    "crowdfunding"
+    "swiss_crowdfunder"
+    "products"
+    "release"
+    "ungleich"
+    "ungleich_glarus_ag"),
+   :slug "joint-release-of-swiss-crowdfunder",
+   :date-published #inst "2017-11-14T00:00:00.000-00:00",
+   :permalink "/posts/joint-release-of-swiss-crowdfunder.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/joint-release-of-swiss-crowdfunder.html",
+   :parent-path "public/posts/",
+   :title
+   "Joint release of swiss-crowdfunder.com with ungleich glarus ag",
+   :canonical-url
+   "https://200ok.ch/posts/joint-release-of-swiss-crowdfunder.html",
+   :short-filename "joint-release-of-swiss-crowdfunder",
+   :extension "html",
+   :filename "joint-release-of-swiss-crowdfunder.html",
+   :original-path
+   "posts/2017-11-14-joint-release-of-swiss-crowdfunder.md",
+   :uuid "0fe5d5cf-0622-4abc-825a-9c8c0f8ba12d",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:description "We're welcoming our new team member, Carl Düvel!",
+   :path "public/posts/2018-08-15_welcome_to_the_team_carl.html",
+   :category "200ok",
+   :ttr 1,
+   :tags ("200ok"),
+   :slug "2018-08-15_welcome_to_the_team_carl",
+   :featured-image "/img/carl.jpg",
+   :date-published #inst "2018-08-15T00:00:00.000-00:00",
+   :permalink "/posts/2018-08-15_welcome_to_the_team_carl.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2018-08-15_welcome_to_the_team_carl.html",
+   :parent-path "public/posts/",
+   :title "Welcome to the team, Carl!",
+   :canonical-url
+   "https://200ok.ch/posts/2018-08-15_welcome_to_the_team_carl.html",
+   :short-filename "2018-08-15_welcome_to_the_team_carl",
+   :extension "html",
+   :filename "2018-08-15_welcome_to_the_team_carl.html",
+   :original-path "posts/2018-08-15_welcome_to_the_team_carl.md",
+   :uuid "b429f5fe-d4b3-48de-a8c5-3de205cdb453",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:path "public/posts/speedtest-for-hackers.html",
+   :category "Tooling",
+   :ttr 1,
+   :tags ("debian" "bash" "linux" "nload" "shell" "unix"),
+   :slug "speedtest-for-hackers",
+   :date-published #inst "2017-09-10T00:00:00.000-00:00",
+   :permalink "/posts/speedtest-for-hackers.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/speedtest-for-hackers.html",
+   :parent-path "public/posts/",
+   :title "Speedtest for Hackers",
+   :canonical-url "https://200ok.ch/posts/speedtest-for-hackers.html",
+   :short-filename "speedtest-for-hackers",
+   :extension "html",
+   :filename "speedtest-for-hackers.html",
+   :original-path "posts/2017-09-10-speedtest-for-hackers.md",
+   :uuid "5a77fd35-30b5-45a2-a2a7-03737598064e",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:path "public/posts/dsl-resources-for-ruby.html",
+   :category "ruby",
+   :ttr 1,
+   :tags ("ruby" "dsl" "programming"),
+   :slug "dsl-resources-for-ruby",
+   :date-published #inst "2016-12-10T00:00:00.000-00:00",
+   :permalink "/posts/dsl-resources-for-ruby.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/dsl-resources-for-ruby.html",
+   :parent-path "public/posts/",
+   :title "DSL resources for Ruby",
+   :canonical-url "https://200ok.ch/posts/dsl-resources-for-ruby.html",
+   :short-filename "dsl-resources-for-ruby",
+   :extension "html",
+   :filename "dsl-resources-for-ruby.html",
+   :original-path "posts/2016-12-10-dsl-resources-for-ruby.md",
+   :uuid "663b4876-7e0e-4da5-a30a-54ccc8ae709a",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon, Phil Hofmann"}
+  {:path
+   "public/posts/how-to-become-a-proficient-python-programmer.html",
+   :category "python",
+   :ttr 4,
+   :tags ("coding" "learning"),
+   :slug "how-to-become-a-proficient-python-programmer",
+   :date-published #inst "2011-06-12T00:00:00.000-00:00",
+   :permalink
+   "/posts/how-to-become-a-proficient-python-programmer.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/how-to-become-a-proficient-python-programmer.html",
+   :parent-path "public/posts/",
+   :title "How to become a proficient Python programmer",
+   :canonical-url
+   "https://200ok.ch/posts/how-to-become-a-proficient-python-programmer.html",
+   :short-filename "how-to-become-a-proficient-python-programmer",
+   :extension "html",
+   :filename "how-to-become-a-proficient-python-programmer.html",
+   :original-path
+   "posts/2011-6-12-how-to-become-a-proficient-python-programmer.md",
+   :uuid "360ccd7a-933d-438a-95f5-c6eddf3cd39c",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:description "Working with Orgmode inline code blocks",
+   :path "public/posts/2018-09-07_orgmode_inline_code_blocks.html",
+   :category "orgmode",
+   :ttr 1,
+   :tags ("emacs"),
+   :slug "2018-09-07_orgmode_inline_code_blocks",
+   :date-published #inst "2018-09-07T00:00:00.000-00:00",
+   :permalink "/posts/2018-09-07_orgmode_inline_code_blocks.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2018-09-07_orgmode_inline_code_blocks.html",
+   :parent-path "public/posts/",
+   :title "Orgmode inline code blocks",
+   :canonical-url
+   "https://200ok.ch/posts/2018-09-07_orgmode_inline_code_blocks.html",
+   :short-filename "2018-09-07_orgmode_inline_code_blocks",
+   :extension "html",
+   :filename "2018-09-07_orgmode_inline_code_blocks.html",
+   :original-path "posts/2018-09-07_orgmode_inline_code_blocks.md",
+   :uuid "41ee0bdc-510a-4bb2-ac9d-efbacd7ef0a4",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:path "public/posts/enable-extensions-for-chromium-in-debian.html",
+   :category "debian",
+   :ttr 1,
+   :tags ("debian" "chromium"),
+   :slug "enable-extensions-for-chromium-in-debian",
+   :date-published #inst "2017-04-04T00:00:00.000-00:00",
+   :permalink "/posts/enable-extensions-for-chromium-in-debian.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/enable-extensions-for-chromium-in-debian.html",
+   :parent-path "public/posts/",
+   :title "Enable extensions for Chromium in Debian",
+   :canonical-url
+   "https://200ok.ch/posts/enable-extensions-for-chromium-in-debian.html",
+   :short-filename "enable-extensions-for-chromium-in-debian",
+   :extension "html",
+   :filename "enable-extensions-for-chromium-in-debian.html",
+   :original-path
+   "posts/2017-04-04-enable-extensions-for-chromium-in-debian.md",
+   :uuid "35536858-81dd-467f-90e5-4c9f657569ea",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:description
+   "Release 1.1 of Swiss Crowdfunder featuring: Translatable user generated content",
+   :path
+   "public/posts/2018-10-13_new_release_of_our_oss_crowdfunding_platform_swiss_crowdfunder.html",
+   :category "200ok",
+   :ttr 1,
+   :tags ("swiss_crowdfunder" "oss" "ruby" "rails"),
+   :slug
+   "2018-10-13_new_release_of_our_oss_crowdfunding_platform_swiss_crowdfunder",
+   :featured-image
+   "https://swiss-crowdfunder.com/android-chrome-512x512.png",
+   :date-published #inst "2018-10-14T00:00:00.000-00:00",
+   :permalink
+   "/posts/2018-10-13_new_release_of_our_oss_crowdfunding_platform_swiss_crowdfunder.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2018-10-13_new_release_of_our_oss_crowdfunding_platform_swiss_crowdfunder.html",
+   :parent-path "public/posts/",
+   :title
+   "New release of our OSS crowdfunding platform swiss-crowdfunder.com",
+   :canonical-url
+   "https://200ok.ch/posts/2018-10-13_new_release_of_our_oss_crowdfunding_platform_swiss_crowdfunder.html",
+   :short-filename
+   "2018-10-13_new_release_of_our_oss_crowdfunding_platform_swiss_crowdfunder",
+   :extension "html",
+   :filename
+   "2018-10-13_new_release_of_our_oss_crowdfunding_platform_swiss_crowdfunder.html",
+   :original-path
+   "posts/2018-10-13_new_release_of_our_oss_crowdfunding_platform_swiss_crowdfunder.md",
+   :uuid "E93EB457-D23A-43FF-9F27-FB6F60829EF1",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:description
+   "Combine sourceme and tmux to automate complicated dev setups.",
+   :path "public/posts/2018-09-22_teaming_up_sourceme_and_tmux.html",
+   :category "tooling",
+   :ttr 2,
+   :tags ("200ok"),
+   :slug "2018-09-22_teaming_up_sourceme_and_tmux",
+   :date-published #inst "2018-09-22T00:00:00.000-00:00",
+   :permalink "/posts/2018-09-22_teaming_up_sourceme_and_tmux.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2018-09-22_teaming_up_sourceme_and_tmux.html",
+   :parent-path "public/posts/",
+   :title "Teaming up sourceme and tmux",
+   :canonical-url
+   "https://200ok.ch/posts/2018-09-22_teaming_up_sourceme_and_tmux.html",
+   :short-filename "2018-09-22_teaming_up_sourceme_and_tmux",
+   :extension "html",
+   :filename "2018-09-22_teaming_up_sourceme_and_tmux.html",
+   :original-path "posts/2018-09-22_teaming_up_sourceme_and_tmux.md",
+   :uuid "a04d36eb-0649-46a4-ac29-88d2494855f5",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:description
+   "Autoformatting source code with prettier, eslint and Emacs.",
+   :path
+   "public/posts/2019-03-02_autoformatting_source_code_in_emacs.html",
+   :category "Emacs",
+   :ttr 2,
+   :tags ("programming" "javascript" "elisp" "eslint" "prettier"),
+   :slug "2019-03-02_autoformatting_source_code_in_emacs",
+   :date-published #inst "2019-03-02T00:00:00.000-00:00",
+   :permalink
+   "/posts/2019-03-02_autoformatting_source_code_in_emacs.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2019-03-02_autoformatting_source_code_in_emacs.html",
+   :parent-path "public/posts/",
+   :title "Autoformatting source code in Emacs",
+   :canonical-url
+   "https://200ok.ch/posts/2019-03-02_autoformatting_source_code_in_emacs.html",
+   :short-filename "2019-03-02_autoformatting_source_code_in_emacs",
+   :extension "html",
+   :filename "2019-03-02_autoformatting_source_code_in_emacs.html",
+   :original-path
+   "posts/2019-03-02_autoformatting_source_code_in_emacs.md",
+   :uuid "d6511129-46d6-4f2f-a5bc-e076b78811d6",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:description
+   "If you're a mu4e user and you're seeing way too many HTML emails, consider changing a built in preset.",
+   :path
+   "public/posts/2018-10-25_disable_mu4e_html_over_plain_text_heuristic.html",
+   :category "Emacs",
+   :ttr 2,
+   :tags ("mu4e"),
+   :slug "2018-10-25_disable_mu4e_html_over_plain_text_heuristic",
+   :date-published #inst "2018-10-25T00:00:00.000-00:00",
+   :permalink
+   "/posts/2018-10-25_disable_mu4e_html_over_plain_text_heuristic.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2018-10-25_disable_mu4e_html_over_plain_text_heuristic.html",
+   :parent-path "public/posts/",
+   :title "Disable MU4E 'HTML over plain text' heuristic",
+   :canonical-url
+   "https://200ok.ch/posts/2018-10-25_disable_mu4e_html_over_plain_text_heuristic.html",
+   :short-filename
+   "2018-10-25_disable_mu4e_html_over_plain_text_heuristic",
+   :extension "html",
+   :filename
+   "2018-10-25_disable_mu4e_html_over_plain_text_heuristic.html",
+   :original-path
+   "posts/2018-10-25_disable_mu4e_html_over_plain_text_heuristic.md",
+   :uuid "453dc43b-b160-4c77-9ce7-d0c6a3ec746a",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}
+  {:description
+   "Phil was invited to speak at the Goto conference in Copenhagen. His talk shows the unleashed potential when you leave some popular programming paradigms behind.",
+   :path
+   "public/posts/2019-05-21_phil_speaks_at_goto_copenhagen_reaching_beyond_traditional_boundaries_with_clojure.html",
+   :category "Clojure",
+   :ttr 1,
+   :tags
+   ("advanced_mobile"
+    "react"
+    "front_end"
+    "programming_languages"
+    "public_appearance"),
+   :slug
+   "2019-05-21_phil_speaks_at_goto_copenhagen_reaching_beyond_traditional_boundaries_with_clojure",
+   :featured-image "/img/2019/05/phil-goto_conference.jpg",
+   :date-published #inst "2019-05-21T00:00:00.000-00:00",
+   :permalink
+   "/posts/2019-05-21_phil_speaks_at_goto_copenhagen_reaching_beyond_traditional_boundaries_with_clojure.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/2019-05-21_phil_speaks_at_goto_copenhagen_reaching_beyond_traditional_boundaries_with_clojure.html",
+   :parent-path "public/posts/",
+   :title
+   "Phil speaks at Goto Copenhagen: \"Reaching Beyond Traditional Boundaries with Clojure\"",
+   :canonical-url
+   "https://200ok.ch/posts/2019-05-21_phil_speaks_at_goto_copenhagen_reaching_beyond_traditional_boundaries_with_clojure.html",
+   :short-filename
+   "2019-05-21_phil_speaks_at_goto_copenhagen_reaching_beyond_traditional_boundaries_with_clojure",
+   :extension "html",
+   :filename
+   "2019-05-21_phil_speaks_at_goto_copenhagen_reaching_beyond_traditional_boundaries_with_clojure.html",
+   :original-path
+   "posts/2019-05-21_phil_speaks_at_goto_copenhagen_reaching_beyond_traditional_boundaries_with_clojure.md",
+   :uuid "b25f0652-6fe3-4626-b40b-4ce23169c682",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Phil Hofmann"}
+  {:path "public/posts/vim-as-python-ide.html",
+   :category "vim",
+   :ttr 6,
+   :tags
+   ("coding"
+    "ctags"
+    "exuberant_ctags"
+    "minibuf"
+    "omni_completion"
+    "pep_8"
+    "programming"
+    "python"
+    "python_ide"
+    "taglist"
+    "tasklist"
+    "tutorial"
+    "vi"
+    "vimpdb"
+    "walkthrough"),
+   :slug "vim-as-python-ide",
+   :date-published #inst "2009-05-24T00:00:00.000-00:00",
+   :permalink "/posts/vim-as-python-ide.html",
+   :out-dir "public",
+   :full-path
+   "/Users/eklavya/.boot/cache/tmp/Users/eklavya/projects/work/Pesto/portfolio/_resources/200ok.ch/3rh/doo9u2/public/posts/vim-as-python-ide.html",
+   :parent-path "public/posts/",
+   :title "VIM as Python IDE",
+   :canonical-url "https://200ok.ch/posts/vim-as-python-ide.html",
+   :short-filename "vim-as-python-ide",
+   :extension "html",
+   :filename "vim-as-python-ide.html",
+   :original-path "posts/2009-05-25-vim-as-python-ide.md",
+   :uuid "dbae6bba-fd00-4cbe-94e7-e8df800489c1",
+   :target "dev",
+   :io.perun/trace
+   [:io.perun/yaml-metadata
+    :io.perun/pandoc
+    :io.perun/slug
+    :io.perun/ttr],
+   :authors "Alain M. Lafon"}),
+ :date-build #inst "2019-06-22T21:36:59.972-00:00",
+ :target "dev",
+ :fsdb
+ {:manifest
+  {:projects
+   {:collecture-web
+    {:description
+     "## The place to record and listen to lectures\nRecord and listen to lectures on [collecture.io](https://collecture.io) - on the go, when you need it and at your own pace.\n**Give students the ability to**\n- Stop time\n- Go back to every lecture\n- Learn at their own pace\n**Record lectures with less than 30s effort**\n**Bring your own device**\n**Share recordings**\n- Web access - Share only a link - No need to install anything\n**Public and private sharing**\n**As a lecturer, prepare your next lecture by listening to your colleagues**\nCollecture is in the catalog of software for lecturers at [Zurich University of Applied Sciences](http://zhaw.ch) and used in various lectures at the School of Engineering and the School of Management and Law.\nVisit [collecture.io](https://collecture.io) or download the [iOS](https://itunes.apple.com/ch/app/collecture/id1185222314?l=en&mt=8) or [Android](https://play.google.com/store/apps/details?id=io.collecture) App.\n## How do I get started?\"\nWe have you covered! Please take a look at the [Get Started Page](https://collecture.io/get-started).",
+     :category "Education",
+     :short-description
+     "The place to record and listen to lectures.\nRecord and listen to lectures on collecture.io - on the go, when you need it and at your own pace.",
+     :name "Collecture",
+     :priority 20,
+     :url "https://collecture.io",
+     :image "/img/products/collecture.png",
+     :incubator-status
+     "Full product developed and used daily by lecturers and students alike.",
+     :people ["dibran" "phil" "alain" "ursula" "nick"],
+     :incubated 2016,
+     :technologies
+     ["ansible"
+      "clojure"
+      "cljs"
+      "ring"
+      "re-frame"
+      "rabbitmq"
+      "nginx"
+      "aws"
+      "reagent"
+      "react"
+      "postgresql"
+      "javascript"
+      "debian"]},
+    :kunstmuseum-chat
+    {:name "Kunstmuseum Basel Chat",
+     :image "/img/products/kunstmuseum-chat.png",
+     :priority 44,
+     :technologies ["nodejs" "javascript" "faye" "riot"],
+     :people ["alain" "anna"],
+     :short-description
+     "A mobile-first chat application with an admin back-end for Kunstmuseum Basel exhibitions.",
+     :description
+     "A mobile-first chat application with an admin back-end. Visitors of Kunstmuseum Basel exhibitions can ask questions on iPads which are deployed throughout the museum and get instant feeback from curators, restaurators and art brokers."},
+    :quickshift-rails
+    {:description
+     "QuickShift is a fully automatic work planning solution.\n**Reduce costs**: Save time through automatic shiftplan generation. Make the best of your working time instead. Save costs by optimizing the assignment of employees.\n**Automatic shift assignment**: QuickShift assigns your employees to optimal shifts within your business.\n**Better shift plans**: QuickShift generates optimal shift plans. By using our algorithmic approach, we trump the quality of manually created plans. Without additional effort, you will improve upon the satisfaction of your employees, because the plans also take their wishes into account.\n**Conforming to the law**: QuickShift ensures that your shift plans are conforming to Swiss laws ArG and L-GAV.\n**Online availability**: You have online access to your shiftplans. Your employees can also see their assignments and enter their wishes for future plans.\nDo you want to create your shift plans automatically with QuickShift? Please contact us any time at <a href=\"mailto:info@quickshift.ch\">info@quickshift.ch</a> or <a href=\"tel:+41 76 405 05 67\">+41 76 405 05 67</a> . You can also create your business yourself on <a href=\"https://quickshift.ch\">https://quickshift.ch</a> and we will contact you as soon as possible.",
+     :short-description
+     "*QuickShift* is a fully automatic work planning solution.",
+     :name "QuickShift",
+     :priority 10,
+     :url "https://quickshift.ch",
+     :image "/img/products/quickshift.png",
+     :incubator-status
+     "Going through the LEAN process, QuickShift has validated all MVP stages and by 2018 has become it's own entity QuickShift Gmbh.",
+     :people ["phil" "alain" "pascal" "micha"],
+     :incubated "2015-2017",
+     :technologies
+     ["ruby"
+      "ruby-on-rails"
+      "riot"
+      "nginx"
+      "postgresql"
+      "debian"
+      "javascript"
+      "ansible"]},
+    :wittbib
+    {:name "Wittbib Library Management",
+     :opensourced 2012,
+     :priority 120,
+     :technologies
+     ["ruby-on-rails"
+      "saas"
+      "coffeescript"
+      "jquery"
+      "ruby"
+      "postgresql"],
+     :people ["phil" "alain"],
+     :short-description
+     "A library management application that we developed as a contribution to library organised by volunteers.",
+     :description
+     "A library management application that we developed as a contribution to library organised by volunteers. Wittbib has the ability to scan ISBN numbers from a book using a hand scanner to look up book meta data in different databases. The books of the library can then be searched and lent to visitors. There is also a public searching interface as well as various export formats for the library."},
+    :p-slides
+    {:description
+     "### Simple semantic slides\np_slides is a *static files only*, dead simple way, to create semantic slides. It neither needs a server, installed software, pre-compilation nor a special editor. Neither editing nor presenting has any external dependencies - it's just a html file.\n- Only think about content, don't worry about styling\n- Static files only, no need for a server, installed software, pre-compilation or a special editor (unless of course your favorite and very special editor!)\n- For editing and presenting, there are no external dependencies\n- It's just a html file (therefore it can easily be put into version control for example)\n- Extendable and supporting themes\n- Write slides in markdown\np_slides is used in various courses at [Zurich University of Applied Sciences](http://zhaw.ch) and is a quite popular project on [Github](https://github.com/munen/p_slides).",
+     :category "Education",
+     :short-description
+     "*p_slides* is a \"static files only\", dead simple way to create semantic slides.",
+     :name "p_slides",
+     :priority 50,
+     :url "https://github.com/munen/p_slides",
+     :image "/img/products/p_slides.png",
+     :people ["alain"],
+     :technologies ["html" "markdown" "javascript"],
+     :opensourced 2012},
+    :swiss-crowdfunder
+    {:description
+     "Swiss Crowdfunder is a crowd funding and equity funding platform. It is a joint product with [ungleich glarus ag](https://ungleich.ch/).\n## Why did we do it?\nCrowdfunding using established platforms can be very expensive. Usually, there is a fee of 12-20% that has to be paid. **Swiss Crowdfunder** is fully open source - therefore it can be used by anyone to start their own crowdfunding platform or campaign.\n## Open source\n**Swiss Crowdfunder** is released under the popular [AGPL license](https://github.com/200ok-ungleich/swiss-crowdfunder/blob/master/LICENSE), has a [contribution guide](https://github.com/200ok-ungleich/swiss-crowdfunder/blob/master/CONTRIBUTING.md) as well as a [code of conduct](https://github.com/200ok-ungleich/swiss-crowdfunder/blob/master/CODE_OF_CONDUCT.md), is [fully configurable](https://github.com/200ok-ungleich/swiss-crowdfunder#configuration) and has a community [Mattermost chatroom](https://github.com/200ok-ungleich/swiss-crowdfunder#configuration).\nFor more information, visit [https://github.com/200ok-ungleich/swiss-crowdfunder](https://github.com/200ok-ungleich/swiss-crowdfunder), star the project and become part of it!\n## Hosted SaaS\nNext to the OSS version, we run and support our hosted SaaS version at [https://swiss-crowdfunder.com/](https://swiss-crowdfunder.com/). If you don't want to get too technical, get in touch with us at info@200ok.ch and we will host your campaign for an 8% fee.\nWe also offer coaching and support in how to set up a proper crowdfunding campaign and optimize your marketing efforts. Call or write us anytime!",
+     :short-description
+     "*Swiss Crowdfunder* is a crowd funding and equity funding platform. It is a joint product with *ungleich glarus ag* and Open Source.",
+     :name "Swiss Crowdfunder",
+     :priority 30,
+     :url "https://swiss-crowdfunder.com",
+     :image "/img/products/swiss-crowdfunder.png",
+     :people ["alain" "nico" "sanghee"],
+     :technologies
+     ["ruby-on-rails"
+      "saas"
+      "javascript"
+      "ruby"
+      "nginx"
+      "postgresql"
+      "debian"],
+     :opensourced 2017},
+    :voicerepublic-site
+    {:description
+     "Professional live audio streaming and archiving of events. Whether you want to stream your event live or record it and upload the files - with Voice Republic you’ll easily create your own audio channel.\nPROFESSIONAL STREAMING SOLUTION The StreamBoxx is developed to stream and archive events. All live streams can be controlled via your web browser from anywhere you like.\nOpen Source: [https://github.com/voicerepublic/](https://github.com/voicerepublic/)",
+     :short-description
+     "Professional live audio streaming and archiving of events. Whether you want to stream your event live or record it and upload the files - with *Voice Republic* you’ll easily create your own audio channel.",
+     :name "Voice Republic",
+     :priority 35,
+     :url "https://voicerepublic.com",
+     :image "/img/products/voicerepublic.png",
+     :incubator-status
+     "Full product developed, 7-digits capital raised.",
+     :people ["phil" "alain" "nick" "josef"],
+     :incubated 2014,
+     :technologies
+     ["ruby-on-rails"
+      "cljs"
+      "clojure"
+      "faye"
+      "rabbitmq"
+      "icecast"
+      "liquidsoap"
+      "ruby"
+      "nginx"
+      "aws"
+      "elk"
+      "d3"
+      "reagent"
+      "react"
+      "postgresql"
+      "duct"
+      "javascript"
+      "coffeescript"
+      "debian"],
+     :opensourced 2019},
+    :200ok-site
+    {:description
+     "\"You're lookin' at it, baby! The setup behind this website is cooler than you might think. Because it's totally data-driven. That's right. Robots 'n stuff.\"",
+     :short-description
+     "\"You're lookin' at it, baby! The setup behind this website is cooler than you might think. Because it's totally data-driven. That's right. Robots 'n stuff.\"",
+     :name "200ok Website",
+     :priority 60,
+     :url "https://gitlab.com/200ok/200ok.gitlab.io",
+     :image "/img/products/200ok.ch.png",
+     :people ["phil" "alain"],
+     :technologies ["clojure" "boot" "perun" "hiccup" "fsdb"],
+     :opensourced 2016},
+    :codegraph
+    {:description
+     "Codegraph is a command utility written in about 50 lines of Clojure. It reads Clojure code with Clojure's builtin function `read-string`, analyzes the code and generates a dot file, which can be fed into Graphviz to generate a dependency graph of the given code. It works nicely with ClojureScript. And it's a beautiful demonstration of Clojure's homoiconicity (which is a fancy technical term for \"code is data\").",
+     :short-description
+     "Generates a dependency graph for Clojure and ClojureScript code.",
+     :name "Codegraph",
+     :priority 80,
+     :url "https://gitlab.com/200ok/codegraph",
+     :image "/img/products/codegraph.png",
+     :people ["phil"],
+     :technologies ["clojure" "graphviz"],
+     :opensourced 2016},
+    :json2xslx
+    {:description
+     "*json2xlsx* is a self contained binary to convert json data into a xlsx file.",
+     :category "Conversion Tool",
+     :short-description
+     "*json2xlsx* is a self contained binary to convert json data into a xlsx file.",
+     :name "json2xlsx",
+     :priority 100,
+     :url "https://gitlab.com/200ok/json2xslx",
+     :image "/img/products/json2xlsx.png",
+     :people ["phil"],
+     :technologies
+     ["clojure" "docjure" "json" "xlsx" "apache-poi" "lein-bin"],
+     :opensourced 2018},
+    :webhooks
+    {:description
+     "Webhooks is a lightweight webhooks server written in Clojure. It allows to set up webhook endpoints and corresponding shell commands, which will be executed when the endpoint is requested. The config file is written in EDN (the preferred clojure data format). The config file will be read per request, so there is no restart required after updating the config file.",
+     :short-description
+     "*Webhooks* is a lightweight webhooks server written in Clojure.",
+     :name "Webhooks",
+     :priority 90,
+     :url "https://gitlab.com/200ok/webhooks",
+     :image "/img/products/webhooks.svg",
+     :people ["phil"],
+     :technologies ["clojure"],
+     :opensourced 2017},
+    :hegel
+    {:description
+     "Hegel is not only one of the most influential philosophers of post-Kantian idealism, but also a swiss german word for a pocket knive, and most recently also a tool to convert camt to v11.",
+     :category "Conversion Tool",
+     :short-description
+     "*Hegel* is a swiss german word for a pocket knive, and most recently also a tool to convert camt to v11.",
+     :name "Hegel",
+     :priority 110,
+     :url "https://gitlab.com/200ok/hegel",
+     :image "/img/products/hegel.svg",
+     :people ["phil"],
+     :technologies ["ruby" "sinatra" "heroku"],
+     :opensourced 2017},
+    :meetup-calendar
+    {:name "Meetup Calendar Microservice",
+     :opensourced 2015,
+     :priority 110,
+     :url "https://github.com/munen/meetup-calendar",
+     :technologies ["ruby" "sinatra" "heroku" "haml" "css"],
+     :people ["alain"],
+     :short-description
+     "A microservice accessing the Meetup API and rendering a HTML table for any given meetup.",
+     :description
+     "A microservice accessing the Meetup API and rendering a HTML table for any given meetup. We are also making a free hosted SaaS version available."},
+    :wilmalivestats
+    {:people ["phil"], :technologies ["ruby-on-rails" "aws" "faye"]},
+    :voicerepublic-backoffice
+    {:people ["phil" "alain" "nick"],
+     :technologies
+     ["ruby-on-rails"
+      "cljs"
+      "faye"
+      "rabbitmq"
+      "ruby"
+      "nginx"
+      "aws"
+      "d3"
+      "reagent"
+      "react"
+      "postgresql"
+      "javascript"
+      "debian"]},
+    :pseudocult
+    {:description
+     "Pseudocult (which is an anagram to \"cloud setup\") enables you to set up your cloud (AWS) declarativly and consistently.\nIt is mainly a clojure program that you run providing one or more config files, which describe your cloud setup. Pseudocult will detect discrepancies between the current state of the cloud and the description obtained from the config files as well as take action to overcome the discrepencies.",
+     :category "Cloud Configuration",
+     :short-description
+     "*Pseudocult* (which is an anagram to \"cloud setup\") enables you to set up your cloud (AWS) declarativly and consistently.",
+     :name "Pseudocult",
+     :priority 100,
+     :url "https://gitlab.com/200ok/pseudocult",
+     :people ["phil"],
+     :technologies ["clojure" "aws" "amazonica"],
+     :opensourced 2017},
+    :collecture-mobile
+    {:name "Collecture Mobile Apps",
+     :priority 25,
+     :image "/img/products/collecture-mobile.png",
+     :category "Education",
+     :people ["dibran" "phil" "alain"],
+     :technologies
+     ["reagent" "re-frame" "react-native" "re-natal" "cljs" "aws"],
+     :short-description
+     "iOS and Android mobile apps to record, organize and share lectures and meetings on collecture.io.",
+     :description
+     "iOS and Android mobile apps to record, organize and share lectures and meetings on collecture.io."},
+    :quickshift-java
+    {:people ["pascal" "mischa"],
+     :technologies ["java" "optaplanner" "drools"]},
+    :wilmaaepg
+    {:people ["phil"],
+     :technologies ["ruby-on-rails" "google-protocol-buffers"]},
+    :zen-temple
+    {:name "Insopor Zen Academy",
+     :url "http://zen-temple.net",
+     :image "/img/products/zen-temple.png",
+     :priority 47,
+     :people ["alain"],
+     :technologies
+     ["wordpress"
+      "javascript"
+      "clojure"
+      "heroku"
+      "ruby"
+      "sinatra"
+      "adwords"],
+     :short-description
+     "*zen-temple.net* is a multilingual, SEO optimized website with over 500 landing pages, each with automated integrations into 8 social media networks. It feeds data from specialized microservices and has automated integration into Google Adwords.",
+     :description
+     "zen-temple.net is a multilingual, SEO optimized website with over 500 landing pages, each with automated integrations into 8 social media networks. It feeds data from specialized microservices and has automated integration into Google Adwords."},
+    :voicerepublic-mobile
+    {:people ["dibran"], :technologies ["angular" "ionic"]},
+    :fsdb
+    {:name "fsdb",
+     :url "https://gitlab.com/200ok/fsdb",
+     :opensourced 2017,
+     :priority 70,
+     :technologies ["clojure"],
+     :people ["phil"],
+     :short-description
+     "A Clojure library that provides a reasonably convenient database on top of the file system.",
+     :description
+     "A Clojure library that provides a reasonably convenient database on top of the file system."},
+    :simplatyser
+    {:description
+     "Simplatyser automates manual tasks for you with the power of the cloud.",
+     :short-description
+     "*Simplatyser* automates manual tasks for you with the power of the cloud.",
+     :name "Simplatyser",
+     :priority 45,
+     :url "https://simplatyser.ch/",
+     :image "/img/products/simplatyser.png",
+     :incubator-status "MVP online and usable, but currently on hold.",
+     :people ["max" "raphael" "alain" "phil"],
+     :incubated 2015,
+     :technologies
+     ["java"
+      "jhipster"
+      "postgresql"
+      "angular"
+      "debian"
+      "docker"
+      "clojure"]},
+    :wilmaaautoscaling {:technologies ["aws"]}},
+   :clients
+   {:voicerepublic
+    {:name "Voice Republic Media AG",
+     :position 60,
+     :logo "vr.svg",
+     :url "https://voicerepublic.com"},
+    :bos-schweiz
+    {:name "BOS Schweiz",
+     :position 90,
+     :logo "bos-schweiz.jpg",
+     :url "http://www.bos-schweiz.ch",
+     :projects ["webhooks"]},
+    :satcom
+    {:name "Satcom International AG",
+     :position 110,
+     :logo "satcom.jpg",
+     :url "http://satcom-int.com"},
+    :srg
+    {:name "SRG SSR",
+     :position 35,
+     :logo "SRG.png",
+     :url "http://www.srgssr.ch"},
+    :xsenda
+    {:position 25,
+     :name "xSenda",
+     :logo "xsenda.png",
+     :url "https://www.xsenda.ch/"},
+    :sva
+    {:name "SVA Zürich",
+     :position 25,
+     :logo "logo_sva_zuerich.svg",
+     :url "https://www.svazurich.ch"},
+    :livingdocs
+    {:name "Livingdocs",
+     :position 10,
+     :logo "livingdocs_logo.svg",
+     :url "https://livingdocs.io/"},
+    :kunstmuseumbasel
+    {:name "Kunstmuseum Basel",
+     :position 50,
+     :logo "logo_kumu_basel_rot.gif",
+     :url "https://kunstmuseumbasel.ch/",
+     :projects ["kunstmuseum-chat"]},
+    :zhaw
+    {:name "ZHAW Zurich University of Applied Sciences",
+     :position 20,
+     :logo "zhaw_soe.jpg",
+     :url "https://www.zhaw.ch/en/engineering/"},
+    :swi
+    {:name "swissinfo",
+     :position 100,
+     :logo "swissinfo.png",
+     :url "https://www.swissinfo.ch/"},
+    :swisscom
+    {:position 20,
+     :name "Swisscom",
+     :logo "swisscom.jpg",
+     :url "http://swisscom.ch"},
+    :sourcepole
+    {:name "Sourcepole AG",
+     :position 80,
+     :logo "sourcepole.png",
+     :url "https://sourcepole.ch"},
+    :wilmaa
+    {:name "Wilmaa",
+     :position 40,
+     :logo "wilmaa_logo.png",
+     :url "https://wilmaa.com"},
+    :nzz
+    {:name "NZZ",
+     :position 30,
+     :logo "nzz_logo.png",
+     :url "https://nzz.ch"},
+    :trifork
+    {:name "Trifork",
+     :position 27,
+     :logo "trifork.png",
+     :url "https://trifork.com/"},
+    :switch
+    {:position 15,
+     :name "Switch",
+     :logo "switch.png",
+     :url "https://switch.ch"}},
+   :locations
+   {:okhq
+    {:name "Zürich",
+     :address "Badenerstrasse 313, 8003 Zürich",
+     :images nil,
+     :description
+     "Our Zürich headquarter is well situated within urban Zürich next to Albisriederplatz.\nThis is our **day to day office** where we work together on our products and for clients. In summer, it features a great option to cool off and relax in the pool. We've got a great meeting room that we use for workshops and coachings.\n## Office location\n<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2701.777878179114!2d8.50997601594404!3d47.37725357917015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a2496f25c69%3A0xd00300eef0166b7b!2sBadenerstrasse+313%2C+8003+Z%C3%BCrich!5e0!3m2!1sen!2sch!4v1517591996880\" width=\"400\" height=\"300\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>\n## Public Transportation\nDrive to station \"Albisriederplatz\" (Trams 2 and 3 and busses 33, 72 and 83). From there, it is a 2 minute walk.\n## Parking Lots\nPlease use one of the public parking lots 150m from the office.\n<iframe src=\"https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d1795.1385523643235!2d8.511208336500038!3d47.3769617138686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e2!4m3!3m2!1d47.3767326!2d8.5120795!4m5!1s0x47900a2496f25c69%3A0xd00300eef0166b7b!2sBadenerstrasse+313%2C+Z%C3%BCrich!3m2!1d47.377253599999996!2d8.5121647!5e1!3m2!1sen!2sch!4v1517592561287\" width=\"400\" height=\"300\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>"},
+    :lambda
+    {:name "Glarus",
+     :address "Im Stützli 5, 8750 Glarus",
+     :images nil,
+     :description
+     "Our Glarus office is perfectly situated within the mountains of Glarus, Switzerland.\nThere, we hold multi-day **code retreats** and **workshops**. In summer we do hikes and go snow shoeing in winter. It also is a co-working space where 200ok partners and friends work together while enjoying the benefits of the local scenery.\n## Office location\n<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.812931495304!2d9.058425415934522!3d47.04390147915123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47852da58017cbdf%3A0xed472da130a82575!2sIm+St%C3%BCtzli+5%2C+8750+Glarus!5e0!3m2!1sen!2sch!4v1517592065475\" width=\"400\" height=\"300\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>\n## Public Transportation\nGlarus is very accessible by public transportation. There are direct trains from Zurich and Rapperswil every 30 minutes.\n## Parking Lots\nPlease use one of the public parking lots 150m from the office.\n<iframe src=\"https://www.google.com/maps/embed?pb=!1m27!1m11!1m3!1d2285.2765428884004!2d9.059551010391942!3d47.043509042269896!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x47852daf9c28c753%3A0xb06473db6d3bdeba!2sLangenackerstrasse+2%2C+8750+Glarus!3m2!1d47.0435915!2d9.0617152!4m5!1s0x47852da58017cbdf%3A0xed472da130a82575!2sIm+St%C3%BCtzli+5%2C+8750+Glarus!3m2!1d47.0439015!2d9.0606141!5e1!3m2!1sen!2sch!4v1517592361525\" width=\"400\" height=\"300\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>"}},
+   :tour
+   ["/"
+    "/team.html"
+    "/technologies.html"
+    "/clients.html"
+    "/services.html"
+    "/projects.html"
+    "/opensource.html"],
+   :expertises
+   {:cloud
+    {:name "Cloud Infrastructure",
+     :technologies ["aws" "terraform" "ansible"]},
+    :audio {:name "Audio Live Streaming and Processing"},
+    :data {:name "Data Science & Visualization"}},
+   :people
+   {:dibran
+    {:name "Dibran Isufi",
+     :title "Code Gluer",
+     :email "dibran@200ok.ch",
+     :image "/img/dibran.jpg",
+     :position 60,
+     :uuid "28f71257-ead7-4599-b6fd-454b6abc01f3",
+     :description "Glues all the code together."},
+    :nick
+    {:name "Nick Niles",
+     :title "VP of Design",
+     :email "nick@200ok.ch",
+     :image "/img/nick.jpg",
+     :position 35,
+     :uuid "50403e2f-5da2-4e11-98ad-686b25889432",
+     :description
+     "A former rock musician and long-distance runner from Northern California, Nick has been designing and building web sites since 1997. With a background in design & technology, and an MFA in Film Directing from Columbia University, he enjoys telling stories through motion graphics, animations, and rich digital experiences."},
+    :pascal
+    {:name "Pascal Huber",
+     :title "Software Engineer",
+     :email "pascal@200ok.ch",
+     :image "/img/pascal.jpg",
+     :position 45,
+     :uuid "bb581b55-c1c6-4685-bb46-a25916fbd1ad",
+     :description
+     "Pascal has been working in IT for 8 years. He has studied computer science where he could foster his primary interests: optimizing processes and algorithms."},
+    :alain
+    {:name "Alain M. Lafon",
+     :title "Founder & CEO",
+     :image "/img/munen_alain_lafon.jpg",
+     :email "alain@200ok.ch",
+     :position 10,
+     :uuid "a3948985-c326-4f1b-b2f5-521d91a01808",
+     :description
+     "Alain has been programming for the web since 2004. He is an avid follower of Web Standards and constantly improving his own productivity as well as the productivity of the team he is working with by his profound knowledge about agile methodologies as well as tooling to facilitate a smooth software development process.\nHe is also a lecturer at [ZHAW](http://zhaw.ch) and ordained Zen monk - tending to [Lambda Zen Temple](http://zen-temple.net/zen-temples/lambda-zen-temple/introduction/) in Glarus, Switzerland, as headmonk."},
+    :alex
+    {:name "Alex Mihov",
+     :title "Software Engineer",
+     :image "/img/alex.jpg",
+     :email "alex@200ok.ch",
+     :position 30,
+     :uuid "21908556-bd55-40fb-9ce0-89935c37a3bd",
+     :description
+     "Alex has a BA in computer science. His focus at 200ok is on web related projects.\nThe constant advancements and new technologies in the domain of web development are very much in sync with Alex' wish to tackle and hopefully solve new problems every day."},
+    :phil
+    {:name "Phil Hofmann",
+     :title "Founder",
+     :email "phil@200ok.ch",
+     :image "/img/phil.jpg",
+     :position 20,
+     :uuid "769734a1-bc69-43fe-9be9-73d5a319a9de",
+     :description
+     "Phil has been programming for the web since 1999. He is an experienced Software Engineer."},
+    :carl
+    {:name "Carl Anders Düvel",
+     :title "Software Engineer",
+     :email "carl@200ok.ch",
+     :image "/img/carl.jpg",
+     :position 31,
+     :uuid "dadad064-e504-43e9-9eab-d66223753a49",
+     :description
+     "Carl is an independent IT-Consultant from Northern Germany who holds a BA in Politics and Public Administration as well as in Applied Computer Science. He worked for nearly a decade in the software industry starting out his career on applications servers slinging J2EE code and just a few years ago falling in love with programming again through the power of Lisp or more specifically Clojure. He also enjoys operations work and has spent a considerate time working in a high traffic, high availability and very cloudy environment."},
+    :anna
+    {:name "Anna-Flurina Kälin",
+     :title "Designer",
+     :email "annaflurina@200ok.ch",
+     :image "/img/anna.jpg",
+     :position 70,
+     :uuid "50403e2f-5da2-4e11-98ad-686b25889432",
+     :description
+     "Anna has a Master of Arts in Art Education and is currently working on her degree in Computer Science. She works as a lecturer and designer. At 200ok, she combines her inner artist with her love for programming."},
+    :josef
+    {:name "Josef Erben",
+     :image "/img/josef.jpg",
+     :title "Clojure Coder",
+     :email "josef@200ok.ch",
+     :position 55,
+     :uuid "cd18f913-bb0f-4362-8601-389ac94a1df8",
+     :description ""}},
+   :technologies
+   {:coffeescript
+    {:name "CoffeeScript",
+     :logo "coffeescript.png",
+     :category "Programming Language",
+     :url "http://coffeescript.org/",
+     :description
+     "CoffeeScript is a language that compiles into JavaScript. Underneath that awkward Java-esque patina, JavaScript has always had a gorgeous heart. CoffeeScript is an attempt to expose the good parts of JavaScript in a simple way.\nThe golden rule of CoffeeScript is \"It's just JavaScript.\" The code compiles one-to-one into the equivalent JS, and there is no interpretation at runtime. You can use any existing JavaScript library seamlessly from CoffeeScript (and vice-versa)."},
+    :javascript
+    {:name "Javascript",
+     :priority 50,
+     :logo "javascript.png",
+     :category "Programming Language",
+     :description
+     "JavaScript is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs.\nAs a multi-paradigm language, JavaScript supports event-driven, functional, and imperative (including object-oriented and prototype-based) programming styles. It has an API for working with text, arrays, dates, regular expressions, and basic manipulation of the DOM, but the language itself does not include any I/O, such as networking, storage, or graphics facilities, relying for these upon the host environment in which it is embedded."},
+    :riot
+    {:name "Riot",
+     :logo "riot.png",
+     :category "Frontend Framework",
+     :url "http://riotjs.com/",
+     :description "A simple and elegant component-based UI library."},
+    :react
+    {:name "React",
+     :priority 70,
+     :logo "react.png",
+     :category "Frontend Framework",
+     :url "https://reactjs.org/",
+     :description
+     "The most popular Open Source Software of our times. (This it proven by facts.)\nReact allows developers to create large web-applications that use data and can change over time without reloading the page. It aims primarily to provide speed, simplicity, and scalability. React processes only user interfaces in applications.\nIt is maintained by Facebook, Instagram and a community of individual developers and corporations."},
+    :r
+    {:name "R",
+     :priority 80,
+     :logo "r.svg",
+     :category "Programming Language",
+     :url "https://www.r-project.org/",
+     :description
+     "R is an open source programming language and software environment for statistical computing and graphics that is supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis."},
+    :aws
+    {:name "Amazon Web Services",
+     :priority 90,
+     :logo "aws.svg",
+     :category "Cloud Computing Platform",
+     :url "https://aws.amazon.com/"},
+    :faye
+    {:name "Faye",
+     :logo "faye.gif",
+     :category "Message Broker",
+     :url "https://faye.jcoglan.com/",
+     :description
+     "Faye is a publish-subscribe messaging system based on the Bayeux protocol. It provides message servers for Node.js and Ruby, and clients for use on the server and in all major web browsers."},
+    :kubernetes
+    {:name "Kubernetes",
+     :category "Cloud",
+     :logo "kubernetes.png",
+     :url "https://kubernetes.io/",
+     :description
+     "Kubernetes is an open-source container-orchestration system for automating deployment, scaling and management of containerized applications. It was originally designed by Google and is now maintained by the Cloud Native Computing Foundation. It aims to provide a \"platform for automating deployment, scaling, and operations of application containers across clusters of hosts\". It works with a range of container tools, including Docker."},
+    :postgresql
+    {:name "PostgreSQL",
+     :logo "postgresql.png",
+     :category "Database",
+     :url "https://www.postgresql.org/",
+     :description
+     "PostgreSQL is an object-relational database management system (ORDBMS) with an emphasis on extensibility and standards compliance. As a database server, its primary functions are to store data securely and return that data in response to requests from other software applications. It can handle workloads ranging from small single-machine applications to large Internet-facing applications (or for data warehousing) with many concurrent users."},
+    :ring {:name "Ring"},
+    :adwords {:name "Google Adwords", :logo "google-adwords.jpg"},
+    :clojure
+    {:name "Clojure",
+     :priority 10,
+     :logo "clojure.png",
+     :category "Programming Language",
+     :url "https://clojure.org/",
+     :description
+     "Clojure is a dynamic, general-purpose programming language, combining the approachability and interactive development of a scripting language with an efficient and robust infrastructure for multithreaded programming. Clojure is a compiled language, yet remains completely dynamic – every feature supported by Clojure is supported at runtime. Clojure provides easy access to the Java frameworks, with optional type hints and type inference, to ensure that calls to Java can avoid reflection.\nClojure is a dialect of Lisp, and shares with Lisp the code-as-data philosophy and a powerful macro system. Clojure is predominantly a functional programming language, and features a rich set of immutable, persistent data structures. When mutable state is needed, Clojure offers a software transactional memory system and reactive Agent system that ensure clean, correct, multithreaded designs."},
+    :sinatra
+    {:name "Sinatra",
+     :category "Web Application Framework",
+     :logo "sinatra.png",
+     :url "http://sinatrarb.com/",
+     :description
+     "Sinatra is a DSL for quickly creating web applications in Ruby with minimal effort."},
+    :drools
+    {:name "Drools",
+     :logo "drools.png",
+     :category "Rule Engine",
+     :url "https://www.drools.org/",
+     :description
+     "Drools is a Business Rules Management System (BRMS) solution. It provides a core Business Rules Engine (BRE), a web authoring and rules management application (Drools Workbench) and an Eclipse IDE plugin for core development."},
+    :latex
+    {:name "LaTex",
+     :logo "latex.png",
+     :category "Document Preparation System",
+     :url "https://www.latex-project.org/",
+     :description
+     "LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. LaTeX is the de facto standard for the communication and publication of scientific documents. LaTeX is available as free software."},
+    :docker
+    {:name "Docker",
+     :category "Cloud",
+     :logo "docker.png",
+     :url "https://www.docker.com/",
+     :description
+     "Docker is used to run software packages called \"containers\". Containers are isolated from each other and bundle their own tools, libraries and configuration files; they can communicate with each other through well-defined channels. All containers are run by a single operating system kernel and are thus more lightweight than virtual machines. Containers are created from \"images\" that specify their precise contents. Images are often created by combining and modifying standard images downloaded from repositories."},
+    :nodejs
+    {:name "Node.js",
+     :priority 60,
+     :logo "nodejs.png",
+     :category "Runtime Environment",
+     :url "https://nodejs.org/",
+     :description
+     "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world."},
+    :optaplanner
+    {:name "OptaPlanner",
+     :logo "optaplanner.png",
+     :category "Constraint Solver",
+     :url "https://www.optaplanner.org/",
+     :description
+     "OptaPlanner is a constraint satisfaction solver. It optimizes business resource planning use cases, such as Vehicle Routing, Employee Rostering, Cloud Optimization, Job Scheduling, Bin Packing and many more. Every organization faces such scheduling puzzles: assign a limited set of constrained resources (employees, assets, time and money) to provide products or services to customers. OptaPlanner optimizes those planning problems to do more business with less resources.\nOptaPlanner is a lightweight, embeddable planning engine. It enables normal Java™ programmers to solve optimization problems efficiently. Constraints apply on plain domain objects and can reuse existing code. There’s no need to input difficult mathematical equations. Under the hood, OptaPlanner combines sophisticated optimization heuristics and metaheuristics (such as Tabu Search, Simulated Annealing and Late Acceptance) with very efficient score calculation.\nOptaPlanner is open source software, released under the Apache Software License. It is written in 100% pure Java™, runs on any JVM and is available in the Maven Central repository too."},
+    :livingdocs
+    {:name "Livingdocs",
+     :priority 52,
+     :category "CMS",
+     :logo "livingdocs.png",
+     :url "https://www.livingdocs.io/",
+     :description
+     "Livingdocs is not only a CMS but a component-based solution to publish across many devices and products."},
+    :react-native
+    {:name "React Native",
+     :logo "reactnative.png",
+     :category "Front-end Framework",
+     :url "https://facebook.github.io/react-native/",
+     :description
+     "React Native lets you build mobile apps using only JavaScript. It uses the same design as React, letting you compose a rich mobile UI from declarative components."},
+    :nginx
+    {:name "Nginx",
+     :logo "nginx.png",
+     :category "Web Server",
+     :url "https://nginx.org/",
+     :description
+     "Nginx is a web server which can also be used as a reverse proxy, load balancer and HTTP cache.\nNginx is free and open source software, released under the terms of a BSD-like license. A large fraction of web servers use NGINX, often as a load balancer."},
+    :monit
+    {:name "Monit",
+     :category "Monitoring",
+     :logo "monit.png",
+     :url "https://mmonit.com/monit/",
+     :description
+     "Monit is a small Open Source utility for managing and monitoring Unix systems. Monit conducts automatic maintenance and repair and can execute meaningful causal actions in error situations."},
+    :re-natal
+    {:name "Re-Natal",
+     :category "Technology Bridge",
+     :url "https://github.com/drapanjanas/re-natal",
+     :description
+     "A utility for building ClojureScript-based React Native apps"},
+    :analytics
+    {:name "Google Analytics",
+     :logo "google-analytics.png",
+     :description
+     "Google Analytics is a web analytics service offered by Google that tracks and reports website traffic.\nAt 200ok, we're building products data-driven, so that marketing and product development choices can be deduced from actual user interactions. This means that we're not just plugging Google Analytics into a website. We interface with it on an API level to get custom data into Analytics - later we build custom software to re-use this data in any form required: for example in reports or statistics right within the original product."},
+    :vagrant
+    {:name "Vagrant",
+     :logo "vagrant.png",
+     :url "https://www.vagrantup.com/",
+     :description
+     "Vagrant is an open-source software product for building and maintaining portable virtual software development environments, e.g. for VirtualBox, Hyper-V, Docker, VMware, and AWS. The core idea behind it lies in the fact that the environment maintenance of virtualizations becomes increasingly difficult in a large software development project. Vagrant simplifies the necessary software configuration management in order to increase development productivity. Vagrant is written in the Ruby language, but its ecosystem supports development in almost all major languages."},
+    :ruby-on-rails
+    {:name "Ruby On Rails",
+     :priority 40,
+     :logo "rails.svg",
+     :category "Web Application Framework",
+     :url "http://rubyonrails.org/",
+     :description
+     "Ruby on Rails, or Rails, is a server-side web application framework written in Ruby under the MIT License. Rails is a model–view–controller (MVC) framework, providing default structures for a database, a web service, and web pages. It encourages and facilitates the use of web standards such as JSON or XML for data transfer, and HTML, CSS and JavaScript for display and user interfacing. In addition to MVC, Rails emphasizes the use of other well-known software engineering patterns and paradigms, including convention over configuration (CoC), don't repeat yourself (DRY), and the active record pattern."},
+    :protobuf
+    {:name "Protocol Buffers",
+     :logo "google-dev.png",
+     :url "https://developers.google.com/protocol-buffers/",
+     :description
+     "Protocol buffers are Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data – think XML, but smaller, faster, and simpler. You define how you want your data to be structured once, then you can use special generated source code to easily write and read your structured data to and from a variety of data streams and using a variety of languages."},
+    :wordpress {:name "Wordpress", :logo "wordpress.png"},
+    :sox
+    {:name "SoX",
+     :category "Audio Processing",
+     :logo "sox.png",
+     :url "http://sox.sourceforge.net/",
+     :description
+     "SoX is the Swiss Army knife of sound processing programs. SoX is a cross-platform (Windows, Linux, MacOS X, etc.) command line utility that can convert various formats of computer audio files in to other formats. It can also apply various effects to these sound files, and, as an added bonus, SoX can play and record audio files on most platforms."},
+    :re-frame
+    {:name "Re-Frame",
+     :logo "reframe.png",
+     :category "Front-end Framework",
+     :url "https://github.com/Day8/re-frame",
+     :description
+     "re-frame is a pattern for writing SPAs in ClojureScript, using Reagent."},
+    :duct
+    {:name "Duct",
+     :logo "duct.svg",
+     :category "Web Application Framework",
+     :url "https://github.com/duct-framework/duct",
+     :description
+     "Duct is a highly modular framework for building server-side applications in Clojure using data-driven architecture.\nIt is similar in scope to Arachne, and is based on Integrant. Duct builds applications around an immutable configuration that acts as a structural blueprint. The configuration can be manipulated and queried to produce sophisticated behavior."},
+    :elk
+    {:name "Elk",
+     :logo "elk.png",
+     :category "Analytics Solution",
+     :url "https://www.elastic.co/products"},
+    :ansible
+    {:name "Ansible",
+     :logo "ansible.png",
+     :category "System Configuration Management",
+     :url "https://www.ansible.com/",
+     :description
+     "Ansible is an open-source automation engine that automates software provisioning, configuration management, and application deployment."},
+    :reagent
+    {:name "Reagent",
+     :logo "reagent.png",
+     :category "Front-end Framework",
+     :url "http://reagent-project.github.io/",
+     :description
+     "Reagent provides a minimalistic interface between ClojureScript and React. It allows you to define efficient React components using nothing but plain ClojureScript functions and data, that describe your UI using a Hiccup-like syntax.\nThe goal of Reagent is to make it possible to define arbitrarily complex UIs using just a couple of basic concepts, and to be fast enough by default that you rarely have to care about performance."},
+    :terraform
+    {:name "Terraform",
+     :logo "terraform.svg",
+     :category "Cloud Configuration",
+     :url "https://www.terraform.io/",
+     :description
+     "Terraform is an infrastructure as code software by HashiCorp. It allows users to define a datacenter infrastructure in a high-level configuration language, from which it can create an execution plan to build the infrastructure in a service provider such as AWS."},
+    :d3
+    {:name "D3",
+     :priority 55,
+     :logo "d3.png",
+     :category "Visualization",
+     :url "https://d3js.org/",
+     :description
+     "D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation."},
+    :icecast
+    {:name "Icecast",
+     :logo "icecast.png",
+     :category "Media Streaming Server",
+     :url "http://icecast.org/",
+     :description
+     "Icecast is a streaming media (audio/video) server which currently supports Ogg (Vorbis and Theora), Opus, WebM and MP3 streams. It can be used to create an Internet radio station or a privately running jukebox and many things in between. It is very versatile in that new formats can be added relatively easily and supports open standards for communication and interaction."},
+    :debian
+    {:name "Debian GNU/Linux",
+     :logo "debian.jpg",
+     :category "Operating System",
+     :url "https://www.debian.org/",
+     :description
+     "Debian is a Unix-like computer operating system that is composed entirely of free software, most of which is under the GNU General Public License and packaged by a group of individuals participating in the Debian Project.\nThe project's work is carried out over the Internet by a team of volunteers guided by the Debian Project Leader and three foundational documents: the Debian Social Contract, the Debian Constitution, and the Debian Free Software Guidelines. New distributions are updated continually, and the next candidate is released after a time-based freeze."},
+    :rabbitmq
+    {:name "RabbitMQ",
+     :logo "rabbitmq.png",
+     :category "Message Broker",
+     :url "https://www.rabbitmq.com/",
+     :description
+     "With more than 35,000 production deployments of RabbitMQ world-wide at small startups and large enterprises, RabbitMQ is the most popular open source message broker.\nRabbitMQ is lightweight and easy to deploy on premises and in the cloud. It supports multiple messaging protocols. RabbitMQ can be deployed in distributed and federated configurations to meet high-scale, high-availability requirements."},
+    :heroku
+    {:name "Heroku",
+     :logo "heroku.jpg",
+     :category "Cloud Computing Platform",
+     :description
+     "Heroku is a cloud platform as a service (PaaS) supporting several programming languages that is used as a web application deployment model. Heroku, one of the first cloud platforms, has been in development since June 2007, when it supported only the Ruby programming language, but now supports Java, Node.js, Scala, Clojure, Python, PHP, and Go."},
+    :cljs
+    {:name "ClojureScript",
+     :priority 20,
+     :logo "cljs.svg",
+     :category "Programming Language",
+     :url "https://clojurescript.org/",
+     :description
+     "ClojureScript is a compiler for Clojure that targets JavaScript. It emits JavaScript code which is compatible with the advanced compilation mode of the Google Closure optimizing compiler."},
+    :ruby
+    {:name "Ruby",
+     :priority 30,
+     :logo "ruby.png",
+     :category "Programming Language",
+     :url "https://www.ruby-lang.org/",
+     :description
+     "Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write."},
+    :munin
+    {:name "Munin",
+     :category "Monitoring",
+     :logo "munin.png",
+     :url "http://munin-monitoring.org/",
+     :description
+     "Munin is a networked resource monitoring tool that can help analyze resource trends and \"what just happened to kill our performance?\" problems. It is designed to be very plug and play. A default installation provides a lot of graphs with almost no work."},
+    :liquidsoap
+    {:name "Liquidsoap",
+     :logo "liquidsoap.png",
+     :category "Programming Language",
+     :url "http://liquidsoap.fm/",
+     :description
+     "Liquidsoap is the swiss-army knife for multimedia streaming, notably used for netradios and webtvs. It has tons of features, it's free and it's open-source!"}},
+   :services
+   {:development
+    {:name "Software Development",
+     :description
+     "We love technology & and we surely love to code. Whether you need a custom solution for your business or you need someone to code your idea, which most definitely will become the next Twitter or Facebook, drop us a line or use the chat on this site to get in contact. We're looking forward to hearing from you."},
+    :consulting
+    {:name "Consulting",
+     :description
+     "Our team covers a broad palette of technologies as well as whole technology stacks and brings plenty of years of experience to the table. We offer onsite technology consulting. Whether you are about to start a green field project or try to bring change to an existing software solution, we can help you to move forward and meet your goals."},
+    :training
+    {:name "Training",
+     :description
+     "We not only love code, we also love to teach coding: \"Code excellent and talk about it.\" You want your team hit the ground running with a new technology? Training is the way to go. We offer single- and multi-day training courses for a couple of technologies that will boost the productivity of your team. Let us know about your ideas and together we will figure something out that meet you needs."},
+    :opensource-integration
+    {:name "Open Source Integration",
+     :description
+     "As an open source integrator we offer cost effective solutions built on top of the most proven open source technologies. Open Source is a treasure trove of well established solutions that can help you digitize and transform your business. Having not only released and contributed to a lot of open source projects, but also having studied open source scientifically we understand what makes open source tick and how to make it work for you."},
+    :coaching
+    {:name "Coaching",
+     :description
+     "Don't make the same mistakes we did! Take the shortcut, by letting us help you avoid the same traps. We have plenty of experience in software development and we like to share it. It's not only knowing your way around technology. It's also about how you think about it and how you do it. Whether as an individual or a small team coaching is probably the most effective way to acquire new skills and to learn and adopt a mindset that helps building better software."},
+    :workshops
+    {:name "Workshops",
+     :description
+     "Building a successful company is hard. Really hard. At 200ok, we have launched multiple incubators and spinned-off companies, so we have a little experience in how to optimize your chances of success. For that we have created multiple workshops: <strong>Traction</strong>: A startup guide to getting customers. <strong>Bullseye</strong>: The Bullseye framework is designed to be a straightforward way to direct your traction focus and maximize your results. <strong>Lean Startup</strong>: Be more innovative. Stop wasting people's time. Be more successful. <strong>Scrum</strong>: Scrum is an Agile framework for completing complex projects."},
+    :hosting
+    {:name "Hosting & Maintenance",
+     :description
+     "We support our clients and products in all areas of Unix/Linux infrastructure. 200ok works with true DevOps in mind where our developers are not just developers, but have a strong background in different flavors of Unix and Linux. All our applications are deployed through automated configuration management, many run within containers, all have automated monitoring and exception notification and either run in Swiss data centers on private networks or on any cloud service provider.\nWe also offer to support and maintain the applications that we build at various levels to meet the clients' demands - from regular security updates to adding new functionality. In cooperation with our partners we are able to provide 24/7 on-call service."}}}},
+ :site-title "200ok - Consultancy, Research Lab, Incubator"}</pre></body></html>

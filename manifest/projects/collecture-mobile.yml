@@ -1,0 +1,21 @@
+name: Collecture Mobile Apps
+priority: 25
+image: "/img/products/collecture-mobile.png"
+category: Education
+people:
+  - dibran
+  - phil
+  - alain
+technologies:
+  - reagent
+  - re-frame
+  - react-native
+  - re-natal
+  - cljs
+  - aws
+short-description: >-
+  iOS and Android mobile apps to record, organize and share lectures
+  and meetings on collecture.io.
+description: >-
+  iOS and Android mobile apps to record, organize and share lectures
+  and meetings on collecture.io.

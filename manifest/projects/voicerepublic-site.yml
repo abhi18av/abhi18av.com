@@ -1,0 +1,49 @@
+name: Voice Republic
+url: https://voicerepublic.com
+image: "/img/products/voicerepublic.png"
+priority: 35
+incubated: 2014
+opensourced: 2019
+incubator-status: >-
+  Full product developed, 7-digits capital raised.
+people:
+  - phil
+  - alain
+  - nick
+  - josef
+technologies:
+  - ruby-on-rails
+  - cljs
+  - clojure
+  - faye
+  - rabbitmq
+  - icecast
+  - liquidsoap
+  - ruby
+  - nginx
+  - aws
+  - elk
+  - d3
+  - reagent
+  - react
+  - postgresql
+  - duct
+  - javascript
+  - coffeescript
+  - debian
+short-description: >-
+  Professional live audio streaming and archiving of events. Whether
+  you want to stream your event live or record it and upload the
+  files - with *Voice Republic* you’ll easily create your own audio
+  channel.
+description: >-
+  Professional live audio streaming and archiving of events.
+  Whether you want to stream your event live or record it and upload
+  the files - with Voice Republic you’ll easily create your own
+  audio channel.
+
+  PROFESSIONAL STREAMING SOLUTION The StreamBoxx is developed to
+  stream and archive events. All live streams can be controlled via
+  your web browser from anywhere you like.
+
+  Open Source: [https://github.com/voicerepublic/](https://github.com/voicerepublic/)

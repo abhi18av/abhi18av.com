@@ -1,0 +1,14 @@
+name: fsdb
+url: https://gitlab.com/200ok/fsdb
+opensourced: 2017
+priority: 70
+technologies:
+  - clojure
+people:
+  - phil
+short-description: >-
+  A Clojure library that provides a reasonably convenient database
+  on top of the file system.
+description: >-
+  A Clojure library that provides a reasonably convenient database
+  on top of the file system.

@@ -1,0 +1,18 @@
+name: Webhooks
+url: https://gitlab.com/200ok/webhooks
+image: /img/products/webhooks.svg
+opensourced: 2017
+priority: 90
+technologies:
+  - clojure
+people:
+  - phil
+short-description: >-
+  *Webhooks* is a lightweight webhooks server written in Clojure.
+description: >-
+  Webhooks is a lightweight webhooks server written in Clojure. It
+  allows to set up webhook endpoints and corresponding shell
+  commands, which will be executed when the endpoint is
+  requested. The config file is written in EDN (the preferred
+  clojure data format). The config file will be read per request, so
+  there is no restart required after updating the config file.

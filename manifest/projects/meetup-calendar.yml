@@ -1,0 +1,19 @@
+name: Meetup Calendar Microservice
+opensourced: 2015
+priority: 110
+url: https://github.com/munen/meetup-calendar
+technologies:
+  - ruby
+  - sinatra
+  - heroku
+  - haml
+  - css
+people:
+  - alain
+short-description: >-
+  A microservice accessing the Meetup API and rendering a HTML table
+  for any given meetup.
+description: >-
+  A microservice accessing the Meetup API and rendering a HTML table
+  for any given meetup. We are also making a free hosted SaaS
+  version available.

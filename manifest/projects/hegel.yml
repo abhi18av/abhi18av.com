@@ -1,0 +1,19 @@
+name: Hegel
+image: "/img/products/hegel.svg"
+url: https://gitlab.com/200ok/hegel
+category: Conversion Tool
+opensourced: 2017
+priority: 110
+technologies:
+  - ruby
+  - sinatra
+  - heroku
+people:
+  - phil
+short-description: >-
+  *Hegel* is a swiss german word for a pocket knive, and most recently
+  also a tool to convert camt to v11.
+description: >-
+  Hegel is not only one of the most influential philosophers of
+  post-Kantian idealism, but also a swiss german word for a pocket
+  knive, and most recently also a tool to convert camt to v11.

@@ -1,0 +1,22 @@
+name: 200ok Website
+url: https://gitlab.com/200ok/200ok.gitlab.io
+image: "/img/products/200ok.ch.png"
+opensourced: 2016
+priority: 60
+technologies:
+  - clojure
+  - boot
+  - perun
+  - hiccup
+  - fsdb
+people:
+  - phil
+  - alain
+short-description: >-
+  "You're lookin' at it, baby! The setup behind this website is
+  cooler than you might think. Because it's totally data-driven.
+  That's right. Robots 'n stuff."
+description: >-
+  "You're lookin' at it, baby! The setup behind this website is
+  cooler than you might think. Because it's totally data-driven.
+  That's right. Robots 'n stuff."

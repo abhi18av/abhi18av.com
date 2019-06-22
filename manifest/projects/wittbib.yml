@@ -1,0 +1,24 @@
+name: Wittbib Library Management
+opensourced: 2012
+priority: 120
+technologies:
+  - ruby-on-rails
+  - saas
+  - coffeescript
+  - jquery
+  - ruby
+  - postgresql
+people:
+  - phil
+  - alain
+short-description: >-
+  A library management application that we developed as a
+  contribution to library organised by volunteers.
+description: >-
+  A library management application that we developed as a
+  contribution to library organised by volunteers. Wittbib has the
+  ability to scan ISBN numbers from a book using a hand scanner to
+  look up book meta data in different databases. The books of the
+  library can then be searched and lent to visitors. There is also a
+  public searching interface as well as various export formats for
+  the library.

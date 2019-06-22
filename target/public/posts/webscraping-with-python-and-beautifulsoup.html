@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport"><link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"><link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"><link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"><link href="/manifest.json" rel="manifest"><link color="#5bbad5" href="/safari-pinned-tab.svg" rel="mask-icon"><meta content="#ffffff" name="theme-color"><link href="/css/normalize.css" rel="stylesheet"><link href="/css/app.css" rel="stylesheet"><title>Webscraping with Python and BeautifulSoup - 200ok</title><link href="/rss.xml" rel="alternate" title="200ok - Consultancy, Research Lab, Incubator" type="application/rss+xml"><link href="/atom.xml" rel="alternate" title="200ok - Consultancy, Research Lab, Incubator" type="application/atom+xml"><meta content="Webscraping with Python and BeautifulSoup - 200ok" property="og:title"><meta content="article" property="og:type"><meta property="og:description"><meta content="https://200ok.ch/posts/webscraping-with-python-and-beautifulsoup.html" property="og:url"><meta content="https://200ok.ch/img/logo.png" property="og:image"><meta content="summary" name="twitter:card"><meta content="@twohundredok" name="twitter:site"><meta content="Webscraping with Python and BeautifulSoup - 200ok" name="twitter:title"><meta content="https://200ok.ch/img/logo.png" name="twitter:image"><meta name="twitter:description"><link href="https://200ok.ch/posts/webscraping-with-python-and-beautifulsoup.html" rel="canonical"><link href="/css/styles/solarized-light.css" rel="stylesheet"></head><body id="blog" itemscope itemtype="http://schema.org/Blog"><div class="top-bar"><div class="top-bar-left"><top-bar-title itemprop="image"><a href="/" id="logo"><img src="/img/200ok.svg"></a></top-bar-title></div><div class="top-bar-right"><ul class="menu"><li><a href="/blog.html">Blog</a></li><li><a href="/projects.html">Projects</a></li><li><a href="/team.html">Team</a></li><li><a href="/atom.xml" id="atom-feed"><span>&nbsp;</span>Feed</a></li></ul></div></div><main class="single-post"><div id="content"><article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting"><h3 class="headline" itemprop="headline"><a class="nunito" href="/posts/webscraping-with-python-and-beautifulsoup.html" itemprop="url">Webscraping with Python and BeautifulSoup</a></h3><div class="subheader"><p class="post-meta"><time itemprop="datePublished">2009-03-15</time> - <span itemprop="wordCount">1116</span> words - <span itemprop="timeRequired">9</span> min read</p><div class="byline"><img class="author-icon" src="/img/author.svg"><section class="author" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Alain M. Lafon</span></section></div></div><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><meta content="190" itemprop="height"><meta content="349" itemprop="width"><meta content="https://200ok.ch/img/logo.png" itemprop="url"></span><div><div class="article-body" itemprop="articleBody"><p>Update: This is a re-post of an older blog post of mine. Originally it was posted on my <a href="http://blog.dispatched.ch/">personal blog</a> where it has ~40 comments and &gt;35’000 views over the last years. I’m deprecating my personal blog in favor of this 200OK blog.</p>
+<p>In this short tutorial, I’m going to show you how to scrape a website with the 3rd party html-parsing module <a href="https://www.crummy.com/software/BeautifulSoup/">BeautifulSoup</a> in a practical example. We will search the wonderful translation engine <a href="http://www.dict.cc/">dict.cc</a>, which holds the key to over 700k translations from English to German and vice versa. Note that BeautifulSoup is <a href="http://www.crummy.com/software/BeautifulSoup/#Download">licensed</a> just like Python while dict.cc allows for <a href="http://www.dict.cc/?s=about%3Afaq#faq15">external searching</a>.</p>
+<p>First, place BeautifulSoup.py in your modules directory. Alternatively, if you just want to do a quick test, put in the same directory where you will be writing your program. Then start your favourite text editor/Python IDE(for quick prototyping like we are about to do, I highly recommend a combination of IDLE and <a href="/posts/vim-as-python-ide.html">VIM</a>) and begin coding. In this tutorial we won’t be doing any design; we won’t even encapsulate in a class. How to do that, later on, is up to your needs.</p>
+<p>What we will do:</p>
+<ol type="1">
+<li>go to dict.cc</li>
+<li>enter a search word into the webform</li>
+<li>submit the form</li>
+<li>read the result</li>
+<li>parse the html code</li>
+<li>save all translations</li>
+<li>print them</li>
+</ol>
+<p>All required code is embedded in this post. At <a
+href="#complete_code">the bottom</a>, you will find the complete code in one snippet.</p>
+<p>Now, let the magic begin. Those are the required imports.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="im">import</span> urllib</a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="im">import</span> urllib2</a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="im">import</span> string</a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="im">import</span> sys</a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="im">from</span> BeautifulSoup <span class="im">import</span> BeautifulSoup</a></code></pre></div>
+<p><a href="http://docs.python.org/library/urllib.html">urllib</a> and <a href="http://docs.python.org/library/urllib2.html">urllib2</a> are both modules offering the possibility to read data from various URLs; they will be needed to open the connection and retrieve the website. BeautifulSoup is, as mentioned, a html parser.</p>
+<p>Since we are going to fetch our data from a website, we have to behave like a browser. That’s why will be needing to fake a <a href="http://de.wikipedia.org/wiki/User_Agent">user agent</a>. For our program, I chose to push the webstatistics a little in favour of Firefox and Solaris.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">user_agent <span class="op">=</span> <span class="st">&#39;Mozilla/5 (Solaris 10) Gecko&#39;</span></a>
+<a class="sourceLine" id="cb2-2" title="2">headers <span class="op">=</span> { <span class="st">&#39;User-Agent&#39;</span> : user_agent }</a></code></pre></div>
+<p>Now let’s take a look at the code of dict.cc. We need to know how the form is constructed if we want to query it.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb3-1" title="1">...</a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="kw">&lt;form</span><span class="ot"> style=</span><span class="st">&quot;margin:0px&quot;</span><span class="ot"> action=</span><span class="st">&quot;http://www.dict.cc/&quot;</span><span class="ot"> method=</span><span class="st">&quot;get&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb3-3" title="3">  <span class="kw">&lt;table&gt;</span></a>
+<a class="sourceLine" id="cb3-4" title="4">    <span class="kw">&lt;tr&gt;</span></a>
+<a class="sourceLine" id="cb3-5" title="5">      <span class="kw">&lt;td&gt;</span></a>
+<a class="sourceLine" id="cb3-6" title="6">        <span class="kw">&lt;input</span><span class="ot"> id=</span><span class="st">&quot;sinp&quot;</span><span class="ot"> maxlength=</span><span class="st">&quot;100&quot;</span><span class="ot"> name=</span><span class="st">&quot;s&quot;</span><span class="ot"> size=</span><span class="st">&quot;25&quot;</span><span class="ot"> type=</span><span class="st">&quot;text&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb3-7" title="7">        style=&quot;padding:2px;width:340px&quot; value=&quot;&quot;&gt;</a>
+<a class="sourceLine" id="cb3-8" title="8">      ...<span class="kw">&lt;/td&gt;</span></a>
+<a class="sourceLine" id="cb3-9" title="9">    <span class="kw">&lt;/tr&gt;</span></a>
+<a class="sourceLine" id="cb3-10" title="10">  <span class="kw">&lt;/table&gt;</span></a>
+<a class="sourceLine" id="cb3-11" title="11"><span class="kw">&lt;/form&gt;</span></a>
+<a class="sourceLine" id="cb3-12" title="12">...</a></code></pre></div>
+<p>The relevant parts are <code>action</code>, <code>method</code> and the <code>name</code> inside the input tag. The action is the web application that will get called when the form is submitted. The method shows us how we need to encode the data for the form while the <code>name</code> is our <code>query</code> variable.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">values <span class="op">=</span> {<span class="st">&#39;s&#39;</span> : sys.argv[<span class="dv">1</span>] }</a>
+<a class="sourceLine" id="cb4-2" title="2">data <span class="op">=</span> urllib.urlencode(values)</a>
+<a class="sourceLine" id="cb4-3" title="3">request <span class="op">=</span> urllib2.Request(<span class="st">&quot;http://www.dict.cc/&quot;</span>, data, headers)</a>
+<a class="sourceLine" id="cb4-4" title="4">response <span class="op">=</span> urllib2.urlopen(request)</a></code></pre></div>
+<p>Here the data get’s encapsulated in a <a href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">GET</a> request and packed into the form. Notice that <code>values</code> is a dictionary which makes handling more complex forms a charm. The form gets submitted by <code>urlopen()</code> – i.e. we virtually pressed the “Search”-button. See how easy it is? These are only a couple lines of code, but we already have searched on dict.cc for a completely arbitrary word from the command line. The <code>response</code> has also been retrieved. All that is left, is to extract the relevant information.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1">the_page <span class="op">=</span> response.read()</a>
+<a class="sourceLine" id="cb5-2" title="2">pool <span class="op">=</span> BeautifulSoup(the_page)</a></code></pre></div>
+<p>The <code>response</code> is read and saved into regular html code. This code could now be analyzed via regular <code>string.find()</code> or <code>re.findall()</code> methods, but this implies hard-coding in reference to a lot of the underlying logic of the page. Besides, it would require a lot reverse engineering of the positional parameters, setting up several potentially recursive methods. This would ultimately produce ugly(i.e. not very pythonic) code. Lucky for us, there already is a full fledged html parser which allows us to ask just about any generic question. Let’s take a look at the resulting html code, first. If you are not yet familar with the tool that can be seen in the screenshot; I’m using Firefox with the <a href="https://addons.mozilla.org/de/firefox/addon/1843">Firebug</a> addon. This one is very helpful if you ever need to debug a website.</p>
+<p><img src="/img/webscraping-with-python/firefox-firebug.png" /></p>
+<p>Let me show an excerpt of the code.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="op">&lt;</span>table<span class="op">&gt;</span>..</a>
+<a class="sourceLine" id="cb6-2" title="2">  <span class="op">&lt;</span>td <span class="kw">class</span><span class="op">=</span><span class="st">&quot;td7nl&quot;</span> style<span class="op">=</span><span class="st">&quot;background-color: rgb(233, 233, 233);&quot;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb6-3" title="3">    <span class="op">&lt;</span>a href<span class="op">=</span><span class="st">&quot;/englisch-deutsch/web.html&quot;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb6-4" title="4">      <span class="op">&lt;</span>b<span class="op">&gt;</span>web<span class="op">&lt;/</span>b<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb6-5" title="5">    <span class="op">&lt;/</span>a<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb6-6" title="6">  <span class="op">&lt;/</span>td<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb6-7" title="7"><span class="op">&lt;</span>td <span class="kw">class</span><span class="op">=</span><span class="st">&quot;td7nl&quot;</span> ... <span class="op">/</span>td<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb6-8" title="8"><span class="op">&lt;/</span>table<span class="op">&gt;</span>..</a></code></pre></div>
+<p>The results are displayed in a table. The two interesting columns share the class <code>td7nl</code>. The most efficient way would seem to just sweep all the data from inside the cells of these two columns. Fortunately for us, BeautifulSoup implemented just that feature.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">results <span class="op">=</span> pool.findAll(<span class="st">&#39;td&#39;</span>, attrs<span class="op">=</span>{<span class="st">&#39;class&#39;</span> : <span class="st">&#39;td7nl&#39;</span>})</a>
+<a class="sourceLine" id="cb7-2" title="2">source <span class="op">=</span> <span class="st">&#39;&#39;</span></a>
+<a class="sourceLine" id="cb7-3" title="3">translations <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb7-4" title="4"> </a>
+<a class="sourceLine" id="cb7-5" title="5"><span class="cf">for</span> result <span class="kw">in</span> results:</a>
+<a class="sourceLine" id="cb7-6" title="6">    word <span class="op">=</span> <span class="st">&#39;&#39;</span></a>
+<a class="sourceLine" id="cb7-7" title="7">    <span class="cf">for</span> tmp <span class="kw">in</span> result.findAll(text<span class="op">=</span><span class="va">True</span>):</a>
+<a class="sourceLine" id="cb7-8" title="8">        word <span class="op">=</span> word <span class="op">+</span> <span class="st">&quot; &quot;</span> <span class="op">+</span> <span class="bu">unicode</span>(tmp).encode(<span class="st">&quot;utf-8&quot;</span>)</a>
+<a class="sourceLine" id="cb7-9" title="9">    <span class="cf">if</span> source <span class="op">==</span> <span class="st">&#39;&#39;</span>:</a>
+<a class="sourceLine" id="cb7-10" title="10">        source <span class="op">=</span> word</a>
+<a class="sourceLine" id="cb7-11" title="11">    <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb7-12" title="12">        translations.append((source, word))</a>
+<a class="sourceLine" id="cb7-13" title="13"> </a>
+<a class="sourceLine" id="cb7-14" title="14"><span class="cf">for</span> translation <span class="kw">in</span> translations:</a>
+<a class="sourceLine" id="cb7-15" title="15">    <span class="bu">print</span> <span class="st">&quot;</span><span class="sc">%s</span><span class="st"> =&gt; </span><span class="sc">%s</span><span class="st">&quot;</span> <span class="op">%</span> (translation[<span class="dv">0</span>], translation[<span class="dv">1</span>])</a></code></pre></div>
+<p><code>results</code> will be a <code>BeautifulSoup.ResultSet</code>. Each member of the tuple is the HTML code of one column of the class <code>td7nl</code>. Notice that you can access each element like you would expect in a tuple. <code>result.findAll(text=True)</code> will return each embedded textual element of the table. All we have to do is merge the different tags together. <code>source</code> and <code>word</code> are temporary variables that will hold one translation in each iteration. Each translation will be saved as a pair(list) inside the <code>translations</code> tuple. Finally we iterate over the found translations and write them to the screen.</p>
+<pre class="shell"><code>$ python webscraping_demo.py
+ kinky   {adj} =&gt;  9 kraus   [Haar]  
+ kinky   {adj} =&gt;  nappy   {adj}   [Am.]
+ kinky   {adj} =&gt;  6 kraus   [Haar]  
+ kinky   {adj} =&gt;  crinkly   {adj}
+ kinky   {adj} =&gt;  kraus  
+ kinky   {adj} =&gt;  curly   {adj}
+ kinky   {adj} =&gt;  kraus  
+ kinky   {adj} =&gt;  frizzily   {adv}
+ </code></pre>
+<p>In a regular application those results would need a little lexing, of course. The most important thing, however, is that we just wrote a translation wrapper onto a web application – in only 28 lines of code.</p>
+<div id="complete_code">
+<h4>
+Complete code
+</h4>
+<pre> <code class="hljs shell python">import urllib
+import urllib2
+import string
+import sys
+from BeautifulSoup import BeautifulSoup
+user_agent = 'Mozilla/5 (Solaris 10) Gecko'
+headers = { 'User-Agent' : user_agent }
+values = {'s' : sys.argv[1] }
+data = urllib.urlencode(values)
+request = urllib2.Request("http://www.dict.cc/", data, headers)
+response = urllib2.urlopen(request)
+the_page = response.read()
+pool = BeautifulSoup(the_page)
+results = pool.findAll('td', attrs={'class' : 'td7nl'})
+source = ''
+translations = []
+
+for result in results:
+    word = ''
+    for tmp in result.findAll(text=True):
+        word = word + " " + unicode(tmp).encode("utf-8")
+    if source == '':
+        source = word
+    else:
+        translations.append((source, word))
+
+for translation in translations:
+    print "%s => %s" % (translation[0], translation[1])
+</code></pre>
+</div>
+<p>All that is left is for me to recommend the <a href="http://www.crummy.com/software/BeautifulSoup/documentation.html">BeautifulSoup documentation</a>. What we did here really didn’t cover what this module is capable of.</p>
+<p>I wish you all the best.</p>
+</div><div class="tags"><img class="tag-icon" src="/img/tag.svg"><ul itemprop="keywords"><li class="category"><a href="/category/python.html">python</a></li><li class="tag"><a href="/tags/beautifulsoup.html">#beautifulsoup</a></li><li class="tag"><a href="/tags/howto.html">#howto</a></li><li class="tag"><a href="/tags/scraping.html">#scraping</a></li><li class="tag"><a href="/tags/tutorial.html">#tutorial</a></li><li class="tag"><a href="/tags/web_scraping.html">#web_scraping</a></li><li class="tag"><a href="/tags/webscraping.html">#webscraping</a></li></ul></div></div></article></div></main><footer><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><div class="name" itemprop="name">200ok GmbH</div><div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"><a href="https://goo.gl/maps/GNAoiNF7mbL2" title="View on Google Maps"><div itemprop="streetAddress">Badenerstrasse 313</div><div><span itemprop="postalCode">8003</span> <span itemprop="addressLocality">Zürich</span></div></a></div><div itemprop="telephone">+41 76 405 05 67</div><div itemprop="email"><a href="mailto:info@200ok.ch">info@200ok.ch</a></div><img itemprop="logo" src="https://200ok.ch/img/200ok.svg"></div></footer><div class="scripts" style="{:display &quot;none&quot;}"><script src="/js/vendor/bowser.min.js"></script><script async src="/js/ie_safeguard.js"></script><script async src="/js/tour.js"></script><script src="/js/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script><script>tour=null</script></div></body></html>

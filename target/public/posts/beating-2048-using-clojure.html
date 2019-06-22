@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport"><link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"><link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"><link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"><link href="/manifest.json" rel="manifest"><link color="#5bbad5" href="/safari-pinned-tab.svg" rel="mask-icon"><meta content="#ffffff" name="theme-color"><link href="/css/normalize.css" rel="stylesheet"><link href="/css/app.css" rel="stylesheet"><title>Beating 2048 using Clojure - 200ok</title><link href="/rss.xml" rel="alternate" title="200ok - Consultancy, Research Lab, Incubator" type="application/rss+xml"><link href="/atom.xml" rel="alternate" title="200ok - Consultancy, Research Lab, Incubator" type="application/atom+xml"><meta content="Beating 2048 using Clojure - 200ok" property="og:title"><meta content="article" property="og:type"><meta property="og:description"><meta content="https://200ok.ch/posts/beating-2048-using-clojure.html" property="og:url"><meta content="https://200ok.ch/img/logo.png" property="og:image"><meta content="summary" name="twitter:card"><meta content="@twohundredok" name="twitter:site"><meta content="Beating 2048 using Clojure - 200ok" name="twitter:title"><meta content="https://200ok.ch/img/logo.png" name="twitter:image"><meta name="twitter:description"><link href="https://200ok.ch/posts/beating-2048-using-clojure.html" rel="canonical"><link href="/css/styles/solarized-light.css" rel="stylesheet"></head><body id="blog" itemscope itemtype="http://schema.org/Blog"><div class="top-bar"><div class="top-bar-left"><top-bar-title itemprop="image"><a href="/" id="logo"><img src="/img/200ok.svg"></a></top-bar-title></div><div class="top-bar-right"><ul class="menu"><li><a href="/blog.html">Blog</a></li><li><a href="/projects.html">Projects</a></li><li><a href="/team.html">Team</a></li><li><a href="/atom.xml" id="atom-feed"><span>&nbsp;</span>Feed</a></li></ul></div></div><main class="single-post"><div id="content"><article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting"><h3 class="headline" itemprop="headline"><a class="nunito" href="/posts/beating-2048-using-clojure.html" itemprop="url">Beating 2048 using Clojure</a></h3><div class="subheader"><p class="post-meta"><time itemprop="datePublished">2017-10-30</time> - <span itemprop="wordCount">1317</span> words - <span itemprop="timeRequired">15</span> min read</p><div class="byline"><img class="author-icon" src="/img/author.svg"><section class="author" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Josef Erben</span></section></div></div><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><meta content="190" itemprop="height"><meta content="349" itemprop="width"><meta content="https://200ok.ch/img/logo.png" itemprop="url"></span><div><div class="article-body" itemprop="articleBody"><p>Today we are going to write a bot using Clojure to beat the game <a href="https://gabrielecirulli.github.io/2048/">2048</a>. We are going to use a variation of the <a href="https://en.wikipedia.org/wiki/Minimax">minimax</a> algorithm called expectimax.</p>
+<p><img src="/img/2048-clj/demo.gif" /></p>
+<h2 id="game-rules">1. game rules</h2>
+<p>You can merge tiles by merging the whole board either horizontally or vertically. If you manage to get the 2048 tile, you win. After a merge (= player’s turn), a tile will appear randomly on an empty slot. The chance of that tile being a <strong>4</strong> is <strong>0.1</strong>, the chance of it being a <strong>2</strong> is <strong>0.9</strong>. After reaching the 2048 you can keep playing and the same rules apply.</p>
+<p>In fact we are going to write a bot that is able to get the <em>8192 tile</em>.</p>
+<h2 id="heuristic">2. heuristic</h2>
+<p>First of all, we need a measure of how well the bot performs. If you want to come up with your own heuristic, pause here and play a few rounds.</p>
+<p>After a few rounds, you probably realize that the largest tile should stay in a corner. Intuitively the larger tiles should stick together.</p>
+<p>We can formalize these observations by splitting up the heursitic score into two parts:</p>
+<h3 id="cluster-score">cluster score</h3>
+<p>The <em>cluster score</em> is simply the actual board weighted by a matrix:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode clojure"><code class="sourceCode clojure"><a class="sourceLine" id="cb1-1" title="1">(<span class="bu">def</span><span class="fu"> matrix </span>[[<span class="dv">15</span> <span class="dv">14</span> <span class="dv">13</span> <span class="dv">12</span>] [<span class="dv">11</span> <span class="dv">10</span> <span class="dv">9</span> <span class="dv">8</span>] [<span class="dv">7</span> <span class="dv">6</span> <span class="dv">5</span> <span class="dv">4</span>] [<span class="dv">3</span> <span class="dv">2</span> <span class="dv">1</span> <span class="dv">0</span>]])</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode clojure"><code class="sourceCode clojure"><a class="sourceLine" id="cb2-1" title="1">(<span class="bu">defn</span><span class="fu"> cluster-score </span>[board matrix]</a>
+<a class="sourceLine" id="cb2-2" title="2">  (<span class="kw">reduce</span> <span class="kw">+</span></a>
+<a class="sourceLine" id="cb2-3" title="3">          (<span class="kw">for</span> [x [<span class="dv">0</span> <span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb2-4" title="4">                y [<span class="dv">0</span> <span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span>]]</a>
+<a class="sourceLine" id="cb2-5" title="5">            (<span class="kw">*</span> (<span class="kw">nth</span> (<span class="kw">nth</span> board x) y) (<span class="kw">nth</span> (<span class="kw">nth</span> matrix x) y)))))</a></code></pre></div>
+<p>This is a measure of how <em>monotone</em> the board is. It leads to the highest tile sticking to the upper-left corner.</p>
+<h3 id="heterogeneous-score">heterogeneous score</h3>
+<p>This score is actually a penalty. The higher this score, the worse for the player. It is calculated by summing the differences of all tiles to all their adjacent neighbours.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode clojure"><code class="sourceCode clojure"><a class="sourceLine" id="cb3-1" title="1">(<span class="bu">defn</span><span class="fu"> neighbour-score</span></a>
+<a class="sourceLine" id="cb3-2" title="2">  [x y board]</a>
+<a class="sourceLine" id="cb3-3" title="3">  (<span class="kw">reduce</span> <span class="kw">+</span></a>
+<a class="sourceLine" id="cb3-4" title="4">          [(Math/abs (<span class="kw">-</span> (<span class="kw">nth</span> (<span class="kw">nth</span> board x) y) (<span class="kw">nth</span> (<span class="kw">nth</span> board (<span class="kw">max</span> (<span class="kw">dec</span> x) <span class="dv">0</span>)) y)))</a>
+<a class="sourceLine" id="cb3-5" title="5">          (Math/abs (<span class="kw">-</span> (<span class="kw">nth</span> (<span class="kw">nth</span> board x) y) (<span class="kw">nth</span> (<span class="kw">nth</span> board (<span class="kw">min</span> (<span class="kw">inc</span> x) <span class="dv">3</span>)) y)))</a>
+<a class="sourceLine" id="cb3-6" title="6">          (Math/abs (<span class="kw">-</span> (<span class="kw">nth</span> (<span class="kw">nth</span> board x) y) (<span class="kw">nth</span> (<span class="kw">nth</span> board x) (<span class="kw">max</span> (<span class="kw">dec</span> y) <span class="dv">0</span>))))</a>
+<a class="sourceLine" id="cb3-7" title="7">          (Math/abs (<span class="kw">-</span> (<span class="kw">nth</span> (<span class="kw">nth</span> board x) y) (<span class="kw">nth</span> (<span class="kw">nth</span> board x) (<span class="kw">min</span> (<span class="kw">inc</span> y) <span class="dv">3</span>))))]))</a>
+<a class="sourceLine" id="cb3-8" title="8"></a>
+<a class="sourceLine" id="cb3-9" title="9">(<span class="bu">defn</span><span class="fu"> hetero-score</span></a>
+<a class="sourceLine" id="cb3-10" title="10">  [board]</a>
+<a class="sourceLine" id="cb3-11" title="11">  (<span class="kw">reduce</span> <span class="kw">+</span></a>
+<a class="sourceLine" id="cb3-12" title="12">          (<span class="kw">for</span> [x [<span class="dv">0</span> <span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb3-13" title="13">                y [<span class="dv">0</span> <span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span>]]</a>
+<a class="sourceLine" id="cb3-14" title="14">            (neighbour-score x y board))))</a></code></pre></div>
+<p>Finally, substract the penalty score from the cluster score:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode clojure"><code class="sourceCode clojure"><a class="sourceLine" id="cb4-1" title="1">(<span class="bu">defn</span><span class="fu"> score</span></a>
+<a class="sourceLine" id="cb4-2" title="2">  <span class="st">&quot;heuristic score for a given board&quot;</span></a>
+<a class="sourceLine" id="cb4-3" title="3">  [board]</a>
+<a class="sourceLine" id="cb4-4" title="4">     (<span class="kw">-</span> (cluster-score board matrix) (hetero-score board)))</a></code></pre></div>
+<p>And we are left with a function that maps a game board to a score. We are going to implement an algorithm that tries to maximize this score.</p>
+<h2 id="game-simulation">3. game simulation</h2>
+<p>The next part consists of a function to simulate moves. A <em>move</em> is either a player move, or a move by the environment (= spawning tiles). This distinction is important as we will see later on. The function we are looking for has following signature:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode clojure"><code class="sourceCode clojure"><a class="sourceLine" id="cb5-1" title="1">(<span class="bu">defn</span><span class="fu"> execute-move</span></a>
+<a class="sourceLine" id="cb5-2" title="2">  <span class="st">&quot;returns board after execution of move&quot;</span></a>
+<a class="sourceLine" id="cb5-3" title="3">  [board move]</a>
+<a class="sourceLine" id="cb5-4" title="4">  next-board)</a></code></pre></div>
+<p>The first observation is, considering only horizontal moves, that each row merges independently. Our second observation reveals, that vertical moves can easily be transformed to horizontal moves by transposing the board. The last observation shows, that a left-merge equals a right-merge of the reversed vector.</p>
+<p>If we solve merging of a single row along a single axis, we solve simulating player moves:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode clojure"><code class="sourceCode clojure"><a class="sourceLine" id="cb6-1" title="1">(<span class="bu">def</span><span class="fu"> moves </span>{<span class="at">:up</span> <span class="dv">0</span> <span class="at">:down</span> <span class="dv">1</span> <span class="at">:left</span> <span class="dv">2</span> <span class="at">:right</span> <span class="dv">3</span>})</a>
+<a class="sourceLine" id="cb6-2" title="2"></a>
+<a class="sourceLine" id="cb6-3" title="3">(<span class="bu">defn</span><span class="fu"> remove-zeroes</span></a>
+<a class="sourceLine" id="cb6-4" title="4">  [row]</a>
+<a class="sourceLine" id="cb6-5" title="5">  (<span class="kw">vec</span> (<span class="kw">filter</span> (<span class="kw">complement</span> <span class="kw">zero?</span>) row)))</a>
+<a class="sourceLine" id="cb6-6" title="6"></a>
+<a class="sourceLine" id="cb6-7" title="7">(<span class="bu">defn</span><span class="fu"> pad-zeroes</span></a>
+<a class="sourceLine" id="cb6-8" title="8">  <span class="st">&quot;right pads zeroes to length 4&quot;</span></a>
+<a class="sourceLine" id="cb6-9" title="9">  [row]</a>
+<a class="sourceLine" id="cb6-10" title="10">  (<span class="kw">loop</span> [row row]</a>
+<a class="sourceLine" id="cb6-11" title="11">    (<span class="kw">if</span> (<span class="kw">&gt;=</span> (<span class="kw">count</span> row) <span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb6-12" title="12">      row</a>
+<a class="sourceLine" id="cb6-13" title="13">      (<span class="kw">recur</span> (<span class="kw">conj</span> row <span class="dv">0</span>)))))</a>
+<a class="sourceLine" id="cb6-14" title="14"></a>
+<a class="sourceLine" id="cb6-15" title="15">(<span class="bu">defn</span><span class="fu"> merge-pair</span></a>
+<a class="sourceLine" id="cb6-16" title="16">  <span class="st">&quot;merges two elemnts of a row to the left, considering the original row&quot;</span></a>
+<a class="sourceLine" id="cb6-17" title="17">  [row a b original]</a>
+<a class="sourceLine" id="cb6-18" title="18">  (<span class="kw">if</span> (<span class="kw">and</span> (<span class="kw">=</span> (<span class="kw">nth</span> row a) (<span class="kw">nth</span> row b))</a>
+<a class="sourceLine" id="cb6-19" title="19">           (<span class="kw">or</span> (<span class="kw">nil?</span> original) (<span class="kw">=</span> (<span class="kw">nth</span> original <span class="dv">2</span>) (<span class="kw">nth</span> row <span class="dv">2</span>))))</a>
+<a class="sourceLine" id="cb6-20" title="20">      (<span class="kw">-&gt;</span> row</a>
+<a class="sourceLine" id="cb6-21" title="21">          (<span class="kw">assoc</span> a (<span class="kw">+</span> (<span class="kw">nth</span> row a) (<span class="kw">nth</span> row b))) </a>
+<a class="sourceLine" id="cb6-22" title="22">          (<span class="kw">assoc</span> b <span class="dv">0</span>))</a>
+<a class="sourceLine" id="cb6-23" title="23">      row))</a>
+<a class="sourceLine" id="cb6-24" title="24"></a>
+<a class="sourceLine" id="cb6-25" title="25">(<span class="bu">defn</span><span class="fu"> merge-row-left </span></a>
+<a class="sourceLine" id="cb6-26" title="26">  [row]</a>
+<a class="sourceLine" id="cb6-27" title="27">  (<span class="kw">-&gt;</span> row</a>
+<a class="sourceLine" id="cb6-28" title="28">      (remove-zeroes)</a>
+<a class="sourceLine" id="cb6-29" title="29">      (pad-zeroes)</a>
+<a class="sourceLine" id="cb6-30" title="30">      (merge-pair <span class="dv">0</span> <span class="dv">1</span> <span class="va">nil</span>)</a>
+<a class="sourceLine" id="cb6-31" title="31">      (merge-pair <span class="dv">2</span> <span class="dv">3</span> <span class="va">nil</span>)</a>
+<a class="sourceLine" id="cb6-32" title="32">      (merge-pair <span class="dv">1</span> <span class="dv">2</span> row)</a>
+<a class="sourceLine" id="cb6-33" title="33">      (remove-zeroes)</a>
+<a class="sourceLine" id="cb6-34" title="34">      (pad-zeroes)))</a>
+<a class="sourceLine" id="cb6-35" title="35"></a>
+<a class="sourceLine" id="cb6-36" title="36">(<span class="bu">def</span><span class="fu"> m-left </span>(<span class="kw">memoize</span> merge-row-left))</a></code></pre></div>
+<p>It is noteworthy, that we memoize the function <code>merge-row-left</code>. Assuming the maximum tile we want to reach is <strong>8192</strong> (= 2^13), there are only 13^4 possible combinations to make up a row. This function will potentially be called millions of times per second while searching for the score maximizing player move.</p>
+<p>Introducing some transpose functions leads to our goal function <code>execute-move</code>:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode clojure"><code class="sourceCode clojure"><a class="sourceLine" id="cb7-1" title="1">(<span class="bu">defn-</span><span class="fu"> merge-row-right</span></a>
+<a class="sourceLine" id="cb7-2" title="2">  [row]</a>
+<a class="sourceLine" id="cb7-3" title="3">  (<span class="kw">-&gt;</span> row</a>
+<a class="sourceLine" id="cb7-4" title="4">      (<span class="kw">reverse</span>)</a>
+<a class="sourceLine" id="cb7-5" title="5">      (m-left)</a>
+<a class="sourceLine" id="cb7-6" title="6">      (#(<span class="kw">vec</span> (<span class="kw">reverse</span> <span class="va">%</span>)))))</a>
+<a class="sourceLine" id="cb7-7" title="7"></a>
+<a class="sourceLine" id="cb7-8" title="8">(<span class="bu">def</span><span class="fu"> m-right </span>(<span class="kw">memoize</span> merge-row-right))</a>
+<a class="sourceLine" id="cb7-9" title="9"></a>
+<a class="sourceLine" id="cb7-10" title="10">(<span class="bu">defn-</span><span class="fu"> merge-row</span></a>
+<a class="sourceLine" id="cb7-11" title="11">  [move]</a>
+<a class="sourceLine" id="cb7-12" title="12">  (<span class="kw">if</span> (<span class="kw">=</span> move <span class="at">:right</span>)</a>
+<a class="sourceLine" id="cb7-13" title="13">    m-right</a>
+<a class="sourceLine" id="cb7-14" title="14">    m-left))</a>
+<a class="sourceLine" id="cb7-15" title="15"></a>
+<a class="sourceLine" id="cb7-16" title="16">(<span class="bu">defn-</span><span class="fu"> merge-rows</span></a>
+<a class="sourceLine" id="cb7-17" title="17">  [board move]</a>
+<a class="sourceLine" id="cb7-18" title="18">  (<span class="kw">map</span> (merge-row move) board))</a>
+<a class="sourceLine" id="cb7-19" title="19"></a>
+<a class="sourceLine" id="cb7-20" title="20">(<span class="bu">defn-</span><span class="fu"> transpose-move</span></a>
+<a class="sourceLine" id="cb7-21" title="21">  [move]</a>
+<a class="sourceLine" id="cb7-22" title="22">  (<span class="kw">cond</span></a>
+<a class="sourceLine" id="cb7-23" title="23">    (<span class="kw">=</span> move <span class="at">:down</span>) <span class="at">:right</span></a>
+<a class="sourceLine" id="cb7-24" title="24">    (<span class="kw">=</span> move <span class="at">:up</span>) <span class="at">:left</span>))</a>
+<a class="sourceLine" id="cb7-25" title="25"></a>
+<a class="sourceLine" id="cb7-26" title="26">(<span class="bu">defn-</span><span class="fu"> transpose</span></a>
+<a class="sourceLine" id="cb7-27" title="27">  [board]</a>
+<a class="sourceLine" id="cb7-28" title="28">  (<span class="kw">apply</span> <span class="kw">mapv</span> <span class="kw">vector</span> board))</a>
+<a class="sourceLine" id="cb7-29" title="29"></a>
+<a class="sourceLine" id="cb7-30" title="30">(<span class="bu">defn</span><span class="fu"> execute-move</span></a>
+<a class="sourceLine" id="cb7-31" title="31">  [board move]</a>
+<a class="sourceLine" id="cb7-32" title="32">  (<span class="kw">if</span> (<span class="kw">&gt;</span> <span class="dv">2</span> (<span class="kw">get</span> moves move))</a>
+<a class="sourceLine" id="cb7-33" title="33">   (transpose (merge-rows (transpose board) (transpose-move move)))</a>
+<a class="sourceLine" id="cb7-34" title="34">   (merge-rows board move)))</a></code></pre></div>
+<h2 id="expectimax">4. expectimax</h2>
+<p><img src="/img/2048-clj/tree.png" /></p>
+<p>We are using a search algorithm with an adaptive depth of search. While searching the bot alternates between the <em>chance</em> layer and the <em>max</em> layer. The chance layer is where the environment spawns a tile randomly. We don’t know where it’s going to happen and we don’t know what tile it’s going to be: We have to calculate using the <em>expectancy value</em> of all possible boards:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode clojure"><code class="sourceCode clojure"><a class="sourceLine" id="cb8-1" title="1">(<span class="bu">defn-</span><span class="fu"> average</span></a>
+<a class="sourceLine" id="cb8-2" title="2">  [numbers]</a>
+<a class="sourceLine" id="cb8-3" title="3">    (<span class="kw">/</span> (<span class="kw">apply</span> <span class="kw">+</span> numbers) (<span class="kw">count</span> numbers)))</a>
+<a class="sourceLine" id="cb8-4" title="4"></a>
+<a class="sourceLine" id="cb8-5" title="5">(<span class="bu">defn-</span><span class="fu"> all-spawns</span></a>
+<a class="sourceLine" id="cb8-6" title="6">  <span class="st">&quot;returns a list of boards by spawning tiles of `kind` on all free slots&quot;</span></a>
+<a class="sourceLine" id="cb8-7" title="7">  [board kind]</a>
+<a class="sourceLine" id="cb8-8" title="8">  (<span class="kw">-&gt;&gt;</span></a>
+<a class="sourceLine" id="cb8-9" title="9">   (<span class="kw">for</span> [x [<span class="dv">0</span> <span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb8-10" title="10">         y [<span class="dv">0</span> <span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span>]]</a>
+<a class="sourceLine" id="cb8-11" title="11">     (<span class="kw">if</span> (<span class="kw">=</span> (<span class="kw">nth</span> (<span class="kw">nth</span> board x) y) <span class="dv">0</span>)</a>
+<a class="sourceLine" id="cb8-12" title="12">       (<span class="kw">assoc-in</span> (<span class="kw">vec</span> board) [x y] kind)))</a>
+<a class="sourceLine" id="cb8-13" title="13">   (<span class="kw">filter</span> (<span class="kw">complement</span> <span class="kw">nil?</span>))))</a>
+<a class="sourceLine" id="cb8-14" title="14"></a>
+<a class="sourceLine" id="cb8-15" title="15">(<span class="bu">defn</span><span class="fu"> calculate-chance</span></a>
+<a class="sourceLine" id="cb8-16" title="16">  <span class="st">&quot;returns heuristic score of current chance node&quot;</span></a>
+<a class="sourceLine" id="cb8-17" title="17">  ([board depth limit original]</a>
+<a class="sourceLine" id="cb8-18" title="18">   (<span class="kw">if</span> (<span class="kw">=</span> board original)</a>
+<a class="sourceLine" id="cb8-19" title="19">     <span class="dv">0</span></a>
+<a class="sourceLine" id="cb8-20" title="20">     (calculate-chance board depth limit)))</a>
+<a class="sourceLine" id="cb8-21" title="21">  ([board depth limit]</a>
+<a class="sourceLine" id="cb8-22" title="22">   (<span class="kw">if</span> (<span class="kw">or</span> (<span class="kw">=</span> depth limit)) </a>
+<a class="sourceLine" id="cb8-23" title="23">     (ai/m-score board)</a>
+<a class="sourceLine" id="cb8-24" title="24">     (average (<span class="kw">concat</span></a>
+<a class="sourceLine" id="cb8-25" title="25">               (<span class="kw">map</span> #(<span class="kw">*</span> (calculate-max <span class="va">%</span> (<span class="kw">inc</span> depth) limit) <span class="fl">0.9</span>) (all-spawns board <span class="dv">2</span>))</a>
+<a class="sourceLine" id="cb8-26" title="26">               (<span class="kw">map</span> #(<span class="kw">*</span> (calculate-max <span class="va">%</span> (<span class="kw">inc</span> depth) limit) <span class="fl">0.1</span>) (all-spawns board <span class="dv">4</span>)))))))</a></code></pre></div>
+<p>At the <em>max</em> layer on the other hand, we are in control. We can simply execute all possible moves given a board and return the highest heuristic score using <code>calculate-max</code>.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode clojure"><code class="sourceCode clojure"><a class="sourceLine" id="cb9-1" title="1">(<span class="bu">defn-</span><span class="fu"> all-moves</span></a>
+<a class="sourceLine" id="cb9-2" title="2">  <span class="st">&quot;returns a list of all possible moves given a board&quot;</span></a>
+<a class="sourceLine" id="cb9-3" title="3">  [board]</a>
+<a class="sourceLine" id="cb9-4" title="4">  (<span class="kw">filter</span> #(<span class="kw">not=</span> <span class="va">%</span> board) (<span class="kw">map</span> #(game/execute-move board <span class="va">%</span>) ai/moves)))</a>
+<a class="sourceLine" id="cb9-5" title="5"></a>
+<a class="sourceLine" id="cb9-6" title="6">(<span class="bu">defn</span><span class="fu"> calculate-max</span></a>
+<a class="sourceLine" id="cb9-7" title="7">  <span class="st">&quot;returns heuristic score of current max node by returning the max value of the children&quot;</span></a>
+<a class="sourceLine" id="cb9-8" title="8">  ([board depth limit original]</a>
+<a class="sourceLine" id="cb9-9" title="9">  (<span class="kw">if</span> (<span class="kw">=</span> board original)</a>
+<a class="sourceLine" id="cb9-10" title="10">    <span class="dv">0</span></a>
+<a class="sourceLine" id="cb9-11" title="11">    (calculate-max board depth limit)))</a>
+<a class="sourceLine" id="cb9-12" title="12">  ([board depth limit]</a>
+<a class="sourceLine" id="cb9-13" title="13">  (<span class="kw">if</span> (<span class="kw">or</span> (<span class="kw">=</span> depth limit) )</a>
+<a class="sourceLine" id="cb9-14" title="14">    (ai/m-score board)</a>
+<a class="sourceLine" id="cb9-15" title="15">    (<span class="kw">apply</span> <span class="kw">max</span> (<span class="kw">concat</span> (<span class="kw">map</span> #(calculate-chance <span class="va">%</span> (<span class="kw">inc</span> depth) limit) (all-moves board)) &#39;(<span class="dv">0</span>))))))</a>
+<a class="sourceLine" id="cb9-16" title="16"></a></code></pre></div>
+<p>Lastly, we expose our magnificent AI through a single function <code>best-move</code> returning the best move given a board:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode clojure"><code class="sourceCode clojure"><a class="sourceLine" id="cb10-1" title="1">(defn-n count-zeroes</a>
+<a class="sourceLine" id="cb10-2" title="2">  <span class="st">&quot;amount of empty slots on a board&quot;</span></a>
+<a class="sourceLine" id="cb10-3" title="3">  [board]</a>
+<a class="sourceLine" id="cb10-4" title="4">  (<span class="kw">or</span> (<span class="kw">-&gt;</span> board</a>
+<a class="sourceLine" id="cb10-5" title="5">          (flatten)</a>
+<a class="sourceLine" id="cb10-6" title="6">          (<span class="kw">frequencies</span>)</a>
+<a class="sourceLine" id="cb10-7" title="7">          (<span class="kw">get</span> <span class="dv">0</span>)) <span class="dv">0</span>))</a>
+<a class="sourceLine" id="cb10-8" title="8"></a>
+<a class="sourceLine" id="cb10-9" title="9">(defn-n decide-depth</a>
+<a class="sourceLine" id="cb10-10" title="10">  <span class="st">&quot;set depth of search according to amount of empty slots left&quot;</span></a>
+<a class="sourceLine" id="cb10-11" title="11">  [number]</a>
+<a class="sourceLine" id="cb10-12" title="12">  (<span class="kw">cond</span></a>
+<a class="sourceLine" id="cb10-13" title="13">    (<span class="kw">&gt;</span> number <span class="dv">12</span>) <span class="dv">1</span></a>
+<a class="sourceLine" id="cb10-14" title="14">    (<span class="kw">&gt;</span> number <span class="dv">7</span>) <span class="dv">2</span></a>
+<a class="sourceLine" id="cb10-15" title="15">    (<span class="kw">&gt;</span> number <span class="dv">4</span>) <span class="dv">3</span></a>
+<a class="sourceLine" id="cb10-16" title="16">    (<span class="kw">&gt;</span> number <span class="dv">1</span>) <span class="dv">4</span></a>
+<a class="sourceLine" id="cb10-17" title="17">    (<span class="kw">&gt;=</span> number <span class="dv">0</span>) <span class="dv">6</span></a>
+<a class="sourceLine" id="cb10-18" title="18">    <span class="at">:else</span> <span class="dv">2</span>))</a>
+<a class="sourceLine" id="cb10-19" title="19">    </a>
+<a class="sourceLine" id="cb10-20" title="20">(<span class="bu">defn-</span><span class="fu"> get-depth</span></a>
+<a class="sourceLine" id="cb10-21" title="21">  <span class="st">&quot;returns depth of search for current board&quot;</span></a>
+<a class="sourceLine" id="cb10-22" title="22">  [board]</a>
+<a class="sourceLine" id="cb10-23" title="23">  (<span class="kw">-&gt;</span> board</a>
+<a class="sourceLine" id="cb10-24" title="24">      (count-zeroes)</a>
+<a class="sourceLine" id="cb10-25" title="25">      (decide-depth)))</a>
+<a class="sourceLine" id="cb10-26" title="26"></a>
+<a class="sourceLine" id="cb10-27" title="27">(<span class="bu">defn</span><span class="fu"> best-move</span></a>
+<a class="sourceLine" id="cb10-28" title="28">  <span class="st">&quot;returns best move for a board&quot;</span></a>
+<a class="sourceLine" id="cb10-29" title="29">  [board]</a>
+<a class="sourceLine" id="cb10-30" title="30">  (<span class="kw">let</span> [moveh (<span class="kw">sort-by</span> <span class="kw">val</span> <span class="kw">&gt;</span> (<span class="kw">into</span> (<span class="kw">sorted-map</span>)</a>
+<a class="sourceLine" id="cb10-31" title="31">                    (<span class="kw">pmap</span></a>
+<a class="sourceLine" id="cb10-32" title="32">                     (<span class="kw">fn</span> [x] {x (ex/calculate-chance (game/execute-move board x) <span class="dv">0</span> (get-depth board) board)}) moves)))]</a>
+<a class="sourceLine" id="cb10-33" title="33">    (<span class="kw">get</span> moves-map</a>
+<a class="sourceLine" id="cb10-34" title="34">         (<span class="kw">first</span> (<span class="kw">keys</span> moveh)))))</a>
+<a class="sourceLine" id="cb10-35" title="35"></a>
+<a class="sourceLine" id="cb10-36" title="36">(<span class="bu">def</span><span class="fu"> m-best-move </span>(<span class="kw">memoize</span> best-move))</a></code></pre></div>
+<p>Using <code>pmap</code> I am able to get 100% CPU usage on Java 8 HotSpot VM and a dual core machine. At most there are only 4 functions getting executed in parallel, so the performance gain through parallelization is probably not that great on machines with more cores.</p>
+<p>You can find the source in <a href="https://github.com/jerben/clj-2048-ai">this repo</a>.</p>
+</div><div class="tags"><img class="tag-icon" src="/img/tag.svg"><ul itemprop="keywords"><li class="category"><a href="/category/clojure.html">clojure</a></li><li class="tag"><a href="/tags/coding.html">#coding</a></li><li class="tag"><a href="/tags/2048.html">#2048</a></li><li class="tag"><a href="/tags/ai.html">#ai</a></li></ul></div></div></article></div></main><footer><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><div class="name" itemprop="name">200ok GmbH</div><div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"><a href="https://goo.gl/maps/GNAoiNF7mbL2" title="View on Google Maps"><div itemprop="streetAddress">Badenerstrasse 313</div><div><span itemprop="postalCode">8003</span> <span itemprop="addressLocality">Zürich</span></div></a></div><div itemprop="telephone">+41 76 405 05 67</div><div itemprop="email"><a href="mailto:info@200ok.ch">info@200ok.ch</a></div><img itemprop="logo" src="https://200ok.ch/img/200ok.svg"></div></footer><div class="scripts" style="{:display &quot;none&quot;}"><script src="/js/vendor/bowser.min.js"></script><script async src="/js/ie_safeguard.js"></script><script async src="/js/tour.js"></script><script src="/js/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script><script>tour=null</script></div></body></html>

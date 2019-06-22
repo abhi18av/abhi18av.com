@@ -1,0 +1,25 @@
+name: Simplatyser
+url: https://simplatyser.ch/
+priority: 45
+image: "/img/products/simplatyser.png"
+incubated: 2015
+incubator-status: MVP online and usable, but currently on hold.
+technologies:
+  - java
+  - jhipster
+  - postgresql
+  - angular
+  - debian
+  - docker
+  - clojure
+people:
+  - max
+  - raphael
+  - alain
+  - phil
+short-description: >-
+  *Simplatyser* automates manual tasks for you with the power of the
+  cloud.
+description: >-
+  Simplatyser automates manual tasks for you with the power of the
+  cloud.

@@ -1,0 +1,67 @@
+okhq:
+  name: Zürich
+  address: Badenerstrasse 313, 8003 Zürich
+  images:
+    #- hq2.jpg
+    #- hq_meeting_room.jpg
+    #- hq_pool.jpg
+    #- hq1.jpg
+    #- hq_surroundings.jpg
+  description: >-
+    Our Zürich headquarter is well situated within urban Zürich next
+    to Albisriederplatz.
+
+    This is our **day to day office** where we work together on our
+    products and for clients. In summer, it features a great option to
+    cool off and relax in the pool. We've got a great meeting room
+    that we use for workshops and coachings.
+
+    ## Office location
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2701.777878179114!2d8.50997601594404!3d47.37725357917015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a2496f25c69%3A0xd00300eef0166b7b!2sBadenerstrasse+313%2C+8003+Z%C3%BCrich!5e0!3m2!1sen!2sch!4v1517591996880" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    ## Public Transportation
+
+    Drive to station "Albisriederplatz" (Trams 2 and 3 and busses 33,
+    72 and 83). From there, it is a 2 minute walk.
+
+    ## Parking Lots
+
+    Please use one of the public parking lots 150m from the office.
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d1795.1385523643235!2d8.511208336500038!3d47.3769617138686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e2!4m3!3m2!1d47.3767326!2d8.5120795!4m5!1s0x47900a2496f25c69%3A0xd00300eef0166b7b!2sBadenerstrasse+313%2C+Z%C3%BCrich!3m2!1d47.377253599999996!2d8.5121647!5e1!3m2!1sen!2sch!4v1517592561287" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+lambda:
+  name: Glarus
+  address: Im Stützli 5, 8750 Glarus
+  images:
+    #- lambda1.jpg
+    #- lambda_berg.jpg
+    #- lambda_kloental.jpg
+    #- lambda_sunrise.jpg
+    #- lambda_tea_room.jpg
+    #- lambda_living_room.jpg
+    #- lambda_zen_temple_zendo.jpg
+  description: >-
+    Our Glarus office is perfectly situated within the mountains of
+    Glarus, Switzerland.
+
+    There, we hold multi-day **code retreats** and **workshops**. In
+    summer we do hikes and go snow shoeing in winter. It also is a
+    co-working space where 200ok partners and friends work together
+    while enjoying the benefits of the local scenery.
+
+    ## Office location
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.812931495304!2d9.058425415934522!3d47.04390147915123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47852da58017cbdf%3A0xed472da130a82575!2sIm+St%C3%BCtzli+5%2C+8750+Glarus!5e0!3m2!1sen!2sch!4v1517592065475" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    ## Public Transportation
+
+    Glarus is very accessible by public transportation. There are
+    direct trains from Zurich and Rapperswil every 30 minutes.
+
+    ## Parking Lots
+
+    Please use one of the public parking lots 150m from the office.
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m27!1m11!1m3!1d2285.2765428884004!2d9.059551010391942!3d47.043509042269896!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x47852daf9c28c753%3A0xb06473db6d3bdeba!2sLangenackerstrasse+2%2C+8750+Glarus!3m2!1d47.0435915!2d9.0617152!4m5!1s0x47852da58017cbdf%3A0xed472da130a82575!2sIm+St%C3%BCtzli+5%2C+8750+Glarus!3m2!1d47.0439015!2d9.0606141!5e1!3m2!1sen!2sch!4v1517592361525" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>

@@ -1,0 +1,19 @@
+name: Kunstmuseum Basel Chat
+image: "/img/products/kunstmuseum-chat.png"
+priority: 44
+technologies:
+  - nodejs
+  - javascript
+  - faye
+  - riot
+people:
+  - alain
+  - anna
+short-description: >-
+  A mobile-first chat application with an admin back-end for
+  Kunstmuseum Basel exhibitions.
+description: >-
+  A mobile-first chat application with an admin back-end. Visitors
+  of Kunstmuseum Basel exhibitions can ask questions on iPads which
+  are deployed throughout the museum and get instant feeback from
+  curators, restaurators and art brokers.

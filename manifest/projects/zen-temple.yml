@@ -1,0 +1,24 @@
+name: Insopor Zen Academy
+url: http://zen-temple.net
+image: "/img/products/zen-temple.png"
+priority: 47
+people:
+  - alain
+technologies:
+  - wordpress
+  - javascript
+  - clojure
+  - heroku
+  - ruby
+  - sinatra
+  - adwords
+short-description: >-
+  *zen-temple.net* is a multilingual, SEO optimized website with over
+  500 landing pages, each with automated integrations into 8 social
+  media networks. It feeds data from specialized microservices and
+  has automated integration into Google Adwords.
+description: >-
+  zen-temple.net is a multilingual, SEO optimized website with over
+  500 landing pages, each with automated integrations into 8 social
+  media networks. It feeds data from specialized microservices and
+  has automated integration into Google Adwords.

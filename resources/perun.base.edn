@@ -1,0 +1,7 @@
+;; global meta data
+
+{:base-url "https://200ok.ch/"
+ :site-title "200ok - Consultancy, Research Lab, Incubator"
+ :description "Consultancy - Research Lab - Incubator"
+ :subdescription "based in beautiful Zürich, Switzerland"
+ :author "200ok GmbH"}

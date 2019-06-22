@@ -1,0 +1,20 @@
+name: Codegraph
+url: https://gitlab.com/200ok/codegraph
+image: "/img/products/codegraph.png"
+opensourced: 2016
+priority: 80
+technologies:
+  - clojure
+  - graphviz
+people:
+  - phil
+short-description: >-
+  Generates a dependency graph for Clojure and ClojureScript code.
+description: >-
+  Codegraph is a command utility written in about 50 lines of
+  Clojure. It reads Clojure code with Clojure's builtin function
+  `read-string`, analyzes the code and generates a dot file, which
+  can be fed into Graphviz to generate a dependency graph of the
+  given code. It works nicely with ClojureScript. And it's a
+  beautiful demonstration of Clojure's homoiconicity (which is a
+  fancy technical term for "code is data").

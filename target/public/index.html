@@ -1,13 +1,51 @@
 <!DOCTYPE html>
-<html><div style="max-width: 900px; margin: 40px auto;"><a href="/">Home</a><a href="/about.html">About</a><div class="sect3">
-<h4 id="__say_hello_world">(say "Hello, World!")</h4>
-<div class="paragraph">
-<p>This is the <code>index.adoc</code> file</p>
-</div>
-<div class="paragraph">
-<p>And this should now re-render automagically!</p>
-</div>
-<div class="paragraph">
-<p><a href="http://localhost:3000/about.html">about</a></p>
-</div>
-</div></div></html>
+<html lang="en"><!--
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNMMNmmmmNNNNNNNNNNmmmNMNNmmNNMMNmmddmNNNMMNmddmNNMMNNddmNMMMmdhdd
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNMMNmmmmNNNNNNNNNNmmmNMMNmmNNMMNNdddmmNNMMNmddmNNMMMNmdmNMMMmdhdd
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNMMNmmmmNNNNNmmhmNddhmNMNmmmNMMMNmddmmNNMMNmddmmNMMMNmdmNMMMNdddd
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNMMNNmmmNNmdhs+oosso/-:/oydmNMMMNmddmmNNMMMmmdmmNMMMNmdmNMMMNdhdd
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNMMNmdhs+/-..`````.::/-```-oNNNMNmddmmNNMMMNddmmNMMMNmdmNNMMNmddd
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNMNdo:.```````````````-:```./mNNNmdddmmNNMMNmddmNMMMNmdmNNMMNmddd
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNmdo-............```` ````````-hddmdddmmNNMMNmddmNMMMNmddmNMMNmddd
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmyo/------://:-.`...````.````````-/ossydmmNNMMNmddmNNMMNmddmNMMNmddd
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMNMNs:---::///:-:--.````.`...````.`.`.``--:+yhmNNMMNmddmmNMMMNmdmNMMMmddd
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMNy/.-::////--:-:/:......-.-....``.----....:oydNNMMMmddmmNMMMNmdmNMMMmdhd
+MMMMMMMMMMMMMMMMMMMMMMMMMMNy+--...://+o:./oyyo+///+/+/://:--...-:::-..`./sdNMMMNmddmNMMMNmmmNMMMNddd
+MMMMMMMMMMMMMMMMMMMMMMMMMNs:---...-://+/:ossyo+ssyss///:---.....-::::-.``.ohmMMNmddmNMMMNmdmNMMMNmdd
+MMMMMMMMMMMMMMMMMMMMMMMMNs/::-....--:////::/-/-osooo///::--..--:+s:::--.``-ohNNNmddmNMMMNmdmNMMMNmdd
+MMMMMMMMMMMMMMMMMMMMMMMNy///:--..`..-::--......://+++++++/:---::/../oo/--`-:yNMNmddmmNMMNmdmNNMMNmdd
+MMMMMMMMMMMMMMMMMMMMMMMmyso+/:.````.....````````.---/+sso++++o/:--+syhh+:..omNMNmdddmNMMNmmmmNMMNmdd
+MMMMMMMMMMMMMMMMMMMMMMNhsoo+/-..::-.......````   ```.:+sysssyyyyyo/:ohhy+:-/hNMNmdddmNMMNNmmmNMMNmdd
+MMMMMMMMMMMMMMMMMMMMMMNdysoo//+sys/-.-:--..`````   ```.:++/+oyhdmho+shdhs/-./dMMNmddmNMMMNmmmNMMNmmd
+MMMMMMMMMMMMMMMMMMMMMMMNdyysosyhyo/---:::--...`````````.-/+++osyhdmmhddhs+:-/dMMNmddmNMMMNmmmNMMMNmd
+MMMMMMMMMMMMMMMMMMMMMMMMmhhysyyyo/:::-://::-..``````````..-:://oyhdNmddhs/:-/hNMNmddmNMMMNmmmNMMMNmd
+MMMMMMMMMMMMMMMMMMMMMMMMNdhhhhhyso++++////:--.``` ```````````.-:oydmmmho++/:+hNMNmmdmNMMMNmmmNMMMNmd
+MMMMMMMMMMMMMMMMMMMMMMMMNdddhddhyyyhyso//:/----..````````   ```-/ohdmds/:+//hmNMNmmdmmNMMNmmmNMMMNmd
+MMMMMMMMMMMMMMMMMMMMMMMMMNmmddmmmmdysoo//+syyhhyo+//:-.........-:+shhho//+++hmNMMNmmmmNMMNNmmNMMMNmm
+MMMMMMMMMMMMMMMMMMMMMMMMMMmyydNMMMNNmmmddmddddmmddddys::/+++::////oydhsoosshmmNMMNmmmmNMMNNmmNMMMNmm
+MMMMMMMMMMMMMMMMMMMMMMMMMNmNmddmmmhhhmMMNdhhhdmNNNNNmhooyhyyyyhhhhhdmddyyhdmmNMMMNmmmmNMMMNmmNNMMNmm
+MMMMMMMMMMMMMMMMMMMMMMMMMNNNmmhyhdys++mNmNNmNNmNNNNNNMNmNMNNNNNmmmmhmNMMNdmmmNMMMNmmmmNMMMNmmNNMMNmm
+MMMMMMMMMMMMMMMMMMMMMMMMMMNmmdyshdds+:smsyyhdmmmmhhmNN++NMNmNNmmNmhyddNMmdmmmNNMMNmmmmNMMMNmmNNMMNNm
+MMMMMMMMMMMMMMMMMMMMMMMMMMNddsyssddys+/NooosyhysoosdN+`.dNyhdmdddhsyymMMmdmmmNNMMMNmmmNNMMNmmNNMMNNm
+MMMMMMMMMMMMMMMMMMMMMMMMMMMhshhyohddhhyydsoo+:::/smd:`` -my/oyyyy+osyNNNmdmmmNNMMMNmmmNNMMNmmmNMMMNm
+MMMMMMMMMMMMMMMMMMMMMMMMMMMdsyddsydmdhhhyso+++osdmo--.```/dy+/++oossdmmmmmdmmNNMMMNmmmmNMMNmmmNMMMNm
+MMMMMMMMMMMMMMMMMMMMMMMMMMMNhshdhsdmdhhysooooshmNy++sssoo++yo++oyhhsyhmmmdmmmmNMMMNmmmmNMMNNmmNMMMNm
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMNmdhshdmdhhssssyhhhdmmNNNNNNmhdhsooshyoyNNNmmmmmmNNMMNmmmmNMMNNmmNMMMNm
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmmdhhmmmhhyyyysydydsdhmNNmmyosyyhyhhyhNMNNmmddmmNNMMNmmmmNMMNNmmNNMMNm
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMNmmmmdmNmhssyhyhdmmNmNmmNmmhyhs/shdhhhmMMNNNNNNNNNNMMMNNNNMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMNdmhmmmmmmdhosyydNNNNNmmmmmmmNNNdy/ydhsdNMMNMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMNdhmyydmmmmmhyydddmdhyhyhyhhhyyhmNNdoososmNNNNMMMMMMMMMMMMMMMMNNNNNmmdddhhh
+MMMMMMMMMMMMMMMMMMMMMMMNdyyhhssydmmmmdddmmy++osoosoysoossydmdso+sdmNMNMMMMMMMNNNmmddhhyyyssss+++////
+MMMMMMMMMMMMMMMMMMMMMmyooyydsoooyddmNdmmdo+://osossoyssysososyyoossyyyyydmNmddhhhhyyyysssssoo+////::
+MMMMMMMMMMMMMMMMMMNho+o++yshoooooshmmmmhho:--:/o/shhhddyos+::ososo+//::----::://+osyssssssoooo+///::
+MMMMMMMMMMMMMMNmyo///++++ssyyooossyhmmNhh+:::++/oyhhhhys+o+-+ssssooo++/::-------..-/sssssssoooo+////
+MMMMMMMMMMMNds+:::///++++osshosssyyydmdho/::/+oosysyhhso/+/:sssssooooo++/::-------..-/osssssoooo+///
+MMMMMMMMNho:---:::/::+++++oshsosyyyhhddyo+-://:/o/oyydo++/::hmyssooo+++++//::-----....:osssosooooo//
+MMMMNho/:------::::://+oo+ooydossyyyhddmdhyyyo:/+/oyhhs++/:/hmdsoooo++///////:------...-osssssosoo++
+Nds/-----------:::::///++ooosdhosyyhhhddmNmmNmmmhdhddhsoo+/+yMNhs++++++/////:::-----.-.--sssssssoooo
+--......------::::::///++++osymhoyyhhhhdmmmmNNNNNMMMMNhso++++hMmyo++++++////:::::-----.--/ssssssoooo
+.........---::-:/::://///ooooshdhsyhhhddmmmmmmmMMMMMMMMNs+++/ohMds++/+/++///:::::::----.--:osssssooo
+........-s+----::--:/::/++++ooyhmhyhddhddmmmmdMMMMMMMMMMMs///+sNNho+////////+++//::::--.---:sssssooo
+.........-oh/--::--::::/+++oo+oysdhyhhdddmmmdNMMMMMMMMMMMMs/:/smMmy+//////:::::::////:-----/syssssso
+-->
+<head><meta charset="utf-8"><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport"><link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"><link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"><link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"><link href="/manifest.json" rel="manifest"><link color="#5bbad5" href="/safari-pinned-tab.svg" rel="mask-icon"><meta content="#ffffff" name="theme-color"><link href="/css/normalize.css" rel="stylesheet"><link href="/css/app.css" rel="stylesheet"><title></title><link href="/rss.xml" rel="alternate" type="application/rss+xml"><link href="/atom.xml" rel="alternate" type="application/atom+xml"></head><body itemscope itemtype="http://schema.org/WebPage"><div class="top-bar"><div class="top-bar-left"><top-bar-title itemprop="image"><a href="/" id="logo"><img src="/img/200ok.svg"></a></top-bar-title></div><div class="top-bar-right"><ul class="menu"><li><a href="/blog.html">Blog</a></li><li><a href="/projects.html">Projects</a></li><li><a href="/team.html">Team</a></li><li><a href="/atom.xml" id="atom-feed"><span>&nbsp;</span>Feed</a></li></ul></div></div><main class="teaser-wrapper"><div class="teaser"><span><span>We're </span><a href="team.html">9 software engineers*,</a></span><span><span> working from </span><a href="locations.html">2 locations in Switzerland,</a></span><span><span> highly skilled in </span><a href="technologies.html">44 technologies,</a></span><span><span> enthusiastically working for </span><a href="clients.html">16 clients,</a></span><span><span> providing </span><a href="services.html">7 kinds of services,</a></span><span><span> on </span><a href="projects.html">24 awesome projects,</a></span><span><span> of which to this date </span><a href="opensource.html">12 have been open-sourced.</a></span><div class="supporting">* including supporting roles & network</div></div><a class="stopper" href="https://www.meetup.com/zh-clj-Zurich-Clojure-User-Group/" target="_blank"><img src="clojure_sun.svg"></a></main><footer><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><div class="name" itemprop="name">200ok GmbH</div><div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"><a href="https://goo.gl/maps/GNAoiNF7mbL2" title="View on Google Maps"><div itemprop="streetAddress">Badenerstrasse 313</div><div><span itemprop="postalCode">8003</span> <span itemprop="addressLocality">Zürich</span></div></a></div><div itemprop="telephone">+41 76 405 05 67</div><div itemprop="email"><a href="mailto:info@200ok.ch">info@200ok.ch</a></div><img itemprop="logo" src="https://200ok.ch/img/200ok.svg"></div></footer><div class="scripts" style="{:display &quot;none&quot;}"><script src="/js/vendor/bowser.min.js"></script><script async src="/js/ie_safeguard.js"></script><script async src="/js/tour.js"></script><script src="/js/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script><script>tour=["\/","\/team.html","\/technologies.html","\/clients.html","\/services.html","\/projects.html","\/opensource.html"]</script></div></body></html>

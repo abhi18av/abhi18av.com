@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport"><link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"><link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"><link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"><link href="/manifest.json" rel="manifest"><link color="#5bbad5" href="/safari-pinned-tab.svg" rel="mask-icon"><meta content="#ffffff" name="theme-color"><link href="/css/normalize.css" rel="stylesheet"><link href="/css/app.css" rel="stylesheet"><title>Make zsh recognize Projects you are working on - 200ok</title><link href="/rss.xml" rel="alternate" title="200ok - Consultancy, Research Lab, Incubator" type="application/rss+xml"><link href="/atom.xml" rel="alternate" title="200ok - Consultancy, Research Lab, Incubator" type="application/atom+xml"><meta content="A snippet for ZSH to recognize project folders you changed to, so that when you create new shells (i.e. through opening a terminal) it changes to the last used project automatically." name="description"><meta content="Make zsh recognize Projects you are working on - 200ok" property="og:title"><meta content="article" property="og:type"><meta content="A snippet for ZSH to recognize project folders you changed to, so that when you create new shells (i.e. through opening a terminal) it changes to the last used project automatically." property="og:description"><meta content="https://200ok.ch/posts/2018-04-10_Make_zsh_recognise_Projects_you_are_working_on.html" property="og:url"><meta content="https://200ok.ch/img/logo.png" property="og:image"><meta content="summary" name="twitter:card"><meta content="@twohundredok" name="twitter:site"><meta content="Make zsh recognize Projects you are working on - 200ok" name="twitter:title"><meta content="https://200ok.ch/img/logo.png" name="twitter:image"><meta content="A snippet for ZSH to recognize project folders you changed to, so that when you create new shells (i.e. through opening a terminal) it changes to the last used project automatically." name="twitter:description"><link href="https://200ok.ch/posts/2018-04-10_Make_zsh_recognise_Projects_you_are_working_on.html" rel="canonical"><link href="/css/styles/solarized-light.css" rel="stylesheet"></head><body id="blog" itemscope itemtype="http://schema.org/Blog"><div class="top-bar"><div class="top-bar-left"><top-bar-title itemprop="image"><a href="/" id="logo"><img src="/img/200ok.svg"></a></top-bar-title></div><div class="top-bar-right"><ul class="menu"><li><a href="/blog.html">Blog</a></li><li><a href="/projects.html">Projects</a></li><li><a href="/team.html">Team</a></li><li><a href="/atom.xml" id="atom-feed"><span>&nbsp;</span>Feed</a></li></ul></div></div><main class="single-post"><div id="content"><article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting"><h3 class="headline" itemprop="headline"><a class="nunito" href="/posts/2018-04-10_Make_zsh_recognise_Projects_you_are_working_on.html" itemprop="url">Make zsh recognize Projects you are working on</a></h3><div class="subheader"><p class="post-meta"><time itemprop="datePublished">2018-04-30</time> - <span itemprop="wordCount">903</span> words - <span itemprop="timeRequired">7</span> min read</p><div class="byline"><img class="author-icon" src="/img/author.svg"><section class="author" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Phil Hofmann</span></section></div></div><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><meta content="190" itemprop="height"><meta content="349" itemprop="width"><meta content="https://200ok.ch/img/logo.png" itemprop="url"></span><div><div class="article-body" itemprop="articleBody"><p>TL;DR The following snippet added to you <code>~/.zshrc</code> will recognize project folders you changed to, so that when you create new shells (i.e. through opening a terminal) it changes to the last used project automatically. Please find the complete snippet at the end of this post.</p>
+<p>Some projects have a lot of processes. While there are tools for orchestrating the startup of applications that require multiple processes, sometimes it just more convenient to open terminals for each of those processes. But having opened multiple terminals, it would be cumbersome to have to change to the project’s directory on each of those shells. And more generally, it would be nice to have a shell setup which is aware of the project I’m working on and thus could automatically change the directory to the current project as I spawn new terminals.</p>
+<p>Let’s make a list of what we need to make that happen:</p>
+<ul>
+<li>a persistent storage
+<ul>
+<li>to store the location of the current project to</li>
+<li>and to read the location of the current project from</li>
+</ul></li>
+<li>a way to distinguish project directories from other directories</li>
+<li>a hook that hooks into the event of changing directories</li>
+<li>a way to automatically change the directory of a new shell</li>
+<li>optionally, a way to revert the last recognition of a project</li>
+</ul>
+<h2 id="storage">Storage</h2>
+<p>A flat file will do for storage. This file storage will be required throughout the upcoming code. Let’s put it in a variable <code>WD</code>(for “working directory”).</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="va">WD=</span>~/.wd</a></code></pre></div>
+<p>We can easily save the current working directory:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" title="1"><span class="bu">pwd</span> <span class="op">&gt;</span> <span class="va">$WD</span></a></code></pre></div>
+<p>And read it back:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" title="1"><span class="va">CURRENT_PROJECT=</span><span class="kw">`</span><span class="fu">cat</span> <span class="va">$WD</span><span class="kw">`</span></a></code></pre></div>
+<p>But since we’re planning to be able to revert to the last detected project, we’ll actually use it as a stack, and thus instead of overwriting the file we’ll append to it.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb4-1" title="1"><span class="bu">pwd</span> <span class="op">&gt;&gt;</span> <span class="va">$WD</span></a></code></pre></div>
+<p>And when reading from the stack instead of reading the whole file we’ll just read the last line.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb5-1" title="1"><span class="va">CURRENT_PROJECT=</span><span class="kw">`</span><span class="fu">tail</span> -1 <span class="va">$WD</span><span class="kw">`</span></a></code></pre></div>
+<p>So reading and writing to the storage is set, let’s move on.</p>
+<h2 id="project-or-nonproject-directory">Project or Nonproject Directory</h2>
+<p>Distinguishing project from nonproject directories is a tricky one and might depend on the tools you’re using. Since I’m using git in almost all of my projects, I settle with the presence of a <code>.git</code> directory as an indicator for a project directory.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">if [[</span> <span class="ot">-d</span> .git<span class="kw"> ]]</span>; <span class="kw">then</span></a>
+<a class="sourceLine" id="cb6-2" title="2">  <span class="co"># ...</span></a>
+<a class="sourceLine" id="cb6-3" title="3"><span class="kw">fi</span></a></code></pre></div>
+<p>If you are using other VCSs, you need to change that, obviously. A good indicator might also be project settings files that are written by your editor or IDE or dependency/project automation files (like <code>Gemfile</code> for Ruby, <code>package.json</code> for JavaScript or <code>project.clj</code> for Clojure).</p>
+<h2 id="hooking-into-cd">Hooking into <code>cd</code></h2>
+<p>Hooking into changing directories is fairly easy with zsh as it provides <code>chpwd</code> among its so called <a href="http://zsh.sourceforge.net/Doc/Release/Functions.html">“Hook Functions”</a>. But it is a good practice to use <code>add-zsh-hook</code>, which lets you register multiple functions to a hook.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb7-1" title="1"><span class="ex">autoload</span> -U add-zsh-hook</a>
+<a class="sourceLine" id="cb7-2" title="2"></a>
+<a class="sourceLine" id="cb7-3" title="3"><span class="ex">add-zsh-hook</span> chpwd recognize-project</a></code></pre></div>
+<p><code>recognize-project</code> is a function that we still need to write as of yet.</p>
+<p>Other shells than zsh provide similar functionality. In some cases like bash you get away by wrapping the builtin <code>cd</code> command in a function, that call the builtin but also runs you own code.</p>
+<h2 id="automate-cd">Automate <code>cd</code></h2>
+<p>Automatically changing to the last location stored is as easy as calling</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb8-1" title="1"><span class="bu">cd</span> <span class="kw">`</span><span class="fu">tail</span> -1 <span class="va">$WD</span><span class="kw">`</span></a></code></pre></div>
+<p>Adding this to you <code>~/.zshrc</code> will run it automatically for each new shell. Just be aware that as long as <code>~/.wd</code> is empty or doesn’t exist this will throw an error.</p>
+<h2 id="in-practice">In Practice</h2>
+<p>Putting it together:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb9-1" title="1"><span class="co">#!/usr/bin/zsh</span></a>
+<a class="sourceLine" id="cb9-2" title="2"></a>
+<a class="sourceLine" id="cb9-3" title="3"><span class="ex">autoload</span> -U add-zsh-hook</a>
+<a class="sourceLine" id="cb9-4" title="4"></a>
+<a class="sourceLine" id="cb9-5" title="5"><span class="va">WD=</span>~/.wd</a>
+<a class="sourceLine" id="cb9-6" title="6"></a>
+<a class="sourceLine" id="cb9-7" title="7"><span class="fu">recognize-project()</span> <span class="kw">{</span></a>
+<a class="sourceLine" id="cb9-8" title="8">  <span class="kw">if [[</span> <span class="ot">-d</span> .git<span class="kw"> ]]</span>; <span class="kw">then</span></a>
+<a class="sourceLine" id="cb9-9" title="9">    <span class="bu">pwd</span> <span class="op">&gt;&gt;</span> <span class="va">$WD</span></a>
+<a class="sourceLine" id="cb9-10" title="10">  <span class="kw">fi</span></a>
+<a class="sourceLine" id="cb9-11" title="11"><span class="kw">}</span></a>
+<a class="sourceLine" id="cb9-12" title="12"></a>
+<a class="sourceLine" id="cb9-13" title="13"><span class="ex">add-zsh-hook</span> chpwd recognize-project</a>
+<a class="sourceLine" id="cb9-14" title="14"></a>
+<a class="sourceLine" id="cb9-15" title="15"><span class="bu">cd</span> <span class="kw">`</span><span class="fu">tail</span> -1 <span class="va">$WD</span><span class="kw">`</span></a></code></pre></div>
+<p>Used in practice, this quickly reveals some weaknesses.</p>
+<h3 id="undo">Undo</h3>
+<p>Sometimes, while working on project A we just want to have one shell in project B to look something up, but we quickly release that the location of project B has been stored when opening the next shell and we would like to have the means of undoing that. In that case we just need to remove the last line from the storage (pop the stack), read the location before that and change to it.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb10-1" title="1"><span class="fu">previous-project()</span> <span class="kw">{</span></a>
+<a class="sourceLine" id="cb10-2" title="2">  <span class="fu">sed</span> -i <span class="st">&#39;$ d&#39;</span> <span class="va">$WD</span></a>
+<a class="sourceLine" id="cb10-3" title="3">  <span class="bu">cd</span> <span class="kw">`</span><span class="fu">tail</span> -1 <span class="va">$WD</span><span class="kw">`</span></a>
+<a class="sourceLine" id="cb10-4" title="4"><span class="kw">}</span></a>
+<a class="sourceLine" id="cb10-5" title="5"></a>
+<a class="sourceLine" id="cb10-6" title="6"><span class="bu">alias</span> pp=previous-project</a></code></pre></div>
+<p>I like to give functions expressive names, but I don’t want to type these so I aliased <code>previous-project</code> here to <code>pp</code>.</p>
+<h3 id="unique">Unique</h3>
+<p>Another weakness is that your our stack will quickly collect multiple consecutive equal lines. This is of no much use and in fact renders the just added undo feature useless. So to get rid of duplicate consecutive lines in our stack we’ll use some <code>sed</code> magic:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb11-1" title="1"><span class="fu">sed</span> -i <span class="st">&#39;$!N; /^\(.*\)\n\1$/!P; D&#39;</span> <span class="va">$WD</span></a></code></pre></div>
+<p>This reads: If it’s not the last line read the line and see if it is equal to the next line, if that is not the case print and in any case delete it. This will effectively remove duplicate consecutive lines and this keep our stack usable.</p>
+<h2 id="finally">Finally</h2>
+<p>Ok, let’s put everything together! This gives us the complete snippet:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb12-1" title="1"><span class="co">#!/usr/bin/zsh</span></a>
+<a class="sourceLine" id="cb12-2" title="2"></a>
+<a class="sourceLine" id="cb12-3" title="3"><span class="ex">autoload</span> -U add-zsh-hook</a>
+<a class="sourceLine" id="cb12-4" title="4"></a>
+<a class="sourceLine" id="cb12-5" title="5"><span class="va">WD=</span>~/.wd</a>
+<a class="sourceLine" id="cb12-6" title="6"></a>
+<a class="sourceLine" id="cb12-7" title="7"><span class="fu">recognize-project()</span> <span class="kw">{</span></a>
+<a class="sourceLine" id="cb12-8" title="8">  <span class="kw">if [[</span> <span class="ot">-d</span> .git<span class="kw"> ]]</span>; <span class="kw">then</span></a>
+<a class="sourceLine" id="cb12-9" title="9">    <span class="bu">pwd</span> <span class="op">&gt;&gt;</span> <span class="va">$WD</span></a>
+<a class="sourceLine" id="cb12-10" title="10">    <span class="co"># delete consecutive duplicate lines</span></a>
+<a class="sourceLine" id="cb12-11" title="11">    <span class="fu">sed</span> -i <span class="st">&#39;$!N; /^\(.*\)\n\1$/!P; D&#39;</span> <span class="va">$WD</span></a>
+<a class="sourceLine" id="cb12-12" title="12">  <span class="kw">fi</span></a>
+<a class="sourceLine" id="cb12-13" title="13"><span class="kw">}</span></a>
+<a class="sourceLine" id="cb12-14" title="14"></a>
+<a class="sourceLine" id="cb12-15" title="15"><span class="ex">add-zsh-hook</span> chpwd recognize-project</a>
+<a class="sourceLine" id="cb12-16" title="16"></a>
+<a class="sourceLine" id="cb12-17" title="17"><span class="fu">previous-project()</span> <span class="kw">{</span></a>
+<a class="sourceLine" id="cb12-18" title="18">  <span class="co"># delete last line</span></a>
+<a class="sourceLine" id="cb12-19" title="19">  <span class="fu">sed</span> -i <span class="st">&#39;$ d&#39;</span> <span class="va">$WD</span></a>
+<a class="sourceLine" id="cb12-20" title="20">  <span class="bu">cd</span> <span class="kw">`</span><span class="fu">tail</span> -1 <span class="va">$WD</span><span class="kw">`</span></a>
+<a class="sourceLine" id="cb12-21" title="21"><span class="kw">}</span></a>
+<a class="sourceLine" id="cb12-22" title="22"></a>
+<a class="sourceLine" id="cb12-23" title="23"><span class="bu">alias</span> pp=previous-project</a>
+<a class="sourceLine" id="cb12-24" title="24"></a>
+<a class="sourceLine" id="cb12-25" title="25"><span class="bu">cd</span> <span class="kw">`</span><span class="fu">tail</span> -1 <span class="va">$WD</span><span class="kw">`</span></a></code></pre></div>
+</div><div class="tags"><img class="tag-icon" src="/img/tag.svg"><ul itemprop="keywords"><li class="category"><a href="/category/tricks.html">tricks</a></li><li class="tag"><a href="/tags/linux.html">#linux</a></li><li class="tag"><a href="/tags/console.html">#console</a></li><li class="tag"><a href="/tags/cli.html">#cli</a></li><li class="tag"><a href="/tags/terminal.html">#terminal</a></li><li class="tag"><a href="/tags/shell.html">#shell</a></li><li class="tag"><a href="/tags/zsh.html">#zsh</a></li></ul></div></div></article></div></main><footer><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><div class="name" itemprop="name">200ok GmbH</div><div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"><a href="https://goo.gl/maps/GNAoiNF7mbL2" title="View on Google Maps"><div itemprop="streetAddress">Badenerstrasse 313</div><div><span itemprop="postalCode">8003</span> <span itemprop="addressLocality">Zürich</span></div></a></div><div itemprop="telephone">+41 76 405 05 67</div><div itemprop="email"><a href="mailto:info@200ok.ch">info@200ok.ch</a></div><img itemprop="logo" src="https://200ok.ch/img/200ok.svg"></div></footer><div class="scripts" style="{:display &quot;none&quot;}"><script src="/js/vendor/bowser.min.js"></script><script async src="/js/ie_safeguard.js"></script><script async src="/js/tour.js"></script><script src="/js/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script><script>tour=null</script></div></body></html>

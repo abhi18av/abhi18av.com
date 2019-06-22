@@ -1,0 +1,5 @@
+people:
+  - phil
+technologies:
+  - ruby-on-rails
+  - google-protocol-buffers

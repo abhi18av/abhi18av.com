@@ -1,0 +1,210 @@
+* 200ok Site
+
+** Prerequisites
+
+-  Install [[https://github.com/boot-clj/boot][boot]]
+
+** Usage
+
+Run =boot dev=.
+
+This will start a web server on port 3000, watch the directory and
+rebuild the target on changes.
+
+On =git push= gitlab ci takes care of deployment.
+
+*** REPL driven development
+
+Alternatively to running =boot dev=, run =boot repl=, then connect to
+the REPL from Emacs (=C-c M-c=), open the =build.boot= file, eval the
+buffer (=C-c C-k=) and then run =(boot (boot.user/dev))=.
+
+
+*** Initial setup
+
+- Add :base-url to global-meta data
+
+** SEO
+
+We are using [[https://schema.org][schema.org]] markup to add some SEO juice. When adding new
+structured data, test it out on [[https://search.google.com/structured-data/testing-tool][Googles Structured Testing Tool]]. Find
+out more about structured data on Googles [[https://developers.google.com/search/docs/guides/intro-structured-data][Introduction to Structured Data]] article.
+
+** Publish Guideline
+
+*** Posts
+
+1. Create a new .md file within /posts
+2. Add required meta data for
+   - uuid (generate one with =uuidgen=)
+   - title
+   - category
+     - Note: Categories are also used in navigation. They define the
+       'main interests' on our blog. Therefore it's not bad if we
+       regularly come back to the same categories. The category is
+       also our "focus keyword" for the post.
+   - tags
+     - Use as many as you like. They help with SEO.
+     - At the moment, tags and category will be merged as "keywords"
+       for SEO. Do not repeat the category within the tags, because
+       there is no 'unique' filter atm.
+   - date-published (Format YYYY-MM-DD)
+
+
+**** Optional SEO attributes
+
+The following attributes can be set on a pots and will benefit your
+SEO strategy:
+
+- =description=: Short description of the post
+- =featured_image=: Shows up when sharing a link
+
+**** Checks
+
+- If you used a new Category within your Post, make sure to also link
+  it in the [[file:src/ok/index.clj][index.clj]] layout.
+** Convert Images (with Image Magick)
+
+*** Scale
+
+=convert phil.jpg -resize 980x980^ -gravity Center -extent 980x980 phil2.jpg=
+
+*** Color
+
+- [ ] A light sepia would be better
+
+=convert savino_bak.jpg -set colorspace Gray -separate -average savino.jpg=
+
+** Generate a Word Cloud
+
+see https://www.jasondavies.com/wordcloud/
+
+Here is a word list to get started with
+
+Clojure
+ClojureScript
+Reagent
+Figwheel
+re-frame
+ReactNative
+re-natal
+Hiccup
+Compjure
+CompojureAPI
+Garden
+Selmer
+Luminus
+Ring
+hugsql
+
+TODO generate the wordlist from project metadata
+
+** Directoy Structure
+
+#+BEGIN_SRC
+├── assets             - static web assets which will be copied verbatim
+├── build.boot         - the boot config
+├── README.org         - this file
+├── resources          - where all the markdown files go
+│   ├── audio-book     - pages for the audio book
+│   ├── open-source    - pages for open source projects/contributions
+│   ├── perun.base.edn - global metadata file
+│   ├── posts          - where all the blog articles go
+│   ├── projects       - pages for projects
+│   └── team           - the team member directory
+├── src                - custom clojure code, mostly hiccup templates
+└── target
+    └── public         - where the generated site ends up
+#+END_SRC
+
+** Fonts
+
+We are using the "Abril Fatface" font for headers. It comes with the
+[[https://www.fontsquirrel.com/fonts/abril-fatface][SIL Open Font License]] which states that the font is free to use, but
+it cannot be used under the original name. Therefore we downloaded the
+font legally on [[https://www.fontsquirrel.com/fonts/abril-fatface][fontsquirrel.com]] as OTF font and then used the
+[[https://www.fontsquirrel.com/tools/webfont-generator][fontsquirrel webfont-generator]] to generate WOFF and WOFF2 font files
+while renaming the font to "Header Font". As far as the documentation
+states, this is a legal use for this font.
+
+** SSL
+
+SSL certificates are taken care of by the Hetzner managed hosting.
+It's a Symantec certificate.
+
+** TODOs
+
+*** BUGS
+**** TODO Projects Page on mobile is broken
+**** TODO Landing Page on iPad needs fixing (Meetup Image over clickable links)
+
+*** PROJECT SEO Improvements
+
+**** TODO Optimize based on attached SEO analysis
+https://www.evernote.com/shard/s19/sh/8b804428-4f4e-42df-ae21-08bd1f3da56e/935fff756f2adffaf97a48a3c7e48ee3
+**** TODO Optimize page on Google speedtest
+Optimise 200ok.ch on Google Speed Test
+
+https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2F200ok.ch&tab=mobile
+
+**** TODO Use schema.org markup for other pages than the blog
+
+**** TODO Opengraph / Twitter Card
+
+- Opengraph generally works:
+  http://screenshots.200ok.ch/screenshot_2018_05_26-435a373d.png
+- Twitter generally works:
+  http://screenshots.200ok.ch/screenshot_2018_05_26-7b4e64e2.png
+
+***** TODO The image is not optimal. It doesn't show for FB and Twitter seems to need a 1:1 crop.
+
+*** PROJECT Sitemap
+**** TODO [#A] fix the sitemap
+**** TODO Add language field to Post
+     - Schema: BlogPosting =inLanugage= or similar
+
+*** PROJECT Improve Technologies Page
+
+**** TODO Some technologies in =technologies.yml= are only stubs
+**** TODO Some technology links on project pages might not resolve, because for example fsbd is not a technology, but a project
+**** TODO list projects on technologies
+**** TODO allow for 200ok-specific text on technologies
+**** TODO link from technologies to projects
+
+*** PROJECT Migrate hosting
+**** TODO Enable rsync instead of =boot-copy=, again
+
+- Relevant commit: 2f51d98
+
+*** TODO Add favicon through realfavicongenerator
+*** TODO Style Opensource page and source in some logic from =project.clj=
+*** TODO When rendering the blog preview, properly close the missing tags
+- [ ] Maybe use an HTML parser and close the tags
+- [ ] Maybe use a completely different option for previews
+*** TODO Upgrade to new Perun version
+
+- [ ] =permalink= and =canonical-url= are no longer necessary - resolution of those keys are automatic now
+
+*** TODO on project page the technologies should not overflow the center area
+*** Archive
+**** DONE Implement tags
+
+ - [X] There is now a =tags= task in Perun
+
+**** PROJECT Feed
+***** DONE The atom feed has things in random order
+ - This is a serious issue, because our newest blog posts _do not_ show
+   up in the Atom feed.
+
+ - This [[https://github.com/hashobject/perun/commit/8dbf910b540339d57dbd484d6fca7ad3ba41f59d][has lately been fixed for the RSS feed in Perun]], but not for
+   Atom.
+   - Even if we wanted to switch to RSS, I do not know how to make use
+     of Perun =master= which isn't published to clojars. I asked about
+     that in #perun:
+     https://clojurians.slack.com/archives/C0JM5DUFL/p1546277764004100
+
+***** DONE Fix categories in feed
+**** DONE Sharing Improvement: If there's a picture in the post, don't share the 200ok logo
+**** DONE Eval how to do a 404 Page
+
+ - [X] Is it even possible without a back-end?

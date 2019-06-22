@@ -1,0 +1,23 @@
+name: Pseudocult
+url: https://gitlab.com/200ok/pseudocult
+category: Cloud Configuration
+opensourced: 2017
+priority: 100
+technologies:
+  - clojure
+  - aws
+  - amazonica
+people:
+  - phil
+short-description: >-
+  *Pseudocult* (which is an anagram to "cloud setup") enables you to
+  set up your cloud (AWS) declarativly and consistently.
+description: >-
+  Pseudocult (which is an anagram to "cloud setup") enables you to
+  set up your cloud (AWS) declarativly and consistently.
+
+  It is mainly a clojure program that you run providing one or more
+  config files, which describe your cloud setup. Pseudocult will
+  detect discrepancies between the current state of the cloud and
+  the description obtained from the config files as well as take
+  action to overcome the discrepencies.

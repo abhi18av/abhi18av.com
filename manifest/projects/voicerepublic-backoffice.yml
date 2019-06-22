@@ -1,0 +1,18 @@
+people:
+  - phil
+  - alain
+  - nick
+technologies:
+  - ruby-on-rails
+  - cljs
+  - faye
+  - rabbitmq
+  - ruby
+  - nginx
+  - aws
+  - d3
+  - reagent
+  - react
+  - postgresql
+  - javascript
+  - debian

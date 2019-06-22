@@ -1,0 +1,99 @@
+switch:
+  position: 15
+  name: Switch
+  logo: switch.png
+  url: https://switch.ch
+
+xsenda:
+  position: 25
+  name: xSenda
+  logo: xsenda.png
+  url: https://www.xsenda.ch/
+
+swisscom:
+  position: 20
+  name: Swisscom
+  logo: swisscom.jpg
+  url: http://swisscom.ch
+
+satcom:
+  name: Satcom International AG
+  position: 110
+  logo: satcom.jpg
+  url: http://satcom-int.com
+
+swi:
+  name: swissinfo
+  position: 100
+  logo: swissinfo.png
+  url: https://www.swissinfo.ch/
+
+srg:
+  name: SRG SSR
+  position: 35
+  logo: SRG.png
+  url: http://www.srgssr.ch
+
+sva:
+  name: SVA Zürich
+  position: 25
+  logo: logo_sva_zuerich.svg
+  url: https://www.svazurich.ch
+
+zhaw:
+  name: ZHAW Zurich University of Applied Sciences
+  position: 20
+  logo: zhaw_soe.jpg
+  url: https://www.zhaw.ch/en/engineering/
+
+wilmaa:
+  name: Wilmaa
+  position: 40
+  logo: wilmaa_logo.png
+  url: https://wilmaa.com
+
+nzz:
+  name: NZZ
+  position: 30
+  logo: nzz_logo.png
+  url: https://nzz.ch
+
+kunstmuseumbasel:
+  name: Kunstmuseum Basel
+  position: 50
+  logo: logo_kumu_basel_rot.gif
+  url: https://kunstmuseumbasel.ch/
+  projects:
+    - kunstmuseum-chat
+
+livingdocs:
+  name: Livingdocs
+  position: 10
+  logo: livingdocs_logo.svg
+  url: https://livingdocs.io/
+
+voicerepublic:
+  name: Voice Republic Media AG
+  position: 60
+  logo: vr.svg
+  url: https://voicerepublic.com
+
+sourcepole:
+  name: Sourcepole AG
+  position: 80
+  logo: sourcepole.png
+  url: https://sourcepole.ch
+
+bos-schweiz:
+  name: BOS Schweiz
+  position: 90
+  logo: bos-schweiz.jpg
+  url: http://www.bos-schweiz.ch
+  projects:
+    - webhooks
+
+trifork:
+  name: Trifork
+  position: 27
+  logo: trifork.png
+  url: https://trifork.com/

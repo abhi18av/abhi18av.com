@@ -1,0 +1,51 @@
+---
+title: "QuickShift: News vom neuen Release"
+authors: Alain M. Lafon
+category: 200ok
+date-published: 2019-06-09
+tags:
+  - quickshift
+uuid: c867d49d-5f16-4bdd-94e2-86aa10c426de
+description: >-
+  New quickshift.ch release
+featured-image: /img/products/quickshift.png
+---
+
+Es gibt wieder neue Verbesserungen und Features bei QuickShift.
+Natürlich profitieren Sie kostenlos davon! Hier eine Auflistung der
+wichtigsten Änderungen.
+
+** Schichten in den Ferien
+
+Sicherlich ist es Ihnen auch schon passiert: Ein Angestellter, welcher
+an einem Wochentag immer dieselbe Schicht hat, gibt Ferien ein. Sie
+generieren den Einsatzplan und merken erst danach, dass dieser
+Angestellte, der nun in den Ferien eine Schicht zugewiesen bekommen hat.
+
+Um dies zu vermeiden gibt es nun eine Option auf Betriebs-Ebene: /Ferien
+von Mitarbeitenden als wichtiger einstufen als Schichten/. Ist diese
+Option aktiviert, werden Mitarbeitende vor der Generierung automatisch
+aus denjenigen Schichten entfernt, bei welchen sie in den Ferien sind.
+Diese Option wurde von uns für alle bestehende Betriebe aktiviert!
+
+** Neue Wochenende-Regel
+
+Wir haben eine neue Regel geschrieben, welche probiert jedem
+Mitarbeitenden pro Einsatzplan mindestens ein ganzes (Samstag und
+Sonntag) Wochenende frei zu geben. Diese Regel fördert eine gerechte
+Verteilung der Wochenende. Für bestehende Betriebe ist sie
+ausgeschaltet. Sie kann bei den Optimierungs-Regeln aktiviert werden.
+
+** Feiertage
+
+Seit einiger Zeit gibt es in der Ansicht "Einsatzplan vorbereiten" die
+Möglichkeit einen Feiertag zu erstellen. An einem Feiertag werden alle
+Schichten ausgeblendet. Diese Option können Sie verwenden, wenn Ihr
+Betrieb an einem spezifischen Tag geschlossen hat.
+
+** Interessiert?
+
+Wollen auch Sie Ihre Einsatzpläne vollautomatisch mit QuickShift
+erstellen? Dann schreiben Sie uns eine [[mailto:info@quickshift.ch][Email]] oder erstellen Sie Ihren
+Betrieb selbstständig und wir werden uns schnellstmöglich mit Ihnen in
+Verbindung setzen.
