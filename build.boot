@@ -1,37 +1,34 @@
 (set-env!
   :source-paths #{"src"}
-  :resource-paths #{"content"}
+  :resource-paths #{"resources"}
   :dependencies '[[perun "0.4.3-SNAPSHOT" :scope "test"]
                   [hiccup "1.0.5" :exclusions [org.clojure/clojure]]
                   [pandeiro/boot-http "0.8.3" :exclusions [org.clojure/clojure]]])
 
-(require '[io.perun :as perun]
-         '[pandeiro.boot-http :refer [serve]]
-
-         #_'[io.perun.example.index :as index-view]
-         #_'[io.perun.example.post :as post-view])
-
-
+(require '[clojure.string :as str]
+         '[io.perun :as perun]
+         '[io.perun.example.index :as index-view]
+         '[io.perun.example.post :as post-view]
+         '[pandeiro.boot-http :refer [serve]])
 
 (deftask build
   "Build test blog. This task is just for testing different plugins together."
   []
   (comp
-        #_(perun/global-metadata)
-        #_(perun/markdown)
-        (perun/asciidoctor)
+        (perun/global-metadata)
+        (perun/markdown)
         (perun/draft)
         (perun/print-meta)
         (perun/slug)
         (perun/ttr)
         (perun/word-count)
         (perun/build-date)
-        #_(perun/gravatar :source-key :author-email :target-key :author-gravatar)
-        #_(perun/render :renderer 'io.perun.example.post/render)
-        #_(perun/collection :renderer 'io.perun.example.index/render :page "index.html")
-        #_(perun/tags :renderer 'io.perun.example.tags/render)
-        #_(perun/paginate :renderer 'io.perun.example.paginate/render)
-        #_(perun/assortment :renderer 'io.perun.example.assortment/render
+        (perun/gravatar :source-key :author-email :target-key :author-gravatar)
+        (perun/render :renderer 'io.perun.example.post/render)
+        (perun/collection :renderer 'io.perun.example.index/render :page "index.html")
+        (perun/tags :renderer 'io.perun.example.tags/render)
+        (perun/paginate :renderer 'io.perun.example.paginate/render)
+        (perun/assortment :renderer 'io.perun.example.assortment/render
                           :grouper (fn [entries]
                                      (->> entries
                                           (mapcat (fn [entry]
@@ -44,12 +41,12 @@
                                                           (update-in [path :entries] conj entry)
                                                           (assoc-in [path :entry :keyword] kw))))
                                                   {}))))
-        #_(perun/static :renderer 'io.perun.example.about/render :page "about.html")
-        #_(perun/inject-scripts :scripts #{"start.js"})
-        #_(perun/sitemap)
-        #_(perun/rss :description "abhi18av blog")
-        #_(perun/atom-feed :filterer :original)
-        #_(perun/print-meta)
+        (perun/static :renderer 'io.perun.example.about/render :page "about.html")
+        (perun/inject-scripts :scripts #{"start.js"})
+        (perun/sitemap)
+        (perun/rss :description "Hashobject blog")
+        (perun/atom-feed :filterer :original)
+        (perun/print-meta)
         (target)
         (notify)))
 
