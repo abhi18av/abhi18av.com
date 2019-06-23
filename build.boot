@@ -2,14 +2,23 @@
   :source-paths #{"src"}
   :resource-paths #{"resources"}
   :dependencies '[[perun "0.4.3-SNAPSHOT" :scope "test"]
+                  [org.martinklepsch/boot-garden "1.3.2-1"]
                   [hiccup "1.0.5" :exclusions [org.clojure/clojure]]
                   [pandeiro/boot-http "0.8.3" :exclusions [org.clojure/clojure]]])
 
 (require '[clojure.string :as str]
          '[io.perun :as perun]
+         '[org.martinklepsch.boot-garden :refer [garden]]
          '[io.perun.example.index :as index-view]
          '[io.perun.example.post :as post-view]
          '[pandeiro.boot-http :refer [serve]])
+
+
+
+(task-options! garden {:styles-var   'io.perun.example.stylesheet/screen
+                       :output-to    "public/garden.css"
+                       :pretty-print false})
+
 
 (deftask build
   "Build test blog. This task is just for testing different plugins together."
@@ -43,6 +52,7 @@
                                                   {}))))
         (perun/static :renderer 'io.perun.example.about/render :page "about.html")
         (perun/inject-scripts :scripts #{"start.js"})
+        (garden)
         (perun/sitemap)
         (perun/rss :description "Hashobject blog")
         (perun/atom-feed :filterer :original)
