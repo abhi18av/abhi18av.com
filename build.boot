@@ -21,7 +21,6 @@
 
 
 (deftask build
-  "Build test blog. This task is just for testing different plugins together."
   []
   (comp
         (perun/global-metadata)
