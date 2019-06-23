@@ -9,13 +9,13 @@
 (require '[clojure.string :as str]
          '[io.perun :as perun]
          '[org.martinklepsch.boot-garden :refer [garden]]
-         '[io.perun.example.index :as index-view]
-         '[io.perun.example.post :as post-view]
+         '[site.index :as index-view]
+         '[site.post :as post-view]
          '[pandeiro.boot-http :refer [serve]])
 
 
 
-(task-options! garden {:styles-var   'io.perun.example.stylesheet/screen
+(task-options! garden {:styles-var   'site.stylesheet/screen
                        :output-to    "public/garden.css"
                        :pretty-print false})
 
@@ -32,11 +32,11 @@
         (perun/word-count)
         (perun/build-date)
         (perun/gravatar :source-key :author-email :target-key :author-gravatar)
-        (perun/render :renderer 'io.perun.example.post/render)
-        (perun/collection :renderer 'io.perun.example.index/render :page "index.html")
-        (perun/tags :renderer 'io.perun.example.tags/render)
-        (perun/paginate :renderer 'io.perun.example.paginate/render)
-        (perun/assortment :renderer 'io.perun.example.assortment/render
+        (perun/render :renderer 'site.post/render)
+        (perun/collection :renderer 'site.index/render :page "index.html")
+        (perun/tags :renderer 'site.tags/render)
+        (perun/paginate :renderer 'site.paginate/render)
+        (perun/assortment :renderer 'site.assortment/render
                           :grouper (fn [entries]
                                      (->> entries
                                           (mapcat (fn [entry]
@@ -49,7 +49,7 @@
                                                           (update-in [path :entries] conj entry)
                                                           (assoc-in [path :entry :keyword] kw))))
                                                   {}))))
-        (perun/static :renderer 'io.perun.example.about/render :page "about.html")
+        (perun/static :renderer 'site.about/render :page "about.html")
         (perun/inject-scripts :scripts #{"start.js"})
         (garden)
         (perun/sitemap)

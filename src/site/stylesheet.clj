@@ -1,4 +1,4 @@
-(ns io.perun.example.stylesheet
+(ns site.stylesheet
   (:require [garden.def :as gdn]))
 
 (gdn/defstyles screen

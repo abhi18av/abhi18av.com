@@ -1,4 +1,4 @@
-(ns io.perun.example.tags
+(ns site.paginate
   (:require [hiccup.page :refer [html5]]))
 
 (defn render [{global-meta :meta posts :entries entry :entry}]
@@ -9,7 +9,7 @@
       [:meta {:http-equiv "X-UA-Compatible" :content "IE=edge,chrome=1"}]
       [:meta {:name "viewport" :content "width=device-width, initial-scale=1.0, user-scalable=no"}]]
     [:body
-     [:h1 (:title entry)]
+     [:h1 (str "Page " (:page entry))]
      [:ul.items.columns.small-12
       (for [post posts]
         [:li (:title post)])]]))

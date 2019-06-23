@@ -1,4 +1,4 @@
-(ns io.perun.example.index
+(ns site.index
   (:use [hiccup.core :only (html)]
         [hiccup.page :only (html5)]))
 
