@@ -1,0 +1,6 @@
+:443
+errors stderr
+log stderr
+tls {
+	max_certs 10
+}
