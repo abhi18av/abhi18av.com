@@ -3,6 +3,7 @@
   :resource-paths #{"resources"}
   :dependencies '[[perun "0.4.3-SNAPSHOT" :scope "test"]
                   [org.martinklepsch/boot-garden "1.3.2-1"]
+                  #_[cider/cider-nrepl "0.22.0-beta3"]
                   [hiccup "1.0.5" :exclusions [org.clojure/clojure]]
                   [pandeiro/boot-http "0.8.3" :exclusions [org.clojure/clojure]]])
 
@@ -33,6 +34,7 @@
         (perun/build-date)
         (perun/gravatar :source-key :author-email :target-key :author-gravatar)
         (perun/collection :renderer 'site.index/render :page "index.html")
+        #_(perun/collection :renderer 'site.contact/render :page "contact.html")
         (perun/collection :renderer 'site.blog/render :page "blog.html")
         (perun/collection :renderer 'site.post/render :page "post.html")
         (perun/collection :renderer 'site.pursuit-of-simplicity/render :page "pursuit-of-simplicity.html")
