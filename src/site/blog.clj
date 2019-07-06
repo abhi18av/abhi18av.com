@@ -50,10 +50,18 @@
                [:a {:class "link", :href "https://abhi18av.com/about"} "About"]]]]
             [:section {:class "list"}
              [:div {:class "item "}
-              [:a {:class "url", :href "https://abhi18av.com/pursuit-of-simplicity/"}
+              [:a {:class "url", :href "/post1.html"}
                [:aside {:class "date"}
                 [:time {:datetime "01-07-2019"} "July 01 2019"]]
                [:h3 {:class "title"} "Pursuit of Simplicity"]]]]
+
+                ;; [:ul.items
+                ;;  (for [post posts]
+                ;;    [:li
+                ;;     [:div (:date-pubished post)]
+                ;;     [:a {:href (:permalink post)}(:title post)]])]]]]]
+
+
             [:footer {:class "footer-main"} " Abhinav Sharma © 2019 "
              [:a {:class "link", :href "https://abhi18av.com/feed.xml", :target "_blank"}
               [:svg {:class "icon icon-rss"}
