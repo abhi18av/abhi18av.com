@@ -53,7 +53,7 @@
         (perun/inject-scripts :scripts #{"start.js"})
         (garden)
         (perun/sitemap)
-        (perun/rss :description "Hashobject blog")
+        (perun/rss :description "Abhinav Sharma (abhi18av)")
         (perun/atom-feed :filterer :original)
         (perun/print-meta)
         (target)
