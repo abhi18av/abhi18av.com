@@ -55,7 +55,7 @@
         #_(perun/inject-scripts :scripts #{"start.js"})
         #_(garden)
         (perun/sitemap)
-        #_(perun/rss :description "Abhinav Sharma (abhi18av)")
+        (perun/rss :description "Abhinav Sharma (abhi18av)")
         #_(perun/atom-feed :filterer :original)
         (perun/print-meta)
         (target)
