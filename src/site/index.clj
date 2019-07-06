@@ -15,6 +15,8 @@
           [:link {:rel "canonical" :href "https://abhi18av.com/"}]
           [:link {:rel "stylesheet" :type "text/css" :href "style.css"}]]
     [:body
+
+
        [:div {:class "wrapper-large"}
         [:div {:class "page home"}
          [:header {:class "header-home animated"}
@@ -23,6 +25,7 @@
           [:h1 {:class "title"} "Abhinav Sharma"]
           [:h2 {:class "description"} "Full Stack Web Engineer"]
           [:div {:class "social-links"}
+           ;; TODO replace this with angel list
            [:a {:class "link", :data-title "twitter.com/abhi18av", :href "http://twitter.com/abhi18av", :target "_blank"}
             [:svg {:class "icon icon-twitter"}
              [:use {:xlink:href "#icon-twitter"}]]]
@@ -36,12 +39,12 @@
              [:use {:xlink:href "#icon-github"}]]]
            [:svg {:class "icon icon-medium"}
             [:use {:xlink:href "#icon-medium"}]]]]
+
+
          [:nav {:class "nav-home"}
           [:ul {:class "list"}
            [:li {:class "item"}
             [:a {:class "link", :href "./blog.html"} "Blog"]]
-           [:li {:class "item"}
-            [:a {:class "link", :href "./post_listing.html"} "BlogRoll"]]
            [:li {:class "item"}
             [:a {:class "link", :href "./projects.html"} "Projects"]]
            [:li {:class "item"}
@@ -57,6 +60,8 @@
          [:symbol {:id "icon-rss", :viewbox "0 0 1024 1024"}
           [:title "rss"]
           [:path {:class "path1", :d "M122.88 122.88v121.19c362.803 0 656.896 294.195 656.896 656.998h121.293c0-429.773-348.416-778.189-778.189-778.189zM122.88 365.414v121.293c228.813 0 414.362 185.498 414.362 414.413h121.242c0-295.834-239.821-535.706-535.603-535.706zM239.053 668.621c-64.205 0-116.224 52.122-116.224 116.275s52.019 116.224 116.224 116.224 116.173-52.019 116.173-116.224-51.968-116.275-116.173-116.275z"}]]
+
+         ;; TODO replace this with angel list
          [:symbol {:id "icon-twitter", :viewbox "0 0 1024 1024"}
           [:title "twitter"]
           [:path {:class "path1", :d "M886.579 319.795c0.41 8.294 0.563 16.691 0.563 24.986 0 255.488-194.406 549.99-549.888 549.99-109.21 0-210.739-32-296.294-86.886 15.155 1.792 30.515 2.714 46.080 2.714 90.624 0 173.926-30.925 240.026-82.688-84.531-1.587-155.955-57.395-180.531-134.195 11.776 2.202 23.91 3.379 36.352 3.379 17.664 0 34.765-2.304 50.944-6.707-88.422-17.818-155.034-95.898-155.034-189.594 0-0.819 0-1.587 0-2.406 26.061 14.49 55.91 23.194 87.552 24.218-51.866-34.714-86.016-93.798-86.016-160.922 0-35.379 9.523-68.608 26.214-97.178 95.283 116.992 237.773 193.894 398.387 201.984-3.277-14.182-4.966-28.877-4.966-44.083 0-106.701 86.477-193.178 193.229-193.178 55.603 0 105.83 23.398 141.107 60.979 43.981-8.704 85.35-24.781 122.726-46.899-14.438 45.107-45.107 82.995-84.992 106.906 39.117-4.71 76.288-15.002 111.002-30.413-25.907 38.81-58.675 72.806-96.461 99.994z"}]]
