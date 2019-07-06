@@ -34,6 +34,8 @@
         (perun/gravatar :source-key :author-email :target-key :author-gravatar)
         (perun/collection :renderer 'site.index/render :page "index.html")
         (perun/collection :renderer 'site.blog/render :page "blog.html")
+        (perun/collection :renderer 'site.post/render :page "post.html")
+        (perun/collection :renderer 'site.pursuit-of-simplicity/render :page "pursuit-of-simplicity.html")
         (perun/tags :renderer 'site.tags/render)
         (perun/paginate :renderer 'site.paginate/render)
         (perun/assortment :renderer 'site.assortment/render

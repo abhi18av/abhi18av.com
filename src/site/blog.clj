@@ -50,9 +50,9 @@
                [:a {:class "link", :href "https://abhi18av.com/about"} "About"]]]]
             [:section {:class "list"}
              [:div {:class "item "}
-              [:a {:class "url", :href "/post1.html"}
+              [:a {:class "url", :href "/pursuit-of-simplicity.html"}
                [:aside {:class "date"}
-                [:time {:datetime "01-07-2019"} "July 01 2019"]]
+                [:time {:datetime "01-07-2019"} "July 07 2019"]]
                [:h3 {:class "title"} "Pursuit of Simplicity"]]]]
 
                 ;; [:ul.items
