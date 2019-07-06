@@ -1,14 +1,16 @@
 (ns site.about
   (:require [hiccup.page :refer [html5]]))
 
-
 (defn render [{global-meta :meta posts :entries}]
   (html5 {:lang "en" :itemtype "http://schema.org/Blog"}
          [:head
-          [:title (:site-title global-meta)]
+          [:title "About | Abhinav Sharma"]
           [:meta {:charset "utf-8"}]
           [:meta {:http-equiv "X-UA-Compatible" :content "IE=edge,chrome=1"}]
           [:meta {:name "viewport" :content "width=device-width, initial-scale=1.0, user-scalable=no"}]
+          [:meta {:name "description" :content "Full Stack Web Engineer"}]
+          [:meta {:name "author" :content "Abhinav Sharma"}]
+          [:link {:rel "canonical" :href "https://abhi18av.com/"}]
           [:link {:rel "stylesheet" :type "text/css" :href "style.css"}]]
          [:body
           [:img {:src "./assets/images/profile.jpg", :alt "Profile Image"}]
@@ -27,3 +29,5 @@
            [:li "ReactJS"]
            [:li "MySQL - MongoDB - SQLite3 "]]]
          [:footer ""]))
+
+
