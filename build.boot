@@ -58,7 +58,7 @@
         #_(garden)
         (perun/sitemap)
         (perun/rss :description "Abhinav Sharma (abhi18av)")
-        perun/atom-feed :filterer :original)
+        (perun/atom-feed :filterer :original)
         (perun/print-meta)
         (target)
         (notify)))
