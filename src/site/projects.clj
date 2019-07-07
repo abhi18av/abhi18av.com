@@ -55,7 +55,7 @@
               [:a {:class "url", :href "/pursuit-of-simplicity.html"}
                [:aside {:class "date"}
                 [:time {:datetime "01-07-2019"} "July 07 2019"]]
-               [:h3 {:class "title"} "Luminus Snake"]]]
+               [:h3 {:class "title"} "Fulcro for ReactJS"]]]
 
 
              [:div {:class "item "}
@@ -69,21 +69,92 @@
               [:a {:class "url", :href "/pursuit-of-simplicity.html"}
                [:aside {:class "date"}
                 [:time {:datetime "01-07-2019"} "July 07 2019"]]
-               [:h3 {:class "title"} "Luminus Snake"]]]
+               [:h3 {:class "title"} "Faker REST API Server"]]]
 
 
              [:div {:class "item "}
               [:a {:class "url", :href "/pursuit-of-simplicity.html"}
                [:aside {:class "date"}
                 [:time {:datetime "01-07-2019"} "July 07 2019"]]
-               [:h3 {:class "title"} "Luminus Snake"]]]
+               [:h3 {:class "title"} "Cheffy AirBnB for Chefs"]]]
+
+             [:div {:class "item "}
+              [:a {:class "url", :href "/pursuit-of-simplicity.html"}
+               [:aside {:class "date"}
+                [:time {:datetime "01-07-2019"} "July 07 2019"]]
+               [:h3 {:class "title"} "Project Enfermeira"]]]
 
 
              [:div {:class "item "}
               [:a {:class "url", :href "/pursuit-of-simplicity.html"}
                [:aside {:class "date"}
                 [:time {:datetime "01-07-2019"} "July 07 2019"]]
-               [:h3 {:class "title"} "Devnagri CLI"]]]]
+               [:h3 {:class "title"} "Whole Genome Analysis pipeline for Mycobacterium Tuberculosis"]]]
+
+
+             [:div {:class "item "}
+              [:a {:class "url", :href "/pursuit-of-simplicity.html"}
+               [:aside {:class "date"}
+                [:time {:datetime "01-07-2019"} "July 07 2019"]]
+               [:h3 {:class "title"} "Conda-forge contributor"]]]
+
+
+
+             [:div {:class "item "}
+              [:a {:class "url", :href "/pursuit-of-simplicity.html"}
+               [:aside {:class "date"}
+                [:time {:datetime "01-07-2019"} "July 07 2019"]]
+               [:h3 {:class "title"} "Data Analysis for Meetup venues"]]]
+
+
+             [:div {:class "item "}
+              [:a {:class "url", :href "/pursuit-of-simplicity.html"}
+               [:aside {:class "date"}
+                [:time {:datetime "01-07-2019"} "July 07 2019"]]
+               [:h3 {:class "title"} "The Code of Khans"]]]
+
+
+             [:div {:class "item "}
+              [:a {:class "url", :href "/pursuit-of-simplicity.html"}
+               [:aside {:class "date"}
+                [:time {:datetime "01-07-2019"} "July 07 2019"]]
+               [:h3 {:class "title"} "Devnagri CLI"]]]
+
+
+             [:div {:class "item "}
+              [:a {:class "url", :href "/pursuit-of-simplicity.html"}
+               [:aside {:class "date"}
+                [:time {:datetime "01-07-2019"} "July 07 2019"]]
+               [:h3 {:class "title"} "Analysis of AlphaGo AI by Google's Deepmind"]]]
+
+
+             [:div {:class "item "}
+              [:a {:class "url", :href "/pursuit-of-simplicity.html"}
+               [:aside {:class "date"}
+                [:time {:datetime "01-07-2019"} "July 07 2019"]]
+               [:h3 {:class "title"} "Alda - Music programming language"]]]
+
+
+
+             [:div {:class "item "}
+              [:a {:class "url", :href "/pursuit-of-simplicity.html"}
+               [:aside {:class "date"}
+                [:time {:datetime "01-07-2019"} "July 07 2019"]]
+               [:h3 {:class "title"} "Analysis of the Great Smog in Delhi"]]]
+
+
+             [:div {:class "item "}
+              [:a {:class "url", :href "/pursuit-of-simplicity.html"}
+               [:aside {:class "date"}
+                [:time {:datetime "01-07-2019"} "July 07 2019"]]
+               [:h3 {:class "title"} "Auto-apply for Coursera Scholarships"]]]
+
+
+             [:div {:class "item "}
+              [:a {:class "url", :href "/pursuit-of-simplicity.html"}
+               [:aside {:class "date"}
+                [:time {:datetime "01-07-2019"} "July 07 2019"]]
+               [:h3 {:class "title"} "Language, Space and Mind"]]]]
 
 
             [:footer {:class "footer-main"} " Abhinav Sharma © 2019 "

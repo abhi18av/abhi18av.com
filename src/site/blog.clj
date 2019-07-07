@@ -50,7 +50,61 @@
                [:a {:class "link", :href "/projects.html"} "Projects"]" "]
               [:li {:class "item"}
                [:a {:class "link", :href "./contact.html"} "Contact"]]]]
+
+
             [:section {:class "list"}
+
+             [:div {:class "item "}
+              [:a {:class "url", :href "/pursuit-of-simplicity.html"}
+               [:aside {:class "date"}
+                [:time {:datetime "01-07-2019"} "July 07 2019"]]
+               [:h3 {:class "title"} "ReactJS for Terminal User Interface!"]]]
+
+
+             [:div {:class "item "}
+              [:a {:class "url", :href "/pursuit-of-simplicity.html"}
+               [:aside {:class "date"}
+                [:time {:datetime "01-07-2019"} "July 07 2019"]]
+               [:h3 {:class "title"} "Full Stack ReactJS - Fulcro"]]]
+
+
+
+             [:div {:class "item "}
+              [:a {:class "url", :href "/pursuit-of-simplicity.html"}
+               [:aside {:class "date"}
+                [:time {:datetime "01-07-2019"} "July 07 2019"]]
+               [:h3 {:class "title"} "First month at Pesto aka The Inferno"]]]
+
+
+             [:div {:class "item "}
+              [:a {:class "url", :href "/pursuit-of-simplicity.html"}
+               [:aside {:class "date"}
+                [:time {:datetime "01-07-2019"} "July 07 2019"]]
+               [:h3 {:class "title"} "\"Doing Good and Doing Well\"  in Entrepreneurship"]]]
+
+
+
+             [:div {:class "item "}
+              [:a {:class "url", :href "/pursuit-of-simplicity.html"}
+               [:aside {:class "date"}
+                [:time {:datetime "01-07-2019"} "July 07 2019"]]
+               [:h3 {:class "title"} "The Joy of Game development"]]]
+
+
+             [:div {:class "item "}
+              [:a {:class "url", :href "/pursuit-of-simplicity.html"}
+               [:aside {:class "date"}
+                [:time {:datetime "01-07-2019"} "July 07 2019"]]
+               [:h3 {:class "title"} "Datalog in the Frontend"]]]
+
+
+             [:div {:class "item "}
+              [:a {:class "url", :href "/pursuit-of-simplicity.html"}
+               [:aside {:class "date"}
+                [:time {:datetime "01-07-2019"} "July 07 2019"]]
+               [:h3 {:class "title"} "Programming as a Tool for Thought"]]]
+
+
              [:div {:class "item "}
               [:a {:class "url", :href "/pursuit-of-simplicity.html"}
                [:aside {:class "date"}
