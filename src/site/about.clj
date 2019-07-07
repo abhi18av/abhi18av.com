@@ -1,6 +1,8 @@
 (ns site.about
   (:require [hiccup.page :refer [html5]]))
 
+
+;; TODO Remove this page and add the same content to the landing page itself
 (defn render [{global-meta :meta posts :entries}]
   (html5 {:lang "en" :itemtype "http://schema.org/Blog"}
          [:head
@@ -13,7 +15,7 @@
           [:link {:rel "canonical" :href "https://abhi18av.com/"}]
           [:link {:rel "stylesheet" :type "text/css" :href "style.css"}]]
          [:body
-          [:img {:src "./assets/images/profile.jpg", :alt "Profile Image"}]
+          #_[:img {:src "profile.jpg", :alt "Profile Image"}]
           [:p " I am not from Krypton, or Stark Tower or even BatCave ;)"]
           [:p " What am I passionate about, you ask? "]
           [:p " I am passionate about Startups "]

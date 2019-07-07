@@ -1,4 +1,4 @@
-(ns site.blog
+(ns site.projects
   (:use [hiccup.core :only (html)]
         [hiccup.page :only (html5)]))
 
@@ -9,7 +9,7 @@
           [:meta {:charset "utf-8"}]
           [:meta {:http-equiv "X-UA-Compatible" :content "IE=edge,chrome=1"}]
           [:meta {:name "viewport" :content "width=device-width, initial-scale=1.0, user-scalable=no"}]
-          [:title "Blog | Abhinav Sharma"]
+          [:title "Projects | Abhinav Sharma"]
           [:meta {:name "description" :content "Full Stack Web Engineer"}]
           [:meta {:name "author" :content "Abhinav Sharma"}]
           [:link {:rel "canonical" :href "https://abhi18av.com/"}]
@@ -55,13 +55,35 @@
               [:a {:class "url", :href "/pursuit-of-simplicity.html"}
                [:aside {:class "date"}
                 [:time {:datetime "01-07-2019"} "July 07 2019"]]
-               [:h3 {:class "title"} "Pursuit of Simplicity"]]]]
+               [:h3 {:class "title"} "Luminus Snake"]]]
 
-                ;; [:ul.items
-                ;;  (for [post posts]
-                ;;    [:li
-                ;;     [:div (:date-pubished post)]
-                ;;     [:a {:href (:permalink post)}(:title post)]])]]]]]
+
+             [:div {:class "item "}
+              [:a {:class "url", :href "/pursuit-of-simplicity.html"}
+               [:aside {:class "date"}
+                [:time {:datetime "01-07-2019"} "July 07 2019"]]
+               [:h3 {:class "title"} "Luminus Snake"]]]
+
+
+             [:div {:class "item "}
+              [:a {:class "url", :href "/pursuit-of-simplicity.html"}
+               [:aside {:class "date"}
+                [:time {:datetime "01-07-2019"} "July 07 2019"]]
+               [:h3 {:class "title"} "Luminus Snake"]]]
+
+
+             [:div {:class "item "}
+              [:a {:class "url", :href "/pursuit-of-simplicity.html"}
+               [:aside {:class "date"}
+                [:time {:datetime "01-07-2019"} "July 07 2019"]]
+               [:h3 {:class "title"} "Luminus Snake"]]]
+
+
+             [:div {:class "item "}
+              [:a {:class "url", :href "/pursuit-of-simplicity.html"}
+               [:aside {:class "date"}
+                [:time {:datetime "01-07-2019"} "July 07 2019"]]
+               [:h3 {:class "title"} "Devnagri CLI"]]]]
 
 
             [:footer {:class "footer-main"} " Abhinav Sharma © 2019 "
