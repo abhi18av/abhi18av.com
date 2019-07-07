@@ -49,7 +49,7 @@
               [:li {:class "item"}
                [:a {:class "link", :href "/projects.html"} "Projects"]" "]
               [:li {:class "item"}
-               [:a {:class "link", :href "/about.html"} "About"]" "]]]
+               [:a {:class "link", :href "./contact.html"} "Contact"]]]]
             [:section {:class "list"}
              [:div {:class "item "}
               [:a {:class "url", :href "/pursuit-of-simplicity.html"}
