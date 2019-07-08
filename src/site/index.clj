@@ -55,17 +55,14 @@
          [:ul {:class "skill-list"}
           [:li "ReactJS based Frontend Development"]
           [:li "Phaser GameEngine for the Web"]
-          [:li "JavaScript"]
           [:li "ClojureScript based Electron Apps"]
           [:li "Go based backends and CLI apps"]
           [:li "Python Data Science"]
-          [:li "Clojure"]
-          [:li "Relational and Non-relational"]]
+          [:li "AWS DevOps"]
+          [:li "Clojure based Big Data Processing"]
+          [:li "MySQL, MongoDB and Datomic"]]
 
-         [:footer {:class "footer-main"} " Abhinav Sharma © 2019 "
-          [:a {:class "link", :href "https://abhi18av.com/feed.xml", :target "_blank"}
-           [:svg {:class "icon icon-rss"}
-            [:use {:xlink:href "#icon-rss"}]]]]]]
+         [:footer {:class "footer-main"} " Abhinav Sharma © 2019 "]]]
        [:svg {:display "none", :version "1.1", :xmlns "http://www.w3.org/2000/svg", :xmlns:xlink "http://www.w3.org/1999/xlink"}
         [:defs
          [:symbol {:id "icon-rss", :viewbox "0 0 1024 1024"}

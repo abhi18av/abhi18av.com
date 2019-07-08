@@ -45,9 +45,9 @@
               [:li {:class "item"}
                [:a {:class "link", :href "/"} "Home"]" "]
               [:li {:class "item"}
-               [:a {:class "link", :href "/blog.html"} "Blog"]" "]
-              [:li {:class "item"}
                [:a {:class "link", :href "/projects.html"} "Projects"]" "]
+              [:li {:class "item"}
+               [:a {:class "link", :href "/resume.html"} "Resume"]" "]
               [:li {:class "item"}
                [:a {:class "link", :href "./contact.html"} "Contact"]]]]
 
@@ -118,10 +118,7 @@
                 ;;     [:a {:href (:permalink post)}(:title post)]])]]]]]
 
 
-            [:footer {:class "footer-main"} " Abhinav Sharma © 2019 "
-             [:a {:class "link", :href "https://abhi18av.com/feed.xml", :target "_blank"}
-              [:svg {:class "icon icon-rss"}
-               [:use {:xlink:href "#icon-rss"}]]]]]]
+            [:footer {:class "footer-main"} " Abhinav Sharma © 2019 "]]]
           [:svg {:display "none", :version "1.1", :xmlns "http://www.w3.org/2000/svg", :xmlns:xlink "http://www.w3.org/1999/xlink"}
            [:defs
             [:symbol {:id "icon-rss", :viewbox "0 0 1024 1024"}
