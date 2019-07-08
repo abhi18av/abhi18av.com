@@ -27,16 +27,18 @@
            [:a {:class "link", :data-title "twitter.com/abhi18av", :href "http://twitter.com/abhi18av", :target "_blank"}
             [:svg {:class "icon icon-twitter"}
              [:use {:xlink:href "#icon-twitter"}]]]
-           [:svg {:class "icon icon-linkedin"}
-            [:use {:xlink:href "#icon-linkedin"}]]
+           [:a {:class "link", :data-title "linkedin.com/in/abhi18av", :href "http://linkedin.com/in/abhi18av", :target "_blank"}
+            [:svg {:class "icon icon-linkedin"}
+             [:use {:xlink:href "#icon-linkedin"}]]]
            [:a {:class "link", :data-title "youtube.com/abhi18av", :href "http://youtube.com/abhi18av", :target "_blank"}
             [:svg {:class "icon icon-youtube"}
              [:use {:xlink:href "#icon-youtube"}]]]
            [:a {:class "link", :data-title "github.com/abhi18av", :href "https://github.com/abhi18av", :target "_blank"}
             [:svg {:class "icon icon-github"}
              [:use {:xlink:href "#icon-github"}]]]
-           [:svg {:class "icon icon-medium"}
-            [:use {:xlink:href "#icon-medium"}]]]]
+           [:a {:class "link", :data-title "medium.com/@abhi18av", :href "https://medium.com/@abhi18av", :target "_blank"}
+            [:svg {:class "icon icon-medium"}
+             [:use {:xlink:href "#icon-medium"}]]]]]
          [:nav {:class "nav-home"}
           [:ul {:class "list"}
            [:li {:class "item"}
