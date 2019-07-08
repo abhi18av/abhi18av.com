@@ -51,7 +51,7 @@
             [:a {:class "link", :href "./contact.html"} "Contact"]]]]
          [:h4 " I am passionate about helping startups launch and scale. "]
          ;; TODO Add links to the original technologies
-         [:h5 " Here's my programming skillset"]
+         [:h5 "Engineering skillset"]
          [:ul {:class "skill-list"}
           [:li "ReactJS based Frontend Development"]
           [:li "Phaser GameEngine for the Web"]
