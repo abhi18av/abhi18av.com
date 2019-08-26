@@ -1,23 +1,13 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
-      "layout": null,
-      "jsonName": "dev-404-page.json",
-      "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
-      "component": "/Users/eklavya/projects/portfolio/abhi18av.com/.cache/dev-404-page.js",
-      "componentChunkName": "component---cache-dev-404-page-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin dev-404-page",
-      "pluginCreatorId": "Plugin dev-404-page",
-      "componentPath": "/Users/eklavya/projects/portfolio/abhi18av.com/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "75c5390b53e9b83dcefe9f67be74eb3b",
-        "description": "Plugin dev-404-page",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
         "owner": "internal-data-bridge"
       }
     },
@@ -1000,16 +990,14 @@
         "author": "abhi18av",
         "twitter": "abhi18av"
       },
-      "port": "8000",
-      "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-08-26T12:36:36.723Z",
+      "buildTime": "2019-08-26T12:38:01.050Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "978a9516d1026ee59a672b9e25f2a286",
+        "contentDigest": "5d3c18c5ce9435aec3b6c84c63c4a3d6",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1019,7 +1007,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "a3b469647e23474d6b64f453c57098b8",
+        "contentDigest": "25cd14dbc925c182457a89948747b5a5",
         "type": "Directory",
         "description": "Directory \"src/data\"",
         "owner": "gatsby-source-filesystem"
@@ -1031,7 +1019,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2019-08-26T11:09:51.757Z",
-      "accessTime": "2019-08-26T12:36:40.208Z",
+      "accessTime": "2019-08-26T12:38:04.049Z",
       "changeTime": "2019-08-26T12:07:54.471Z",
       "birthTime": "2019-07-11T22:38:32.000Z",
       "root": "/",
@@ -1049,11 +1037,11 @@
       "blksize": 4096,
       "ino": 12893799194,
       "blocks": 0,
-      "atimeMs": 1566823000208.2986,
+      "atimeMs": 1566823084048.523,
       "mtimeMs": 1566817791756.929,
       "ctimeMs": 1566821274470.8806,
       "birthtimeMs": 1562884712000,
-      "atime": "2019-08-26T12:36:40.208Z",
+      "atime": "2019-08-26T12:38:04.049Z",
       "mtime": "2019-08-26T11:09:51.757Z",
       "ctime": "2019-08-26T12:07:54.471Z",
       "birthtime": "2019-07-11T22:38:32.000Z"
@@ -1198,7 +1186,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "64954c665384d1115be461302c4ae255",
+        "contentDigest": "3b178d4d31c9d38e43e5c7668778639a",
         "type": "Directory",
         "description": "Directory \"src/images\"",
         "owner": "gatsby-source-filesystem"
@@ -1210,7 +1198,7 @@
       "size": 192,
       "prettySize": "192 B",
       "modifiedTime": "2019-08-26T10:32:41.423Z",
-      "accessTime": "2019-08-26T12:36:40.217Z",
+      "accessTime": "2019-08-26T12:38:04.060Z",
       "changeTime": "2019-08-26T12:07:54.450Z",
       "birthTime": "2019-07-11T22:38:32.000Z",
       "root": "/",
@@ -1228,11 +1216,11 @@
       "blksize": 4096,
       "ino": 12893799143,
       "blocks": 0,
-      "atimeMs": 1566823000217.0603,
+      "atimeMs": 1566823084060.3,
       "mtimeMs": 1566815561422.6426,
       "ctimeMs": 1566821274450.2588,
       "birthtimeMs": 1562884712000,
-      "atime": "2019-08-26T12:36:40.217Z",
+      "atime": "2019-08-26T12:38:04.060Z",
       "mtime": "2019-08-26T10:32:41.423Z",
       "ctime": "2019-08-26T12:07:54.450Z",
       "birthtime": "2019-07-11T22:38:32.000Z"
@@ -1242,7 +1230,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "dea66e0655b9b193c270b7a5b02f9e88",
+        "contentDigest": "1e16ae1a2bd30d79bc7a2308ab096c79",
         "type": "Directory",
         "description": "Directory \"src/images/icons\"",
         "owner": "gatsby-source-filesystem"
@@ -1254,7 +1242,7 @@
       "size": 256,
       "prettySize": "256 B",
       "modifiedTime": "2019-07-11T22:38:32.000Z",
-      "accessTime": "2019-08-26T12:36:40.218Z",
+      "accessTime": "2019-08-26T12:38:04.061Z",
       "changeTime": "2019-08-26T12:07:54.448Z",
       "birthTime": "2019-07-11T22:38:32.000Z",
       "root": "/",
@@ -1272,11 +1260,11 @@
       "blksize": 4096,
       "ino": 12893799163,
       "blocks": 0,
-      "atimeMs": 1566823000218.1672,
+      "atimeMs": 1566823084061.4678,
       "mtimeMs": 1562884712000,
       "ctimeMs": 1566821274448.4944,
       "birthtimeMs": 1562884712000,
-      "atime": "2019-08-26T12:36:40.218Z",
+      "atime": "2019-08-26T12:38:04.061Z",
       "mtime": "2019-07-11T22:38:32.000Z",
       "ctime": "2019-08-26T12:07:54.448Z",
       "birthtime": "2019-07-11T22:38:32.000Z"
@@ -1286,7 +1274,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "5eb8db23039fa54e49ac5cc1cfe7e9db",
+        "contentDigest": "1e9a42c022c3b1a96f9db6714123acdc",
         "type": "Directory",
         "description": "Directory \"src/images/projects\"",
         "owner": "gatsby-source-filesystem"
@@ -1298,7 +1286,7 @@
       "size": 640,
       "prettySize": "640 B",
       "modifiedTime": "2019-07-11T22:38:32.000Z",
-      "accessTime": "2019-08-26T12:36:40.219Z",
+      "accessTime": "2019-08-26T12:38:04.061Z",
       "changeTime": "2019-08-26T12:07:54.440Z",
       "birthTime": "2019-07-11T22:38:32.000Z",
       "root": "/",
@@ -1316,11 +1304,11 @@
       "blksize": 4096,
       "ino": 12893799144,
       "blocks": 0,
-      "atimeMs": 1566823000218.6287,
+      "atimeMs": 1566823084061.492,
       "mtimeMs": 1562884712000,
       "ctimeMs": 1566821274439.8005,
       "birthtimeMs": 1562884712000,
-      "atime": "2019-08-26T12:36:40.219Z",
+      "atime": "2019-08-26T12:38:04.061Z",
       "mtime": "2019-07-11T22:38:32.000Z",
       "ctime": "2019-08-26T12:07:54.440Z",
       "birthtime": "2019-07-11T22:38:32.000Z"
@@ -2823,7 +2811,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f633e29c0c272119c459f1db925d1fd4",
+        "contentDigest": "deeb57d5457eaa9b7fd8366255e909be",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
