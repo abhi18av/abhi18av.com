@@ -1,0 +1,2995 @@
+{
+  "nodes": {
+    "SitePage /dev-404-page/": {
+      "path": "/dev-404-page/",
+      "id": "SitePage /dev-404-page/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin dev-404-page": {
+      "resolve": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "id": "Plugin dev-404-page",
+      "name": "dev-404-page",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "packageJson": {
+        "name": "dev-404-page",
+        "description": "Internal plugin to add a 404 page in development with helpful information",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "fcfff792747b6a03ea9c18f7df2cce71",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin component-layout-creator": {
+      "resolve": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
+      "id": "Plugin component-layout-creator",
+      "name": "component-layout-creator",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createLayouts"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
+      "packageJson": {
+        "name": "component-layout-creator",
+        "description": "An internal Gatsby plugin that creates pages from component files in src/layouts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "1081badc1d11a888d04190fa7337d178",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin internal-data-bridge": {
+      "resolve": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "id": "Plugin internal-data-bridge",
+      "name": "internal-data-bridge",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "packageJson": {
+        "name": "internal-data-bridge",
+        "description": "An internal Gatsby plugin which creates data nodes from internal data",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "4bb63324fe92f7aaa661c1b735ea1717",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin prod-404": {
+      "resolve": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "id": "Plugin prod-404",
+      "name": "prod-404",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "packageJson": {
+        "name": "prod-404",
+        "description": "Internal plugin to detect various flavors of 404 pages and ensure there's a 404.html path created as well to ensure compatability with static hosts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "e7c89a8410ce43c198cdbb2b177a5907",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin query-runner": {
+      "resolve": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "id": "Plugin query-runner",
+      "name": "query-runner",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage",
+        "onCreateLayout"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "packageJson": {
+        "name": "query-runner",
+        "description": "Internal plugin for running queries",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "909ab2b34366c7c50efc42be6faf9cbd",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-manifest": {
+      "resolve": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby-plugin-manifest",
+      "id": "Plugin gatsby-plugin-manifest",
+      "name": "gatsby-plugin-manifest",
+      "version": "1.0.27",
+      "pluginOptions": {
+        "plugins": [],
+        "name": "Abhinav Sharma",
+        "short_name": "AbhinavSharma",
+        "start_url": "/",
+        "background_color": "#337ab7",
+        "theme_color": "#337ab7",
+        "display": "fullscreen",
+        "icon": "src/static/logo/favicon.png"
+      },
+      "nodeAPIs": [
+        "onPostBuild"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby-plugin-manifest",
+      "packageJson": {
+        "name": "gatsby-plugin-manifest",
+        "description": "Gatsby plugin which adds a manifest.webmanifest to make sites progressive web apps",
+        "version": "1.0.27",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "favicon",
+          "icons",
+          "manifest.webmanifest",
+          "progressive-web-app",
+          "pwa"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "sharp",
+            "version": "^0.20.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "c3488f9caa6f6fbebeb4bd14f9598767",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-source-filesystem": {
+      "resolve": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby-source-filesystem",
+      "id": "Plugin gatsby-source-filesystem",
+      "name": "gatsby-source-filesystem",
+      "version": "1.5.39",
+      "pluginOptions": {
+        "plugins": [],
+        "path": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images",
+        "name": "images"
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "setFieldsOnGraphQLNodeType"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby-source-filesystem",
+      "packageJson": {
+        "name": "gatsby-source-filesystem",
+        "description": "Gatsby plugin which parses files within a directory for further parsing by other plugins",
+        "version": "1.5.39",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "better-queue",
+            "version": "^3.8.7"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.1"
+          },
+          {
+            "name": "got",
+            "version": "^7.1.0"
+          },
+          {
+            "name": "md5-file",
+            "version": "^3.1.1"
+          },
+          {
+            "name": "mime",
+            "version": "^1.3.6"
+          },
+          {
+            "name": "pretty-bytes",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "valid-url",
+            "version": "^1.0.9"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.9.250"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "97138c57d4887c8840657313d29be85c",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-google-analytics": {
+      "resolve": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby-plugin-google-analytics",
+      "id": "Plugin gatsby-plugin-google-analytics",
+      "name": "gatsby-plugin-google-analytics",
+      "version": "1.0.31",
+      "pluginOptions": {
+        "plugins": [],
+        "trackingId": "UA-102315844-1",
+        "head": true
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [
+        "onRouteUpdate"
+      ],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby-plugin-google-analytics",
+      "packageJson": {
+        "name": "gatsby-plugin-google-analytics",
+        "description": "Gatsby plugin to add google analytics onto a site",
+        "version": "1.0.31",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "google analytics"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "bbd83db5cb918c2e4561805a3bef1906",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-sitemap": {
+      "resolve": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby-plugin-sitemap",
+      "id": "Plugin gatsby-plugin-sitemap",
+      "name": "gatsby-plugin-sitemap",
+      "version": "1.2.25",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onPostBuild"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby-plugin-sitemap",
+      "packageJson": {
+        "name": "gatsby-plugin-sitemap",
+        "description": "Gatsby plugin that automatically creates a sitemap for your site",
+        "version": "1.2.25",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": {
+          "name": "Nicholas Young &lt;nicholas@nicholaswyoung.com&gt;"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "minimatch",
+            "version": "^3.0.4"
+          },
+          {
+            "name": "sitemap",
+            "version": "^1.12.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "d3f3a64698e0971231c927b17537559a",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-transformer-sharp": {
+      "resolve": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby-transformer-sharp",
+      "id": "Plugin gatsby-transformer-sharp",
+      "name": "gatsby-transformer-sharp",
+      "version": "1.6.27",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateNode",
+        "setFieldsOnGraphQLNodeType",
+        "onPreExtractQueries"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby-transformer-sharp",
+      "packageJson": {
+        "name": "gatsby-transformer-sharp",
+        "description": "Gatsby transformer plugin for images using Sharp",
+        "version": "1.6.27",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "image",
+          "sharp"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "probe-image-size",
+            "version": "^4.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "b610e14866c18dc6173373bab1cf59c8",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-sharp": {
+      "resolve": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby-plugin-sharp",
+      "id": "Plugin gatsby-plugin-sharp",
+      "name": "gatsby-plugin-sharp",
+      "version": "1.6.48",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby-plugin-sharp",
+      "packageJson": {
+        "name": "gatsby-plugin-sharp",
+        "description": "Wrapper of the Sharp image manipulation library for Gatsby plugins",
+        "version": "1.6.48",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "image",
+          "sharp"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "async",
+            "version": "^2.1.2"
+          },
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "imagemin",
+            "version": "^5.2.2"
+          },
+          {
+            "name": "imagemin-pngquant",
+            "version": "5.0.1"
+          },
+          {
+            "name": "imagemin-webp",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "mini-svg-data-uri",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "potrace",
+            "version": "^2.1.1"
+          },
+          {
+            "name": "probe-image-size",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "progress",
+            "version": "^1.1.8"
+          },
+          {
+            "name": "sharp",
+            "version": "^0.20.0"
+          },
+          {
+            "name": "svgo",
+            "version": "^0.7.2"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "fa73ef7d9e52ec38b2b3dd4211337c79",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-react-helmet": {
+      "resolve": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby-plugin-react-helmet",
+      "id": "Plugin gatsby-plugin-react-helmet",
+      "name": "gatsby-plugin-react-helmet",
+      "version": "2.0.11",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby-plugin-react-helmet",
+      "packageJson": {
+        "name": "gatsby-plugin-react-helmet",
+        "description": "Manage document head data with react-helmet. Provides drop-in server rendering support for Gatsby.",
+        "version": "2.0.11",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "favicon",
+          "react-helmet",
+          "seo",
+          "document",
+          "head",
+          "title",
+          "meta",
+          "link",
+          "script",
+          "base",
+          "noscript",
+          "style"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "matthews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "react-helmet",
+            "version": ">=5.1.3"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "db8b549f7e3b37eabf5b33702defdc8d",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin default-site-plugin": {
+      "resolve": "/Users/eklavya/projects/portfolio/abhi18av.com",
+      "id": "Plugin default-site-plugin",
+      "name": "default-site-plugin",
+      "version": "25bd009b26c4ec3fdec4786a7ed4b55d",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/eklavya/projects/portfolio/abhi18av.com",
+      "packageJson": {
+        "name": "abhi18av-portfolio-v2",
+        "description": "A showcase of my projects",
+        "version": "1.0.0",
+        "author": "Abhinav Sharma",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "ajv",
+            "version": "^6.5.3"
+          },
+          {
+            "name": "bootstrap",
+            "version": "^4.1.3"
+          },
+          {
+            "name": "classnames",
+            "version": "^2.2.5"
+          },
+          {
+            "name": "font-awesome",
+            "version": "^4.7.0"
+          },
+          {
+            "name": "gatsby",
+            "version": "^1.9.250"
+          },
+          {
+            "name": "gatsby-image",
+            "version": "^1.0.45"
+          },
+          {
+            "name": "gatsby-link",
+            "version": "^1.6.39"
+          },
+          {
+            "name": "gatsby-plugin-google-analytics",
+            "version": "^1.0.31"
+          },
+          {
+            "name": "gatsby-plugin-manifest",
+            "version": "^1.0.27"
+          },
+          {
+            "name": "gatsby-plugin-react-helmet",
+            "version": "^2.0.11"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "^1.6.43"
+          },
+          {
+            "name": "gatsby-plugin-sitemap",
+            "version": "^1.2.20"
+          },
+          {
+            "name": "gatsby-source-filesystem",
+            "version": "^1.5.39"
+          },
+          {
+            "name": "gatsby-transformer-sharp",
+            "version": "^1.6.23"
+          },
+          {
+            "name": "jquery",
+            "version": "^3.3.1"
+          },
+          {
+            "name": "react",
+            "version": "^16.4.1"
+          },
+          {
+            "name": "react-bootstrap",
+            "version": "^0.32.1"
+          },
+          {
+            "name": "react-dom",
+            "version": "^16.4.1"
+          },
+          {
+            "name": "react-helmet",
+            "version": "^5.2.0"
+          },
+          {
+            "name": "react-scrollchor",
+            "version": "^5.0.1"
+          },
+          {
+            "name": "react-scrollspy",
+            "version": "^3.3.5"
+          },
+          {
+            "name": "reactstrap",
+            "version": "^6.3.0"
+          },
+          {
+            "name": "unist-util-select",
+            "version": "^1.5.0"
+          },
+          {
+            "name": "webpack",
+            "version": "^1.15.0"
+          }
+        ],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "3eed0f809fe06f4932ee8c16519efc7d",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-page-creator": {
+      "resolve": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby-plugin-page-creator",
+      "id": "Plugin gatsby-plugin-page-creator",
+      "name": "gatsby-plugin-page-creator",
+      "version": "1.0.1",
+      "pluginOptions": {
+        "plugins": [],
+        "path": "/Users/eklavya/projects/portfolio/abhi18av.com/src/pages",
+        "pathCheck": false
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/eklavya/projects/portfolio/abhi18av.com/node_modules/gatsby-plugin-page-creator",
+      "packageJson": {
+        "name": "gatsby-plugin-page-creator",
+        "description": "Gatsby plugin that automatically creates pages from React components in specified directories",
+        "version": "1.0.1",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "glob",
+            "version": "^7.1.1"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "parse-filepath",
+            "version": "^1.0.1"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "61957296f142c0a4a139c0b36498cadf",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Site": {
+      "siteMetadata": {
+        "title": "Abhinav Sharma || Home",
+        "description": "My mission as a developer is to contribute to applications that empower and motivate lives. Let's change the world together.",
+        "siteUrl": "https://www.abhi18av.com",
+        "author": "abhi18av",
+        "twitter": "abhi18av"
+      },
+      "pathPrefix": "",
+      "polyfill": true,
+      "buildTime": "2019-08-26T12:13:47.169Z",
+      "id": "Site",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "323c5c5d205e1e60bd736725d36c15b0",
+        "type": "Site",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/data/ absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/data/ absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "4d6666092a9ae669e1e401b2743187dc",
+        "type": "Directory",
+        "description": "Directory \"src/data\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/data/",
+      "relativePath": "",
+      "extension": "",
+      "size": 160,
+      "prettySize": "160 B",
+      "modifiedTime": "2019-08-26T11:09:51.757Z",
+      "accessTime": "2019-08-26T12:13:50.439Z",
+      "changeTime": "2019-08-26T12:07:54.471Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src",
+      "base": "data",
+      "ext": "",
+      "name": "data",
+      "relativeDirectory": "..",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 5,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799194,
+      "blocks": 0,
+      "atimeMs": 1566821630439.4634,
+      "mtimeMs": 1566817791756.929,
+      "ctimeMs": 1566821274470.8806,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:13:50.439Z",
+      "mtime": "2019-08-26T11:09:51.757Z",
+      "ctime": "2019-08-26T12:07:54.471Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/data/contacts.json absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/data/contacts.json absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "e754f33ac07f5b0d8416a0018a448cc5",
+        "mediaType": "application/json",
+        "type": "File",
+        "description": "File \"src/data/contacts.json\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/data/contacts.json",
+      "relativePath": "contacts.json",
+      "extension": "json",
+      "size": 760,
+      "prettySize": "760 B",
+      "modifiedTime": "2019-08-26T10:22:01.086Z",
+      "accessTime": "2019-08-26T12:08:16.895Z",
+      "changeTime": "2019-08-26T12:07:54.471Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/data",
+      "base": "contacts.json",
+      "ext": ".json",
+      "name": "contacts",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799197,
+      "blocks": 8,
+      "atimeMs": 1566821296895.259,
+      "mtimeMs": 1566814921085.659,
+      "ctimeMs": 1566821274470.7551,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.895Z",
+      "mtime": "2019-08-26T10:22:01.086Z",
+      "ctime": "2019-08-26T12:07:54.471Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/data/hobbies.json absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/data/hobbies.json absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "d4bbee2af06cad63abb628981ba49b2b",
+        "mediaType": "application/json",
+        "type": "File",
+        "description": "File \"src/data/hobbies.json\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/data/hobbies.json",
+      "relativePath": "hobbies.json",
+      "extension": "json",
+      "size": 289,
+      "prettySize": "289 B",
+      "modifiedTime": "2019-08-26T10:24:37.248Z",
+      "accessTime": "2019-08-26T12:08:16.895Z",
+      "changeTime": "2019-08-26T12:07:54.469Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/data",
+      "base": "hobbies.json",
+      "ext": ".json",
+      "name": "hobbies",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799195,
+      "blocks": 8,
+      "atimeMs": 1566821296895.2346,
+      "mtimeMs": 1566815077248.326,
+      "ctimeMs": 1566821274469.1934,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.895Z",
+      "mtime": "2019-08-26T10:24:37.248Z",
+      "ctime": "2019-08-26T12:07:54.469Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/data/projects.json absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/data/projects.json absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "1c430343cc13fe8d9647cffe8f4a0f74",
+        "mediaType": "application/json",
+        "type": "File",
+        "description": "File \"src/data/projects.json\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/data/projects.json",
+      "relativePath": "projects.json",
+      "extension": "json",
+      "size": 3543,
+      "prettySize": "3.54 kB",
+      "modifiedTime": "2019-08-26T11:09:51.756Z",
+      "accessTime": "2019-08-26T12:08:16.895Z",
+      "changeTime": "2019-08-26T12:07:54.470Z",
+      "birthTime": "2019-08-26T11:09:51.755Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/data",
+      "base": "projects.json",
+      "ext": ".json",
+      "name": "projects",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799196,
+      "blocks": 8,
+      "atimeMs": 1566821296895.2764,
+      "mtimeMs": 1566817791755.5063,
+      "ctimeMs": 1566821274469.9224,
+      "birthtimeMs": 1566817791755.3708,
+      "atime": "2019-08-26T12:08:16.895Z",
+      "mtime": "2019-08-26T11:09:51.756Z",
+      "ctime": "2019-08-26T12:07:54.470Z",
+      "birthtime": "2019-08-26T11:09:51.755Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "908bbb6a792019121e012490b2624fb0",
+        "type": "Directory",
+        "description": "Directory \"src/images\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images",
+      "relativePath": "",
+      "extension": "",
+      "size": 192,
+      "prettySize": "192 B",
+      "modifiedTime": "2019-08-26T10:32:41.423Z",
+      "accessTime": "2019-08-26T12:13:50.448Z",
+      "changeTime": "2019-08-26T12:07:54.450Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src",
+      "base": "images",
+      "ext": "",
+      "name": "images",
+      "relativeDirectory": "..",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 6,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799143,
+      "blocks": 0,
+      "atimeMs": 1566821630448.2783,
+      "mtimeMs": 1566815561422.6426,
+      "ctimeMs": 1566821274450.2588,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:13:50.448Z",
+      "mtime": "2019-08-26T10:32:41.423Z",
+      "ctime": "2019-08-26T12:07:54.450Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "1a3fba17ac10e4865895516c7e22ca3a",
+        "type": "Directory",
+        "description": "Directory \"src/images/icons\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons",
+      "relativePath": "icons",
+      "extension": "",
+      "size": 256,
+      "prettySize": "256 B",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:13:50.449Z",
+      "changeTime": "2019-08-26T12:07:54.448Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images",
+      "base": "icons",
+      "ext": "",
+      "name": "icons",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 8,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799163,
+      "blocks": 0,
+      "atimeMs": 1566821630449.4338,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274448.4944,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:13:50.449Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.448Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "7247a8cafdddead0dd3a0b72f2bbcd52",
+        "type": "Directory",
+        "description": "Directory \"src/images/projects\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects",
+      "relativePath": "projects",
+      "extension": "",
+      "size": 640,
+      "prettySize": "640 B",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:13:50.449Z",
+      "changeTime": "2019-08-26T12:07:54.440Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images",
+      "base": "projects",
+      "ext": "",
+      "name": "projects",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 20,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799144,
+      "blocks": 0,
+      "atimeMs": 1566821630449.413,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274439.8005,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:13:50.449Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.440Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/meditating.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/meditating.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/meditating.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "aedaa2b5e0690e547a2c1dddac665770",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/icons/meditating.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/meditating.png",
+      "relativePath": "icons/meditating.png",
+      "extension": "png",
+      "size": 1520,
+      "prettySize": "1.52 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.445Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons",
+      "base": "meditating.png",
+      "ext": ".png",
+      "name": "meditating",
+      "relativeDirectory": "icons",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799165,
+      "blocks": 8,
+      "atimeMs": 1566821296956.679,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274445.204,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.445Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/hiking.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/hiking.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/hiking.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "82e043f3aea6e41ea6d2aa1dc9b3a547",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/icons/hiking.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/hiking.png",
+      "relativePath": "icons/hiking.png",
+      "extension": "png",
+      "size": 1532,
+      "prettySize": "1.53 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.448Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons",
+      "base": "hiking.png",
+      "ext": ".png",
+      "name": "hiking",
+      "relativeDirectory": "icons",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799169,
+      "blocks": 8,
+      "atimeMs": 1566821296956.5999,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274448.339,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.448Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/Abhinav.jpg absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/Abhinav.jpg absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/Abhinav.jpg absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "6c25632ec70b0d139e8504034e976a00",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "description": "File \"src/images/Abhinav.jpg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/Abhinav.jpg",
+      "relativePath": "Abhinav.jpg",
+      "extension": "jpg",
+      "size": 32280,
+      "prettySize": "32.3 kB",
+      "modifiedTime": "2019-08-13T21:07:21.796Z",
+      "accessTime": "2019-08-26T12:08:16.896Z",
+      "changeTime": "2019-08-26T12:07:54.449Z",
+      "birthTime": "2019-08-13T21:07:21.795Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images",
+      "base": "Abhinav.jpg",
+      "ext": ".jpg",
+      "name": "Abhinav",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799170,
+      "blocks": 64,
+      "atimeMs": 1566821296895.636,
+      "mtimeMs": 1565730441796.3079,
+      "ctimeMs": 1566821274449.474,
+      "birthtimeMs": 1565730441795.0703,
+      "atime": "2019-08-26T12:08:16.896Z",
+      "mtime": "2019-08-13T21:07:21.796Z",
+      "ctime": "2019-08-26T12:07:54.449Z",
+      "birthtime": "2019-08-13T21:07:21.795Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/reading.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/reading.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/reading.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "d1bb48e013287d17205ee9ad372f8b4c",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/icons/reading.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/reading.png",
+      "relativePath": "icons/reading.png",
+      "extension": "png",
+      "size": 1395,
+      "prettySize": "1.4 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.446Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons",
+      "base": "reading.png",
+      "ext": ".png",
+      "name": "reading",
+      "relativeDirectory": "icons",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799166,
+      "blocks": 8,
+      "atimeMs": 1566821296956.623,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274445.922,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.446Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/running.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/running.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/running.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "67c170999e80298bf6bda536884ad9ca",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/icons/running.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/running.png",
+      "relativePath": "icons/running.png",
+      "extension": "png",
+      "size": 1495,
+      "prettySize": "1.5 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.447Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons",
+      "base": "running.png",
+      "ext": ".png",
+      "name": "running",
+      "relativeDirectory": "icons",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799167,
+      "blocks": 8,
+      "atimeMs": 1566821296956.6443,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274446.5825,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.447Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/musicfestival.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/musicfestival.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/musicfestival.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "ceb445e8d055c8cef56caf48f10f82ab",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/icons/musicfestival.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/musicfestival.png",
+      "relativePath": "icons/musicfestival.png",
+      "extension": "png",
+      "size": 1617,
+      "prettySize": "1.62 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.447Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons",
+      "base": "musicfestival.png",
+      "ext": ".png",
+      "name": "musicfestival",
+      "relativeDirectory": "icons",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799168,
+      "blocks": 8,
+      "atimeMs": 1566821296956.6953,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274447.3823,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.447Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/traveling.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/traveling.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/traveling.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "264690f64be4a21c5860c497b0c04356",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/icons/traveling.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/traveling.png",
+      "relativePath": "icons/traveling.png",
+      "extension": "png",
+      "size": 1555,
+      "prettySize": "1.55 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.445Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons",
+      "base": "traveling.png",
+      "ext": ".png",
+      "name": "traveling",
+      "relativeDirectory": "icons",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799164,
+      "blocks": 8,
+      "atimeMs": 1566821296956.662,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274444.5317,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.445Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/FileMetadata.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/FileMetadata.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/FileMetadata.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "d4262da38cb6ce4e32b47724773adda4",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/projects/FileMetadata.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/FileMetadata.png",
+      "relativePath": "projects/FileMetadata.png",
+      "extension": "png",
+      "size": 39737,
+      "prettySize": "39.7 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.429Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects",
+      "base": "FileMetadata.png",
+      "ext": ".png",
+      "name": "FileMetadata",
+      "relativeDirectory": "projects",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799153,
+      "blocks": 80,
+      "atimeMs": 1566821296957.1167,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274428.7976,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.429Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/meditating.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/meditating.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/meditating.png absPath of file",
+      "internal": {
+        "contentDigest": "aedaa2b5e0690e547a2c1dddac665770",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/hiking.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/hiking.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/hiking.png absPath of file",
+      "internal": {
+        "contentDigest": "82e043f3aea6e41ea6d2aa1dc9b3a547",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/Abhinav.jpg absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/Abhinav.jpg absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/Abhinav.jpg absPath of file",
+      "internal": {
+        "contentDigest": "6c25632ec70b0d139e8504034e976a00",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/reading.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/reading.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/reading.png absPath of file",
+      "internal": {
+        "contentDigest": "d1bb48e013287d17205ee9ad372f8b4c",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/running.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/running.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/running.png absPath of file",
+      "internal": {
+        "contentDigest": "67c170999e80298bf6bda536884ad9ca",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/musicfestival.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/musicfestival.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/musicfestival.png absPath of file",
+      "internal": {
+        "contentDigest": "ceb445e8d055c8cef56caf48f10f82ab",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/traveling.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/traveling.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/traveling.png absPath of file",
+      "internal": {
+        "contentDigest": "264690f64be4a21c5860c497b0c04356",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/FileMetadata.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/FileMetadata.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/FileMetadata.png absPath of file",
+      "internal": {
+        "contentDigest": "d4262da38cb6ce4e32b47724773adda4",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/PomodoroTimer.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/PomodoroTimer.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/PomodoroTimer.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "2f19a8e095479d65fe4cd2b406818dbe",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/projects/PomodoroTimer.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/PomodoroTimer.png",
+      "relativePath": "projects/PomodoroTimer.png",
+      "extension": "png",
+      "size": 42707,
+      "prettySize": "42.7 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.429Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects",
+      "base": "PomodoroTimer.png",
+      "ext": ".png",
+      "name": "PomodoroTimer",
+      "relativeDirectory": "projects",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799154,
+      "blocks": 88,
+      "atimeMs": 1566821296957.1594,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274429.2827,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.429Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/CamperLeaderboard.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/CamperLeaderboard.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/CamperLeaderboard.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "a0d225f0ec5f9ca453df586367a3c55d",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/projects/CamperLeaderboard.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/CamperLeaderboard.png",
+      "relativePath": "projects/CamperLeaderboard.png",
+      "extension": "png",
+      "size": 104310,
+      "prettySize": "104 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.428Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects",
+      "base": "CamperLeaderboard.png",
+      "ext": ".png",
+      "name": "CamperLeaderboard",
+      "relativeDirectory": "projects",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799152,
+      "blocks": 208,
+      "atimeMs": 1566821296957.234,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274427.8257,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.428Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/PomodoroTimer.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/PomodoroTimer.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/PomodoroTimer.png absPath of file",
+      "internal": {
+        "contentDigest": "2f19a8e095479d65fe4cd2b406818dbe",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/CamperLeaderboard.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/CamperLeaderboard.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/CamperLeaderboard.png absPath of file",
+      "internal": {
+        "contentDigest": "a0d225f0ec5f9ca453df586367a3c55d",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/JavascriptCalculator.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/JavascriptCalculator.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/JavascriptCalculator.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "f7974c8b6a3a721141b0216b252af33e",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/projects/JavascriptCalculator.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/JavascriptCalculator.png",
+      "relativePath": "projects/JavascriptCalculator.png",
+      "extension": "png",
+      "size": 62395,
+      "prettySize": "62.4 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.436Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects",
+      "base": "JavascriptCalculator.png",
+      "ext": ".png",
+      "name": "JavascriptCalculator",
+      "relativeDirectory": "projects",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799158,
+      "blocks": 128,
+      "atimeMs": 1566821296957.3098,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274436.0227,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.436Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/ImageSearch.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/ImageSearch.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/ImageSearch.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "659f79fa9f6655e892becf690f337a7f",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/projects/ImageSearch.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/ImageSearch.png",
+      "relativePath": "projects/ImageSearch.png",
+      "extension": "png",
+      "size": 92902,
+      "prettySize": "92.9 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.438Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects",
+      "base": "ImageSearch.png",
+      "ext": ".png",
+      "name": "ImageSearch",
+      "relativeDirectory": "projects",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799160,
+      "blocks": 184,
+      "atimeMs": 1566821296957.0803,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274437.9646,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.438Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/MinimalistPomodoro.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/MinimalistPomodoro.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/MinimalistPomodoro.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "3c16c08d65a5d4d386fb6c2fd7512107",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/projects/MinimalistPomodoro.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/MinimalistPomodoro.png",
+      "relativePath": "projects/MinimalistPomodoro.png",
+      "extension": "png",
+      "size": 70792,
+      "prettySize": "70.8 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.430Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects",
+      "base": "MinimalistPomodoro.png",
+      "ext": ".png",
+      "name": "MinimalistPomodoro",
+      "relativeDirectory": "projects",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799156,
+      "blocks": 144,
+      "atimeMs": 1566821296957.273,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274430.2063,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.430Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/RequestHeaderParser.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/RequestHeaderParser.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/RequestHeaderParser.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "a22822bec191403231e428fd7bb9e413",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/projects/RequestHeaderParser.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/RequestHeaderParser.png",
+      "relativePath": "projects/RequestHeaderParser.png",
+      "extension": "png",
+      "size": 66982,
+      "prettySize": "67 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.427Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects",
+      "base": "RequestHeaderParser.png",
+      "ext": ".png",
+      "name": "RequestHeaderParser",
+      "relativeDirectory": "projects",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799150,
+      "blocks": 136,
+      "atimeMs": 1566821296957.292,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274426.7256,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.427Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/TicTacToe.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/TicTacToe.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/TicTacToe.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "a6dbcc9dc41d754611d2b00896150ecc",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/projects/TicTacToe.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/TicTacToe.png",
+      "relativePath": "projects/TicTacToe.png",
+      "extension": "png",
+      "size": 124945,
+      "prettySize": "125 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.426Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects",
+      "base": "TicTacToe.png",
+      "ext": ".png",
+      "name": "TicTacToe",
+      "relativeDirectory": "projects",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799149,
+      "blocks": 248,
+      "atimeMs": 1566821296957.0356,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274426.1255,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.426Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/Timestamp.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/Timestamp.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/Timestamp.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "2ba77f15e7f862de6769d2b70dbc2832",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/projects/Timestamp.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/Timestamp.png",
+      "relativePath": "projects/Timestamp.png",
+      "extension": "png",
+      "size": 112474,
+      "prettySize": "112 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.424Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects",
+      "base": "Timestamp.png",
+      "ext": ".png",
+      "name": "Timestamp",
+      "relativeDirectory": "projects",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799148,
+      "blocks": 224,
+      "atimeMs": 1566821296957.0605,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274423.8877,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.424Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/urlShortener.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/urlShortener.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/urlShortener.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "b7996ea1a705a188ee567067290434ab",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/projects/urlShortener.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/urlShortener.png",
+      "relativePath": "projects/urlShortener.png",
+      "extension": "png",
+      "size": 91906,
+      "prettySize": "91.9 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.430Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects",
+      "base": "urlShortener.png",
+      "ext": ".png",
+      "name": "urlShortener",
+      "relativeDirectory": "projects",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799155,
+      "blocks": 184,
+      "atimeMs": 1566821296957.142,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274429.661,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.430Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/JavascriptCalculator.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/JavascriptCalculator.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/JavascriptCalculator.png absPath of file",
+      "internal": {
+        "contentDigest": "f7974c8b6a3a721141b0216b252af33e",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/ImageSearch.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/ImageSearch.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/ImageSearch.png absPath of file",
+      "internal": {
+        "contentDigest": "659f79fa9f6655e892becf690f337a7f",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/MinimalistPomodoro.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/MinimalistPomodoro.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/MinimalistPomodoro.png absPath of file",
+      "internal": {
+        "contentDigest": "3c16c08d65a5d4d386fb6c2fd7512107",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/RequestHeaderParser.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/RequestHeaderParser.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/RequestHeaderParser.png absPath of file",
+      "internal": {
+        "contentDigest": "a22822bec191403231e428fd7bb9e413",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/TicTacToe.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/TicTacToe.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/TicTacToe.png absPath of file",
+      "internal": {
+        "contentDigest": "a6dbcc9dc41d754611d2b00896150ecc",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/Timestamp.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/Timestamp.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/Timestamp.png absPath of file",
+      "internal": {
+        "contentDigest": "2ba77f15e7f862de6769d2b70dbc2832",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/urlShortener.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/urlShortener.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/urlShortener.png absPath of file",
+      "internal": {
+        "contentDigest": "b7996ea1a705a188ee567067290434ab",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/WikipediaViewer.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/WikipediaViewer.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/WikipediaViewer.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "ebe3511f9bbdb4493f07217aa973d5cd",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/projects/WikipediaViewer.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/WikipediaViewer.png",
+      "relativePath": "projects/WikipediaViewer.png",
+      "extension": "png",
+      "size": 137677,
+      "prettySize": "138 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.436Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects",
+      "base": "WikipediaViewer.png",
+      "ext": ".png",
+      "name": "WikipediaViewer",
+      "relativeDirectory": "projects",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799159,
+      "blocks": 272,
+      "atimeMs": 1566821296957.193,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274436.485,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.436Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/WikipediaViewer.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/WikipediaViewer.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/WikipediaViewer.png absPath of file",
+      "internal": {
+        "contentDigest": "ebe3511f9bbdb4493f07217aa973d5cd",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/Twitch_Streamers.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/Twitch_Streamers.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/Twitch_Streamers.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "00cc28a1d2a5e476771c432b921d9f9d",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/projects/Twitch_Streamers.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/Twitch_Streamers.png",
+      "relativePath": "projects/Twitch_Streamers.png",
+      "extension": "png",
+      "size": 206155,
+      "prettySize": "206 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.435Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects",
+      "base": "Twitch_Streamers.png",
+      "ext": ".png",
+      "name": "Twitch_Streamers",
+      "relativeDirectory": "projects",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799157,
+      "blocks": 408,
+      "atimeMs": 1566821296957.2092,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274435.2695,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.435Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/AirBalloon.jpg absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/AirBalloon.jpg absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/AirBalloon.jpg absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "d1d4a51816a920dfe8c7268d0a6859f4",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "description": "File \"src/images/AirBalloon.jpg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/AirBalloon.jpg",
+      "relativePath": "AirBalloon.jpg",
+      "extension": "jpg",
+      "size": 230960,
+      "prettySize": "231 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.896Z",
+      "changeTime": "2019-08-26T12:07:54.450Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images",
+      "base": "AirBalloon.jpg",
+      "ext": ".jpg",
+      "name": "AirBalloon",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799171,
+      "blocks": 456,
+      "atimeMs": 1566821296895.6526,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274450.1497,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.896Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.450Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/Twitch_Streamers.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/Twitch_Streamers.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/Twitch_Streamers.png absPath of file",
+      "internal": {
+        "contentDigest": "00cc28a1d2a5e476771c432b921d9f9d",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/AirBalloon.jpg absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/AirBalloon.jpg absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/AirBalloon.jpg absPath of file",
+      "internal": {
+        "contentDigest": "d1d4a51816a920dfe8c7268d0a6859f4",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/SimonGame.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/SimonGame.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/SimonGame.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "b09fa5516edd12ff3fee07fdd5c24aa2",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/projects/SimonGame.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/SimonGame.png",
+      "relativePath": "projects/SimonGame.png",
+      "extension": "png",
+      "size": 243355,
+      "prettySize": "243 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.420Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects",
+      "base": "SimonGame.png",
+      "ext": ".png",
+      "name": "SimonGame",
+      "relativeDirectory": "projects",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799146,
+      "blocks": 480,
+      "atimeMs": 1566821296957.0166,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274420.1746,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.420Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/SimonGame.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/SimonGame.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/SimonGame.png absPath of file",
+      "internal": {
+        "contentDigest": "b09fa5516edd12ff3fee07fdd5c24aa2",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/EmpowerHerSF_cover.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/EmpowerHerSF_cover.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/EmpowerHerSF_cover.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "c40054167f2c59cb7c77b13413f091c0",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/projects/EmpowerHerSF_cover.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/EmpowerHerSF_cover.png",
+      "relativePath": "projects/EmpowerHerSF_cover.png",
+      "extension": "png",
+      "size": 385678,
+      "prettySize": "386 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.440Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects",
+      "base": "EmpowerHerSF_cover.png",
+      "ext": ".png",
+      "name": "EmpowerHerSF_cover",
+      "relativeDirectory": "projects",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799162,
+      "blocks": 760,
+      "atimeMs": 1566821296957.2576,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274439.6921,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.440Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/EmpowerHerSF_cover.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/EmpowerHerSF_cover.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/EmpowerHerSF_cover.png absPath of file",
+      "internal": {
+        "contentDigest": "c40054167f2c59cb7c77b13413f091c0",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/SFWeatherSmall.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/SFWeatherSmall.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/SFWeatherSmall.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "a981707f8af4253740fbdcf805911e9d",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/projects/SFWeatherSmall.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/SFWeatherSmall.png",
+      "relativePath": "projects/SFWeatherSmall.png",
+      "extension": "png",
+      "size": 347214,
+      "prettySize": "347 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.439Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects",
+      "base": "SFWeatherSmall.png",
+      "ext": ".png",
+      "name": "SFWeatherSmall",
+      "relativeDirectory": "projects",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799161,
+      "blocks": 680,
+      "atimeMs": 1566821296957.1753,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274438.8794,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.439Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/TributePage.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/TributePage.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/TributePage.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "7716f2e91185d88c49d6d0b1b84977e6",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/projects/TributePage.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/TributePage.png",
+      "relativePath": "projects/TributePage.png",
+      "extension": "png",
+      "size": 261520,
+      "prettySize": "262 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.427Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects",
+      "base": "TributePage.png",
+      "ext": ".png",
+      "name": "TributePage",
+      "relativeDirectory": "projects",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799151,
+      "blocks": 512,
+      "atimeMs": 1566821296957.0989,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274427.272,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.427Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/AskMe.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/AskMe.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/AskMe.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "d9e2342c10baf9022ea4e641a3fb1931",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/projects/AskMe.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/AskMe.png",
+      "relativePath": "projects/AskMe.png",
+      "extension": "png",
+      "size": 382657,
+      "prettySize": "383 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.423Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects",
+      "base": "AskMe.png",
+      "ext": ".png",
+      "name": "AskMe",
+      "relativeDirectory": "projects",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799147,
+      "blocks": 752,
+      "atimeMs": 1566821296956.9946,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274423.0845,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.423Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/SFWeatherSmall.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/SFWeatherSmall.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/SFWeatherSmall.png absPath of file",
+      "internal": {
+        "contentDigest": "a981707f8af4253740fbdcf805911e9d",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/TributePage.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/TributePage.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/TributePage.png absPath of file",
+      "internal": {
+        "contentDigest": "7716f2e91185d88c49d6d0b1b84977e6",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/AskMe.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/AskMe.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/AskMe.png absPath of file",
+      "internal": {
+        "contentDigest": "d9e2342c10baf9022ea4e641a3fb1931",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/RandomQuoteGenerator.png absPath of file": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/RandomQuoteGenerator.png absPath of file",
+      "children": [
+        "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/RandomQuoteGenerator.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "675fac566be6daeb02a53a1af4eb7ca3",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/images/projects/RandomQuoteGenerator.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/RandomQuoteGenerator.png",
+      "relativePath": "projects/RandomQuoteGenerator.png",
+      "extension": "png",
+      "size": 497323,
+      "prettySize": "497 kB",
+      "modifiedTime": "2019-07-11T22:38:32.000Z",
+      "accessTime": "2019-08-26T12:08:16.957Z",
+      "changeTime": "2019-08-26T12:07:54.418Z",
+      "birthTime": "2019-07-11T22:38:32.000Z",
+      "root": "/",
+      "dir": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects",
+      "base": "RandomQuoteGenerator.png",
+      "ext": ".png",
+      "name": "RandomQuoteGenerator",
+      "relativeDirectory": "projects",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 12893799145,
+      "blocks": 976,
+      "atimeMs": 1566821296957.3293,
+      "mtimeMs": 1562884712000,
+      "ctimeMs": 1566821274417.8662,
+      "birthtimeMs": 1562884712000,
+      "atime": "2019-08-26T12:08:16.957Z",
+      "mtime": "2019-07-11T22:38:32.000Z",
+      "ctime": "2019-08-26T12:07:54.418Z",
+      "birthtime": "2019-07-11T22:38:32.000Z"
+    },
+    "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/RandomQuoteGenerator.png absPath of file >> ImageSharp": {
+      "id": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/RandomQuoteGenerator.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/RandomQuoteGenerator.png absPath of file",
+      "internal": {
+        "contentDigest": "675fac566be6daeb02a53a1af4eb7ca3",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "SitePage /": {
+      "layout": null,
+      "jsonName": "index.json",
+      "internalComponentName": "ComponentIndex",
+      "path": "/",
+      "component": "/Users/eklavya/projects/portfolio/abhi18av.com/src/pages/index.js",
+      "componentChunkName": "component---src-pages-index-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "componentPath": "/Users/eklavya/projects/portfolio/abhi18av.com/src/pages/index.js",
+      "id": "SitePage /",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "ae11ed9c3ade3f682a86703d7eda74ec",
+        "description": "Plugin gatsby-plugin-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    }
+  },
+  "status": {
+    "plugins": {},
+    "PLUGINS_HASH": "2a0de601198ca1aebade2441c7a36a93"
+  },
+  "componentDataDependencies": {
+    "nodes": {
+      "Site": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/AirBalloon.jpg absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/AirBalloon.jpg absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/Abhinav.jpg absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/Abhinav.jpg absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/AskMe.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/AskMe.png absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/CamperLeaderboard.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/CamperLeaderboard.png absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/EmpowerHerSF_cover.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/EmpowerHerSF_cover.png absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/FileMetadata.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/FileMetadata.png absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/ImageSearch.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/ImageSearch.png absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/JavascriptCalculator.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/JavascriptCalculator.png absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/MinimalistPomodoro.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/MinimalistPomodoro.png absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/PomodoroTimer.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/PomodoroTimer.png absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/RandomQuoteGenerator.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/RandomQuoteGenerator.png absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/RequestHeaderParser.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/RequestHeaderParser.png absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/SFWeatherSmall.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/SFWeatherSmall.png absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/SimonGame.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/SimonGame.png absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/TicTacToe.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/TicTacToe.png absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/Timestamp.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/Timestamp.png absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/TributePage.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/TributePage.png absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/Twitch_Streamers.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/Twitch_Streamers.png absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/WikipediaViewer.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/WikipediaViewer.png absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/urlShortener.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/projects/urlShortener.png absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/hiking.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/hiking.png absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/meditating.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/meditating.png absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/musicfestival.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/musicfestival.png absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/reading.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/reading.png absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/running.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/running.png absPath of file": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/traveling.png absPath of file >> ImageSharp": [
+        "/"
+      ],
+      "/Users/eklavya/projects/portfolio/abhi18av.com/src/images/icons/traveling.png absPath of file": [
+        "/"
+      ]
+    },
+    "connections": {
+      "SitePage": [
+        "/dev-404-page/"
+      ],
+      "File": [
+        "/"
+      ]
+    }
+  }
+}

@@ -1,15 +1,22 @@
-# example blog
+# Abhinav Sharma
 
-Example perun-powered Blog.
+Hi! This is the source code for my [portfolio website](https://abhi18av.com), which I rebuilt using React and Gatsby. 
 
-Written in [Clojure](https://clojure.org). Generated with [Perun](https://perun.io/).
+## Tech stack
 
-_Note: this example is extremely basic.
-For a list of real-world examples, check [the main README.md](/README.md)._
+- [Gatsby](https://gatsbyjs.org/) - static site generator
+- [Font Awesome](https://fontawesome.com/) - icons
+- [Bootstrap](https://getbootstrap.com/) - css framework
+- [Netlify](https://www.netlify.com/) - static site hosting
+- [Prettier](https://prettier.io/) - An opinionated code formatter
 
+## Sitemap
 
-## Testing
+- [Home](https://maribelduran.com)
 
-To test the example locally, simply `cd` into its directory and run:
+## TODO
 
-`boot dev`
+- [ ] Localize app
+- [ ] Improve accessibility (currently 56/100 score on Lighthouse)
+- [ ] Turn into a progressive web app
+- [ ] Add dark/light mode

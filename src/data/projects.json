@@ -1,0 +1,72 @@
+[
+  {
+    "name": "EmpowerHer:SF",
+    "type": "front-end",
+    "description": "EmpowerHerSF focuses on providing Human Trafficking awareness and funding to local SF women shelters. The website matches you with local shelters that need items that you have available to donate.",
+    "img": "EmpowerHerSF_cover.png",
+    "url": "https://maribelduran.github.io/Hacking4Humanity2017/web/index.html"
+  },
+  {
+    "name": "Tic Tac Toe",
+    "type": "front-end",
+    "description": "A user can play a game of Tic Tac Toe with the computer and choose whether they want to play as X or O. The game will reset as soon as it's over. Built using: Javascript, jQuery, HTML, CSS3, and Bootstrap.",
+    "img": "TicTacToe.png",
+    "url": "https://maribelduran.github.io/tic-tac-toe"
+  },
+  {
+    "name": "Pomodoro Timer",
+    "type": "front-end",
+    "description": "A countdown clock that switches between a Session Timer and Break Timer. The length of the timers are customizable and can be reset. Built using: Javascript, Jquery, HTML5, CSS3, and Bootstrap.",
+    "img": "PomodoroTimer.png",
+    "url": "https://maribelduran.github.io/pomodoro-timer"
+  },
+  {
+    "name": "Javascript Calculator",
+    "type": "front-end",
+    "description": "A fully functional calculator that can chain mathematical operations together. Built using Javascript, jQuery, HTML5, and CSS3.",
+    "img": "JavascriptCalculator.png",
+    "url": "https://maribelduran.github.io/javascript-calculator"
+  },
+  {
+    "name": "Wikipedia Viewer",
+    "type": "front-end",
+    "description": "Allows a user to search and view Wikipedia articles.Uses Wikpedia's API to retrieve the articles. Built using Vanilla JS, HTML, and CSS3.",
+    "img": "WikipediaViewer.png",
+    "url": "https://maribelduran.github.io/wikipedia-viewer"
+  },
+  {
+    "name": "Inspirational Quotes Generator",
+    "type": "front-end",
+    "description": "Provides random inspirational quotes using Forismatic API. The user can share the quotes on Facebook and Twitter. Built using Javascript, JQuery, HTML, CSS3, and Bootstrap.",
+    "img": "RandomQuoteGenerator.png",
+    "url": "https://maribelduran.github.io/inspirational-quote-generator"
+  },
+  {
+    "name": "File Metadata Microservice",
+    "type": "back-end",
+    "description": "This service accepts a single file upload and will return the file size in bytes in the JSON response. Built using Node.js, Express, and Multer.",
+    "img": "FileMetadata.png",
+    "url": "https://file-metadata-micro-srvc.herokuapp.com/"
+  },
+  {
+    "name": "URL Shortener Microservice",
+    "type": "back-end",
+    "description": "This service accepts a URL and will return both the original URL and shortened URL in a JSON response. Built using MongoDB, Node.js and Express.",
+    "img": "urlShortener.png",
+    "url": "https://url-shortener-microsrvc.herokuapp.com/"
+  },
+  {
+    "name": "Timestamp Microservice",
+    "type": "back-end",
+    "description": "This service accepts a string and returns both the Unix timestamp and the natural language form of that date as a JSON object. Built using Node.js and Express.",
+    "img": "Timestamp.png",
+    "url": "https://timestamp-micro-srvc.herokuapp.com/"
+  },
+  {
+    "name": "FCC Camper Leaderboard",
+    "type": "react",
+    "description": "Shows a list of the FreeCodeCamp campers who've earned the most brownie points in the past 30 days and all timers. Uses the FCC API to get FCC top campers information.",
+    "img": "CamperLeaderboard.png",
+    "url": "https://maribelduran.github.io/camper-leaderboard"
+  }
+]

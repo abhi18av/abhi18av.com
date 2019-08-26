@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Running",
+    "img": "running.png",
+    "external_url": null
+  },
+  {
+    "name": "Meditating",
+    "img": "meditating.png",
+    "external_url": null
+  },
+  {
+    "name": "Reading",
+    "img": "reading.png",
+    "external_url": "https://www.goodreads.com/abhi18av"
+  }
+]

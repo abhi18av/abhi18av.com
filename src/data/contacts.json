@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Github",
+    "icon": "github",
+    "type": "social-media",
+    "url": "https://github.com/abhi18av"
+  },
+  {
+    "name": "Twitter",
+    "icon": "twitter",
+    "type": "social-media",
+    "url": "https://twitter.com/abhi18av"
+  },
+  {
+    "name": "Medium",
+    "icon": "medium",
+    "type": "social-media",
+    "url": "https://medium.com/@abhi18av"
+  },
+  {
+    "name": "Instagram",
+    "icon": "instagram",
+    "type": "social-media",
+    "url": "https://www.instagram.com/abhi18av"
+  },
+  {
+    "name": "Instagram",
+    "icon": "linkedin",
+    "type": "social-media",
+    "url": "https://www.linkedin.com/in/abhi18av"
+  },
+  {
+    "name": "Email",
+    "icon": "envelope",
+    "type": "email",
+    "url": "mailto:abhi18av@outlook.com"
+  }
+]
