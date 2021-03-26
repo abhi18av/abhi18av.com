@@ -26,6 +26,10 @@ module.exports = {
         { to: "blog", label: "Blog", position: "left" },
       ],
     },
+    googleAnalytics: {
+      trackingID: "TODO",
+      anonymizeIP: false,
+    },
     footer: {
       style: "dark",
       links: [],
@@ -46,14 +50,30 @@ module.exports = {
           showReadingTime: true,
           editUrl:
             "https://github.com/facebook/docusaurus/edit/master/website/blog/",
+          blogSidebarCount: "ALL",
+          blogSidebarTitle: "Previous scribblings",
+          postsPerPage: 10,
           feedOptions: {
             type: "all",
+            title: `TODO`, // default to siteConfig.title
+            description: `TODO`, // default to  `${siteConfig.title} Blog`
             copyright: `Copyright © ${new Date().getFullYear()}, All rights reserved. Abhinav Sharma`,
+            language: undefined, // possible values: http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
           },
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
+      },
+    ],
+  ],
+  plugins: [
+    [
+      "@docusaurus/plugin-sitemap",
+      {
+        changefreq: "weekly",
+        priority: 0.5,
+        trailingSlash: false,
       },
     ],
   ],
