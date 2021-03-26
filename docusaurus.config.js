@@ -44,9 +44,12 @@ module.exports = {
         // },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl:
             "https://github.com/facebook/docusaurus/edit/master/website/blog/",
+          feedOptions: {
+            type: "all",
+            copyright: `Copyright © ${new Date().getFullYear()}, All rights reserved. Abhinav Sharma`,
+          },
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
