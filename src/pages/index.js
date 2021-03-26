@@ -11,50 +11,39 @@ export default function Home() {
   const { siteConfig = {} } = context;
   return (
     <Layout
-      title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      title={`Home Page`}
+      description="Abhinav Sharma (abhi18av) personal website."
     >
       <main>
         <div class="hero shadow--lw">
           <div class="container">
-            <a href="https://company.e-resident.gov.ee/company/16019987">
-              <h1 class="hero__title">Abhinav Sharma</h1>
-            </a>
-            <p class="hero__subtitle">
-              We make Bioinformatics simple and easy.
-            </p>
+            <h1 class="hero__title">Abhinav Sharma</h1>
+            <p class="hero__subtitle"></p>
             <div>
               <a
                 class="button button--outline button--secondary"
-                href="https://github.com/biosharp-dotnet"
+                href="https://github.com/abhi18av"
               >
                 Github
               </a>
 
               <a
                 class="button button--outline button--secondary"
-                href="https://www.linkedin.com/company/biosharp"
+                href="https://www.linkedin.com/in/abhi18av"
               >
                 LinkedIn
               </a>
 
               <a
                 class="button button--outline button--secondary"
-                href="https://www.youtube.com/channel/UChZX3OqkjS1SuGV_XPLPZ-Q?view_as=subscriber"
+                href="https://www.youtube.com/channel/UCcDGxGoHwvmmzS01HT7B1LQ?view_as=subscriber"
               >
                 YouTube
               </a>
 
               <a
                 class="button button--outline button--secondary"
-                href="https://www.facebook.com/BioSharp.net/"
-              >
-                Facebook
-              </a>
-
-              <a
-                class="button button--outline button--secondary"
-                href="https://twitter.com/BioSharp_dotnet"
+                href="https://twitter.com/abhi18av"
               >
                 Twitter
               </a>

@@ -1,20 +1,20 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: "My Site",
-  tagline: "The tagline of my site",
-  url: "https://your-docusaurus-test-site.com",
+  title: "Abhinav Sharma",
+  tagline: "Abhinav Sharma's personal website.",
+  url: "https://abhi18av.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  favicon: "img/abhinav.png",
+  organizationName: "abhi18av",
+  projectName: "abhi18av.com",
   themeConfig: {
     navbar: {
-      title: "My Site",
+      // title: "Abhinav Sharma",
       logo: {
-        alt: "My Site Logo",
-        src: "img/logo.svg",
+        alt: "Abhinav Sharma Home Page",
+        src: "img/abhinav.png",
       },
       items: [
         // {
@@ -24,57 +24,12 @@ module.exports = {
         //   position: "left",
         // },
         { to: "blog", label: "Blog", position: "left" },
-        {
-          href: "https://github.com/facebook/docusaurus",
-          label: "GitHub",
-          position: "right",
-        },
       ],
     },
     footer: {
       style: "dark",
-      links: [
-        // {
-        //   title: 'Docs',
-        //   items: [
-        //     {
-        //       label: 'Getting Started',
-        //       to: 'docs/',
-        //     },
-        //   ],
-        // },
-        {
-          title: "Community",
-          items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
-            },
-          ],
-        },
-        {
-          title: "More",
-          items: [
-            {
-              label: "Blog",
-              to: "blog",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      links: [],
+      copyright: `Copyright © ${new Date().getFullYear()}, All rights reserved. Abhinav Sharma`,
     },
   },
   presets: [
