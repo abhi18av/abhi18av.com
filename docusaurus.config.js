@@ -27,13 +27,13 @@ module.exports = {
       ],
     },
     googleAnalytics: {
-      trackingID: "TODO",
+      trackingID: "G-TQ8GL2QYD4eTODO",
       anonymizeIP: false,
     },
     footer: {
       style: "dark",
       links: [],
-      copyright: `Copyright © ${new Date().getFullYear()}, All rights reserved. Abhinav Sharma`,
+      copyright: `Copyright © ${new Date().getFullYear()}, All rights reserved. Abhinav Sharma (@abhi18av)`,
     },
   },
   presets: [
