@@ -29,7 +29,7 @@ export default function Home() {
                   <img src={AbhinavSharmaImageUrl} width={370} height={280} />
                 </div>
                 <p class="hero__subtitle">
-                  <p id="homepage.biosharpTagline">
+                  <p>
                     {'Abhinav Sharma ❤️ Science and Education'}
                   </p>
                 </p>
