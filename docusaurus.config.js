@@ -26,10 +26,6 @@ module.exports = {
         { to: "blog", label: "Blog", position: "left" },
       ],
     },
-    googleAnalytics: {
-      trackingID: "G-TQ8GL2QYD4eTODO",
-      anonymizeIP: false,
-    },
     footer: {
       style: "dark",
       links: [],
@@ -64,6 +60,10 @@ module.exports = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
+    googleAnalytics: {
+      trackingID: "G-TQ8GL2QYD4eTODO",
+      anonymizeIP: false,
+    }
       },
     ],
   ],
