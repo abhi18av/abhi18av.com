@@ -4,7 +4,7 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
-import styles from "./styles.module.css";
+import indexStyles from "./index.module.css";
 import { SocialIcon } from 'react-social-icons';
 import AbhinavSharmaImageUrl from "@site/static/img/abhinav.jpeg";
 
@@ -29,7 +29,7 @@ export default function Home() {
                   <img src={AbhinavSharmaImageUrl} width={370} height={280} />
                 </div>
                 <p class="hero__subtitle">
-                  <p id="homepage.biosharpTagline">
+                  <p class="leading-loose">
                     {'Abhinav Sharma ❤️ Science and Education'}
                   </p>
                 </p>
