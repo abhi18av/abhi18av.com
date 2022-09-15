@@ -6,15 +6,20 @@ module.exports = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/abhinav.png",
+  favicon: "img/abhinav.jpeg",
   organizationName: "abhi18av",
   projectName: "abhi18av.com",
+
   themeConfig: {
+    colorMode: {
+      disableSwitch: true
+    },
+
     navbar: {
       // title: "Abhinav Sharma",
       logo: {
         alt: "Abhinav Sharma Home Page",
-        src: "img/abhinav.png",
+        src: "img/abhinav.jpeg",
       },
       items: [
         // {
@@ -23,6 +28,7 @@ module.exports = {
         //   label: "Docs",
         //   position: "left",
         // },
+        { to: "curriculum_vitae", label: "Curriculum Vitae", position: "left" },
         { to: "blog", label: "Blog", position: "left" },
       ],
     },
@@ -45,25 +51,25 @@ module.exports = {
         blog: {
           showReadingTime: true,
           editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/blog/",
+            "https://github.com/abhi18av/abhi18av.com/edit/master/",
           blogSidebarCount: "ALL",
-          blogSidebarTitle: "Previous scribblings",
+          blogSidebarTitle: "Blog Posts",
           postsPerPage: 10,
           feedOptions: {
             type: "all",
-            title: `TODO`, // default to siteConfig.title
-            description: `TODO`, // default to  `${siteConfig.title} Blog`
+            // title: `TODO`, // default to siteConfig.title
+            // description: `TODO`, // default to  `${siteConfig.title} Blog`
             copyright: `Copyright © ${new Date().getFullYear()}, All rights reserved. Abhinav Sharma`,
-            language: undefined, // possible values: http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
+            language: "en-US", // possible values: http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
           },
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
-    googleAnalytics: {
-      trackingID: "G-TQ8GL2QYD4eTODO",
-      anonymizeIP: false,
-    }
+        // googleAnalytics: {
+        //   trackingID: "G-TQ8GL2QYD4eTODO",
+        //   anonymizeIP: false,
+        // }
       },
     ],
   ],

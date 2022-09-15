@@ -5,7 +5,8 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
-import AbhinavSharmaImageUrl from "@site/static/img/abhinav.png";
+import { SocialIcon } from 'react-social-icons';
+import AbhinavSharmaImageUrl from "@site/static/img/abhinav.jpeg";
 
 export default function Home() {
   const context = useDocusaurusContext();
@@ -16,47 +17,48 @@ export default function Home() {
       description="Abhinav Sharma (@abhi18av) personal website."
     >
       <main>
-        <div class="hero shadow--lw">
+
+
+        <div class="hero">
           <div class="container">
             <div class="row row--no-gutters">
-              <div class="col "></div>
-              <img src={AbhinavSharmaImageUrl} width={260} height={260} />
-              <div class="col col--5">
-                <h1 class="hero__title">Abhinav Sharma</h1>
-                <p class="hero__subtitle"></p>
-                <a
-                  class="button button--outline button--secondary"
-                  href="https://github.com/abhi18av"
-                >
-                  Github
-                </a>
+              <div class="col"> </div>
 
-                <a
-                  class="button button--outline button--secondary"
-                  href="https://www.linkedin.com/in/abhi18av"
-                >
-                  LinkedIn
-                </a>
+              <div class="col col--offset-4">
+                <div class="col--offset">
+                  <img src={AbhinavSharmaImageUrl} width={370} height={280} />
+                </div>
+                <p class="hero__subtitle">
+                  <p id="homepage.biosharpTagline">
+                    {'Abhinav Sharma ❤️ Science and Education'}
+                  </p>
+                </p>
 
-                <a
-                  class="button button--outline button--secondary"
-                  href="https://www.youtube.com/channel/UCcDGxGoHwvmmzS01HT7B1LQ?view_as=subscriber"
-                >
-                  YouTube
-                </a>
+                <div>
+                  <span class="margin--sm">  <SocialIcon url="https://github.com/abhi18av" /></span>
+                  <span class="margin--sm"> <SocialIcon url="https://www.linkedin.com/in/abhi18av" /> </span>
+                  <span class="margin--sm"> <SocialIcon url="https://www.youtube.com/channel/UCcDGxGoHwvmmzS01HT7B1LQ?view_as=subscriber" /> </span>
+                  <span class="margin--sm"> <SocialIcon url="https://www.facebook.com/abhi18av" /> </span>
+                  <span class="margin--sm"> <SocialIcon url="https://twitter.com/abhi18av" /> </span>
+                </div>
 
-                <a
-                  class="button button--outline button--secondary"
-                  href="https://twitter.com/abhi18av"
-                >
-                  Twitter
-                </a>
+                <div />
+                <div />
+                <div />
+
+                {/* <div class="margin-top--sm padding-top--sm"> */}
+                {/*   {"BioSharp OÜ is a company registered in"} */}
+                {/* </div> */}
+
               </div>
-              <div class="col"></div>
+
             </div>
+
           </div>
         </div>
+
+
       </main>
-    </Layout>
+    </Layout >
   );
 }
