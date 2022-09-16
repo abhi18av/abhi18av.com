@@ -1,0 +1,62 @@
+---
+draft: true
+slug: scratch-mdx
+title: Scratch MDX post
+author: Abhinav Sharma
+author_title: A curious data scientist.
+author_url: https://github.com/abhi18av
+author_image_url: https://avatars1.githubusercontent.com/u/12799326?s=460&v=4
+tags: [misc]
+---
+
+import { Mermaid } from 'mdx-mermaid/Mermaid';
+
+<Mermaid chart={`graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+`} />
+
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+<Highlight color="#25c2a0">Docusaurus green</Highlight> and <Highlight color="#1877F2">Facebook blue</Highlight> are my favorite colors.
+
+
+
+<Mermaid chart={`sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail!
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!`} />
+
+I can write **Markdown** alongside my _JSX_!
+
+```mermaid
+gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+excludes weekdays 2014-01-10
+
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2               :         des4, after des3, 5d
+```

@@ -9,7 +9,25 @@ module.exports = {
   favicon: "img/abhinav.jpeg",
   organizationName: "abhi18av",
   projectName: "abhi18av.com",
-
+  plugins: [
+    async function mermaidPlugin() {
+      const mdxMermaid = await import('mdx-mermaid')
+      return {
+        presets: [
+          [
+            'classic',
+            {
+              docs: {
+                remarkPlugins: [
+                  mdxMermaid.default
+                ],
+              }
+            }
+          ]
+        ]
+      }
+    }
+  ],
   themeConfig: {
     colorMode: {
       disableSwitch: true
