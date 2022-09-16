@@ -29,6 +29,10 @@ module.exports = {
     }
   ],
   themeConfig: {
+    prism: {
+      additionalLanguages: ['powershell', 'r', 'groovy', 'clojure', 'lua'],
+      // theme: require('prism-react-renderer/themes/dracula'),
+    },
     colorMode: {
       disableSwitch: true
     },

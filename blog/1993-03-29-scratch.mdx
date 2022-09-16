@@ -11,12 +11,12 @@ tags: [misc]
 
 import { Mermaid } from 'mdx-mermaid/Mermaid';
 
-<Mermaid chart={`graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-`} />
+<Mermaid chart = { `
+sequenceDiagram
+    Alice->>John: Hello John, how are you?
+    John-->>Alice: Great!
+    Alice-)John: See you later!
+`}/>
 
 export const Highlight = ({children, color}) => (
   <span
