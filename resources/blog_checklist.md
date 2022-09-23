@@ -1,0 +1,1 @@
+- Check social card on <https://socialsharepreview.com/>
