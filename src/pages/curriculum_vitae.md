@@ -51,7 +51,6 @@ I’m highly motivated to contribute my skills towards this goal in my career._
   - Managed a team of 5 AI specialists to design and develop the AI and data-science curriculum material using TensorFlow, Scikit-learn.
   - Implemented an agile-based approach to curriculum development (sprints, weekly retrospection and demos etc)
   - Did user and competitor research to optimize the student experience.
-
 <br />
 
 - **Devnagri (Fourtek IT Solutions)** - Machine Learning Engineer (August 2017 - December 2017)
@@ -59,7 +58,6 @@ I’m highly motivated to contribute my skills towards this goal in my career._
   - Designed the implementation pipeline for automated translations before final corrections by human translators.
   - Was eventually promoted to CTO when the internal project I was building was spun off into its own company (see Devnagri above).
   - **Technologies**: Spacy, Keras, TensorFlow, AWS, Neo4J, Clojure, Python, Beautiful Soup
-
 <br />
 
 - **Peoplemetrix**  - Co-founder and Chief Technology Officer (August 2015 - July 2016)
@@ -91,9 +89,7 @@ I’m highly motivated to contribute my skills towards this goal in my career._
 ## Miscellaneous
 
 - Technical reviewer for Packt Publications, books and accompanying author videos for titles like scikit-learn recipes and advanced-vim.
-
 - Mentored a cohort of 15 students for the Udacity AI NanoDegree with 13 students completing the term.
-
 - Weekend faculty for International School of Data Science and Artificial Intelligence
 
 <!-- ## Interviews -->
