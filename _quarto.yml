@@ -1,0 +1,10 @@
+project:
+  type: docusaurus
+  output-dir: ../
+      
+format: 
+  docusaurus-md:
+    code-fold: true
+  
+execute: 
+  warning: false
