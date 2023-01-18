@@ -7,6 +7,9 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 import { SocialIcon } from 'react-social-icons';
 import AbhinavSharmaImageUrl from "@site/static/img/abhinav.jpeg";
+import GoodreadsSVG from "@site/static/img/goodreads.svg";
+import GoodReads from "./goodreads.js"
+
 
 export default function Home() {
   const context = useDocusaurusContext();
@@ -40,6 +43,10 @@ export default function Home() {
                   <span class="margin--sm"> <SocialIcon url="https://www.youtube.com/channel/UCcDGxGoHwvmmzS01HT7B1LQ?view_as=subscriber" /> </span>
                   <span class="margin--sm"> <SocialIcon url="https://www.facebook.com/abhi18av" /> </span>
                   <span class="margin--sm"> <SocialIcon url="https://twitter.com/abhi18av" /> </span>
+                  <span class="margin--sm"> <GoodReads /> </span>
+
+
+
                 </div>
 
                 <div />
