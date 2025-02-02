@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://abhi18av.com/blog</id>
+    <title>Abhinav Sharma Blog</title>
+    <updated>2021-03-23T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://abhi18av.com/blog"/>
+    <subtitle>Abhinav Sharma Blog</subtitle>
+    <icon>https://abhi18av.com/img/abhinav.jpeg</icon>
+    <rights>Copyright © 2025, All rights reserved. Abhinav Sharma</rights>
+    <entry>
+        <title type="html"><![CDATA[Hello, world!]]></title>
+        <id>introduction</id>
+        <link href="https://abhi18av.com/blog/introduction"/>
+        <updated>2021-03-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This blog is about introducing myself, talking about my learnings, musings and work.]]></summary>
+        <content type="html"><![CDATA[<p>Introducing myself :)</p><p>This blog is about introducing myself, talking about my learnings, musings and work.</p>]]></content>
+        <author>
+            <name>Abhinav Sharma</name>
+            <uri>https://github.com/abhi18av</uri>
+        </author>
+        <category label="misc" term="misc"/>
+        <category label="scribblings" term="scribblings"/>
+    </entry>
+</feed>

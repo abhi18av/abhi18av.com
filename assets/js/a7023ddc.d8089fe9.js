@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkabhi18av_com=self.webpackChunkabhi18av_com||[]).push([[713],{3457:s=>{s.exports=JSON.parse('[{"label":"misc","permalink":"/blog/tags/misc","count":1},{"label":"scribblings","permalink":"/blog/tags/scribblings","count":1}]')}}]);
