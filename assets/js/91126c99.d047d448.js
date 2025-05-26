@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkabhi18av_com=self.webpackChunkabhi18av_com||[]).push([[400],{4877:a=>{a.exports=JSON.parse('{"permalink":"/blog/tags/scribblings","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

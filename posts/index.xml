@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Abhinav Sharma</title>
+<link>https://abhi18av.com/posts/</link>
+<atom:link href="https://abhi18av.com/posts/index.xml" rel="self" type="application/rss+xml"/>
+<description>Abhinav Sharma is a data scientist working at the intersection of genomics, machine learning and public health.</description>
+<generator>quarto-1.7.31</generator>
+<lastBuildDate>Sat, 06 Jan 2024 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>🇬🇧 Hey You, Reader!</title>
+  <dc:creator>Emilyn Costa Conceição</dc:creator>
+  <dc:creator>Emilyn Costa</dc:creator>
+  <link>https://abhi18av.com/posts/001-hello-world/index.en.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div style="text-align: justify">
+<blockquote class="blockquote">
+<p>“I don’t like words worn out by information. I have more respect for those that live belly-down on the ground.”<br>
+— Manoel de Barros</p>
+</blockquote>
+<section id="hey-you-reader" class="level2" style="text-align: justify">
+<h2 class="anchored" data-anchor-id="hey-you-reader">Hey you, reader!</h2>
+<p>Putting aside my reluctance to introduce myself publicly, I’m starting this journey for basically three reasons:</p>
+<p><strong>1. First</strong>, because it might help you at some point in your professional journey, whether through my mistakes or my achievements;</p>
+<p><strong>2. Second</strong>, because you might want to join one of the study groups I run on weekends, either in Portuguese or English (more details here);</p>
+<p><strong>3. Finally</strong>, because we might create or join a new and exciting initiative for society. How great would that be?</p>
+<p>Well, let’s move on to the proper introductions, professionally speaking. After all, we are not defined by our degrees — they are just an important part of life, but not <em>the</em> most important one…</p>
+<p>My name is Emilyn Costa Conceição Sharma, and I’m from Belém, Pará, Brazil. Despite the challenges my family and educators faced in getting me interested in studying during childhood, their persistence worked — and here I am.</p>
+<p>After a not-so-traditional journey, I fell in love with knowledge, and it became like magic chocolate: the more I consumed, the more there was to enjoy.<br>
+At that time, I had no internet, cellphone, or even TV access. My entire knowledge source came from formal education (school) and informal education (my grandmother’s library — she was a teacher). I went through many schools, experienced bullying, traumas, new beginnings, and later, found places that became emotional, intellectual, social, and protective oases.</p>
+<p>This background made me want to be everything at once.<br>
+Teenage years brought intense passions: for history, I wanted to be a historian; for music, a musician; for physics, I dreamed of NASA; for religion, I considered becoming a theologian or religious scholar; for sociology, geography, literature, and… biology. Eventually, I had to choose just two paths.</p>
+<p>My choices were led by the desire to serve God and His creation through what challenged and fascinated me.<br>
+First, I chose Medicine — because I love people and wanted to care for them.<br>
+Second, I chose Biology Education — a unique union between Science and Teaching.<br>
+I love life, the diversity of life, and the paradoxical harmony between its simplicity and complexity.</p>
+<p>And what came of these choices? Here’s a summary of my short professional biography, copied and pasted from a recent conference where I was a speaker:</p>
+<div style="text-align: justify; font-style: italic;">
+<blockquote class="blockquote">
+<p>“Emilyn holds a Biology degree from the Federal University of Pará (UFPA), with internships through CIEE and later through a scientific research project (PIBIC/CNPq) at the Molecular Biology Laboratory of the Bacteriology and Mycology Section at the Evandro Chagas Institute (SABMI/IEC), with which she maintains collaboration to this day. She earned a Master’s degree in Infectious Diseases from the State University of Pará (UEPA) and a PhD in Microbiology from the Federal University of Rio de Janeiro (UFRJ), with a ‘sandwich’ research period at Paris-Sud University, France, in collaboration with the Laboratory of Molecular Biology Applied to Mycobacteria (LABMAM) at the Oswaldo Cruz Institute – Fiocruz (IOC/Fiocruz).<br>
+She worked as a research technologist at Fiotec, in the Bacteriology and Bioassays Laboratory of the National Institute of Infectious Diseases (INI/Fiocruz), a regional reference in mycobacteria, where she gained experience in clinical research and molecular biology diagnostics for mycobacteria. She participated in the clinical projects Phoenix-NIH, TB-Alliance, and Report-Brazil.<br>
+Since 2021, she has been a member of the TB Genomics and Tuberculosis Omics Research (TORCH) groups, mainly coordinating the SMARTT clinical research project as a postdoctoral fellow at Stellenbosch University, Cape Town, South Africa.<br>
+Her current research focuses on personalized medicine through genomic sequencing of patients with drug-resistant tuberculosis.<br>
+Her interests include public health, epidemiology, molecular biology, antimicrobial resistance, genomic surveillance, ‘omics’, bioinformatics, and science education.”</p>
+</blockquote>
+</div>
+<hr>
+<div style="text-align: justify; font-style: normal;">
+<p>To wrap up this introduction, a poetic reminder:<br>
+Research work demands an incredible sense of urgency.<br>
+Everything feels like it’s for “yesterday,” and we live buried under deadlines.<br>
+Proactivity, creativity, and resilience are almost like components of our oxygen molecule.</p>
+<p>Maybe that’s why I want to share my favorite poem here — as a reminder that, even in the rush of life, we shouldn’t forget to appreciate its tiny little wonders.</p>
+<div style="text-align: center; margin: 20px 0;">
+<p><img src="https://abhi18av.com/img/oi-vc.png" alt="Illustration by Emilyn Costa via ChatGPT" style="max-width: 75%; height: auto; border-radius: 8px;"></p>
+</div>
+<section id="the-catcher-of-waste" class="level3" style="text-align: center; font-style: italic;">
+<h3 class="anchored" data-anchor-id="the-catcher-of-waste"><strong>The Catcher of Waste</strong></h3>
+<p><em>(Manoel de Barros)</em></p>
+<blockquote class="blockquote">
+<p>I use words to compose my silences.<br>
+I don’t like words worn out by information.<br>
+I have more respect for those that live belly-down on the ground — like water, stones, frogs.<br>
+I understand the accent of the waters.<br>
+I respect unimportant things and unimportant beings.<br>
+I value insects more than airplanes.<br>
+I value the speed of turtles more than missiles.<br>
+I carry a natural slowness in me.<br>
+I was made to love little birds.<br>
+And I’m abundantly happy because of that.<br>
+My backyard is bigger than the world.<br>
+I am a catcher of waste:<br>
+I love leftovers like good flies do.<br>
+I wish my voice had the shape of a song.<br>
+Because I’m not from informatics — I’m from inventiveness.<br>
+I only use words to compose my silences.</p>
+</blockquote>
+</section>
+<hr>
+<div style="text-align: justify; font-style: normal;">
+<p>With all that said — welcome to my professional-personal blog.</p>
+<p>See you soon — and I hope it really is <em>soon</em>! 😅</p>
+<p>Emilyn Costa.</p>
+
+
+</div>
+</div>
+</section>
+</div>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{costa_conceição2024,
+  author = {{Emilyn Costa Conceição} and Costa, Emilyn},
+  title = {🇬🇧 {Hey} {You,} {Reader!}},
+  date = {2024-01-07},
+  url = {https://abhi18av.com/posts/001-hello-world/index.en.html},
+  langid = {en-GB}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-costa_conceição2024" class="csl-entry quarto-appendix-citeas">
+Emilyn Costa Conceição, and Emilyn Costa. 2024. <span>“🇬🇧 Hey You,
+Reader!”</span> <a href="https://abhi18av.com/posts/001-hello-world/index.en.html">https://abhi18av.com/posts/001-hello-world/index.en.html</a>.
+</div></div></section></div> ]]></description>
+  <category>Reflections</category>
+  <category>Science</category>
+  <category>Career</category>
+  <guid>https://abhi18av.com/posts/001-hello-world/index.en.html</guid>
+  <pubDate>Sat, 06 Jan 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://abhi18av.com/posts/001-hello-world/oi-vc.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+</channel>
+</rss>
