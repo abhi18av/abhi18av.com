@@ -1,0 +1,21 @@
+author:
+  - id: cvc
+    number: 1
+    name:
+      given: Emilyn
+      family: Costa Conceição
+      literal: Emilyn Costa Conceição
+    orcid: 0000-0002-7445-6620
+    email: emilyncosta@gmail.com
+format:
+  html:
+    df-print: paged
+    toc: true
+    lang: en-GB
+    code-overflow: wrap
+    mermaid:
+      theme: neutral
+citation:
+  type: article
+reference-location: margin
+citation-location: margin

@@ -1,0 +1,51 @@
+---
+title: "Abhinav Sharma"
+about:
+    template: trestles
+    links:
+        - icon: linkedin
+          text: LinkedIn
+          url: https://www.linkedin.com/in/abhi18av/
+        - icon: twitter
+          text: Twitter
+          url: https://x.com/abhi18av
+        - icon: github
+          text: Github
+          url: https://github.com/abhi18av
+        - icon: instagram
+          text: Instagram
+          url: https://www.instagram.com/abhi18av
+        - text: "{{< fa envelope >}} Email"
+          url: mailto:abhinavsharma@hey.com
+        - text: "{{< ai orcid >}} ORCID 0000-0003-3131-0864"
+          url: https://orcid.org/0000-0002-7445-6620
+        - text: "{{< ai google-scholar >}} Google Scholar"
+          url: https://scholar.google.com.br/citations?user=QfjcZKoAAAAJ&hl=pt-BR
+#        - text: "{{< ai viaf >}} VIAF 7190162669581955500004"
+#          url: http://viaf.org/viaf/7190162669581955500004
+#        - text: "{{< ai isni >}} ISNI 0000 0005 0265 5729"
+#          url: https://isni.org/isni/0000000502655729
+        - text: "{{< ai researcherid >}} RID IZD-6900-2023"
+          url: https://www.webofscience.com/wos/author/record/K-1170-2015
+#       - text: "{{< ai osf >}} OSF"
+#          url: https://osf.io/awhgj
+image: img/IMG_5986.jpeg
+comments: false
+---
+
+<script type='application/ld+json'>
+{"@context":"http://www.schema.org","@type":"person","name":"Abhinav Sharma","jobTitle":"Director of Biomedical AI/ML","height":"74 inches","gender":"male","description":"Abhinav Sharma is a computational epidemiologist and data scientist working at the intersection of AI/ML, computational dynamics and public health. He is the author of Computational Modeling of Infectious Disease and a number of research papers.","url":"https://chrisvoncsefalvay.com","image":"https://chrisvoncsefalvay.com/img/IMG_5986.jpeg","address":{"@type":"PostalAddress","addressLocality":"Denver","addressRegion":"CO","postalCode":"80204","addressCountry":"United States"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"University of Oxford","sameAs":"https://en.wikipedia.org/wiki/University_of_Oxford"},{"@type":"CollegeOrUniversity","name":"Cardiff University","sameAs":"https://en.wikipedia.org/wiki/Cardiff_University"}],"worksFor":[{"@type":"Organization","name":"HCLTech"}],"birthDate":"1986-07-15","birthPlace":"Budapest, Hungary","memberOf":[{"@type":"Organization","name":"Royal Society for Public Health"},{"@type":"Organization","name":"TOPRA"},{"@type":"Organization","name":"IEEE"}],"nationality":[{"@type":"Country","name":"United Kingdom"},{"@type":"Country","name":"Hungary"}]}
+</script>
+
+<div style="text-align: justify">
+
+## Short Professional Bio
+
+Hi, I’m Emilyn Costa Conceição Sharma — a biologist by training 🧬, a microbiologist by passion 🔬, and someone who spends a suspicious amount of time thinking about bacteria most people can’t even pronounce 😄.
+
+I graduated in Biological Sciences from the Federal University of Pará (UFPA) in 2010 🎓, earned my master’s in Parasitic Biology in the Amazon from the State University of Pará (UEPA) in 2012 🦠, and completed my PhD in Microbiology at the Federal University of Rio de Janeiro (UFRJ) in 2018 📘. I also had the chance to spend an exciting year as a visiting PhD student at Université Paris Sud (2015–2016) — oui, baguettes and bacteria 🥖🇫🇷!
+
+After that, I did a postdoc in Clinical Research on Infectious Diseases at the Evandro Chagas National Institute of Infectious Diseases, part of the Oswaldo Cruz Foundation (INI/Fiocruz), from 2020 to 2021 🧪. Since 2021, I’ve been based in South Africa 🇿🇦, working as a postdoctoral fellow in the Division of Molecular Biology and Human Genetics at Stellenbosch University.
+
+My research is rooted in both basic and applied sciences 🔍, with a special focus on medical and environmental microbiology. I have a particular fascination for the Mycobacteria world — which includes Mycobacterium tuberculosis (a-ha! The TB villain 😷), Non-Tuberculous Mycobacteria (NTM), and Mycobacterium leprae (yes, the one behind Hansen Disease).
+
