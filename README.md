@@ -6,4 +6,4 @@ For any compliments regarding the design, please direct them to his repository a
 **ACKNOWLEDGEMENTS**:
 
 1. Finally, I am thankful to my wife, [Emilyn Costa](http://github.com/emilyncosta), source of my inspiration and motivation ❤️.
-2. I've used AI tools such as ChatGPT and Canvas for the generation of graphics!
+1. I've used AI tools such as ChatGPT and Canvas for the generation of graphics!
