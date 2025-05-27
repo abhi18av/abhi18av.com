@@ -1,10 +1,12 @@
 project:
   type: website
-  pre-render:
-    - scripts/pre_create_papers_file.py
-    # - scripts/pre_check_skierg_records.py
-    # - scripts/pre_doi_from_rogue_scholar.py
-    # - scripts/pre_canonicalise_tags.py
+  output-dir: _site
+  #lib-dir: assets_web
+  #pre-render:
+  # - scripts/pre_create_papers_file.py
+  # - scripts/pre_check_skierg_records.py
+  # - scripts/pre_doi_from_rogue_scholar.py
+  # - scripts/pre_canonicalise_tags.py
 resources:
   - CNAME
 
@@ -29,13 +31,13 @@ website:
     left: "(c) Abhinav Sharma, 2025–. [Disclaimer](disclaimer)"
   twitter-card: true
   open-graph: true
-#  google-analytics: "395640625"
+  #  google-analytics: "395640625"
 
 format:
   html:
     theme:
-      - cosmo
-      - custom.scss
+      light: flatly
+      dark: darkly
     toc: true
     toc_depth: 3
     toc_float: true
