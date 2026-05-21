@@ -60,6 +60,76 @@
     "href": "CV/cv-eng/index.html",
     "title": "🇬🇧 Curriculum vitae (CV)",
     "section": "",
-    "text": "You can download the latest CV here.\n\n\nYour browser cannot display PDFs inline. Please use the download link above."
+    "text": "Download the full PDF version here."
+  },
+  {
+    "objectID": "CV/cv-eng/index.html#contact",
+    "href": "CV/cv-eng/index.html#contact",
+    "title": "🇬🇧 Curriculum vitae (CV)",
+    "section": "Contact",
+    "text": "Contact\n\nAddress: 44 Washington Street, Boston Estate, Bellville, Cape Town, 7530, South Africa\nPhone: +27 68 489 0531\nEmail: abhinavsharma@sun.ac.za, abhi18av@outlook.com\nNationality: Indian\nORCID: https://www.orcid.org/0000-0002-6402-6993\nGitHub: https://www.github.com/abhi18av\nLinkedIn: https://www.linkedin.com/in/abhi18av/"
+  },
+  {
+    "objectID": "CV/cv-eng/index.html#education",
+    "href": "CV/cv-eng/index.html#education",
+    "title": "🇬🇧 Curriculum vitae (CV)",
+    "section": "Education",
+    "text": "Education\n\nPhD Candidate (2023–current), Stellenbosch University, Division of Molecular Biology and Human Genetics, Bioinformatics Research Unit.\nSupervisor: Prof. Gian van der Spuy.\nMasters in Data Science (2020–2021), Liverpool John Moores University, UK.\nPost-graduate diploma in Data Science (2019–2020), International Institute of Information Technology – Bengaluru.\nBachelors in Information Technology (2012–2016), Delhi Technological University, India."
+  },
+  {
+    "objectID": "CV/cv-eng/index.html#experience",
+    "href": "CV/cv-eng/index.html#experience",
+    "title": "🇬🇧 Curriculum vitae (CV)",
+    "section": "Experience",
+    "text": "Experience\n\nGENPATH Africa consortium (2024–current) — Bioinformatician\nPerformed bioinformatic analysis, pipeline and SOP implementation, data management, and training development in computer science and bioinformatics.\nNational Council for Scientific and Technological Development (CNPq), Brazil (2024–current), REVIGET and GEMIBRA Consortiums — Bioinformatician and Capacity Building Mentor\nPerformed bioinformatic analysis, pipeline and SOP implementation, data management, and training development in computer science and bioinformatics.\nTORCH Consortium (2022–2024) — Software Development (Nextflow pipeline)\nMAGMA pipeline development and maintenance.\nTelethon Kids Institute (2023–2024) — Senior Data Scientist\nFacilitated omics analysis for research groups across clinical trials.\nSeqera Labs (2020–2022) — Nextflow Specialist and Customer Success\nHelped top biopharma companies optimize analysis environments (AWS/Azure) and debug pipelines.\nBiosharp OÜ (2020–2023) — Principal Data Scientist\nProvided data science and data engineering services to multiple clients and conducted international capacity-building workshops.\nPxoximity Labs (2020) — Senior Full Stack Software Engineer\nWorked on upgrading the frontend into a performant progressive web app (PWA), focused on UX, performance, and caching.\nDevnagri (2017–2019) — Chief Technology Officer\nLed a team of 15 software engineers to build the digital platform, including NLP translation engine, CLI tooling, web scrapers, and data transformation services."
+  },
+  {
+    "objectID": "CV/cv-eng/index.html#grant-awards",
+    "href": "CV/cv-eng/index.html#grant-awards",
+    "title": "🇬🇧 Curriculum vitae (CV)",
+    "section": "Grant awards",
+    "text": "Grant awards\n\nNRF Scholarship for PhD, South Africa (2024–2026)\nOracle Research Cloud Credits (2023–2026)\nGoogle Cloud Research Credits (2024)\nSAMRC registration bursary (2023)"
+  },
+  {
+    "objectID": "CV/cv-eng/index.html#human-languages-proficiency",
+    "href": "CV/cv-eng/index.html#human-languages-proficiency",
+    "title": "🇬🇧 Curriculum vitae (CV)",
+    "section": "Human languages (proficiency)",
+    "text": "Human languages (proficiency)\n\nEnglish\nHindi\nPortuguese"
+  },
+  {
+    "objectID": "CV/cv-eng/index.html#main-skills",
+    "href": "CV/cv-eng/index.html#main-skills",
+    "title": "🇬🇧 Curriculum vitae (CV)",
+    "section": "Main skills",
+    "text": "Main skills\n\nCloud computing\n\nAWS\nAzure\nGoogle Cloud\nOracle Cloud\n\n\n\nProgramming languages\n\nNextflow\nPython\nR\nClojure(Script)\nPowershell\nJava\n\n\n\nDatabases\n\nMySQL\nSqlite3\nDuckDB\nDatomic\nOracle database\n\n\n\nProject management\n\nClicks\nRedCap"
+  },
+  {
+    "objectID": "CV/cv-eng/index.html#publishedaccepted-peer-reviewed-articles",
+    "href": "CV/cv-eng/index.html#publishedaccepted-peer-reviewed-articles",
+    "title": "🇬🇧 Curriculum vitae (CV)",
+    "section": "Published/accepted peer-reviewed articles",
+    "text": "Published/accepted peer-reviewed articles\n\nHeupinkin, Verboven, Sharma* et al. The MAGMA pipeline for comprehensive genomic analyses of clinical Mycobacterium tuberculosis samples (1st author). https://doi.org/10.1371/journal.pcbi.1011648\nSharma* et al. Tuberculosis drug resistance profiling based on machine learning: A literature review (1st author). https://doi.org/10.1016/j.bjid.2022.102332\n(Accepted) A Near-complete Genome of the Uncultured Staphylococcus aureus Phage COMBAT-CF_PAR1, Isolated from the Lungs of an Infant with Cystic Fibrosis.\nA Genome-Focused Investigation Reveals the Emergence of a Mycobacterium tuberculosis Strain Related to Multidrug-Resistant Tuberculosis in the Amazon Region of Brazil. https://doi.org/10.3390/microorganisms12091817\nDescription of new species of Mycobacterium terrae complex isolated from sewage at the São Paulo zoological park foundation in Brazil. https://doi.org/10.3389/fmicb.2024.1335985\nWhole-Genome Sequencing of Alcaligenes faecalis HZ01, with Potential to Inhibit Nontuberculous Mycobacterial Growth. https://doi.org/10.1128/mra.00521-21\nMolecular epidemiology of Mycobacterium tuberculosis in Brazil before the whole genome sequencing era: A literature review. https://doi.org/10.1590/0074-0276020517\nGenomic Diversity of the Rarely Observed Genotype of the Mycobacterium tuberculosis Central Asian (CAS) Lineage 3 from North Brazil. https://doi.org/10.3390/microorganisms11010132\nAnalysis of potential household transmission events of tuberculosis in the city of Belem, Brazil. https://doi.org/10.1016/j.tube.2018.09.011\nCharacterization of Mycobacterium tuberculosis var. africanum isolated from a patient with pulmonary tuberculosis in Brazil. https://doi.org/10.1016/j.meegid.2020.104550\nEvaluation of drug susceptibility profile of Mycobacterium tuberculosis Lineage 1 from Brazil based on whole genome sequencing and phenotypic methods. https://doi.org/10.1590/0074-02760200520"
+  },
+  {
+    "objectID": "CV/cv-eng/index.html#articles-under-peer-review",
+    "href": "CV/cv-eng/index.html#articles-under-peer-review",
+    "title": "🇬🇧 Curriculum vitae (CV)",
+    "section": "Articles under peer-review",
+    "text": "Articles under peer-review\n\nMarcon, Sharma et al. Genomic surveillance reveals transmission profiles of the first extensively drug-resistant tuberculosis cases in Pará, Brazil (1st author). Frontiers in Microbiology, Oct 2024.\nVirome Assembly Reveals Draft Genomes of Native Pseudomonas Phages isolated from a Paediatric Bronchoalveolar Lavage Sample. Microbiology Resource Announcements, Sep 2024."
+  },
+  {
+    "objectID": "CV/cv-eng/index.html#articles-in-submission",
+    "href": "CV/cv-eng/index.html#articles-in-submission",
+    "title": "🇬🇧 Curriculum vitae (CV)",
+    "section": "Articles in-submission",
+    "text": "Articles in-submission\n\nSharma* et al. MTBseq-nf: Enabling Scalable Tuberculosis Genomics “Big Data” Analysis through a User-Friendly Nextflow Wrapper for MTBseq pipeline (1st author). Intended journal: PEERJ.\nSharma* et al. CholeraSeq: a comprehensive genomic automated pipeline for cholera surveillance and near real-time outbreak investigation (1st author). Intended journal: Oxford Bioinformatics.\nSharma# et al. Ten simple rules to build sustainable bioinformatics capacity using Nextflow and nf-core with a focus on early-mid career researchers: The Kids Institute case report (#Senior author). Intended journal: PLOS One Bioinformatics.\nLeveraging the State of Whole Genome Sequencing for Precision Public Health in a High-Burden Tuberculosis Setting using the GEMIBRA Platform. Intended journal: Discovery Public Health."
+  },
+  {
+    "objectID": "CV/cv-eng/index.html#international-collaboration-network",
+    "href": "CV/cv-eng/index.html#international-collaboration-network",
+    "title": "🇬🇧 Curriculum vitae (CV)",
+    "section": "International collaboration network",
+    "text": "International collaboration network\n\nSouth Africa: Stellenbosch University Research Groups (TB Genomics – Rob Warren, CERI – Tulio de Oliveira, Host Genetics – Marlo Moller, Africa Microbiome Institute – Kristine Nel van Zyl), University of the Western Cape (UWC) – Alan Christoffels, University of Limpopo – Ivy Rukasha, and DIPLOMICS – Mhlekazi Molatoli.\nBrazil: Instituto Evandro Chagas (Karla Lima), Fiocruz-IOC (Philip Suffys), Fiocruz-INI (Cristina Lourenço), UNIFESP (Cristina Viana), UNIPEX (Patricia Reis), USP (Ana Marcia Guimaraes), UFC (Cristiane Frota).\nZambia: Tropical Disease Research Center (TDRC), Ndola (Kabengele Keith).\nBelgium: Antwerp University (Annelies van Rie) and University Hospital Ghent (Tom Sante).\nAustralia: The Kids Institute and University of Western Australia (Patricia Agudelo-Romero).\nSpain: nf-core and Nextflow communities (Seqera Labs) – Ambassador.\nUnited Kingdom: LSHTM (Jody Phelan)."
   }
 ]
