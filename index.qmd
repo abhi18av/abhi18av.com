@@ -44,3 +44,9 @@ comments: false
 Hi, I’m Abhinav Sharma — a data scientist by training, a bioinformatician by passion 🔬, and someone who spends a suspicious amount of time thinking about bacteria most people can’t even pronounce 😄.
 
 I graduated in Computer Science from the Delhi Technological University (DTU) in 2016 🎓, earned my master’s in Data Science from the IIIT-B in 2021 🦠, and currently pursuing my PhD in Bioinformatics at the University of Stellenbosch (SU) since 2023 📘.
+
+## Curriculum Vitae
+
+You can view my CV in the dedicated [CV section](CV/) of this website.
+
+</div>

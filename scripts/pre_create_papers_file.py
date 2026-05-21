@@ -133,6 +133,14 @@ if __name__ == "__main__":
     OUTPUT_FILENAME: str = "papers/index.qmd"
     INPUT_FILENAME: str = "papers/bibliography.bib"
 
+    if not os.path.exists(INPUT_FILENAME):
+        print(f"Skipping bibliography render: {INPUT_FILENAME} not found.")
+        exit()
+
+    if not os.path.exists(OUTPUT_FILENAME):
+        print(f"Skipping bibliography render: {OUTPUT_FILENAME} not found.")
+        exit()
+
     print(f"Rendering bibliography...")
     print("Reading BibTeX file from " + INPUT_FILENAME)
     entries = read_bibtex_file(INPUT_FILENAME)
