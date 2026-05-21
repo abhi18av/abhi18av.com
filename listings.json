@@ -1,28 +1,14 @@
 [
   {
-    "listing": "/posts/index.html",
-    "items": [
-      "/posts/001-hello-world/index.en.html"
-    ]
-  },
-  {
-    "listing": "/talks/index.html",
-    "items": [
-      "/talks/prometheus-unbound/index.html"
-    ]
-  },
-  {
     "listing": "/CV/index.html",
     "items": [
       "/CV/cv-eng/index.html"
     ]
   },
   {
-    "listing": "/media/index.html",
+    "listing": "/posts/index.html",
     "items": [
-      "/media/tech-for-good/index.html",
-      "/media/fr-disinfectants/index.html",
-      "/media/euronews-covid/index.html"
+      "/posts/001-hello-world/index.en.html"
     ]
   }
 ]
