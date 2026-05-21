@@ -46,7 +46,6 @@ Hi, I’m Abhinav Sharma — a data scientist by training, a bioinformatician by
 I graduated in Computer Science from the Delhi Technological University (DTU) in 2016 🎓, earned my master’s in Data Science from the IIIT-B in 2021 🦠, and currently pursuing my PhD in Bioinformatics at the University of Stellenbosch (SU) since 2023 📘.
 
 ## Curriculum Vitae
-
-You can view my CV in the dedicated [CV section](CV/) of this website.
+You can view my CV [here](CV/cv-eng/).
 
 </div>
