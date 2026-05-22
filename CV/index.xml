@@ -10,7 +10,7 @@
 <atom:link href="https://abhi18av.com/CV/index.xml" rel="self" type="application/rss+xml"/>
 <description>Abhinav Sharma is a data scientist working at the intersection of genomics, machine learning and public health.</description>
 <generator>quarto-1.9.37</generator>
-<lastBuildDate>Thu, 21 May 2026 15:10:38 GMT</lastBuildDate>
+<lastBuildDate>Fri, 22 May 2026 09:43:01 GMT</lastBuildDate>
 <item>
   <title>🇬🇧 Curriculum vitae (CV)</title>
   <link>https://abhi18av.com/CV/cv-eng/</link>
@@ -19,17 +19,9 @@
 
 
 
-<p>Download the full PDF version <a href="./Abhinav_CV_21102024_SAMRC.pdf">here</a>.</p>
-<object data="./Abhinav_CV_21102024_SAMRC.pdf" type="application/pdf" width="100%" height="900">
-<p>
-Your browser cannot display PDFs inline. Please use the download link above.
-</p>
-</object>
 <section id="contact" class="level2">
-<h2 class="anchored" data-anchor-id="contact">Contact</h2>
+
 <ul>
-<li><strong>Address:</strong> 44 Washington Street, Boston Estate, Bellville, Cape Town, 7530, South Africa</li>
-<li><strong>Phone:</strong> +27 68 489 0531</li>
 <li><strong>Email:</strong> abhinavsharma@sun.ac.za, abhi18av@outlook.com</li>
 <li><strong>Nationality:</strong> Indian</li>
 <li><strong>ORCID:</strong> <a href="https://www.orcid.org/0000-0002-6402-6993" class="uri">https://www.orcid.org/0000-0002-6402-6993</a></li>
@@ -174,7 +166,7 @@ Led a team of 15 software engineers to build the digital platform, including NLP
 
  ]]></description>
   <guid>https://abhi18av.com/CV/cv-eng/</guid>
-  <pubDate>Thu, 21 May 2026 15:10:38 GMT</pubDate>
+  <pubDate>Fri, 22 May 2026 09:43:01 GMT</pubDate>
 </item>
 </channel>
 </rss>
